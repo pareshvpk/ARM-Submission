@@ -1,9 +1,9 @@
-<img src="docs/logo.png" alt="PS3 Sentinel logo" width="128">
+<img src="docs/logo.png" alt="Cuebird app logo" width="128">
 
-# PS3 Sentinel
+# Cuebird
 
 
-PS3 Sentinel reads an SMS on the device and decides whether it is ham, unwanted promotion, or a scam or phishing attempt. It highlights the words that caused the verdict. For medium or high risk it asks Llama 3.2 1B on the device for plain-language advice. Nothing leaves the device: the manifest declares no `INTERNET` permission, so Android blocks all network access for the app, enforced by `test_no_network_permissions` in `tests/test_android_manifest_privacy.py`; phone packet capture was not done (no root).
+Cuebird reads an SMS on the device and decides whether it is ham, unwanted promotion, or a scam or phishing attempt. It highlights the words that caused the verdict. For medium or high risk it asks Llama 3.2 1B on the device for plain-language advice. Nothing leaves the device: the manifest declares no `INTERNET` permission, so Android blocks all network access for the app, enforced by `test_no_network_permissions` in `tests/test_android_manifest_privacy.py`; phone packet capture was not done (no root).
 
 ## Quick start for judges
 
@@ -208,4 +208,4 @@ Package submission release assets with `python scripts/package_submission.py --m
 
 ## About and licences
 
-PS3 Sentinel code is licensed under Apache-2.0 (see [LICENSE](LICENSE)). Third-party components, model weights, fonts, and datasets keep their respective licences. See [NOTICE](NOTICE) for full attribution, Llama 3.2 Community License details ("Built with Llama"), Acceptable Use Policy links, MiniLM base model attribution, font licences, and dataset terms.
+Cuebird code is licensed under Apache-2.0 (see [LICENSE](LICENSE)). Third-party components, model weights, fonts, and datasets keep their respective licences. See [NOTICE](NOTICE) for full attribution, Llama 3.2 Community License details ("Built with Llama"), Acceptable Use Policy links, MiniLM base model attribution, font licences, and dataset terms.
