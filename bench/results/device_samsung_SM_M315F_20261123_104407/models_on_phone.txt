@@ -1,0 +1,9 @@
+﻿total 1.1G
+-rw-rw---- 1 u0_a960 sdcard_rw 1.0M 2026-11-15 16:29 id_map.json
+-rw-rw---- 1 u0_a960 sdcard_rw 1.0G 2026-11-03 21:09 llama.pte
+-rw-rw---- 1 u0_a960 sdcard_rw  553 2026-11-23 10:45 models.sha256
+-rw-rw---- 1 u0_a960 sdcard_rw 112M 2026-11-21 11:21 sms_fp32.pte
+-rw-rw---- 1 u0_a960 sdcard_rw 6.0M 2026-11-15 16:29 sms_vocab.txt
+-rw-rw---- 1 u0_a960 sdcard_rw 2.0M 2026-11-03 21:08 tokenizer.model
+-rw-rw---- 1 u0_a960 sdcard_rw 1.0M 2026-11-03 20:48 url_cnn_v2.pte
+-rw-rw---- 1 u0_a960 sdcard_rw  896 2026-11-03 20:48 vocab.json

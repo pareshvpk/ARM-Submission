@@ -1,0 +1,2886 @@
+{
+ "real_rows": 3012,
+ "headers": 337,
+ "arms": {
+  "shipped_v5": {
+   "real": {
+    "base": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 635,
+      "high": 198,
+      "medium": 437,
+      "alert_rate": 0.4484,
+      "high_rate": 0.1398
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 45,
+      "high": 19,
+      "medium": 26,
+      "alert_rate": 0.1546,
+      "high_rate": 0.0653
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 40,
+      "high": 16,
+      "medium": 24,
+      "alert_rate": 0.1439,
+      "high_rate": 0.0576
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 5,
+      "high": 3,
+      "medium": 2,
+      "alert_rate": 0.4545,
+      "high_rate": 0.2727
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 11,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.275,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 11,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.2895,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 579,
+      "high": 179,
+      "medium": 400,
+      "alert_rate": 0.5336,
+      "high_rate": 0.165
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 543,
+      "high": 167,
+      "medium": 376,
+      "alert_rate": 0.5282,
+      "high_rate": 0.1625
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 36,
+      "high": 12,
+      "medium": 24,
+      "alert_rate": 0.6316,
+      "high_rate": 0.2105
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 873,
+      "high": 144,
+      "medium": 729,
+      "alert_rate": 0.547,
+      "high_rate": 0.0902
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 69,
+      "high": 31,
+      "medium": 38,
+      "alert_rate": 0.3,
+      "high_rate": 0.1348
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 30,
+      "high": 7,
+      "medium": 23,
+      "alert_rate": 0.1875,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 39,
+      "high": 24,
+      "medium": 15,
+      "alert_rate": 0.5571,
+      "high_rate": 0.3429
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 31,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.4493,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 31,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.4697,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 773,
+      "high": 106,
+      "medium": 667,
+      "alert_rate": 0.596,
+      "high_rate": 0.0817
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 675,
+      "high": 67,
+      "medium": 608,
+      "alert_rate": 0.5995,
+      "high_rate": 0.0595
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 98,
+      "high": 39,
+      "medium": 59,
+      "alert_rate": 0.5765,
+      "high_rate": 0.2294
+     }
+    },
+    "policy": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 318,
+      "high": 198,
+      "medium": 437,
+      "alert_rate": 0.2246,
+      "high_rate": 0.1398
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 24,
+      "high": 19,
+      "medium": 26,
+      "alert_rate": 0.0825,
+      "high_rate": 0.0653
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 21,
+      "high": 16,
+      "medium": 24,
+      "alert_rate": 0.0755,
+      "high_rate": 0.0576
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 3,
+      "high": 3,
+      "medium": 2,
+      "alert_rate": 0.2727,
+      "high_rate": 0.2727
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 2,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.05,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 2,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.0526,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 292,
+      "high": 179,
+      "medium": 400,
+      "alert_rate": 0.2691,
+      "high_rate": 0.165
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 280,
+      "high": 167,
+      "medium": 376,
+      "alert_rate": 0.2724,
+      "high_rate": 0.1625
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 12,
+      "high": 12,
+      "medium": 24,
+      "alert_rate": 0.2105,
+      "high_rate": 0.2105
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 181,
+      "high": 144,
+      "medium": 729,
+      "alert_rate": 0.1134,
+      "high_rate": 0.0902
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 32,
+      "high": 31,
+      "medium": 38,
+      "alert_rate": 0.1391,
+      "high_rate": 0.1348
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 8,
+      "high": 7,
+      "medium": 23,
+      "alert_rate": 0.05,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 24,
+      "high": 24,
+      "medium": 15,
+      "alert_rate": 0.3429,
+      "high_rate": 0.3429
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 12,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.1739,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 12,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.1818,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 137,
+      "high": 106,
+      "medium": 667,
+      "alert_rate": 0.1056,
+      "high_rate": 0.0817
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 95,
+      "high": 67,
+      "medium": 608,
+      "alert_rate": 0.0844,
+      "high_rate": 0.0595
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 42,
+      "high": 39,
+      "medium": 59,
+      "alert_rate": 0.2471,
+      "high_rate": 0.2294
+     }
+    },
+    "both": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 316,
+      "high": 197,
+      "medium": 437,
+      "alert_rate": 0.2232,
+      "high_rate": 0.1391
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 24,
+      "high": 19,
+      "medium": 26,
+      "alert_rate": 0.0825,
+      "high_rate": 0.0653
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 21,
+      "high": 16,
+      "medium": 24,
+      "alert_rate": 0.0755,
+      "high_rate": 0.0576
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 3,
+      "high": 3,
+      "medium": 2,
+      "alert_rate": 0.2727,
+      "high_rate": 0.2727
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 2,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.05,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 2,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.0526,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 290,
+      "high": 178,
+      "medium": 400,
+      "alert_rate": 0.2673,
+      "high_rate": 0.1641
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 278,
+      "high": 166,
+      "medium": 376,
+      "alert_rate": 0.2704,
+      "high_rate": 0.1615
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 12,
+      "high": 12,
+      "medium": 24,
+      "alert_rate": 0.2105,
+      "high_rate": 0.2105
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 181,
+      "high": 144,
+      "medium": 729,
+      "alert_rate": 0.1134,
+      "high_rate": 0.0902
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 32,
+      "high": 31,
+      "medium": 38,
+      "alert_rate": 0.1391,
+      "high_rate": 0.1348
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 8,
+      "high": 7,
+      "medium": 23,
+      "alert_rate": 0.05,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 24,
+      "high": 24,
+      "medium": 15,
+      "alert_rate": 0.3429,
+      "high_rate": 0.3429
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 12,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.1739,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 12,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.1818,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 137,
+      "high": 106,
+      "medium": 667,
+      "alert_rate": 0.1056,
+      "high_rate": 0.0817
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 95,
+      "high": 67,
+      "medium": 608,
+      "alert_rate": 0.0844,
+      "high_rate": 0.0595
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 42,
+      "high": 39,
+      "medium": 59,
+      "alert_rate": 0.2471,
+      "high_rate": 0.2294
+     }
+    },
+    "policy2": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 449,
+      "high": 198,
+      "medium": 437,
+      "alert_rate": 0.3171,
+      "high_rate": 0.1398
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 36,
+      "high": 19,
+      "medium": 26,
+      "alert_rate": 0.1237,
+      "high_rate": 0.0653
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 31,
+      "high": 16,
+      "medium": 24,
+      "alert_rate": 0.1115,
+      "high_rate": 0.0576
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 5,
+      "high": 3,
+      "medium": 2,
+      "alert_rate": 0.4545,
+      "high_rate": 0.2727
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 2,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.05,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 2,
+      "high": 0,
+      "medium": 11,
+      "alert_rate": 0.0526,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 411,
+      "high": 179,
+      "medium": 400,
+      "alert_rate": 0.3788,
+      "high_rate": 0.165
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 392,
+      "high": 167,
+      "medium": 376,
+      "alert_rate": 0.3813,
+      "high_rate": 0.1625
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 19,
+      "high": 12,
+      "medium": 24,
+      "alert_rate": 0.3333,
+      "high_rate": 0.2105
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 367,
+      "high": 144,
+      "medium": 729,
+      "alert_rate": 0.2299,
+      "high_rate": 0.0902
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 50,
+      "high": 31,
+      "medium": 38,
+      "alert_rate": 0.2174,
+      "high_rate": 0.1348
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 18,
+      "high": 7,
+      "medium": 23,
+      "alert_rate": 0.1125,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 32,
+      "high": 24,
+      "medium": 15,
+      "alert_rate": 0.4571,
+      "high_rate": 0.3429
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 14,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.2029,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 14,
+      "high": 7,
+      "medium": 24,
+      "alert_rate": 0.2121,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 303,
+      "high": 106,
+      "medium": 667,
+      "alert_rate": 0.2336,
+      "high_rate": 0.0817
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 228,
+      "high": 67,
+      "medium": 608,
+      "alert_rate": 0.2025,
+      "high_rate": 0.0595
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 75,
+      "high": 39,
+      "medium": 59,
+      "alert_rate": 0.4412,
+      "high_rate": 0.2294
+     }
+    }
+   },
+   "heldout": {
+    "base": {
+     "Overall": {
+      "tp": 4995,
+      "fn": 1536,
+      "fp": 732,
+      "tn": 5835,
+      "recall": 0.7648,
+      "false_alarms": 0.1115
+     },
+     "English": {
+      "tp": 616,
+      "fn": 43,
+      "fp": 3,
+      "tn": 547,
+      "recall": 0.9347,
+      "false_alarms": 0.0055
+     },
+     "Hindi": {
+      "tp": 482,
+      "fn": 18,
+      "fp": 64,
+      "tn": 436,
+      "recall": 0.964,
+      "false_alarms": 0.128
+     },
+     "Tamil": {
+      "tp": 171,
+      "fn": 11,
+      "fp": 85,
+      "tn": 187,
+      "recall": 0.9396,
+      "false_alarms": 0.3125
+     },
+     "Hinglish": {
+      "tp": 466,
+      "fn": 34,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.932,
+      "false_alarms": 0.0
+     }
+    },
+    "policy": {
+     "Overall": {
+      "tp": 3822,
+      "fn": 2709,
+      "fp": 28,
+      "tn": 6539,
+      "recall": 0.5852,
+      "false_alarms": 0.0043
+     },
+     "English": {
+      "tp": 610,
+      "fn": 49,
+      "fp": 1,
+      "tn": 549,
+      "recall": 0.9256,
+      "false_alarms": 0.0018
+     },
+     "Hindi": {
+      "tp": 411,
+      "fn": 89,
+      "fp": 21,
+      "tn": 479,
+      "recall": 0.822,
+      "false_alarms": 0.042
+     },
+     "Tamil": {
+      "tp": 163,
+      "fn": 19,
+      "fp": 0,
+      "tn": 272,
+      "recall": 0.8956,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 431,
+      "fn": 69,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.862,
+      "false_alarms": 0.0
+     }
+    },
+    "both": {
+     "Overall": {
+      "tp": 3813,
+      "fn": 2718,
+      "fp": 28,
+      "tn": 6539,
+      "recall": 0.5838,
+      "false_alarms": 0.0043
+     },
+     "English": {
+      "tp": 601,
+      "fn": 58,
+      "fp": 1,
+      "tn": 549,
+      "recall": 0.912,
+      "false_alarms": 0.0018
+     },
+     "Hindi": {
+      "tp": 411,
+      "fn": 89,
+      "fp": 21,
+      "tn": 479,
+      "recall": 0.822,
+      "false_alarms": 0.042
+     },
+     "Tamil": {
+      "tp": 163,
+      "fn": 19,
+      "fp": 0,
+      "tn": 272,
+      "recall": 0.8956,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 431,
+      "fn": 69,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.862,
+      "false_alarms": 0.0
+     }
+    },
+    "policy2": {
+     "Overall": {
+      "tp": 4065,
+      "fn": 2466,
+      "fp": 113,
+      "tn": 6454,
+      "recall": 0.6224,
+      "false_alarms": 0.0172
+     },
+     "English": {
+      "tp": 613,
+      "fn": 46,
+      "fp": 2,
+      "tn": 548,
+      "recall": 0.9302,
+      "false_alarms": 0.0036
+     },
+     "Hindi": {
+      "tp": 469,
+      "fn": 31,
+      "fp": 59,
+      "tn": 441,
+      "recall": 0.938,
+      "false_alarms": 0.118
+     },
+     "Tamil": {
+      "tp": 163,
+      "fn": 19,
+      "fp": 0,
+      "tn": 272,
+      "recall": 0.8956,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 457,
+      "fn": 43,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.914,
+      "false_alarms": 0.0
+     }
+    }
+   },
+   "small": {
+    "base": {
+     "golden": {
+      "Tamil": 56,
+      "Hindi": 58
+     },
+     "R_alerts": 11,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "policy": {
+     "golden": {
+      "Tamil": 54,
+      "Hindi": 57
+     },
+     "R_alerts": 5,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "both": {
+     "golden": {
+      "Tamil": 54,
+      "Hindi": 57
+     },
+     "R_alerts": 4,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "policy2": {
+     "golden": {
+      "Tamil": 55,
+      "Hindi": 58
+     },
+     "R_alerts": 6,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    }
+   }
+  },
+  "finetuned_run1": {
+   "real": {
+    "base": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 729,
+      "high": 142,
+      "medium": 587,
+      "alert_rate": 0.5148,
+      "high_rate": 0.1003
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 54,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.1856,
+      "high_rate": 0.0241
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 50,
+      "high": 7,
+      "medium": 43,
+      "alert_rate": 0.1799,
+      "high_rate": 0.0252
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 4,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.3636,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 14,
+      "high": 0,
+      "medium": 14,
+      "alert_rate": 0.35,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 13,
+      "high": 0,
+      "medium": 13,
+      "alert_rate": 0.3421,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 1,
+      "high": 0,
+      "medium": 1,
+      "alert_rate": 0.5,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 661,
+      "high": 135,
+      "medium": 526,
+      "alert_rate": 0.6092,
+      "high_rate": 0.1244
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 628,
+      "high": 135,
+      "medium": 493,
+      "alert_rate": 0.6109,
+      "high_rate": 0.1313
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 33,
+      "high": 0,
+      "medium": 33,
+      "alert_rate": 0.5789,
+      "high_rate": 0.0
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 857,
+      "high": 59,
+      "medium": 798,
+      "alert_rate": 0.537,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 54,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.2348,
+      "high_rate": 0.0304
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 34,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.2125,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 20,
+      "high": 0,
+      "medium": 20,
+      "alert_rate": 0.2857,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 34,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.4928,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 34,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.5152,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 769,
+      "high": 45,
+      "medium": 724,
+      "alert_rate": 0.5929,
+      "high_rate": 0.0347
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 721,
+      "high": 41,
+      "medium": 680,
+      "alert_rate": 0.6403,
+      "high_rate": 0.0364
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 48,
+      "high": 4,
+      "medium": 44,
+      "alert_rate": 0.2824,
+      "high_rate": 0.0235
+     }
+    },
+    "policy": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 289,
+      "high": 142,
+      "medium": 587,
+      "alert_rate": 0.2041,
+      "high_rate": 0.1003
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 17,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.0584,
+      "high_rate": 0.0241
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 17,
+      "high": 7,
+      "medium": 43,
+      "alert_rate": 0.0612,
+      "high_rate": 0.0252
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 0,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 4,
+      "high": 0,
+      "medium": 14,
+      "alert_rate": 0.1,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 4,
+      "high": 0,
+      "medium": 13,
+      "alert_rate": 0.1053,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 1,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 268,
+      "high": 135,
+      "medium": 526,
+      "alert_rate": 0.247,
+      "high_rate": 0.1244
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 268,
+      "high": 135,
+      "medium": 493,
+      "alert_rate": 0.2607,
+      "high_rate": 0.1313
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 0,
+      "high": 0,
+      "medium": 33,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 102,
+      "high": 59,
+      "medium": 798,
+      "alert_rate": 0.0639,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 9,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.0391,
+      "high_rate": 0.0304
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 8,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.05,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 1,
+      "high": 0,
+      "medium": 20,
+      "alert_rate": 0.0143,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 14,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.2029,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 14,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.2121,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 79,
+      "high": 45,
+      "medium": 724,
+      "alert_rate": 0.0609,
+      "high_rate": 0.0347
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 75,
+      "high": 41,
+      "medium": 680,
+      "alert_rate": 0.0666,
+      "high_rate": 0.0364
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 4,
+      "high": 4,
+      "medium": 44,
+      "alert_rate": 0.0235,
+      "high_rate": 0.0235
+     }
+    },
+    "both": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 288,
+      "high": 141,
+      "medium": 587,
+      "alert_rate": 0.2034,
+      "high_rate": 0.0996
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 17,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.0584,
+      "high_rate": 0.0241
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 17,
+      "high": 7,
+      "medium": 43,
+      "alert_rate": 0.0612,
+      "high_rate": 0.0252
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 0,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 4,
+      "high": 0,
+      "medium": 14,
+      "alert_rate": 0.1,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 4,
+      "high": 0,
+      "medium": 13,
+      "alert_rate": 0.1053,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 1,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 267,
+      "high": 134,
+      "medium": 526,
+      "alert_rate": 0.2461,
+      "high_rate": 0.1235
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 267,
+      "high": 134,
+      "medium": 493,
+      "alert_rate": 0.2597,
+      "high_rate": 0.1304
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 0,
+      "high": 0,
+      "medium": 33,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 102,
+      "high": 59,
+      "medium": 798,
+      "alert_rate": 0.0639,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 9,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.0391,
+      "high_rate": 0.0304
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 8,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.05,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 1,
+      "high": 0,
+      "medium": 20,
+      "alert_rate": 0.0143,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 14,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.2029,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 14,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.2121,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 79,
+      "high": 45,
+      "medium": 724,
+      "alert_rate": 0.0609,
+      "high_rate": 0.0347
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 75,
+      "high": 41,
+      "medium": 680,
+      "alert_rate": 0.0666,
+      "high_rate": 0.0364
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 4,
+      "high": 4,
+      "medium": 44,
+      "alert_rate": 0.0235,
+      "high_rate": 0.0235
+     }
+    },
+    "policy2": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 492,
+      "high": 142,
+      "medium": 587,
+      "alert_rate": 0.3475,
+      "high_rate": 0.1003
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 37,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.1271,
+      "high_rate": 0.0241
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 35,
+      "high": 7,
+      "medium": 43,
+      "alert_rate": 0.1259,
+      "high_rate": 0.0252
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 2,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.1818,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 5,
+      "high": 0,
+      "medium": 14,
+      "alert_rate": 0.125,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 5,
+      "high": 0,
+      "medium": 13,
+      "alert_rate": 0.1316,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 1,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 450,
+      "high": 135,
+      "medium": 526,
+      "alert_rate": 0.4147,
+      "high_rate": 0.1244
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 433,
+      "high": 135,
+      "medium": 493,
+      "alert_rate": 0.4212,
+      "high_rate": 0.1313
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 17,
+      "high": 0,
+      "medium": 33,
+      "alert_rate": 0.2982,
+      "high_rate": 0.0
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 334,
+      "high": 59,
+      "medium": 798,
+      "alert_rate": 0.2093,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 30,
+      "high": 7,
+      "medium": 47,
+      "alert_rate": 0.1304,
+      "high_rate": 0.0304
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 22,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.1375,
+      "high_rate": 0.0437
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 8,
+      "high": 0,
+      "medium": 20,
+      "alert_rate": 0.1143,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 18,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.2609,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 18,
+      "high": 7,
+      "medium": 27,
+      "alert_rate": 0.2727,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 286,
+      "high": 45,
+      "medium": 724,
+      "alert_rate": 0.2205,
+      "high_rate": 0.0347
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 261,
+      "high": 41,
+      "medium": 680,
+      "alert_rate": 0.2318,
+      "high_rate": 0.0364
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 25,
+      "high": 4,
+      "medium": 44,
+      "alert_rate": 0.1471,
+      "high_rate": 0.0235
+     }
+    }
+   },
+   "heldout": {
+    "base": {
+     "Overall": {
+      "tp": 5768,
+      "fn": 763,
+      "fp": 1056,
+      "tn": 5511,
+      "recall": 0.8832,
+      "false_alarms": 0.1608
+     },
+     "English": {
+      "tp": 631,
+      "fn": 28,
+      "fp": 8,
+      "tn": 542,
+      "recall": 0.9575,
+      "false_alarms": 0.0145
+     },
+     "Hindi": {
+      "tp": 472,
+      "fn": 28,
+      "fp": 6,
+      "tn": 494,
+      "recall": 0.944,
+      "false_alarms": 0.012
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 471,
+      "fn": 29,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.942,
+      "false_alarms": 0.0
+     }
+    },
+    "policy": {
+     "Overall": {
+      "tp": 3926,
+      "fn": 2605,
+      "fp": 50,
+      "tn": 6517,
+      "recall": 0.6011,
+      "false_alarms": 0.0076
+     },
+     "English": {
+      "tp": 621,
+      "fn": 38,
+      "fp": 0,
+      "tn": 550,
+      "recall": 0.9423,
+      "false_alarms": 0.0
+     },
+     "Hindi": {
+      "tp": 348,
+      "fn": 152,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.696,
+      "false_alarms": 0.0
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 403,
+      "fn": 97,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.806,
+      "false_alarms": 0.0
+     }
+    },
+    "both": {
+     "Overall": {
+      "tp": 3916,
+      "fn": 2615,
+      "fp": 50,
+      "tn": 6517,
+      "recall": 0.5996,
+      "false_alarms": 0.0076
+     },
+     "English": {
+      "tp": 611,
+      "fn": 48,
+      "fp": 0,
+      "tn": 550,
+      "recall": 0.9272,
+      "false_alarms": 0.0
+     },
+     "Hindi": {
+      "tp": 348,
+      "fn": 152,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.696,
+      "false_alarms": 0.0
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 403,
+      "fn": 97,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.806,
+      "false_alarms": 0.0
+     }
+    },
+    "policy2": {
+     "Overall": {
+      "tp": 5029,
+      "fn": 1502,
+      "fp": 458,
+      "tn": 6109,
+      "recall": 0.77,
+      "false_alarms": 0.0697
+     },
+     "English": {
+      "tp": 628,
+      "fn": 31,
+      "fp": 4,
+      "tn": 546,
+      "recall": 0.953,
+      "false_alarms": 0.0073
+     },
+     "Hindi": {
+      "tp": 459,
+      "fn": 41,
+      "fp": 3,
+      "tn": 497,
+      "recall": 0.918,
+      "false_alarms": 0.006
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 455,
+      "fn": 45,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.91,
+      "false_alarms": 0.0
+     }
+    }
+   },
+   "small": {
+    "base": {
+     "golden": {
+      "Tamil": 59,
+      "Hindi": 59
+     },
+     "R_alerts": 11,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "policy": {
+     "golden": {
+      "Tamil": 56,
+      "Hindi": 58
+     },
+     "R_alerts": 4,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "both": {
+     "golden": {
+      "Tamil": 56,
+      "Hindi": 58
+     },
+     "R_alerts": 4,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "policy2": {
+     "golden": {
+      "Tamil": 59,
+      "Hindi": 59
+     },
+     "R_alerts": 5,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    }
+   }
+  },
+  "finetuned_run2": {
+   "real": {
+    "base": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 819,
+      "high": 154,
+      "medium": 665,
+      "alert_rate": 0.5784,
+      "high_rate": 0.1088
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 49,
+      "high": 6,
+      "medium": 43,
+      "alert_rate": 0.1684,
+      "high_rate": 0.0206
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 45,
+      "high": 6,
+      "medium": 39,
+      "alert_rate": 0.1619,
+      "high_rate": 0.0216
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 4,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.3636,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 28,
+      "high": 0,
+      "medium": 28,
+      "alert_rate": 0.7,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 26,
+      "high": 0,
+      "medium": 26,
+      "alert_rate": 0.6842,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 2,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 1.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 742,
+      "high": 148,
+      "medium": 594,
+      "alert_rate": 0.6839,
+      "high_rate": 0.1364
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 704,
+      "high": 147,
+      "medium": 557,
+      "alert_rate": 0.6848,
+      "high_rate": 0.143
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 38,
+      "high": 1,
+      "medium": 37,
+      "alert_rate": 0.6667,
+      "high_rate": 0.0175
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 934,
+      "high": 59,
+      "medium": 875,
+      "alert_rate": 0.5852,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 55,
+      "high": 6,
+      "medium": 49,
+      "alert_rate": 0.2391,
+      "high_rate": 0.0261
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 36,
+      "high": 6,
+      "medium": 30,
+      "alert_rate": 0.225,
+      "high_rate": 0.0375
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 19,
+      "high": 0,
+      "medium": 19,
+      "alert_rate": 0.2714,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 47,
+      "high": 7,
+      "medium": 40,
+      "alert_rate": 0.6812,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 45,
+      "high": 7,
+      "medium": 38,
+      "alert_rate": 0.6818,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 2,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 0.6667,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 832,
+      "high": 46,
+      "medium": 786,
+      "alert_rate": 0.6415,
+      "high_rate": 0.0355
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 791,
+      "high": 44,
+      "medium": 747,
+      "alert_rate": 0.7025,
+      "high_rate": 0.0391
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 41,
+      "high": 2,
+      "medium": 39,
+      "alert_rate": 0.2412,
+      "high_rate": 0.0118
+     }
+    },
+    "policy": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 302,
+      "high": 154,
+      "medium": 665,
+      "alert_rate": 0.2133,
+      "high_rate": 0.1088
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 11,
+      "high": 6,
+      "medium": 43,
+      "alert_rate": 0.0378,
+      "high_rate": 0.0206
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 11,
+      "high": 6,
+      "medium": 39,
+      "alert_rate": 0.0396,
+      "high_rate": 0.0216
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 0,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 6,
+      "high": 0,
+      "medium": 28,
+      "alert_rate": 0.15,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 6,
+      "high": 0,
+      "medium": 26,
+      "alert_rate": 0.1579,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 285,
+      "high": 148,
+      "medium": 594,
+      "alert_rate": 0.2627,
+      "high_rate": 0.1364
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 284,
+      "high": 147,
+      "medium": 557,
+      "alert_rate": 0.2763,
+      "high_rate": 0.143
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 1,
+      "high": 1,
+      "medium": 37,
+      "alert_rate": 0.0175,
+      "high_rate": 0.0175
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 116,
+      "high": 59,
+      "medium": 875,
+      "alert_rate": 0.0727,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 9,
+      "high": 6,
+      "medium": 49,
+      "alert_rate": 0.0391,
+      "high_rate": 0.0261
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 8,
+      "high": 6,
+      "medium": 30,
+      "alert_rate": 0.05,
+      "high_rate": 0.0375
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 1,
+      "high": 0,
+      "medium": 19,
+      "alert_rate": 0.0143,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 18,
+      "high": 7,
+      "medium": 40,
+      "alert_rate": 0.2609,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 18,
+      "high": 7,
+      "medium": 38,
+      "alert_rate": 0.2727,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 89,
+      "high": 46,
+      "medium": 786,
+      "alert_rate": 0.0686,
+      "high_rate": 0.0355
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 85,
+      "high": 44,
+      "medium": 747,
+      "alert_rate": 0.0755,
+      "high_rate": 0.0391
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 4,
+      "high": 2,
+      "medium": 39,
+      "alert_rate": 0.0235,
+      "high_rate": 0.0118
+     }
+    },
+    "both": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 300,
+      "high": 153,
+      "medium": 665,
+      "alert_rate": 0.2119,
+      "high_rate": 0.1081
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 11,
+      "high": 6,
+      "medium": 43,
+      "alert_rate": 0.0378,
+      "high_rate": 0.0206
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 11,
+      "high": 6,
+      "medium": 39,
+      "alert_rate": 0.0396,
+      "high_rate": 0.0216
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 0,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 6,
+      "high": 0,
+      "medium": 28,
+      "alert_rate": 0.15,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 6,
+      "high": 0,
+      "medium": 26,
+      "alert_rate": 0.1579,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 283,
+      "high": 147,
+      "medium": 594,
+      "alert_rate": 0.2608,
+      "high_rate": 0.1355
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 282,
+      "high": 146,
+      "medium": 557,
+      "alert_rate": 0.2743,
+      "high_rate": 0.142
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 1,
+      "high": 1,
+      "medium": 37,
+      "alert_rate": 0.0175,
+      "high_rate": 0.0175
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 116,
+      "high": 59,
+      "medium": 875,
+      "alert_rate": 0.0727,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 9,
+      "high": 6,
+      "medium": 49,
+      "alert_rate": 0.0391,
+      "high_rate": 0.0261
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 8,
+      "high": 6,
+      "medium": 30,
+      "alert_rate": 0.05,
+      "high_rate": 0.0375
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 1,
+      "high": 0,
+      "medium": 19,
+      "alert_rate": 0.0143,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 18,
+      "high": 7,
+      "medium": 40,
+      "alert_rate": 0.2609,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 18,
+      "high": 7,
+      "medium": 38,
+      "alert_rate": 0.2727,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 89,
+      "high": 46,
+      "medium": 786,
+      "alert_rate": 0.0686,
+      "high_rate": 0.0355
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 85,
+      "high": 44,
+      "medium": 747,
+      "alert_rate": 0.0755,
+      "high_rate": 0.0391
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 4,
+      "high": 2,
+      "medium": 39,
+      "alert_rate": 0.0235,
+      "high_rate": 0.0118
+     }
+    },
+    "policy2": {
+     "dev|all": {
+      "n": 1416,
+      "alert": 466,
+      "high": 154,
+      "medium": 665,
+      "alert_rate": 0.3291,
+      "high_rate": 0.1088
+     },
+     "dev|genuine": {
+      "n": 291,
+      "alert": 35,
+      "high": 6,
+      "medium": 43,
+      "alert_rate": 0.1203,
+      "high_rate": 0.0206
+     },
+     "dev|genuine|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Latin": {
+      "n": 278,
+      "alert": 33,
+      "high": 6,
+      "medium": 39,
+      "alert_rate": 0.1187,
+      "high_rate": 0.0216
+     },
+     "dev|genuine|Malayalam": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|genuine|Tamil": {
+      "n": 11,
+      "alert": 2,
+      "high": 0,
+      "medium": 4,
+      "alert_rate": 0.1818,
+      "high_rate": 0.0
+     },
+     "dev|promotional": {
+      "n": 40,
+      "alert": 7,
+      "high": 0,
+      "medium": 28,
+      "alert_rate": 0.175,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Latin": {
+      "n": 38,
+      "alert": 7,
+      "high": 0,
+      "medium": 26,
+      "alert_rate": 0.1842,
+      "high_rate": 0.0
+     },
+     "dev|promotional|Tamil": {
+      "n": 2,
+      "alert": 0,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "dev|unknown": {
+      "n": 1085,
+      "alert": 424,
+      "high": 148,
+      "medium": 594,
+      "alert_rate": 0.3908,
+      "high_rate": 0.1364
+     },
+     "dev|unknown|Latin": {
+      "n": 1028,
+      "alert": 406,
+      "high": 147,
+      "medium": 557,
+      "alert_rate": 0.3949,
+      "high_rate": 0.143
+     },
+     "dev|unknown|Tamil": {
+      "n": 57,
+      "alert": 18,
+      "high": 1,
+      "medium": 37,
+      "alert_rate": 0.3158,
+      "high_rate": 0.0175
+     },
+     "test|all": {
+      "n": 1596,
+      "alert": 285,
+      "high": 59,
+      "medium": 875,
+      "alert_rate": 0.1786,
+      "high_rate": 0.037
+     },
+     "test|genuine": {
+      "n": 230,
+      "alert": 26,
+      "high": 6,
+      "medium": 49,
+      "alert_rate": 0.113,
+      "high_rate": 0.0261
+     },
+     "test|genuine|Latin": {
+      "n": 160,
+      "alert": 19,
+      "high": 6,
+      "medium": 30,
+      "alert_rate": 0.1187,
+      "high_rate": 0.0375
+     },
+     "test|genuine|Tamil": {
+      "n": 70,
+      "alert": 7,
+      "high": 0,
+      "medium": 19,
+      "alert_rate": 0.1,
+      "high_rate": 0.0
+     },
+     "test|promotional": {
+      "n": 69,
+      "alert": 20,
+      "high": 7,
+      "medium": 40,
+      "alert_rate": 0.2899,
+      "high_rate": 0.1014
+     },
+     "test|promotional|Latin": {
+      "n": 66,
+      "alert": 20,
+      "high": 7,
+      "medium": 38,
+      "alert_rate": 0.303,
+      "high_rate": 0.1061
+     },
+     "test|promotional|Tamil": {
+      "n": 3,
+      "alert": 0,
+      "high": 0,
+      "medium": 2,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown": {
+      "n": 1297,
+      "alert": 239,
+      "high": 46,
+      "medium": 786,
+      "alert_rate": 0.1843,
+      "high_rate": 0.0355
+     },
+     "test|unknown|Hindi": {
+      "n": 1,
+      "alert": 0,
+      "high": 0,
+      "medium": 0,
+      "alert_rate": 0.0,
+      "high_rate": 0.0
+     },
+     "test|unknown|Latin": {
+      "n": 1126,
+      "alert": 219,
+      "high": 44,
+      "medium": 747,
+      "alert_rate": 0.1945,
+      "high_rate": 0.0391
+     },
+     "test|unknown|Tamil": {
+      "n": 170,
+      "alert": 20,
+      "high": 2,
+      "medium": 39,
+      "alert_rate": 0.1176,
+      "high_rate": 0.0118
+     }
+    }
+   },
+   "heldout": {
+    "base": {
+     "Overall": {
+      "tp": 5811,
+      "fn": 720,
+      "fp": 1289,
+      "tn": 5278,
+      "recall": 0.8898,
+      "false_alarms": 0.1963
+     },
+     "English": {
+      "tp": 632,
+      "fn": 27,
+      "fp": 4,
+      "tn": 546,
+      "recall": 0.959,
+      "false_alarms": 0.0073
+     },
+     "Hindi": {
+      "tp": 481,
+      "fn": 19,
+      "fp": 12,
+      "tn": 488,
+      "recall": 0.962,
+      "false_alarms": 0.024
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 462,
+      "fn": 38,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.924,
+      "false_alarms": 0.0
+     }
+    },
+    "policy": {
+     "Overall": {
+      "tp": 4145,
+      "fn": 2386,
+      "fp": 55,
+      "tn": 6512,
+      "recall": 0.6347,
+      "false_alarms": 0.0084
+     },
+     "English": {
+      "tp": 623,
+      "fn": 36,
+      "fp": 1,
+      "tn": 549,
+      "recall": 0.9454,
+      "false_alarms": 0.0018
+     },
+     "Hindi": {
+      "tp": 385,
+      "fn": 115,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.77,
+      "false_alarms": 0.0
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 414,
+      "fn": 86,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.828,
+      "false_alarms": 0.0
+     }
+    },
+    "both": {
+     "Overall": {
+      "tp": 4136,
+      "fn": 2395,
+      "fp": 55,
+      "tn": 6512,
+      "recall": 0.6333,
+      "false_alarms": 0.0084
+     },
+     "English": {
+      "tp": 614,
+      "fn": 45,
+      "fp": 1,
+      "tn": 549,
+      "recall": 0.9317,
+      "false_alarms": 0.0018
+     },
+     "Hindi": {
+      "tp": 385,
+      "fn": 115,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.77,
+      "false_alarms": 0.0
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 414,
+      "fn": 86,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.828,
+      "false_alarms": 0.0
+     }
+    },
+    "policy2": {
+     "Overall": {
+      "tp": 5198,
+      "fn": 1333,
+      "fp": 537,
+      "tn": 6030,
+      "recall": 0.7959,
+      "false_alarms": 0.0818
+     },
+     "English": {
+      "tp": 631,
+      "fn": 28,
+      "fp": 1,
+      "tn": 549,
+      "recall": 0.9575,
+      "false_alarms": 0.0018
+     },
+     "Hindi": {
+      "tp": 466,
+      "fn": 34,
+      "fp": 3,
+      "tn": 497,
+      "recall": 0.932,
+      "false_alarms": 0.006
+     },
+     "Tamil": {
+      "tp": 182,
+      "fn": 0,
+      "fp": 0,
+      "tn": 272,
+      "recall": 1.0,
+      "false_alarms": 0.0
+     },
+     "Hinglish": {
+      "tp": 453,
+      "fn": 47,
+      "fp": 0,
+      "tn": 500,
+      "recall": 0.906,
+      "false_alarms": 0.0
+     }
+    }
+   },
+   "small": {
+    "base": {
+     "golden": {
+      "Tamil": 59,
+      "Hindi": 57
+     },
+     "R_alerts": 12,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "policy": {
+     "golden": {
+      "Tamil": 57,
+      "Hindi": 58
+     },
+     "R_alerts": 5,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "both": {
+     "golden": {
+      "Tamil": 57,
+      "Hindi": 58
+     },
+     "R_alerts": 4,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    },
+    "policy2": {
+     "golden": {
+      "Tamil": 58,
+      "Hindi": 59
+     },
+     "R_alerts": 5,
+     "R_n": 12,
+     "phone_ok": 6,
+     "phone_n": 6
+    }
+   }
+  }
+ }
+}

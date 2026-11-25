@@ -1,0 +1,15 @@
+{
+    "id":  "<kaggle-user>/ps3-sms-multilang-exp",
+    "title":  "ps3-sms-multilang-exp",
+    "code_file":  "run_ft.py",
+    "language":  "python",
+    "kernel_type":  "script",
+    "is_private":  true,
+    "enable_gpu":  true,
+    "enable_internet":  true,
+    "dataset_sources":  [
+                            "<kaggle-user>/ps3-sms-corpus",
+                            "<kaggle-user>/ps3-sms-multilang-data",
+                            "<kaggle-user>/ps3-sms-real-private"
+                        ]
+}

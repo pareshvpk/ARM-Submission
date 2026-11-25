@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_glass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/space_grotesk"
+                android:text="@string/protection_title"
+                android:textAppearance="@style/TextAppearance.Sentinel.HeadingM"
+                android:textColor="@color/text" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingBottom="112dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- 1. SMS and MMS -->
+                <LinearLayout
+                    android:id="@+id/cardSmsMms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_glass_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/space_grotesk"
+                        android:text="@string/protection_sms_mms_title"
+                        android:textAppearance="@style/TextAppearance.Sentinel.HeadingM"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/protection_sms_mms_desc"
+                        android:textAppearance="@style/TextAppearance.Sentinel.BodyM"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/tvSmsMmsStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:textAppearance="@style/TextAppearance.Sentinel.BodyM"
+                        android:textColor="@color/text_2" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRequestSmsPermissions"
+                        style="@style/Widget.Sentinel.Button.Glass"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:minHeight="48dp"
+                        android:text="@string/protection_grant_permissions" />
+                </LinearLayout>
+
+                <!-- 2. Notifications -->
+                <LinearLayout
+                    android:id="@+id/cardNotifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_glass_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/space_grotesk"
+                        android:text="@string/settings_notifications_title"
+                        android:textAppearance="@style/TextAppearance.Sentinel.HeadingM"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/tvNotificationStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:textAppearance="@style/TextAppearance.Sentinel.BodyM"
+                        android:textColor="@color/text" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTurnOnNotifications"
+                        style="@style/Widget.Sentinel.Button.Glass"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:minHeight="48dp"
+                        android:text="@string/settings_notifications_turn_on" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/settings_notifications_disclaimer"
+                        android:textAppearance="@style/TextAppearance.Sentinel.LabelS"
+                        android:textColor="@color/text_2" />
+                </LinearLayout>
+
+                <!-- 3. Check this screen -->
+                <LinearLayout
+                    android:id="@+id/cardScreenCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_glass_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/space_grotesk"
+                        android:text="@string/settings_screen_check_title"
+                        android:textAppearance="@style/TextAppearance.Sentinel.HeadingM"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/settings_screen_check_explanation"
+                        android:textAppearance="@style/TextAppearance.Sentinel.BodyM"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/tvScreenCheckStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:textAppearance="@style/TextAppearance.Sentinel.BodyM"
+                        android:textColor="@color/text" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnScreenCheckSettings"
+                        style="@style/Widget.Sentinel.Button.Glass"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:minHeight="48dp"
+                        android:text="@string/settings_screen_check_button" />
+                </LinearLayout>
+
+                <!-- 4. App access review -->
+                <LinearLayout
+                    android:id="@+id/cardAppAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_glass_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/space_grotesk"
+                        android:text="@string/app_access_title"
+                        android:textAppearance="@style/TextAppearance.Sentinel.HeadingM"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/app_access_explanation"
+                        android:textAppearance="@style/TextAppearance.Sentinel.BodyM"
+                        android:textColor="@color/text" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCheckAppAccess"
+                        style="@style/Widget.Sentinel.Button.Glass"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:minHeight="48dp"
+                        android:text="@string/app_access_button" />
+
+                    <TextView
+                        android:id="@+id/tvAppAccessResults"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/jetbrains_mono"
+                        android:textAppearance="@style/TextAppearance.Sentinel.BodyM"
+                        android:textColor="@color/text"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/app_access_disclaimer"
+                        android:textAppearance="@style/TextAppearance.Sentinel.LabelS"
+                        android:textColor="@color/text_2" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottomBar"
+        layout="@layout/view_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

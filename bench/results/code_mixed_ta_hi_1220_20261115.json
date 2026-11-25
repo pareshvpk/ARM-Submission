@@ -1,0 +1,381 @@
+{
+ "rows": 1220,
+ "overall": {
+  "risky": 620,
+  "caught": 568,
+  "recall_pct": 91.6,
+  "ham": 600,
+  "false_alarms": 31,
+  "false_alarm_pct": 5.2
+ },
+ "Tamil": {
+  "risky": 310,
+  "caught": 287,
+  "recall_pct": 92.6,
+  "ham": 300,
+  "false_alarms": 26,
+  "false_alarm_pct": 8.7
+ },
+ "Hindi": {
+  "risky": 310,
+  "caught": 281,
+  "recall_pct": 90.6,
+  "ham": 300,
+  "false_alarms": 5,
+  "false_alarm_pct": 1.7
+ },
+ "by_category": {
+  "Hindi|ham|advisory": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Hindi|ham|appointment": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|atm": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|bank_debit": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|bank_info": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|courier": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|delivery": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|electricity": {
+   "total": 20,
+   "wrong": 5
+  },
+  "Hindi|ham|emi": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|gas": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|govt": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|insurance": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|otp": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|personal": {
+   "total": 50,
+   "wrong": 0
+  },
+  "Hindi|ham|ration": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|recharge": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|salary": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|school": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|temple": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|transport": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|upi_credit": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|vaccination": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|water": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|ham|work": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|courier": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Hindi|risky|digital_arrest": {
+   "total": 20,
+   "wrong": 7
+  },
+  "Hindi|risky|electricity": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Hindi|risky|family": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|fastag": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|gas": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|insurance": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|investment": {
+   "total": 10,
+   "wrong": 8
+  },
+  "Hindi|risky|job": {
+   "total": 20,
+   "wrong": 3
+  },
+  "Hindi|risky|kyc": {
+   "total": 30,
+   "wrong": 0
+  },
+  "Hindi|risky|loan": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Hindi|risky|lottery": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Hindi|risky|netbanking": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|otp": {
+   "total": 20,
+   "wrong": 1
+  },
+  "Hindi|risky|remote_app": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|sim": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Hindi|risky|tax": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|traffic": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Hindi|risky|upi": {
+   "total": 30,
+   "wrong": 10
+  },
+  "Tamil|ham|advisory": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Tamil|ham|appointment": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|atm": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|bank_debit": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|bank_info": {
+   "total": 10,
+   "wrong": 10
+  },
+  "Tamil|ham|courier": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|delivery": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|electricity": {
+   "total": 20,
+   "wrong": 2
+  },
+  "Tamil|ham|emi": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|gas": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|govt": {
+   "total": 10,
+   "wrong": 5
+  },
+  "Tamil|ham|insurance": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|otp": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|personal": {
+   "total": 50,
+   "wrong": 0
+  },
+  "Tamil|ham|ration": {
+   "total": 10,
+   "wrong": 9
+  },
+  "Tamil|ham|recharge": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|salary": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|school": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|temple": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|transport": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|upi_credit": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|vaccination": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|water": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|ham|work": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|courier": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Tamil|risky|digital_arrest": {
+   "total": 20,
+   "wrong": 8
+  },
+  "Tamil|risky|electricity": {
+   "total": 20,
+   "wrong": 1
+  },
+  "Tamil|risky|family": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|fastag": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|gas": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|insurance": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|investment": {
+   "total": 10,
+   "wrong": 3
+  },
+  "Tamil|risky|job": {
+   "total": 20,
+   "wrong": 1
+  },
+  "Tamil|risky|kyc": {
+   "total": 30,
+   "wrong": 0
+  },
+  "Tamil|risky|loan": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Tamil|risky|lottery": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Tamil|risky|netbanking": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|otp": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Tamil|risky|remote_app": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|sim": {
+   "total": 20,
+   "wrong": 0
+  },
+  "Tamil|risky|tax": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|traffic": {
+   "total": 10,
+   "wrong": 0
+  },
+  "Tamil|risky|upi": {
+   "total": 30,
+   "wrong": 10
+  }
+ },
+ "model_label_counts": {
+  "ham|ham": 567,
+  "ham|scam": 27,
+  "ham|unwanted": 6,
+  "risky|ham": 54,
+  "risky|scam": 555,
+  "risky|unwanted": 11
+ }
+}

@@ -1,0 +1,21 @@
+--------- beginning of main
+11-07 10:12:58.350 I/PS3Timing(22938): process_start_to_onCreate_ms=19
+11-07 10:12:58.421 I/PS3Timing(22938): integrity_verify_model=url ms=8
+11-07 10:12:58.498 I/PS3Timing(22938): model_load_model=url ms=77
+11-07 10:12:58.501 I/PS3Timing(22938): integrity_verify_model=sms ms=1
+11-07 10:13:01.582 I/PS3Timing(22938): sms_received_to_alert_ms=3122
+11-07 10:13:10.629 I/PS3Timing(22938): model_load_model=sms ms=12129
+11-07 10:13:10.713 I/PS3Timing(22938): deferred_analysis_done_ms=12252 posted=true updated=true
+11-07 10:13:20.508 I/PS3Timing(22938): sms_received_to_alert_ms=97
+11-07 10:14:55.932 I/PS3Timing(22938): integrity_verify_model=llama ms=11
+11-07 10:14:55.945 I/PS3Sms  (22938): LlamaAdvisor: prefix cache enabled (constant USE_PREFIX_CACHE=true, no flag file)
+11-07 10:14:55.985 I/PS3Timing(22938): intent_to_analysis_start_ms=42
+11-07 10:14:56.392 I/PS3Timing(22938): llama_threads=4
+11-07 10:14:56.401 I/PS3Timing(22938): model_load_model=llama ms=468
+11-07 10:15:03.760 I/PS3Timing(22938): prefix_prefill_ms=7357
+11-07 10:15:03.760 I/PS3Sms  (22938): LlamaAdvisor: prefix prefill ready path=prefix_cache
+11-07 10:15:16.410 I/PS3Llama(22938): {"prefill_token_per_sec":62.7476,"decode_token_per_sec":9.30173,"prompt_tokens":301,"generated_tokens":73,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1794026703763,"inference_end_ms":1794026716408,"model_execution_start_ms":1794026716305,"model_execution_end_ms":1794026716408,"prompt_eval_end_ms":1794026708560,"first_token_ms":1794026708560,"aggregate_sampling_time_ms":23,"aggregate_model_execution_time_ms":12453,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-07 10:15:16.411 I/PS3Sms  (22938): LlamaAdvisor prompt_path=full_prompt prompt_tokens=301
+11-07 10:15:16.411 I/PS3Llama(22938): prompt_path=full_prompt
+11-07 10:15:16.417 I/PS3Bench(22938): prompt_path=full_prompt prompt_tokens=301 ttft_ms=4797.0 decode_tok_s=9.2 advice_sha8=bf7f28fe
+11-07 10:15:19.902 I/PS3Sms  (22938): LlamaAdvisor: prefix prefill ready path=prefix_cache

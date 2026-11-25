@@ -1,0 +1,6 @@
+Galaxy F14, APK bdcc10e, on battery (USB unplugged, adb over Wi-Fi), screen on, brightness 80, app in foreground.
+Source: dumpsys battery 'current now' (mA) x 'voltage' (mV), sampled on the phone about every 0.6 s; fuel-gauge value, not a lab meter. Power = |current| (mA) x voltage (mV) / 1e6. Windows: idle = first sample to idle_end, batch = idle_end to batch_end (marks.txt).
+idle (app open, no analysis): sample mean 1.442 W, trapezoid time-weighted mean 1.444 W over 60.0 s, 106 samples, 3 distinct values
+batch (5 warm share analyses incl. Llama advice, 2 s gaps): sample mean 3.247 W, trapezoid time-weighted mean 3.288 W over 75.9 s, 117 samples, 3 distinct values
+extra energy over idle: 140.1 J total (trapezoid batch energy 249.5 J minus idle sample mean x batch span 109.4 J), 28.0 J per analysed message (7.78 mWh); sample-mean method gives 136.9 J total, 27.4 J per message (7.61 mWh)
+Caveat: the fuel gauge took only 3 distinct values per window, so these numbers are coarse; phone energy needs a finer meter.

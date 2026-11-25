@@ -1,0 +1,14 @@
+{
+  "id": "<kaggle-user>/ps3-url-classifier",
+  "title": "ps3-url-classifier",
+  "code_file": "train_url.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "joebeachcapital/phiusiil-phishing-url"
+  ]
+}
+

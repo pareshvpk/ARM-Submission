@@ -1,0 +1,81 @@
+﻿# python build artifacts
+dist/
+build/
+*.egg-info/
+
+media/
+*.pte
+*.hef
+.venv/
+__pycache__/
+models/
+.pytest_cache/
+data/raw/
+data/processed/
+data/*.log
+data/*.err
+data/raw_schema.txt
+*.log
+bench/results/**/*.log
+docs/*.log
+kaggle.json
+.env
+*.pem
+*.key
+id_rsa*
+id_rsa*.pub
+secrets/
+
+# security: signing material, secrets, local config, model weights (S-16)
+*.jks
+*.keystore
+*.p12
+*.pfx
+keystore.properties
+local.properties
+.env.*
+credentials.json
+service-account*.json
+*.pt
+*.onnx
+*.safetensors
+*.tflite
+
+# local-only notes
+docs/handoff_*.md
+android/.kotlin/
+
+# local ExecuTorch AAR build (DT-9); see deploy/android/build_executorch_aar.sh
+android/app/libs/*.aar
+
+tmp_work/
+.venv-train/
+training_runs/
+
+# local only: comparison with teammates' repositories
+docs/team_comparison_*.md
+
+# local only: phone screenshots that show the notification shade or home screen (personal content),
+# and device screenshots not yet reviewed for personal content
+bench/results/device_m31_20261113/*.png
+bench/results/device_vivo_v2338_20261113/*.png
+bench/results/device_m31_20261110_audit/*.png
+bench/results/device_*/*.png
+bench/results/device_*/*_ui.xml
+
+# multilang work: real inbox data and derived files never leave this machine
+bench/heldout_ml/real_*
+docs/multilang/real_*
+data/raw_ml/
+data/processed_ml/
+.venv-mt/
+
+artifacts/
+
+# machine-specific IDE / Android user state and local release artifacts
+.idea/
+.android/
+*.apk
+
+# competition report is kept outside the source repository on request
+submission docs/

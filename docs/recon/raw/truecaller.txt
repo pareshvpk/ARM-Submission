@@ -1,0 +1,414 @@
+URL: https://www.truecaller.com/
+TITLE: Truecaller – Identify Unknown Callers &amp; Block Spam Calls
+
+[RootWebArea] Truecaller – Identify Unknown Callers & Block Spam Calls
+[StaticText] {"mode":"full","isActive":true,"isUserDisabled":false}
+[link] Link to home page
+[link] Sign in
+[link] Truecaller logo Download
+[button] Take the Quiz (2 min)
+[link] Try Truecaller for Free
+[link] About us
+[link] Truecaller Facts & Insights
+[link] CNAP & Truecaller Comparison
+[link] Scam Detection by Truecaller
+[link] Impact
+[link] Safety Center
+[link] Careers We're hiring
+[link] Media Kit
+[link] Engineering
+[link] Investors
+[link] Privacy
+[link] Help
+[link] Android app
+[link] iPhone app
+[link] Wear OS app
+[link] Scam Checker NEW
+[link] Premium
+[link] Truecaller Gold
+[link] Partner With Truecaller Premium
+[link] AI Call Scanner
+[link] Scam Alert
+[link] Caller ID
+[link] Spam Blocking
+[link] Message ID
+[link] Truecaller Assistant - Call Screening
+[link] URL checker
+[link] Call Recording
+[link] Messaging with Truecaller
+[link] Fraud Insurance
+[link] Calling with Truecaller
+[link] Caller ID for Messaging Apps
+[link] Reverse Phone Number Lookup
+[link] SMS Sender ID Lookup
+[link] Scam & Spam Number Lookup
+[link] Phone Number Locator
+[link] Instant Messaging
+[link] Contacts Manager
+[link] Download Truecaller
+[link] Community
+[link] Home
+[link] Insights
+[link] Features
+[link] News
+[link] Diversity & Inclusion
+[link] Life At Truecaller
+[link] For Advertisers
+[link] For Businesses
+[link] For Developers
+[link] Facebook icon
+[link] Twitter icon
+[link] Instagram icon
+[link] Youtube icon
+[link] LinkedIn icon
+[link] Business
+[link] Ads
+[image] Truecaller logo
+[StaticText] Download
+[heading] Trusted by 500M+ people worldwide
+[heading] The World’s Best Caller ID and Spam Blocking App
+[link] Google Play 4.5
+[link] App Store 4.5
+[heading] BEYOND CALLER ID
+[heading] A name tells you who's calling. Truecaller tells you more.
+[link] See the difference
+[heading] NEW
+[heading] Are you being scammed? Protect yourself with Truecaller.
+[link] Search scams
+[heading] PREMIUM
+[heading] Go beyond basic protection. Go Premium.
+[link] Upgrade to Premium
+[heading] Truecaller on iPhone — Smarter calls, every time
+[StaticText] Can you spot the scam?
+[StaticText] Test yourself with real texts and see your spam score!
+[heading] Meet Truecaller's new AI-powered Caller ID!
+[link] Read more
+[image] Blue screen with Truecaller Caller ID
+[heading] Trust your communicatio­n with Truecaller.
+[link] See all features
+[link] SMS Fraud Protection
+[link] Messaging
+[heading] Our fight against spam in 2025
+[heading] 68 billion+
+[heading] 179 billion+
+[heading] 3.3 trillion+
+[heading] 500 million
+[heading] 1 billion+
+[heading] 1.5 million+
+[heading] Globally Certified for Trust and Security
+[heading] See our latest articles
+[heading] ------------------------------ -----------------
+[StaticText] English
+[StaticText] Careers
+[StaticText] All Truecaller features
+[StaticText] Scam Checker
+[StaticText] Blog
+[StaticText] © 2026 Truecaller AB
+[link] Terms of Service
+[link] Cookies
+[link] Responsible Disclosure
+[link] Directory
+[link] Publication certificate
+[link] Indian Government Services
+[link] Edit cookies
+[link] Code of Conduct
+[link] Truecaller Policy Statements
+[StaticText] Trusted by
+[StaticText] 500M+
+[StaticText] people worldwide
+[StaticText] 4.5
+[textbox] Phone number
+[button] Search icon
+[StaticText] Telecom operators can show you who's calling, but a name alone doesn't tell you if it's safe to answer. Truecaller goes further with spam alerts, scam protection and automatic blocking to help keep you safe.
+[StaticText] Are you being scammed? Protect yourself with Truecaller
+[StaticText] Not sure if the phone number that called you or the URL you got on WhatsApp or email can be trusted? Truecaller's free Scam Checker instantly tells you if you're at risk.
+[StaticText] Go beyond basic protection. Go Premium
+[StaticText] If you love to be spam-free, you'll also love going ad-free!
+[StaticText] Truecaller Premium is the best way to upgrade your communicatio­n
+[StaticText] Get real-time Caller ID on your iPhone with Truecaller. It’s fast, private, and designed to keep you in control — powered by Apple’s latest technology.
+[StaticText] Get AI-powered, real-time insights that detect fraud, flag spam, classify businesses, and even summarize user comments — all while your phone is still ringing.
+[StaticText] FEATURES
+[StaticText] Trust your communicatio­n with Truecaller
+[StaticText] Truecaller is proud to be a leader in caller ID and spam blocking software as well as research around call and SMS harassment.
+[StaticText] Identify incoming calls from unknown numbers
+[StaticText] Block numbers
+[StaticText] Stay safe from fraud SMS and links
+[StaticText] No need to switch to other apps
+[StaticText] Spam & fraud calls identified
+[StaticText] Spam & fraud SMSs identified
+[StaticText] Unknown calls identified
+[heading] Loved by our users
+[StaticText] Monthly active users
+[StaticText] Downloads
+[StaticText] 5-star ratings
+[StaticText] Truecaller is proudly certified under three internationally recognized ISO standards that affirm our pledge to global best practices in security, reliability, and quality.
+[StaticText] For
+[StaticText] demonstrating rigorous protection of user data.
+[StaticText] reflecting our commitment to delivering consistent and high quality services.
+[StaticText] ensuring reliable access to our services even in unforeseen circumstances.
+[StaticText] --------------
+[StaticText] ------------------------------
+[StaticText] -----------------
+[StaticText] -----------
+[StaticText] DOWNLOAD TODAY
+[StaticText] Trusted by over 500 million people, Truecaller is proud to be a leader in caller ID and spam blocking software as well as research around call and SMS harassment.
+[StaticText] Language
+[StaticText] We're hiring
+[option] Bahasa Indonesia
+[option] Español
+[option] عربي
+[option] Français
+[option] Português Brasileiro
+[option] Italiano
+[option] Svenska
+[option] हिंदी
+[option] Melayu
+[option] বাংলা
+[option] Tiếng Việt
+[StaticText] Google Play
+[StaticText] App Store
+[StaticText] +91
+[StaticText] Information Security Management
+[StaticText] Quality Management
+[StaticText] Business Continuity Management
+[StaticText] Certified by TÜV Rheinland
+[image] two screens - one for android and one for iOS, showing truecaller identifying an incoming phone call
+[StaticText] Auto-block spam calls and SMSs
+[StaticText] Identify who is calling you
+[StaticText] Search phone numbers
+[StaticText] Record phone calls
+[option] Afghanistan (+93)
+[option] Albania (+355)
+[option] Algeria (+213)
+[option] American Samoa (+1684)
+[option] Andorra (+376)
+[option] Angola (+244)
+[option] Anguilla (+1264)
+[option] Antigua & Barbuda (+1268)
+[option] Argentina (+54)
+[option] Armenia (+374)
+[option] Aruba (+297)
+[option] Australia (+61)
+[option] Austria (+43)
+[option] Azerbaijan (+994)
+[option] Bahamas (+1242)
+[option] Bahrain (+973)
+[option] Bangladesh (+880)
+[option] Barbados (+1246)
+[option] Belarus (+375)
+[option] Belgium (+32)
+[option] Belize (+501)
+[option] Benin (+229)
+[option] Bermuda (+1441)
+[option] Bhutan (+975)
+[option] Bolivia (+591)
+[option] Bosnia & Herzegovina (+387)
+[option] Botswana (+267)
+[option] Brazil (+55)
+[option] British Indian Ocean Territory (+246)
+[option] British Virgin Islands (+1284)
+[option] Brunei (+673)
+[option] Bulgaria (+359)
+[option] Burkina Faso (+226)
+[option] Myanmar (+95)
+[option] Burundi (+257)
+[option] Cambodia (+855)
+[option] Cameroon (+237)
+[option] Canada (+1)
+[option] Cabo Verde (+238)
+[option] Cayman Islands (+1345)
+[option] Central African Republic (+236)
+[option] Chad (+235)
+[option] Chile (+56)
+[option] China (+86)
+[option] Christmas Island (+6189)
+[option] Colombia (+57)
+[option] Comoros (+269)
+[option] Congo (+242)
+[option] Congo (DRC) (+243)
+[option] Cook Islands (+682)
+[option] Costa Rica (+506)
+[option] Croatia (+385)
+[option] Cuba (+53)
+[option] Cyprus (+357)
+[option] Czechia (+420)
+[option] Denmark (+45)
+[option] Djibouti (+253)
+[option] Dominica (+1767)
+[option] Dominican Republic (+1849)
+[option] Dominican Republic (+1829)
+[option] Dominican Republic (+1809)
+[option] Timor-Leste (+670)
+[option] Ecuador (+593)
+[option] Egypt (+20)
+[option] El Salvador (+503)
+[option] Equatorial Guinea (+240)
+[option] Eritrea (+291)
+[option] Estonia (+372)
+[option] Ethiopia (+251)
+[option] Faroe Islands (+298)
+[option] Fiji (+679)
+[option] Finland (+358)
+[option] France (+33)
+[option] French Guiana (+594)
+[option] French Polynesia (+689)
+[option] Gabon (+241)
+[option] Gambia (+220)
+[option] Georgia (+995)
+[option] Germany (+49)
+[option] Ghana (+233)
+[option] Gibraltar (+350)
+[option] Greece (+30)
+[option] Greenland (+299)
+[option] Grenada (+1473)
+[option] Guadeloupe (+590)
+[option] Guam (+1671)
+[option] Guatemala (+502)
+[option] Guinea (+224)
+[option] Guinea-Bissau (+245)
+[option] Guyana (+592)
+[option] Haiti (+509)
+[option] Honduras (+504)
+[option] Hong Kong SAR (+852)
+[option] Hungary (+36)
+[option] Iceland (+354)
+[option] India (+91)
+[option] Indonesia (+62)
+[option] Iran (+98)
+[option] Iraq (+964)
+[option] Ireland (+353)
+[option] Israel (+972)
+[option] Italy (+39)
+[option] Côte d’Ivoire (+225)
+[option] Jamaica (+1876)
+[option] Japan (+81)
+[option] Jordan (+962)
+[option] Kazakhstan (+7)
+[option] Kenya (+254)
+[option] Kiribati (+686)
+[option] Kuwait (+965)
+[option] Kyrgyzstan (+996)
+[option] Laos (+856)
+[option] Latvia (+371)
+[option] Lebanon (+961)
+[option] Lesotho (+266)
+[option] Liberia (+231)
+[option] Libya (+218)
+[option] Liechtenstein (+423)
+[option] Lithuania (+370)
+[option] Luxembourg (+352)
+[option] Macao SAR (+853)
+[option] North Macedonia (+389)
+[option] Madagascar (+261)
+[option] Malawi (+265)
+[option] Malaysia (+60)
+[option] Maldives (+960)
+[option] Mali (+223)
+[option] Malta (+356)
+[option] Marshall Islands (+692)
+[option] Martinique (+596)
+[option] Mauritania (+222)
+[option] Mauritius (+230)
+[option] Mayotte (+262)
+[option] Mexico (+52)
+[option] Moldova (+373)
+[option] Monaco (+377)
+[option] Mongolia (+976)
+[option] Montenegro (+382)
+[option] Montserrat (+1664)
+[option] Morocco (+212)
+[option] Mozambique (+258)
+[option] Namibia (+264)
+[option] Nauru (+674)
+[option] Nepal (+977)
+[option] Netherlands (+31)
+[option] Curaçao (+599)
+[option] New Caledonia (+687)
+[option] New Zealand (+64)
+[option] Nicaragua (+505)
+[option] Niger (+227)
+[option] Nigeria (+234)
+[option] Niue (+683)
+[option] Norfolk Island (+672)
+[option] Northern Mariana Islands (+1670)
+[option] North Korea (+850)
+[option] Norway (+47)
+[option] Oman (+968)
+[option] Pakistan (+92)
+[option] Palau (+680)
+[option] Palestinian Authority (+970)
+[option] Panama (+507)
+[option] Papua New Guinea (+675)
+[option] Paraguay (+595)
+[option] Peru (+51)
+[option] Philippines (+63)
+[option] Pitcairn Islands (+870)
+[option] Poland (+48)
+[option] Portugal (+351)
+[option] Puerto Rico (+1787)
+[option] Qatar (+974)
+[option] Réunion (+262)
+[option] Romania (+40)
+[option] Russia (+7)
+[option] Rwanda (+250)
+[option] St Helena, Ascension, Tristan da Cunha (+290)
+[option] St. Kitts & Nevis (+1869)
+[option] St. Lucia (+1758)
+[option] St. Martin (+1599)
+[option] St. Pierre & Miquelon (+508)
+[option] St. Vincent & Grenadines (+1784)
+[option] Samoa (+685)
+[option] San Marino (+378)
+[option] São Tomé & Príncipe (+239)
+[option] Saudi Arabia (+966)
+[option] Senegal (+221)
+[option] Serbia (+381)
+[option] Seychelles (+248)
+[option] Falkland Islands (+500)
+[option] Sierra Leone (+232)
+[option] Singapore (+65)
+[option] Slovakia (+421)
+[option] Slovenia (+386)
+[option] Solomon Islands (+677)
+[option] Somalia (+252)
+[option] South Africa (+27)
+[option] Korea (+82)
+[option] South Sudan (+211)
+[option] Spain (+34)
+[option] Sri Lanka (+94)
+[option] Sudan (+249)
+[option] Suriname (+597)
+[option] Eswatini (+268)
+[option] Sweden (+46)
+[option] Switzerland (+41)
+[option] Syria (+963)
+[option] Taiwan (+886)
+[option] Tajikistan (+992)
+[option] Tanzania (+255)
+[option] Thailand (+66)
+[option] Togo (+228)
+[option] Tokelau (+690)
+[option] Tonga (+676)
+[option] Trinidad & Tobago (+1868)
+[option] Tunisia (+216)
+[option] Türkiye (+90)
+[option] Turkmenistan (+993)
+[option] Turks & Caicos Islands (+1649)
+[option] Tuvalu (+688)
+[option] Uganda (+256)
+[option] United Kingdom (+44)
+[option] Ukraine (+380)
+[option] United Arab Emirates (+971)
+[option] Uruguay (+598)
+[option] United States (+1)
+[option] Uzbekistan (+998)
+[option] Vanuatu (+678)
+[option] Venezuela (+58)
+[option] Vietnam (+84)
+[option] U.S. Virgin Islands (+1340)
+[option] Wallis & Futuna (+681)
+[option] Yemen (+967)
+[option] Zambia (+260)
+[option] Zimbabwe (+263)
+
+THIRD-PARTY/RESOURCE HOSTS: www.truecaller.com

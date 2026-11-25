@@ -1,0 +1,66 @@
+﻿<resources>
+    <color name="bg">#000000</color>
+    <color name="bg_black">#000000</color>
+    <color name="surface">#101418</color>
+    <color name="surface_2">#181D24</color>
+    <color name="surface_glass">#12FFFFFF</color>
+    <color name="stroke">#24FFFFFF</color>
+    <color name="text">#EAF6FB</color>
+    <color name="text_2">#9DB2BE</color>
+    <color name="text_3">#6E808A</color>
+    <color name="brand">#8FC4FF</color>
+    <color name="brand_deep">#182A3A</color>
+    <color name="on_accent">#061018</color>
+    <color name="danger">#FF4057</color>
+    <color name="danger_deep">#7A0C1C</color>
+    <color name="warn">#F6B23C</color>
+    <color name="warn_deep">#5C3A06</color>
+    <color name="safe">#3DD68C</color>
+    <color name="safe_deep">#0B4A2E</color>
+
+    <color name="primary">@color/brand</color>
+    <color name="primary_dark">@color/brand_deep</color>
+    <color name="accent">@color/brand</color>
+    <color name="background">@color/bg</color>
+
+    <color name="risk_high">@color/danger</color>
+    <color name="risk_medium">@color/warn</color>
+    <color name="risk_low">@color/safe</color>
+
+    <color name="risk_high_fill">#38FF4057</color>
+    <color name="risk_high_stroke">#99FF7A90</color>
+    <color name="risk_high_text">#FFB3C0</color>
+
+    <color name="risk_medium_fill">#38F6B23C</color>
+    <color name="risk_medium_stroke">#99FFC766</color>
+    <color name="risk_medium_text">#FFE29A</color>
+
+    <color name="risk_low_fill">#383DD68C</color>
+    <color name="risk_low_stroke">#997AEBB3</color>
+    <color name="risk_low_text">#A7F3D0</color>
+
+    <color name="text_primary">@color/text</color>
+    <color name="text_secondary">@color/text_2</color>
+    <color name="border_light">@color/glass_stroke</color>
+
+    <color name="cue_urgency">#33FFAB91</color>
+    <color name="cue_threat">#33EF9A9A</color>
+    <color name="cue_credential_request">#33FFCC80</color>
+    <color name="cue_payment_request">#33FFD54F</color>
+    <color name="cue_impersonation">#33FFF59D</color>
+    <color name="cue_reward">#33CE93D8</color>
+    <color name="cue_app_install">#3390CAF9</color>
+    <color name="cue_default">#33F48FB1</color>
+
+    <color name="glass_surface">#12FFFFFF</color>
+    <color name="glass_surface_strong">#EB0B0D10</color>
+    <color name="nav_bar_surface">#FF0B0D10</color>
+    <color name="glass_stroke">#2E9CC8FF</color>
+    <color name="glass_highlight">#1FCFE4FF</color>
+    <color name="glass_highlight_strong">#24FFFFFF</color>
+    <color name="glass_rim_light">#66DCEBFF</color>
+    <color name="glass_rim_dark">#14FFFFFF</color>
+    <color name="glass_rim_ice">#6680B8FF</color>
+    <color name="glass_shade">#33000000</color>
+    <color name="nav_inactive">#7D8C96</color>
+</resources>

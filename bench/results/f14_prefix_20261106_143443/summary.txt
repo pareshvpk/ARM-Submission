@@ -1,0 +1,17 @@
+PS3 prefix cache check summary
+date: 20261106_143443
+serial: phone-serial-redacted
+messages: 20
+off count: 20
+on count: 20
+off TTFT p50 ms: 0
+off TTFT p95 ms: 7043
+on TTFT p50 ms: 5036
+on TTFT p95 ms: 10855
+off mean prompt_tokens: 77.6
+on mean prompt_tokens: 141.25
+identical advice_sha8: 1 / 20
+check1 advice identical on all messages: FAIL
+check2 on prompt_tokens < off on every message: FAIL
+check3 TTFT p50 lower with on: FAIL
+overall: FAIL

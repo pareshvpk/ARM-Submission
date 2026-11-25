@@ -1,0 +1,573 @@
+{
+  "input_file": "bench/heldout/heldout_20261107.csv",
+  "input_sha256": "dba18f2ca7cfc2fb2cb1391a349887e214800d1367a49569bf9e1216ff518bfb",
+  "models_dir": "/home/user/ps3/models",
+  "sms_model_file": "sms_int8.pte",
+  "sms_model_sha256": "6e420507d0d2ca51a8c54f0e89f47e3c37ae1ec056355f9889163ebca21660e7",
+  "git_commit": "unknown",
+  "overall": {
+    "n": 13098,
+    "confusion_level": {
+      "ham": {
+        "low": 5647,
+        "medium": 827,
+        "high": 93
+      },
+      "risky": {
+        "low": 1486,
+        "medium": 1159,
+        "high": 3886
+      }
+    },
+    "confusion_label": {
+      "ham": {
+        "ham": 5426,
+        "unwanted": 1048,
+        "scam": 93
+      },
+      "risky": {
+        "ham": 1378,
+        "unwanted": 1267,
+        "scam": 3886
+      }
+    },
+    "risky_recall": 0.7724697596080232,
+    "false_positive_rate": 0.14009441145119536,
+    "precision": 0.845766974015088,
+    "f1": 0.8074583866837388,
+    "latency_median_ms": 13.5115,
+    "latency_p95_ms": 22.415
+  },
+  "per_source": {
+    "carnageiron": {
+      "n": 209,
+      "confusion_level": {
+        "ham": {
+          "low": 50,
+          "medium": 0,
+          "high": 0
+        },
+        "risky": {
+          "low": 26,
+          "medium": 9,
+          "high": 124
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 50,
+          "unwanted": 0,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 26,
+          "unwanted": 9,
+          "scam": 124
+        }
+      },
+      "risky_recall": 0.8364779874213837,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "f1": 0.910958904109589,
+      "latency_median_ms": 11.388,
+      "latency_p95_ms": 14.183
+    },
+    "anmolshrivastav": {
+      "n": 12889,
+      "confusion_level": {
+        "ham": {
+          "low": 5597,
+          "medium": 827,
+          "high": 93
+        },
+        "risky": {
+          "low": 1460,
+          "medium": 1150,
+          "high": 3762
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 5376,
+          "unwanted": 1048,
+          "scam": 93
+        },
+        "risky": {
+          "ham": 1352,
+          "unwanted": 1258,
+          "scam": 3762
+        }
+      },
+      "risky_recall": 0.770872567482737,
+      "false_positive_rate": 0.1411692496547491,
+      "precision": 0.8422496570644719,
+      "f1": 0.804981973123566,
+      "latency_median_ms": 13.618,
+      "latency_p95_ms": 22.441
+    }
+  },
+  "per_language": {
+    "English": {
+      "n": 1209,
+      "confusion_level": {
+        "ham": {
+          "low": 548,
+          "medium": 1,
+          "high": 1
+        },
+        "risky": {
+          "low": 46,
+          "medium": 12,
+          "high": 601
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 548,
+          "unwanted": 1,
+          "scam": 1
+        },
+        "risky": {
+          "ham": 46,
+          "unwanted": 12,
+          "scam": 601
+        }
+      },
+      "risky_recall": 0.9301972685887708,
+      "false_positive_rate": 0.0036363636363636364,
+      "precision": 0.9967479674796748,
+      "f1": 0.9623233908948194,
+      "latency_median_ms": 12.742,
+      "latency_p95_ms": 18.428
+    },
+    "Marathi": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 432,
+          "medium": 68,
+          "high": 0
+        },
+        "risky": {
+          "low": 46,
+          "medium": 164,
+          "high": 290
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 401,
+          "unwanted": 99,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 41,
+          "unwanted": 169,
+          "scam": 290
+        }
+      },
+      "risky_recall": 0.908,
+      "false_positive_rate": 0.136,
+      "precision": 0.8697318007662835,
+      "f1": 0.8884540117416829,
+      "latency_median_ms": 14.1045,
+      "latency_p95_ms": 20.239
+    },
+    "Odia": {
+      "n": 435,
+      "confusion_level": {
+        "ham": {
+          "low": 245,
+          "medium": 0,
+          "high": 0
+        },
+        "risky": {
+          "low": 30,
+          "medium": 5,
+          "high": 155
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 244,
+          "unwanted": 1,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 30,
+          "unwanted": 5,
+          "scam": 155
+        }
+      },
+      "risky_recall": 0.8421052631578947,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "f1": 0.9142857142857143,
+      "latency_median_ms": 12.612,
+      "latency_p95_ms": 19.331
+    },
+    "Punjabi": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 356,
+          "medium": 140,
+          "high": 4
+        },
+        "risky": {
+          "low": 54,
+          "medium": 145,
+          "high": 301
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 327,
+          "unwanted": 169,
+          "scam": 4
+        },
+        "risky": {
+          "ham": 48,
+          "unwanted": 151,
+          "scam": 301
+        }
+      },
+      "risky_recall": 0.892,
+      "false_positive_rate": 0.288,
+      "precision": 0.7559322033898305,
+      "f1": 0.818348623853211,
+      "latency_median_ms": 17.093,
+      "latency_p95_ms": 24.533
+    },
+    "Kannada": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 496,
+          "medium": 4,
+          "high": 0
+        },
+        "risky": {
+          "low": 347,
+          "medium": 3,
+          "high": 150
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 494,
+          "unwanted": 6,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 345,
+          "unwanted": 5,
+          "scam": 150
+        }
+      },
+      "risky_recall": 0.306,
+      "false_positive_rate": 0.008,
+      "precision": 0.9745222929936306,
+      "f1": 0.4657534246575343,
+      "latency_median_ms": 10.7775,
+      "latency_p95_ms": 14.682
+    },
+    "Hindi": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 437,
+          "medium": 8,
+          "high": 55
+        },
+        "risky": {
+          "low": 25,
+          "medium": 13,
+          "high": 462
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 437,
+          "unwanted": 8,
+          "scam": 55
+        },
+        "risky": {
+          "ham": 25,
+          "unwanted": 13,
+          "scam": 462
+        }
+      },
+      "risky_recall": 0.95,
+      "false_positive_rate": 0.126,
+      "precision": 0.8828996282527881,
+      "f1": 0.9152215799614644,
+      "latency_median_ms": 14.183,
+      "latency_p95_ms": 20.716
+    },
+    "Telugu": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 261,
+          "medium": 229,
+          "high": 10
+        },
+        "risky": {
+          "low": 57,
+          "medium": 210,
+          "high": 233
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 230,
+          "unwanted": 260,
+          "scam": 10
+        },
+        "risky": {
+          "ham": 53,
+          "unwanted": 214,
+          "scam": 233
+        }
+      },
+      "risky_recall": 0.886,
+      "false_positive_rate": 0.478,
+      "precision": 0.6495601173020528,
+      "f1": 0.7495769881556684,
+      "latency_median_ms": 11.57,
+      "latency_p95_ms": 16.096
+    },
+    "Tamil": {
+      "n": 454,
+      "confusion_level": {
+        "ham": {
+          "low": 175,
+          "medium": 97,
+          "high": 0
+        },
+        "risky": {
+          "low": 6,
+          "medium": 13,
+          "high": 163
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 171,
+          "unwanted": 101,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 3,
+          "unwanted": 16,
+          "scam": 163
+        }
+      },
+      "risky_recall": 0.967032967032967,
+      "false_positive_rate": 0.35661764705882354,
+      "precision": 0.6446886446886447,
+      "f1": 0.7736263736263737,
+      "latency_median_ms": 11.9385,
+      "latency_p95_ms": 18.404
+    },
+    "Malayalam": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 399,
+          "medium": 101,
+          "high": 0
+        },
+        "risky": {
+          "low": 131,
+          "medium": 219,
+          "high": 150
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 359,
+          "unwanted": 141,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 121,
+          "unwanted": 229,
+          "scam": 150
+        }
+      },
+      "risky_recall": 0.738,
+      "false_positive_rate": 0.202,
+      "precision": 0.7851063829787234,
+      "f1": 0.7608247422680412,
+      "latency_median_ms": 11.791,
+      "latency_p95_ms": 15.986
+    },
+    "Kashmiri": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 484,
+          "medium": 16,
+          "high": 0
+        },
+        "risky": {
+          "low": 175,
+          "medium": 73,
+          "high": 252
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 460,
+          "unwanted": 40,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 130,
+          "unwanted": 118,
+          "scam": 252
+        }
+      },
+      "risky_recall": 0.65,
+      "false_positive_rate": 0.032,
+      "precision": 0.9530791788856305,
+      "f1": 0.7728894173602854,
+      "latency_median_ms": 16.136000000000003,
+      "latency_p95_ms": 23.586
+    },
+    "Assamese": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 356,
+          "medium": 123,
+          "high": 21
+        },
+        "risky": {
+          "low": 210,
+          "medium": 140,
+          "high": 150
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 308,
+          "unwanted": 171,
+          "scam": 21
+        },
+        "risky": {
+          "ham": 200,
+          "unwanted": 150,
+          "scam": 150
+        }
+      },
+      "risky_recall": 0.58,
+      "false_positive_rate": 0.288,
+      "precision": 0.6682027649769585,
+      "f1": 0.620985010706638,
+      "latency_median_ms": 18.5965,
+      "latency_p95_ms": 22.781
+    },
+    "Hinglish": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 500,
+          "medium": 0,
+          "high": 0
+        },
+        "risky": {
+          "low": 42,
+          "medium": 24,
+          "high": 434
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 500,
+          "unwanted": 0,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 42,
+          "unwanted": 24,
+          "scam": 434
+        }
+      },
+      "risky_recall": 0.916,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "f1": 0.9561586638830899,
+      "latency_median_ms": 10.95,
+      "latency_p95_ms": 20.34
+    },
+    "Gujarati": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 483,
+          "medium": 15,
+          "high": 2
+        },
+        "risky": {
+          "low": 213,
+          "medium": 41,
+          "high": 246
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 478,
+          "unwanted": 20,
+          "scam": 2
+        },
+        "risky": {
+          "ham": 201,
+          "unwanted": 53,
+          "scam": 246
+        }
+      },
+      "risky_recall": 0.574,
+      "false_positive_rate": 0.034,
+      "precision": 0.944078947368421,
+      "f1": 0.7139303482587064,
+      "latency_median_ms": 17.27,
+      "latency_p95_ms": 25.765
+    },
+    "Bengali": {
+      "n": 1000,
+      "confusion_level": {
+        "ham": {
+          "low": 475,
+          "medium": 25,
+          "high": 0
+        },
+        "risky": {
+          "low": 104,
+          "medium": 97,
+          "high": 299
+        }
+      },
+      "confusion_label": {
+        "ham": {
+          "ham": 469,
+          "unwanted": 31,
+          "scam": 0
+        },
+        "risky": {
+          "ham": 93,
+          "unwanted": 108,
+          "scam": 299
+        }
+      },
+      "risky_recall": 0.792,
+      "false_positive_rate": 0.05,
+      "precision": 0.9406175771971497,
+      "f1": 0.8599348534201955,
+      "latency_median_ms": 12.391,
+      "latency_p95_ms": 24.153
+    }
+  }
+}

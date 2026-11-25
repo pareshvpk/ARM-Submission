@@ -1,0 +1,35 @@
+{
+ "device": "Galaxy F14 SM-E146B, sms_int8.pte, rules of 2026-11-15 evening",
+ "rows": 1220,
+ "overall": {
+  "risky": 620,
+  "caught": 614,
+  "recall_pct": 99.0,
+  "ham": 600,
+  "false_alarms": 31,
+  "false_alarm_pct": 5.2
+ },
+ "Tamil": {
+  "risky": 310,
+  "caught": 308,
+  "recall_pct": 99.4,
+  "ham": 300,
+  "false_alarms": 26,
+  "false_alarm_pct": 8.7
+ },
+ "Hindi": {
+  "risky": 310,
+  "caught": 306,
+  "recall_pct": 98.7,
+  "ham": 300,
+  "false_alarms": 5,
+  "false_alarm_pct": 1.7
+ },
+ "vs_pc_int8": {
+  "alert_differs": 0,
+  "level_differs": 2,
+  "model_label_differs": 1,
+  "risk_abs_diff_median": 0.0003,
+  "risk_abs_diff_max": 0.0225
+ }
+}

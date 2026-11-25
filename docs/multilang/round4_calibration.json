@@ -1,0 +1,60 @@
+{
+ "model": "models/sms_v6ml_run3/sms_v6ml",
+ "val_rows": {
+  "ham": 2547,
+  "scam": 923,
+  "unwanted": 530
+ },
+ "dev_genuine_rows": 291,
+ "grid": [
+  {
+   "temperature": 0.5,
+   "dev_genuine_alert": 0.0034,
+   "val_ham_alert": 0.0063,
+   "val_scam_alert": 0.9816,
+   "val_unwanted_alert": 0.2547,
+   "qualifies": true
+  },
+  {
+   "temperature": 0.75,
+   "dev_genuine_alert": 0.0034,
+   "val_ham_alert": 0.0063,
+   "val_scam_alert": 0.9816,
+   "val_unwanted_alert": 0.2528,
+   "qualifies": true
+  },
+  {
+   "temperature": 1.0,
+   "dev_genuine_alert": 0.0034,
+   "val_ham_alert": 0.0063,
+   "val_scam_alert": 0.9816,
+   "val_unwanted_alert": 0.2528,
+   "qualifies": true
+  },
+  {
+   "temperature": 1.5,
+   "dev_genuine_alert": 0.0034,
+   "val_ham_alert": 0.0063,
+   "val_scam_alert": 0.9816,
+   "val_unwanted_alert": 0.2528,
+   "qualifies": true
+  },
+  {
+   "temperature": 2.0,
+   "dev_genuine_alert": 0.0034,
+   "val_ham_alert": 0.0063,
+   "val_scam_alert": 0.9816,
+   "val_unwanted_alert": 0.2509,
+   "qualifies": true
+  },
+  {
+   "temperature": 3.0,
+   "dev_genuine_alert": 0.0034,
+   "val_ham_alert": 0.0067,
+   "val_scam_alert": 0.9816,
+   "val_unwanted_alert": 0.2509,
+   "qualifies": true
+  }
+ ],
+ "chosen_temperature": 3.0
+}

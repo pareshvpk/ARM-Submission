@@ -1,0 +1,85 @@
+url,label,note
+https://www.onlinesbi.sbi/personal/,benign,SBI personal banking login page
+https://www.hdfcbank.com/personal/ways-to-bank/online-banking/netbanking,benign,HDFC netbanking page
+https://www.icicibank.com/personal-banking/ways-to-bank/internet-banking,benign,ICICI internet banking page
+https://www.axisbank.com/bank-smart/internet-banking/features,benign,Axis Bank internet banking
+https://www.pnbindia.in/corporate-internet-banking.html,benign,PNB corporate internet banking
+https://www.kotak.com/en/personal-banking/ways-to-bank/net-banking.html,benign,Kotak Mahindra net banking
+https://www.bankofbaroda.in/ways-to-bank/net-banking,benign,Bank of Baroda net banking
+https://www.canarabank.com/en/digital-banking/internet-banking,benign,Canara Bank internet banking
+https://www.unionbankofindia.co.in/english/internet-banking.aspx,benign,Union Bank internet banking
+https://www.idbibank.in/internet-banking.asp,benign,IDBI Bank internet banking
+https://www.indianbank.in/departments/internet-banking/,benign,Indian Bank internet banking
+https://www.bankofindia.co.in/internet-banking,benign,Bank of India internet banking
+https://www.federalbank.co.in/net-banking,benign,Federal Bank net banking
+https://www.yesbank.in/digital-banking/net-banking,benign,Yes Bank net banking
+https://www.indusind.com/in/en/personal/ways-to-bank/net-banking.html,benign,IndusInd Bank net banking
+https://www.phonepe.com/about/,benign,PhonePe about page
+https://paytm.com/about-us,benign,Paytm about page
+https://gpay.google.com/,benign,Google Pay info page
+https://www.bhimupi.org.in/about-bhim,benign,BHIM UPI about page
+https://cred.club/about,benign,CRED about page
+https://www.mobikwik.com/about-us,benign,Mobikwik about page
+https://www.incometax.gov.in/iec/foportal/,benign,Income Tax Department e-Filing portal
+https://uidai.gov.in/en/contact-support/help.html,benign,UIDAI Aadhaar help portal
+https://www.digilocker.gov.in/about,benign,DigiLocker about page
+https://www.cowin.gov.in/faq,benign,Cowin FAQ page
+https://www.india.gov.in/topics/governance,benign,National Portal of India governance topics
+https://web.umang.gov.in/landing/,benign,UMANG services portal
+https://www.gst.gov.in/about/gst,benign,GST portal about GST
+https://www.passportindia.gov.in/AppOnlineProject/welcomeLink,benign,Passport Seva portal
+https://www.mygov.in/group/mygov-initiatives/,benign,MyGov initiatives
+https://www.nvsp.in/,benign,National Voter Services Portal
+https://www.epfindia.gov.in/site_en/index.php,benign,EPFO employee provident fund
+https://www.esic.nic.in/about-us,benign,ESIC about us
+https://www.irctc.co.in/nget/train-search,benign,IRCTC train ticket booking
+https://www.indiapost.gov.in/vas/pages/india-post-home.aspx,benign,India Post home page
+https://www.jio.com/selfcare/plans/mobility/prepaid-plans-collection/,benign,Jio prepaid plans
+https://www.airtel.in/prepaid-recharge,benign,Airtel prepaid recharge
+https://www.myvi.in/prepaid/best-prepaid-plans,benign,Vi prepaid plans
+https://www.bsnl.co.in/opencms/bsnl/BSNL/services/mobile/prepaid_plans.html,benign,BSNL prepaid plans
+https://www.flipkart.com/helpcentre,benign,Flipkart helpcentre
+https://www.amazon.in/gp/help/customer/display.html,benign,Amazon India customer service
+https://www.myntra.com/contactus,benign,Myntra contact us
+https://www.nykaa.com/help,benign,Nykaa help center
+https://www.blinkit.com/faq,benign,Blinkit FAQ
+https://www.zeptonow.com/help,benign,Zepto help
+https://www.swiggy.com/support,benign,Swiggy support
+https://www.zomato.com/help,benign,Zomato help
+https://www.tatacliq.com/contact-us,benign,Tata Cliq contact us
+https://www.ajio.com/help,benign,Ajio customer care
+https://www.reliancedigital.in/content/contact-us,benign,Reliance Digital contact us
+https://www.croma.com/contact-us,benign,Croma contact us
+https://www.bigbasket.com/help/,benign,BigBasket help
+https://www.nseindia.com/market-data/live-equity-market,benign,NSE India market data
+https://www.bseindia.com/markets/equity/EQReports/StockPrc.aspx,benign,BSE India stock prices
+https://www.rbi.org.in/Scripts/BS_ViewContent.aspx?Id=2009,benign,Reserve Bank of India content
+https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doNotAccess=yes,benign,SEBI portal
+https://www.isro.gov.in/Mission.html,benign,ISRO missions
+https://www.aicte-india.org/about/overview,benign,AICTE overview
+https://www.ugc.gov.in/page/About-UGC.aspx,benign,UGC about
+https://www.cbse.gov.in/cbsenew/cbse.html,benign,CBSE portal
+sbi-kyc-update.xyz/login,phishing,Made-up phishing lookalike pattern
+hdfc-reward-point.top/claim,phishing,Made-up phishing lookalike pattern
+icici-netbanking-verify.site/auth,phishing,Made-up phishing lookalike pattern
+axis-bank-update.xyz/kyc,phishing,Made-up phishing lookalike pattern
+paytm-kyc-complete.online/login,phishing,Made-up phishing lookalike pattern
+phonepe-cashback-reward.xyz/claim,phishing,Made-up phishing lookalike pattern
+gpay-scratch-card.top/win,phishing,Made-up phishing lookalike pattern
+income-tax-refund.xyz/claim,phishing,Made-up phishing lookalike pattern
+aadhaar-uidai-update.site/verify,phishing,Made-up phishing lookalike pattern
+digilocker-document-verify.xyz/login,phishing,Made-up phishing lookalike pattern
+irctc-refund-ticket.top/claim,phishing,Made-up phishing lookalike pattern
+indiapost-parcel-track.site/delivery,phishing,Made-up phishing lookalike pattern
+jio-free-data.xyz/offer,phishing,Made-up phishing lookalike pattern
+airtel-5g-upgrade.top/sim,phishing,Made-up phishing lookalike pattern
+flipkart-big-billion.xyz/win,phishing,Made-up phishing lookalike pattern
+amazon-prize-winner.site/claim,phishing,Made-up phishing lookalike pattern
+zomato-free-coupon.top/eat,phishing,Made-up phishing lookalike pattern
+swiggy-delivery-bonus.xyz/claim,phishing,Made-up phishing lookalike pattern
+zudio-sale-voucher.site/shop,phishing,Made-up phishing lookalike pattern
+pnb-account-block.xyz/verify,phishing,Made-up phishing lookalike pattern
+kotak-811-activate.top/login,phishing,Made-up phishing lookalike pattern
+bob-netbanking-lock.site/unlock,phishing,Made-up phishing lookalike pattern
+canara-bank-kyc.xyz/update,phishing,Made-up phishing lookalike pattern
+union-bank-verify.top/auth,phishing,Made-up phishing lookalike pattern

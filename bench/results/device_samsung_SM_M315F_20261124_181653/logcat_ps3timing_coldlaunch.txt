@@ -1,0 +1,21 @@
+﻿--------- beginning of main
+11-24 18:18:01.091 26689 26689 I PS3Timing: process_start_to_onCreate_ms=9
+11-24 18:18:01.092 26689 26689 I PS3Timing: cpu_features atomics=false asimddp=false fphp=false bf16=false i8mm=false sve=false sve2=false sme=false sme2=false ram_bytes=5843161088 tier=LIGHT
+11-24 18:18:01.096 26689 26689 I PS3Timing: accel_path=NEON clusters=4@2314000+4@1742000
+11-24 18:18:01.097 26689 26689 I PS3Timing: threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:01.136 26689 26718 I PS3Timing: integrity_verify_model=url ms=29
+11-24 18:18:01.141 26689 26718 I PS3Timing: url_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:01.153 26689 26718 I PS3Timing: model_load_model=url ms=17
+11-24 18:18:01.154 26689 26718 I PS3Timing: sms_model_choice=sms_fp32.pte dot_product=false fp32_available=true
+11-24 18:18:02.200 26689 26718 I PS3Timing: integrity_verify_model=sms ms=1046
+11-24 18:18:08.129 26689 26718 I PS3Timing: sms_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:08.845 26689 26718 I PS3Timing: sms_init_split tokenizer_ms=5858 idmap_ms=69 module_load_ms=33 probe_ms=683 gate_wait_ms=0
+11-24 18:18:08.845 26689 26718 I PS3Timing: model_load_model=sms ms=6645
+11-24 18:18:22.128 26689 26737 I PS3Timing: integrity_verify_model=llama ms=13282
+11-24 18:18:22.446 26689 26737 I PS3Timing: llama_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:22.448 26689 26737 I PS3Timing: url_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:22.451 26689 26737 I PS3Timing: sms_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:22.532 26689 26737 I PS3Timing: pool_rebind ms=86 url=ok sms=ok
+11-24 18:18:22.532 26689 26737 I PS3Timing: prefill_skipped reason=light_tier
+11-24 18:18:22.532 26689 26737 I PS3Timing: llama_tier=LIGHT max_new_tokens=78 first_token_timeout_ms=45000 total_timeout_ms=90000
+11-24 18:18:22.532 26689 26737 I PS3Timing: model_load_model=llama ms=404

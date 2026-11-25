@@ -1,0 +1,6 @@
+Galaxy F14, APK from 1e9a326, Wi-Fi adb on battery, cold open via share intent (NEW_TASK|CLEAR_TASK), prefix cache on.
+run1 sms_load_ms=2508 prefix_prefill_ms=5619 prompt_tokens=77 ttft_ms=1350.0 open_to_first_token_s=9.80
+run2 sms_load_ms=2795 prefix_prefill_ms=5430 prompt_tokens=77 ttft_ms=1427.0 open_to_first_token_s=9.92
+run3 sms_load_ms=2457 prefix_prefill_ms=5324 prompt_tokens=77 ttft_ms=1343.0 open_to_first_token_s=9.51
+mean open_to_first_token 9.74 s over 3 runs (before 1e9a326: 13.54 s mean, prefix on, same method)
+Confound: the 13.54 s runs (bench/results/f14_cold_prefix_onoff_20261107) were on USB power; these runs were on battery with adb over Wi-Fi.

@@ -1,0 +1,63 @@
+# Multilingual (Hindi Devanagari) training sources — brief B2, 2026-11-10.
+# Experiment copy only; schema identical to data/source_map.yaml, which this file
+# deliberately does not touch. Every entry points at a CSV devanagari-prefiltered
+# by data/tools/prefilter_devanagari.py (dominant script Devanagari, letter share
+# >= 0.5), living under data/raw_ml/derived/. Build with:
+#   .venv\Scripts\python.exe data\build_corpus.py --only sms \
+#     --source-map data/source_map_ml.yaml --raw-dir data/raw_ml \
+#     --processed-dir data/processed_ml
+# Sources reviewed and REJECTED (evidence in docs/multilang/dataset_survey.md):
+#   onkarbhanarkar hindi-spam-dataset     licence Unknown
+#   adithyanits 2000spam-ham-labelled     licence Unknown (spam label noisy too)
+#   AnudeepRao Hinglish-...-Devanagari    no licence stated
+#   muthumarii tamil-nlp-...              news/sentiment text, no scam class
+- id: sms_yasmeenahmadabadwala_hindi_spam
+  corpus: sms
+  path: derived/kaggle__yasmeenahmadabadwala__hindi-spam-dataset.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    '0': ham
+    '0.0': ham
+    1: scam
+    '1': scam
+    '1.0': scam
+  channel: email_like
+  lang: hi
+  synthetic: true
+  licence: MIT
+  evidence: 'Survey 2026-11-10: label 0 rows are meetings, bills and delivery confirmations while label 1 rows ask for a refund, KYC update, delivery fee, investment or credit-card login, so 0 = ham and 1 = scam. Templated bodies with example.net URLs and email-like correspondence (channel email_like), so synthetic = true. Rows pre-filtered to Devanagari (share >= 0.5) from manual.xlsx.'
+- id: sms_nikhil7g_cross_market_fraud
+  corpus: sms
+  path: derived/kaggle__nikhil7g__multilingual-cross-market-financial-fraud-dataset.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    '0': ham
+    '0.0': ham
+    1: scam
+    '1': scam
+    '1.0': scam
+  channel: sms
+  lang: hi
+  synthetic: true
+  licence: CC-BY-SA-4.0
+  evidence: 'Survey 2026-11-10: label 1 rows are prize, work-from-home, KYC/AnyDesk and UPI refund fraud while label 0 rows are genuine bank debit and ITR alerts, so 0 = ham and 1 = scam. Generated from public sources with templated bank/UPI alerts, so synthetic = true. Rows pre-filtered to Devanagari (share >= 0.5), concatenated from indian_financial_fraud_scam_dataset_12500.csv and mul-fraud_data.csv.'
+- id: sms_debapampal2002_sms_dataset1
+  corpus: sms
+  path: derived/kaggle__debapampal2002__sms-dataset1.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang: hi
+  synthetic: true
+  licence: MIT
+  evidence: 'Survey 2026-11-10: label spam rows are marketing, ringtone and account-verification messages and ham rows are personal conversation, so spam = unwanted; a few read like phishing but the corpus is mostly promotional. English/German/French SMS machine-translated into Hindi, so synthetic = true (translation is rough). Rows pre-filtered to Devanagari (share >= 0.5) from dataset.csv.'

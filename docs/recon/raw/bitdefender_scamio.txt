@@ -1,0 +1,137 @@
+URL: https://www.bitdefender.com/en-us/consumer/scamio
+TITLE: Bitdefender Scamio - Free Scam Detector
+
+[RootWebArea] Bitdefender Scamio - Free Scam Detector
+[StaticText] {"mode":"full","isActive":true,"isUserDisabled":false}
+[button] Close the country or region selector
+[link] Bitdefender Cybersecurity
+[navigation] primary
+[navigation] secondary
+[heading] Why should you use Scamio?
+[heading] Bitdefender Scamio.
+[heading] How does it work?
+[heading] Explain Scamio like I’m 5
+[heading] No scam can avoid detection
+[heading] You already know how to use Scamio
+[heading] Get a strong second opinion
+[heading] Your personal scam detection tool
+[heading] Powered by Bitdefender
+[heading] Safety is better when shared
+[combobox] Country or region selector
+[link] Continue
+[heading] Where will you chat with Scamio the most?
+[StaticText] Have a scam checker as a new contact on WhatsApp? How cool is that! Scan the QR code or click the button below to continue to the chat. Make sure Scamio verifies any deceptive message, job scam, or link you receive.
+[link] Chat on WhatsApp
+[StaticText] Enjoy seamless scam detection with Scamio’s web app. Whether you’re browsing, checking emails, or shopping online, you’re just a conversation away from making sure no one is stealing your money or your personal data.
+[link] Chat on Web App
+[StaticText] Is Facebook Messenger your #1 chat app? Think of Scamio as that friend you always turn to for security advice. Add those fake ads, suspicious links, or social media messages to the chat for a quick analysis.
+[link] Chat on Messenger
+[StaticText] You like chatting on Discord and even getting rewards like free Nitro. It’s better to DM Scamio to check those unexpected messages or giveaways. Authorize the app and drop any fishy texts, screenshots, or links in the chat.
+[link] Chat on Discord
+[StaticText] If you feel like someone may be trying to scam you, instead of playing detective, start a conversation with Scamio. You can either copy-paste the message, upload an image, send a link, or describe your situation. Scamio analyzes it and lets you know if it’s safe or not.
+[StaticText] Scamio makes light work out of uncovering even the best-disguised scams. Just follow the simple steps below and never take any risk again.
+[StaticText] Step 1. To chat with Scamio, sign in or create a Bitdefender account.
+[StaticText] Step 2. Describe the scam or upload an image, send a link, or a text.
+[StaticText] Step 3. Get the results, see tips to avoid scams, and rate your experience.
+[link] Chat with Scamio for free
+[StaticText] Think of Scamio like your personal scam-detecting assistant. How does it know if a message is a scam or not? Scamio breaks it down to identify key elements like sender information, message structure, and language patterns.
+[StaticText] The content is compared against a set of predefined rules and Bitdefender’s huge database of known scams and phishing attempts. If Scamio detects any suspicious elements or finds a match with a known scam, it immediately signals it, giving you peace of mind.
+[StaticText] Plus, with every conversation, it becomes smarter.
+[StaticText] Scammers are getting more creative by the hour. Luckily, Scamio’s here to turn the odds in your favor.
+[StaticText] Whether it’s phishing attempts, fraudulent websites, deceptive emails, or social engineering tactics, Scamio sniffs them out like a bloodhound on a scent trail.
+[StaticText] With Scamio by your side, you’re protected both against the scams of today and tomorrow.
+[heading] Let`s turn the tide in the battle with threat actors
+[heading] ‘Am I being scammed?’ Finding out has never been easier.
+[StaticText] You don’t need to be a tech wizard to make the most out of Scamio. Using it is like talking to a friend. As long as you know how to start a chat, you’re good to go.
+[StaticText] Misinformation campaigns. Phishing scams. Phony websites. The line between authenticity and deceit has never been blurrier. Luckily, Scamio instantly identifies those too-good-to-be-true deals before they can damage your wallet or reputation.
+[StaticText] Bitdefender Scamio mixes award-winning threat-detection with generative AI in an effort to put scammers out of business once and for all.
+[StaticText] With a track record of excellence, Bitdefender brings its 20+ years of experience, cutting-edge threat-detection algorithms and expertise to the heart of Scamio's operations.
+[StaticText] Help spread the word about Scamio and be an agent of change in the fight against online scams. Let your friends and family know how they can take control of their digital safety. Together, we're not just protecting, we're dismantling the fraudsters' plans. Your action today doesn't just fortify, it disrupts, putting scammers out of business. Share the power, disrupt the game, and let's rewrite the rules of online safety together!
+[heading] Frequently asked questions
+[region] Brand and tagline
+[navigation] Primary footer links
+[heading] Quick Links
+[navigation] Social media
+[navigation] Utility links
+[StaticText] Choose a different country or region to see content specific to your location.
+[heading] Bitdefender Scamio
+[heading] The next-gen AI scam detector
+[StaticText] Don’t worry, you’ll still be able to access Scamio on all the other channels as well.
+[LayoutTableCell] WhatsApp
+[LayoutTableCell] Web app
+[LayoutTableCell] Messenger
+[LayoutTableCell] Discord
+[StaticText] Free, easy-to-use AI chatbot
+[StaticText] No download, no install needed
+[StaticText] Available on web, WhatsApp, Messenger, and Discord
+[StaticText] Extensive threat analysis and scam detection
+[StaticText] Practical tips and tricks to avoid scams.
+[LayoutTableCell] 50%
+[LayoutTableCell] Half of people worldwide faced weekly scam attempts in 2024*
+[LayoutTableCell] 70%
+[LayoutTableCell] 70% of scam contacts on Facebook, Instagram, or WhatsApp led to money loss in 2024**
+[LayoutTableCell] $12.5bn
+[LayoutTableCell] US consumers lost a record $12.5 billion to fraud in 2024**
+[StaticText] Global State of Scams – 2024 GASA Report – based on insights from 58,329 individuals from 43 countries
+[StaticText] Federal Trade Commission (FTC Report, 2024)
+[LayoutTableCell] Bitdefender, Foundation Member of Global Anti-Scam Alliance Global Anti-Scam Alliance (GASA) brings together organizations, experts, and law enforcement agencies in a joint effort to protect consumers worldwide from scams. Our collaboration with GASA provides access to cutting-edge research, insights, and expertise in scam prevention, enhancing our anti-scam products' effectiveness.
+[StaticText] ‘Am I being scammed?’
+[StaticText] Finding out has never been easier.
+[button] How does Scamio work?
+[button] Is Scamio free to use?
+[button] Why should I use a free scam detector like Scamio?
+[button] How does Bitdefender collect and use my personal information?
+[button] How can I avoid falling for scams?
+[button] Where can I send feedback about my experience with Scamio?
+[image] Bitdefender red
+[button] United States - English
+[option] India
+[option] Another country or region
+[link] For Consumer
+[link] For Small Business
+[link] For Enterprise
+[link] For Partners
+[link] Company
+[link] Blog
+[StaticText] Trusted. Always.
+[heading] Bitdefender, Foundation Member of Global Anti-Scam Alliance
+[StaticText] Scamio is an AI chatbot in an early access phase, designed to provide helpful information and guidance on avoiding scams and fake messages. By continuously learning and improving, Scamio offers more accurate advice over time.
+[StaticText] Trusted.
+[StaticText] Always.
+[link] Bitdefender Central
+[link] GravityZone Cloud Control Center
+[link] Bitdefender Cyberpedia
+[link] Partner Advantage Network Portal
+[link] Brand Portal
+[link] Support for Home Products
+[link] Support for Business Products
+[link] Investors
+[link] Careers
+[link] InfoZone
+[StaticText] Copyright © 1997 - 2026 Bitdefender
+[StaticText] Support
+[StaticText] Login
+[StaticText] Ready 24/7 to help you check any scam in seconds, this free chatbot is powered by our award-winning threat detection.
+[StaticText] Send any tricky text, email, social media message, link, or even QR code you received to get an instant analysis. Together, we can outsmart scammers.
+[StaticText] Global Anti-Scam Alliance (GASA) brings together organizations, experts, and law enforcement agencies in a joint effort to protect consumers worldwide from scams.
+[StaticText] Our collaboration with GASA provides access to cutting-edge research, insights, and expertise in scam prevention, enhancing our anti-scam products' effectiveness.
+[link] Facebook
+[link] X (formerly Twitter)
+[link] LinkedIn
+[link] YouTube
+[link] Instagram
+[link] TikTok
+[link] Legal Information
+[link] Privacy Policy
+[link] Site Map
+[link] Contact Us
+[link] Privacy Settings
+[link] llms.txt
+[link] robots.txt
+[link] AI-Powered Cybersecurity
+[StaticText] All-in-one Plans
+[StaticText] Solutions
+[StaticText] Trials & Free Tools
+[StaticText] Existing Customers
+
+THIRD-PARTY/RESOURCE HOSTS: www.bitdefender.com

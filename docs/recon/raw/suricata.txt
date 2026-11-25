@@ -1,0 +1,108 @@
+URL: https://suricata.io/features/
+TITLE: Features - Suricata
+
+[RootWebArea] Features - Suricata
+[dialog] Cookie Compliance
+[link] Skip to content
+[StaticText] {"mode":"full","isActive":true,"isUserDisabled":false}
+[IframePresentational] reCAPTCHA
+[StaticText] © 2026 OISF -
+[link] Privacy Policy & Terms of Use
+[StaticText] We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.
+[button] Privacy policy
+[heading] Features
+[link] BlueSky
+[link] YouTube
+[link] LinkedIn
+[link] Forum
+[StaticText] The Open Information Security Foundation (OISF) is a 501(c)3 non-profit foundation organized to build a next generation IDS/IPS engine.
+[link] Learn More >
+[link] Contact OISF: info@oisf.net
+[StaticText] Follow us on social media!
+[link] Subscribe to our Newsletter
+[link] Suricata - Logo
+[button] Toggle navigation
+[heading] Powerful, Flexible, and Open
+[heading]  Always one step ahead
+[heading]  Plays well with others
+[heading]  Independence day is every day
+[link] Get to Know Suricata
+[link] News and Updates
+[link] Learn
+[link] Join Our Community
+[link] Our Story
+[link] Contact
+[link] Branding Images
+[StaticText] Always
+[StaticText] one step ahead
+[StaticText] Our community of developers ensures Suricata remains on the cutting edge of threat detection and response. They prioritize security, usability, and efficiency to keep your network safe from sophisticated and emerging threats.
+[StaticText] Plays well
+[StaticText] with others
+[StaticText] Suricata integrates seamlessly with your network and can be embedded within numerous respected commercial and open source solutions.
+[StaticText] Independence
+[StaticText] day is every day
+[StaticText] The Suricata project and code are owned and supported by the Open Information Security Foundation (OISF), a non-profit that is committed to keeping Suricata open source forever.
+[link] Download
+[link] Free and Open Source
+[link] Documentation
+[link] Deprecation Policy
+[link] EOL Policy
+[link] GPL: Frequently Asked Questions
+[link] Contribution Agreements
+[link] Conferences
+[link] Learning Library
+[link] Live Trainings
+[link] Webinar Archives
+[link] SuriCon
+[link] Consortium Members
+[link] Who We Are
+[link] Jobs
+[heading]  NSM: More than an IDS
+[StaticText] Suricata can log HTTP requests, log and store TLS certificates, extract files from flows and store them to disk. The full pcap capture support allows easy analysis. All this makes Suricata a powerful engine for your Network Security Monitoring (NSM) ecosystem.
+[StaticText] : Not only can you match against most aspects of an SSL/TLS exchange within the ruleset language thanks to Suricata’s TLS Parser, you can also log all key exchanges for analysis. Great way to make sure your network is not the victim of a less than reputable certificate authority.
+[StaticText] Why add more hardware into your network just to log http activity when your IDS already sees it? Suricata will log all HTTP connections on any port to file for later analysis.
+[StaticText] Suricata will log all DNS queries and responses.
+[StaticText] For complete information and logging formats available
+[link] click here.
+[heading]  IDS / IPS
+[StaticText] Suricata implements a complete signature language to match on known threats, policy violations and malicious behaviour. Suricata will also detect many anomalies in the traffic it inspects. Suricata is capable of using the specialized
+[link] Emerging Threats Suricata ruleset
+[StaticText] and the
+[link] VRT ruleset
+[heading]  High Performance
+[StaticText] A single Suricata instance is capable of inspecting multi-gigabit traffic. The engine is built around a multi threaded, modern, clean and highly scalable code base. There is native support for hardware acceleration from several vendors and through PF_RING and AF_PACKET.
+[heading]  Automatic Protocol Detection
+[StaticText] Suricata will automatically detect protocols such as HTTP on any port and apply the proper detection and logging logic. This greatly helps with finding malware and CnC channels.
+[heading]  Lua Scripting
+[StaticText] Advanced analysis and functionality available to detect things not possible within the ruleset syntax.
+[heading]  Industry Standard Outputs
+[StaticText] Our main logging output is called “Eve”, our all JSON event and alert output. This allows for easy integration with Logstash and similar tools.
+[StaticText] Scirius CE hunt mode, correlation showing a request with executable file in response.
+[StaticText] Splunk Enterprise – there is a free Suricata app in the Splunk store made by Eric Leblond at Stamus Networks
+[StaticText] Suricata’s Flow ID in action in EveBox, correlating alerts, anomaly events, & protocol data/NSM
+[StaticText] Alert and protocol/NSM data
+[StaticText] Application Layer Anomaly in Kibana
+[StaticText] File ID/Transactions in Kibana
+[heading] Latest Releases
+[heading] Suricata (Stable) version 8.0.8 was released October 29, 2026
+[StaticText] Linux/Mac/FreeBSD/UNIX/Windows Source:
+[link] suricata-8.0.8.tar.gz
+[StaticText] PGP Signature:
+[link] suricata-8.0.8.tar.gz.sig
+[StaticText] Windows 64-bit installer:
+[link] Suricata-8.0.7-1-64bit.msi
+[StaticText] Ubuntu
+[link] Ubuntu PPA channel for Suricata 8
+[StaticText] RPM packages
+[link] RPM packages for Suricata 8
+[StaticText] NSM: More than an IDS
+[StaticText] TLS/SSL Logging and Analysis
+[StaticText] HTTP Logging:
+[StaticText] DNS Logging:
+[StaticText] IDS / IPS
+[StaticText] High Performance
+[StaticText] Automatic Protocol Detection
+[StaticText] Lua Scripting
+[StaticText] Industry Standard Outputs
+
+THIRD-PARTY/RESOURCE HOSTS: suricata.io

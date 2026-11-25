@@ -1,0 +1,5 @@
+﻿--------- beginning of main
+11-06 19:29:13.978 11014 11068 I PS3Sms  : LlamaAdvisor: prefix prefill ready path=prefix_cache
+11-06 19:29:42.035 11014 11044 I PS3Llama: {"prefill_token_per_sec":30.6905,"decode_token_per_sec":6.01663,"prompt_tokens":156,"generated_tokens":68,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1793973565649,"inference_end_ms":1793973582034,"model_execution_start_ms":1793973581864,"model_execution_end_ms":1793973582034,"prompt_eval_end_ms":1793973570732,"first_token_ms":1793973570732,"aggregate_sampling_time_ms":15,"aggregate_model_execution_time_ms":22172,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-06 19:29:42.035 11014 11044 I PS3Sms  : LlamaAdvisor prompt_path=prefix_cache prompt_tokens=156
+11-06 19:29:42.035 11014 11044 I PS3Llama: prompt_path=prefix_cache

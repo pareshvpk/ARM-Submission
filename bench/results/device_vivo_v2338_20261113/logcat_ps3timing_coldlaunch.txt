@@ -1,0 +1,13 @@
+﻿--------- beginning of main
+11-13 09:38:04.362 21901 21901 I PS3Timing: process_start_to_onCreate_ms=16
+11-13 09:38:04.373 21901 21901 I PS3Timing: cpu_features atomics=true asimddp=true fphp=true bf16=false i8mm=false sve=false sve2=false sme=false sme2=false ram_bytes=7825170432 tier=FULL
+11-13 09:38:04.392 21901 21901 I PS3Timing: accel_path=DOTPROD clusters=4@2208000+4@1804800
+11-13 09:38:04.392 21901 21901 I PS3Timing: threads_proposal=4 threads_used=4 threads_auto=false
+11-13 09:38:04.482 21901 21922 I PS3Timing: integrity_verify_model=url ms=60
+11-13 09:38:04.494 21901 21922 I PS3Timing: url_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-13 09:38:04.521 21901 21922 I PS3Timing: model_load_model=url ms=39
+11-13 09:38:04.522 21901 21922 I PS3Timing: sms_model_choice=sms_int8.pte dot_product=true fp32_available=true
+11-13 09:38:08.471 21901 21922 I PS3Timing: integrity_verify_model=sms ms=3949
+11-13 09:38:12.376 21901 21922 I PS3Timing: sms_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-13 09:38:12.477 21901 21922 I PS3Timing: sms_init_split tokenizer_ms=3738 idmap_ms=161 module_load_ms=23 probe_ms=78 gate_wait_ms=0
+11-13 09:38:12.477 21901 21922 I PS3Timing: model_load_model=sms ms=4005

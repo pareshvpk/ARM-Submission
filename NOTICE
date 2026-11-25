@@ -1,0 +1,86 @@
+PS3 Sentinel
+Copyright (c) 2026 PS3 Sentinel Contributors
+
+This product includes software developed under the Apache License, Version 2.0.
+See LICENSE for details.
+
+========================================================================
+Llama 3.2 Attribution and Licence
+========================================================================
+
+Built with Llama
+
+Llama 3.2 is licensed under the Llama 3.2 Community License,
+Copyright (c) Meta Platforms, Inc. All Rights Reserved.
+
+- Llama 3.2 Community License:
+  https://www.llama.com/llama3_2/license/
+- Llama Acceptable Use Policy:
+  https://www.llama.com/llama3/use-policy/
+
+The on-device advice model file is the executorch-community SpinQuant INT4
+export (Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8.pte).
+
+========================================================================
+SMS Classifier Base Model
+========================================================================
+
+The SMS threat classifier is fine-tuned from the multilingual MiniLM checkpoint:
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+licensed under the Apache License, Version 2.0.
+(Model card: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
+
+========================================================================
+Fonts
+========================================================================
+
+Fonts bundled with the application keep their own licences under the
+SIL Open Font License, Version 1.1:
+- Inter (by Rasmus Andersson): android/third_party_licenses/OFL-Inter.txt
+- JetBrains Mono (by JetBrains): android/third_party_licenses/OFL-JetBrainsMono.txt
+- Space Grotesk (by Florian Karsten): android/third_party_licenses/OFL-SpaceGrotesk.txt
+
+========================================================================
+Datasets
+========================================================================
+
+Training, evaluation, and benchmark datasets keep their own original terms
+and licences. See docs/datasets.md for details.
+
+========================================================================
+MMS Scanning, App Access Check and Submission Packager
+========================================================================
+
+Portions of MMS text scanning (org.ps3.sentinel.sms), App access check
+(org.ps3.sentinel.ui.AppAccessCollector) and the submission packager
+(scripts/package_submission.py) are adapted from pareshvpk/Phase:
+Copyright (c) 2026 V Paresh Kumar
+Licensed under the MIT License. The full MIT licence text is reproduced in
+this file, in the section "MIT License - pareshvpk/Phase" below; no external
+or reference copy is required.
+
+========================================================================
+MIT License - pareshvpk/Phase
+========================================================================
+
+MIT License
+
+Copyright (c) 2026 V Paresh Kumar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

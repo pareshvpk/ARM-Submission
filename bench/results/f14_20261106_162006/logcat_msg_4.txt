@@ -1,0 +1,4 @@
+﻿--------- beginning of main
+11-06 16:24:13.979 27792 27823 I PS3Llama: {"prefill_token_per_sec":49.8976,"decode_token_per_sec":6.38169,"prompt_tokens":341,"generated_tokens":63,"model_load_start_ms":1793962270593,"model_load_end_ms":1793962276205,"inference_start_ms":1793962437273,"inference_end_ms":1793962453979,"model_execution_start_ms":1793962453823,"model_execution_end_ms":1793962453978,"prompt_eval_end_ms":1793962444107,"first_token_ms":1793962444107,"aggregate_sampling_time_ms":19,"aggregate_model_execution_time_ms":16651,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-06 16:24:13.980 27792 27823 I PS3Sms  : LlamaAdvisor prompt_path=full_prompt prompt_tokens=341
+11-06 16:24:13.980 27792 27823 I PS3Llama: prompt_path=full_prompt

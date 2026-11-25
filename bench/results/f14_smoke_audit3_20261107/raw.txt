@@ -1,0 +1,52 @@
+run1 11-07 12:37:27.080 V/WindowManagerShell( 1987):  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@8f6158f
+run1 11-07 12:37:27.086 D/SamsungLightBarControlHelper( 1987): updateStatusBar (BLACK icon) numStacks:1, StatusBarMode:MODE_TRANSPARENT, lightBarBounds:[Rect(0, 0 - 1080, 2408)], StatusBarState:SHADE, packageName:, isWhiteKeyguardStatusBar:false
+run1 11-07 12:37:27.086 D/SamsungLightBarControlHelper( 1987): onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:0, barState:MODE_TRANSPARENT, isKeyguardShowing:false, navbarColorManagedByIme:false, (AppearanceRegion{LIGHT_STATUS_BARS bounds=[0,0][1080,2408]}, )
+run1 11-07 12:37:27.307 I/PS3Timing( 7887): process_start_to_onCreate_ms=21
+run1 11-07 12:37:27.367 I/PS3Timing( 7887): integrity_verify_model=url ms=16
+run1 11-07 12:37:27.470 I/PS3Timing( 7887): model_load_model=url ms=103
+run1 11-07 12:37:27.486 I/PS3Timing( 7887): integrity_verify_model=sms ms=10
+run1 11-07 12:37:27.686 I/HoneySpace.EdgePanel.EdgeVisibilityRepository( 2418): getComputedTrayVisible : keyguardState = 1
+run1 11-07 12:37:27.997 D/SamsungLightBarControlHelper( 1987): updateStatusBar (WHITE icon) numStacks:1, StatusBarMode:MODE_TRANSPARENT, lightBarBounds:[], StatusBarState:SHADE, packageName:, isWhiteKeyguardStatusBar:false
+run1 11-07 12:37:27.998 D/SamsungLightBarControlHelper( 1987): onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:0, barState:MODE_TRANSPARENT, isKeyguardShowing:false, navbarColorManagedByIme:false, (AppearanceRegion{ bounds=[0,0][1080,2408]}, )
+run1 11-07 12:37:29.255 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run1 11-07 12:37:30.054 I/PS3Timing( 7887): sms_init_split tokenizer_ms=2244 idmap_ms=146 module_load_ms=57 probe_ms=118 gate_wait_ms=0
+run1 11-07 12:37:30.055 I/PS3Timing( 7887): model_load_model=sms ms=2568
+run1 11-07 12:37:30.136 I/PS3Timing( 7887): integrity_verify_model=llama ms=3
+run1 11-07 12:37:30.293 I/PS3Timing( 7887): llama_threads=4
+run1 11-07 12:37:30.294 I/PS3Timing( 7887): model_load_model=llama ms=158
+run1 11-07 12:37:31.497 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run1 11-07 12:37:33.742 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run1 11-07 12:37:36.104 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run1 11-07 12:37:37.004 I/PS3Timing( 7887): prefix_prefill_ms=6710
+run1 11-07 12:37:37.527 D/KeyguardUpdateMonitor( 1987): handleBatteryUpdate
+run1 11-07 12:37:38.358 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run1 11-07 12:37:39.066 W/Finsky  (10254): [2] STU: Failed to get storage stats for package 'com.samsung.android.lifeguard' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+run1 11-07 12:37:40.613 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run1 11-07 12:37:42.967 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run1 11-07 12:37:43.241 I/PS3Bench( 7887): prompt_path=prefix_cache prompt_tokens=91 ttft_ms=1714.0 decode_tok_s=9.1 advice_sha8=888fe77c
+run1 11-07 12:37:45.223 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:37:58.809 V/WindowManagerShell( 1987):  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@8f6158f
+run2 11-07 12:37:58.811 D/SamsungLightBarControlHelper( 1987): updateStatusBar (BLACK icon) numStacks:1, StatusBarMode:MODE_TRANSPARENT, lightBarBounds:[Rect(0, 0 - 1080, 2408)], StatusBarState:SHADE, packageName:, isWhiteKeyguardStatusBar:false
+run2 11-07 12:37:58.812 D/SamsungLightBarControlHelper( 1987): onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:0, barState:MODE_TRANSPARENT, isKeyguardShowing:false, navbarColorManagedByIme:false, (AppearanceRegion{LIGHT_STATUS_BARS bounds=[0,0][1080,2408]}, )
+run2 11-07 12:37:59.052 I/PS3Timing( 8052): process_start_to_onCreate_ms=20
+run2 11-07 12:37:59.105 I/PS3Timing( 8052): integrity_verify_model=url ms=8
+run2 11-07 12:37:59.215 I/PS3Timing( 8052): model_load_model=url ms=109
+run2 11-07 12:37:59.223 I/PS3Timing( 8052): integrity_verify_model=sms ms=5
+run2 11-07 12:37:59.416 I/HoneySpace.EdgePanel.EdgeVisibilityRepository( 2418): getComputedTrayVisible : keyguardState = 1
+run2 11-07 12:37:59.693 D/SamsungLightBarControlHelper( 1987): updateStatusBar (WHITE icon) numStacks:1, StatusBarMode:MODE_TRANSPARENT, lightBarBounds:[], StatusBarState:SHADE, packageName:, isWhiteKeyguardStatusBar:false
+run2 11-07 12:37:59.693 D/SamsungLightBarControlHelper( 1987): onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:0, barState:MODE_TRANSPARENT, isKeyguardShowing:false, navbarColorManagedByIme:false, (AppearanceRegion{ bounds=[0,0][1080,2408]}, )
+run2 11-07 12:38:00.997 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:01.592 I/PS3Timing( 8052): sms_init_split tokenizer_ms=2034 idmap_ms=147 module_load_ms=57 probe_ms=129 gate_wait_ms=0
+run2 11-07 12:38:01.592 I/PS3Timing( 8052): model_load_model=sms ms=2369
+run2 11-07 12:38:01.645 I/PS3Timing( 8052): integrity_verify_model=llama ms=3
+run2 11-07 12:38:01.819 I/PS3Timing( 8052): llama_threads=4
+run2 11-07 12:38:01.819 I/PS3Timing( 8052): model_load_model=llama ms=174
+run2 11-07 12:38:03.244 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:05.495 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:07.304 I/PS3Timing( 8052): prefix_prefill_ms=5483
+run2 11-07 12:38:07.722 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:09.977 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:12.263 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:14.511 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:16.748 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+run2 11-07 12:38:16.822 I/PS3Bench( 8052): prompt_path=prefix_cache prompt_tokens=91 ttft_ms=1586.0 decode_tok_s=9.1 advice_sha8=5589d273

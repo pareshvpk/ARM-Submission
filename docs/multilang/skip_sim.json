@@ -1,0 +1,111 @@
+{
+ "real": {
+  "all": {
+   "flagged": 1508,
+   "n": 3012,
+   "skipped": 77,
+   "skipped_otp": 16,
+   "skipped_transaction": 61,
+   "skipped_was_flagged": 2,
+   "skipped_was_high": 1
+  },
+  "genuine": {
+   "flagged": 114,
+   "n": 521,
+   "skipped": 25,
+   "skipped_otp": 1,
+   "skipped_transaction": 24,
+   "skipped_was_flagged": 0,
+   "skipped_was_high": 0
+  },
+  "promotional": {
+   "flagged": 42,
+   "n": 109
+  },
+  "unknown": {
+   "flagged": 1352,
+   "n": 2382,
+   "skipped": 52,
+   "skipped_otp": 15,
+   "skipped_transaction": 37,
+   "skipped_was_flagged": 2,
+   "skipped_was_high": 1
+  }
+ },
+ "heldout": {
+  "Assamese": {
+   "ham_n": 500,
+   "risky_n": 500
+  },
+  "Bengali": {
+   "ham_n": 500,
+   "risky_n": 500
+  },
+  "English": {
+   "ham_n": 550,
+   "ham_skipped": 38,
+   "risky_n": 659
+  },
+  "Gujarati": {
+   "ham_n": 500,
+   "risky_n": 500
+  },
+  "Hindi": {
+   "ham_n": 500,
+   "ham_skipped": 17,
+   "risky_n": 500
+  },
+  "Hinglish": {
+   "ham_n": 500,
+   "risky_n": 500
+  },
+  "Kannada": {
+   "ham_n": 500,
+   "risky_n": 500
+  },
+  "Kashmiri": {
+   "ham_n": 500,
+   "ham_skipped": 6,
+   "risky_n": 500,
+   "risky_skipped": 23
+  },
+  "Malayalam": {
+   "ham_n": 500,
+   "risky_n": 500
+  },
+  "Marathi": {
+   "ham_n": 500,
+   "ham_skipped": 7,
+   "risky_n": 500,
+   "risky_skipped": 25
+  },
+  "Odia": {
+   "ham_n": 245,
+   "ham_skipped": 38,
+   "risky_n": 190
+  },
+  "Overall": {
+   "ham_n": 6567,
+   "ham_skipped": 106,
+   "risky_n": 6531,
+   "risky_skipped": 48
+  },
+  "Punjabi": {
+   "ham_n": 500,
+   "risky_n": 500
+  },
+  "Tamil": {
+   "ham_n": 272,
+   "risky_n": 182
+  },
+  "Telugu": {
+   "ham_n": 500,
+   "risky_n": 500
+  }
+ },
+ "golden": {
+  "risky_kept": 60,
+  "ham_kept": 57,
+  "ham_skipped": 3
+ }
+}

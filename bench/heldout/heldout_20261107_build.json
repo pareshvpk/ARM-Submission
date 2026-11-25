@@ -1,0 +1,36 @@
+{
+  "corpus_unique_hashes": 1267537,
+  "output_rows": 13098,
+  "per_source": {
+    "carnageiron": {
+      "rows_read": 2272,
+      "dropped_seen_in_corpus": 2062,
+      "dropped_duplicate": 1,
+      "kept": 209,
+      "kept_per_truth": {
+        "ham": 50,
+        "risky": 159
+      }
+    },
+    "anmolshrivastav": {
+      "rows_read": 14000,
+      "dropped_seen_in_corpus": 0,
+      "dropped_duplicate": 1111,
+      "kept": 12889,
+      "kept_per_truth": {
+        "ham": 6517,
+        "risky": 6372
+      }
+    }
+  },
+  "total": {
+    "rows_read": 16272,
+    "dropped_seen_in_corpus": 2062,
+    "dropped_duplicate": 1112,
+    "kept": 13098,
+    "kept_per_truth": {
+      "ham": 6567,
+      "risky": 6531
+    }
+  }
+}

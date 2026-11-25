@@ -1,0 +1,21 @@
+11-07 17:28:50.206 I/PS3Timing(22072): process_start_to_onCreate_ms=23
+11-07 17:28:50.271 I/PS3Timing(22072): integrity_verify_model=url ms=14
+11-07 17:28:50.391 I/PS3Timing(22072): model_load_model=url ms=119
+11-07 17:28:50.402 I/PS3Timing(22072): integrity_verify_model=sms ms=4
+11-07 17:28:52.239 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:28:53.135 I/PS3Timing(22072): sms_init_split tokenizer_ms=2402 idmap_ms=147 module_load_ms=58 probe_ms=125 gate_wait_ms=0
+11-07 17:28:53.136 I/PS3Timing(22072): model_load_model=sms ms=2734
+11-07 17:28:53.139 I/PS3Timing(22072): integrity_verify_model=llama ms=2
+11-07 17:28:53.373 I/PS3Timing(22072): llama_threads=4
+11-07 17:28:53.374 I/PS3Timing(22072): model_load_model=llama ms=234
+11-07 17:28:54.481 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:28:56.763 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:28:59.036 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:29:00.773 I/PS3Timing(22072): prefix_prefill_ms=7393
+11-07 17:29:01.296 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:29:03.578 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:29:05.847 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:29:08.081 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:29:10.362 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''
+11-07 17:29:11.248 I/PS3Bench(22072): prompt_path=prefix_cache prompt_tokens=115 ttft_ms=2038.0 decode_tok_s=9.1 advice_sha8=96f5be98
+11-07 17:29:12.619 I/adbd    (28391): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'PS3Bench:I''

@@ -1,0 +1,20 @@
+﻿--------- beginning of main
+11-24 16:43:29.792 10118 10118 I PS3Timing: process_start_to_onCreate_ms=13
+11-24 16:43:29.798 10118 10118 I PS3Timing: cpu_features atomics=false asimddp=false fphp=false bf16=false i8mm=false sve=false sve2=false sme=false sme2=false ram_bytes=5843161088 tier=LIGHT
+11-24 16:43:29.803 10118 10118 I PS3Timing: accel_path=NEON clusters=4@2314000+4@1742000
+11-24 16:43:29.803 10118 10118 I PS3Timing: threads_proposal=4 threads_used=4 threads_auto=false
+11-24 16:43:29.850 10118 10134 I PS3Timing: integrity_verify_model=url ms=30
+11-24 16:43:29.859 10118 10134 I PS3Timing: url_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 16:43:29.879 10118 10134 I PS3Timing: model_load_model=url ms=29
+11-24 16:43:29.880 10118 10134 I PS3Timing: sms_model_choice=sms_fp32.pte dot_product=false fp32_available=true
+11-24 16:43:30.309 10118 10134 I PS3Timing: integrity_verify_model=sms ms=429
+11-24 16:43:30.548 10118 10134 I PS3Timing: sms_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 16:43:30.812 10118 10134 I PS3Timing: sms_init_split tokenizer_ms=175 idmap_ms=61 module_load_ms=40 probe_ms=224 gate_wait_ms=0
+11-24 16:43:30.812 10118 10134 I PS3Timing: model_load_model=sms ms=503
+11-24 16:43:30.825 10118 10155 I PS3Timing: integrity_verify_model=llama ms=13
+11-24 16:43:31.077 10118 10155 I PS3Timing: llama_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 16:43:31.079 10118 10155 I PS3Timing: url_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 16:43:31.082 10118 10155 I PS3Timing: sms_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 16:43:31.121 10118 10155 I PS3Timing: pool_rebind ms=44 url=ok sms=ok
+11-24 16:43:31.122 10118 10155 I PS3Timing: llama_tier=LIGHT max_new_tokens=78 first_token_timeout_ms=45000 total_timeout_ms=90000
+11-24 16:43:31.122 10118 10155 I PS3Timing: model_load_model=llama ms=297

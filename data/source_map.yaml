@@ -1,0 +1,1762 @@
+- id: sms_abdelrahmanmahmoud22_english_sms
+  corpus: sms
+  path: sms/abdelrahmanmahmoud22__phishing-credit-card-smss/raw_intelligent_english_sms_dataset.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'Credit card phishing SMS: label 0 is legitimate conversation (ham), label
+    1 is credit card smishing (scam)'
+- id: sms_aditsawhney_indian_jobs
+  corpus: sms
+  path: sms/aditsawhney__indian-job-fraud-dataset/synthetic_indian_jobs.csv
+  format: csv
+  text_col: description
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: job_post
+  lang: en
+  synthetic: true
+  licence: CC0-1.0
+  evidence: 'Synthetic Indian jobs dataset: job postings (channel: job_post); label 0 is legitimate job posting, label 1 is recruitment scam'
+- id: sms_ahmadtijjani_urgency_phishing
+  corpus: sms
+  path: sms/ahmadtijjani__phishing-urgency-authority-persuasion/phishing_dataset_with_category.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    phishing: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: MIT
+  evidence: Phishing messages with authority/urgency cues all labeled phishing (scam)
+- id: sms_ameenhasan_fake_fraud
+  corpus: sms
+  path: sms/ameenhasan__fake-fraud-message-detection-dataset/SMS fraud Dataset.csv
+  format: csv
+  text_col: sms
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: Other
+  evidence: 'SMS fraud dataset: 0 is ham (UCI sample), 1 is fraud (scam)'
+- id: sms_atherionsystems_indian_scam_30k
+  corpus: sms
+  path: sms/atherionsystems__indian-scam-sms-30k/dataset_30k_pure.jsonl
+  format: jsonl
+  text_col: messages
+  label_col: messages
+  label_map:
+    LEGITIMATE: ham
+    SCAM: scam
+  channel: sms
+  lang: en
+  synthetic: true
+  licence: CC0-1.0
+  evidence: 'Chat completion Indian scam SMS: assistant evaluates LEGITIMATE (ham)
+    vs SCAM (scam)'
+- id: sms_bwandowando_philippine_spam
+  corpus: sms
+  path: sms/bwandowando__philippine-spam-sms-messages/SPAM_SMS.csv
+  format: csv
+  text_col: text
+  fixed_label: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-NC-SA-4.0
+  evidence: Philippine spam SMS collection containing only unwanted spam messages
+- id: sms_dahalea_calls
+  path: sms/dahalea__banking-sms-fraud-datasets/Kaggle_Example/Calls.xlsx
+  skip: true
+  reason: 9-row toy example of phone call strings ('call1', 'call2'), not SMS corpus
+- id: sms_dahalea_sms
+  path: sms/dahalea__banking-sms-fraud-datasets/Kaggle_Example/SMS.xlsx
+  skip: true
+  reason: 9-row toy synthetic placeholder with dummy text ('sms1', 'sms2'), not real
+    SMS corpus
+- id: sms_dharshiyanacc_spam_ham_phishing
+  corpus: sms
+  path: sms/dharshiyanacc__spam-ham-and-phishing-message-dataset-for-nlp/final_dataset.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+    2: unwanted
+  channel: mixed  # merged SMS + email (Enron/TREC escapenumber tokens in label 2)
+  lang: en
+  synthetic: false
+  preprocessed: true  # lowercased, punctuation + stopwords removed, URLs mangled: not raw SMS; exclude or down-weight in training
+  licence: MIT
+  evidence: 'Three-class message dataset: 0 is ham (appointments/records), 1 is phishing/scam
+    (prize/support scam), 2 is commercial spam (unwanted). The Kaggle description says 1=spam,
+    2=phishing, but manager-checked samples (2026-11-03) show 1 = scams (KBC lottery, SSN suspended,
+    PayPal limited) and 2 = email spam (viagra, stock, OEM software), so the description is wrong.'
+- id: sms_fadlifatih_sms_phishing
+  corpus: sms
+  path: sms/fadlifatih__sms-phishing-dataset/Dataset_5971.csv
+  format: csv
+  text_col: TEXT
+  label_col: LABEL
+  label_map:
+    ham: ham
+    Smishing: scam
+    smishing: scam
+    spam: unwanted
+    Spam: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'Mendeley smishing dataset: ham is legitimate, Smishing/smishing is scam,
+    spam/Spam is promotional'
+- id: sms_galactus007_smssmishcollection
+  corpus: sms
+  path: sms/galactus007__sms-smishing-collection-data-set/smssmishcollection/SMSSmishCollection.txt
+  format: tsv
+  read_options:
+    header: null
+    names:
+    - label
+    - text
+  text_col: text
+  label_col: label
+  label_map:
+    ham: ham
+    smish: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: DbCL-1.0
+  evidence: 'Mishra-Soni smishing collection: ham is legitimate SMS, smish is smishing
+    scam'
+- id: sms_gokhansoyturk_combined_sms
+  corpus: sms
+  path: sms/gokhansoyturk__smishing-sms-dataset/combined_sms.csv
+  format: csv
+  text_col: text
+  label_col: is_smishing
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: MIT
+  evidence: 'Smishing SMS dataset: is_smishing column directly marks 1 for smishing
+    scam and 0 for legitimate'
+- id: sms_junioralive_india_spam
+  corpus: sms
+  path: sms/junioralive__india-spam-sms-classification/spam_ham_india.csv
+  format: csv
+  text_col: Msg
+  label_col: Label
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: MIT
+  evidence: 'Indian telecom SMS: ham is transactional/personal, spam is unwanted promotional
+    broadcast'
+- id: sms_karanverma_punjab_fraud
+  corpus: sms
+  path: sms/karanverma__punjab-fraud-intent-benchmark-trilingual/trilingual_fraud_consumer_protection_v2.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    safe: ham
+    scam: scam
+  channel: sms
+  lang: mixed
+  synthetic: false
+  licence: MIT
+  evidence: 'Trilingual fraud benchmark: safe is advisory/legitimate, scam is immigration/financial
+    scam'
+- id: sms_kritikgianta_merged_sms
+  corpus: sms
+  path: sms/kritikgianta__multilanguage-sms-classification-dataset/FINAL_MERGED_SMS_DATASET.csv
+  format: csv
+  text_col: message
+  label_col: category
+  label_map:
+    service: ham
+    promotional: unwanted
+  channel: sms
+  lang: mixed
+  synthetic: false
+  licence: Unknown
+  evidence: 'TRAI category definitions: service SMS is transactional/OTP (ham), promotional
+    is commercial spam (unwanted)'
+- id: sms_mexwell_telegram_spam_ham
+  corpus: sms
+  path: sms/mexwell__telegram-spam-or-ham/dataset.csv
+  format: csv
+  text_col: text
+  label_col: text_type
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: telegram
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'Telegram messages: ham is regular conversation, spam is unwanted broadcast'
+- id: sms_msubhansiddiqui_financial_scam
+  corpus: sms
+  path: sms/msubhansiddiqui__financial-scam-and-deceptive-text-meta-dataset/master_cleaned_dataset_with_synthetic.csv
+  skip: true
+  reason: news headlines and generic phrases, not SMS; labels noisy.
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang: en
+  synthetic: true
+  licence: CC-BY-NC-SA-4.0
+  evidence: 'Financial deceptive text meta-dataset: 0 is verified authentic news/phrase,
+    1 is deceptive scam text'
+- id: sms_nickgabriel100_sms_fraud
+  path: sms/nickgabriel100__sms-fraud-detection-dataset/SMS-Fraud-Data.csv
+  skip: true
+  reason: Engineered feature dataset containing template and metadata columns without
+    raw message text
+- id: sms_rajnathpatel_multilingual_spam
+  corpus: sms
+  path: sms/rajnathpatel__multilingual-spam-data/data-en-hi-de-fr.csv
+  format: csv
+  text_col: text
+  label_col: labels
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: GPL-2.0
+  evidence: 'Multilingual translated spam: ham is legitimate personal message, spam
+    is unwanted message'
+- id: sms_rithikkumar802_adaption_fraud
+  corpus: sms
+  path: sms/rithikkumar802__adaption-sms-fraud-classification/data.jsonl
+  format: jsonl
+  text_col: message
+  label_col: label
+  label_map:
+    legit: ham
+    fraud: scam
+    null: DROP # 2422 unlabelled rows (LLM chat prompts, medical notes) without classification ground truth
+    'None': DROP
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'Adaption SMS fraud dataset: legit is legitimate communication (ham), fraud is scam/phishing (scam), unlabelled null rows dropped'
+- id: sms_roberto2057_hindi_sms
+  corpus: sms
+  path: sms/roberto2057__hindi-sms/hindi_sms_spam_ham_15000.csv
+  format: csv
+  text_col: sms
+  label_col: label
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang: hi
+  synthetic: false
+  licence: Unknown
+  evidence: 'Hindi SMS spam/ham dataset: written in Devanagari script (lang: hi); ham is legitimate Hindi conversation, spam is promotional'
+- id: sms_siddharthrane07_scamshield_test
+  corpus: sms
+  path: sms/siddharthrane07__scamshield-multilingual-smishing-social-engn/test.jsonl
+  format: jsonl
+  text_col: text
+  label_col: is_scam
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang_col: language
+  synthetic: false
+  licence: MIT
+  evidence: 'ScamShield test split: is_scam indicates malicious scam (1) vs non-scam
+    (0)'
+- id: sms_siddharthrane07_scamshield_train
+  corpus: sms
+  path: sms/siddharthrane07__scamshield-multilingual-smishing-social-engn/train.jsonl
+  format: jsonl
+  text_col: text
+  label_col: is_scam
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang_col: language
+  synthetic: false
+  licence: MIT
+  evidence: 'ScamShield train split: is_scam indicates malicious scam (1) vs non-scam
+    (0)'
+- id: sms_siddharthrane07_scamshield_val
+  corpus: sms
+  path: sms/siddharthrane07__scamshield-multilingual-smishing-social-engn/val.jsonl
+  format: jsonl
+  text_col: text
+  label_col: is_scam
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang_col: language
+  synthetic: false
+  licence: MIT
+  evidence: 'ScamShield validation split: is_scam indicates malicious scam (1) vs
+    non-scam (0)'
+- id: sms_sngmyd_india_cyber_scam
+  corpus: sms
+  path: sms/sngmyd__india-cyber-scam-hinglish-dataset/India_Cyber_Scam_Hinglish_Dataset.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: call_transcript
+  lang: hinglish
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'Indian cyber scam call dataset: romanised Hindi mixed with English dialogue (lang: hinglish); 0 is non-scam legitimate dialogue, 1 is scam extortion/fraud'
+- id: sms_spamdetectorssms_combined_multilingual
+  corpus: sms
+  path: sms/spamdetectorssms__combined-multilingual-spam-dataset-25k/Combined_Multilingual_Spam_Dataset_25k.csv
+  format: csv
+  text_col: message
+  label_col: label
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang_col: language
+  synthetic: false
+  licence: ODbL-1.0
+  evidence: 'Combined multilingual spam: ham is legitimate communication, spam is
+    unwanted marketing'
+- id: sms_tapakah68_spam_texts
+  corpus: sms
+  path: sms/tapakah68__spam-text-messages-dataset/spam_texts.csv
+  format: csv
+  text_col: text
+  fixed_label: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: Unknown
+  evidence: OCR-extracted promotional and marketing SMS screenshots all classified
+    as unwanted spam
+- id: sms_teeconnie_english_nonscam
+  corpus: sms
+  path: sms/teeconnie__scam-and-non-scam-call-conversation-dataset/English_NonScam.txt
+  format: txt_lines
+  fixed_label: ham
+  channel: call_transcript
+  lang: en
+  synthetic: false
+  licence: CC BY-NC-ND 4.0
+  evidence: Legitimate customer service and medical call conversations
+- id: sms_teeconnie_english_scam
+  corpus: sms
+  path: sms/teeconnie__scam-and-non-scam-call-conversation-dataset/English_Scam.txt
+  format: txt_lines
+  fixed_label: scam
+  channel: call_transcript
+  lang: en
+  synthetic: false
+  licence: CC BY-NC-ND 4.0
+  evidence: Scam and phishing call conversations requesting banking or credit card
+    details
+- id: sms_uciml_spam
+  corpus: sms
+  path: sms/uciml__sms-spam-collection-dataset/spam.csv
+  format: csv
+  read_options:
+    encoding: latin1
+  text_col: v2
+  label_col: v1
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'UCI SMS Spam Collection: v1 ham is legitimate SMS, spam is unwanted marketing'
+- id: sms_vinit119_sms_scam
+  corpus: sms
+  path: sms/vinit119__sms-scam-detection-dataset-merged/sms_scam_detection_dataset_merged_with_lang.csv
+  skip: true
+  reason: spam label is a Twitter spam-account corpus (tweets, punctuation stripped), not SMS; ham rows include translated junk.
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    ham: ham
+    spam: unwanted
+    Spam: unwanted
+  channel: sms
+  lang_col: lang
+  synthetic: false
+  licence: Other
+  evidence: 'Merged SMS dataset: ham is legitimate, spam/Spam is unwanted marketing'
+- id: sms_wa1618i_whatsapp_chat_1
+  corpus: sms
+  path: sms/wa1618i__whatsapp-scam-dataset/WhatsApp Chat with chat_1.txt
+  format: txt_lines
+  fixed_label: scam
+  channel: whatsapp
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: WhatsApp investment scam conversation log
+- id: sms_wa1618i_whatsapp_chat_2
+  corpus: sms
+  path: sms/wa1618i__whatsapp-scam-dataset/WhatsApp Chat with chat_2.txt
+  format: txt_lines
+  fixed_label: scam
+  channel: whatsapp
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: WhatsApp investment scam conversation log
+- id: sms_wa1618i_whatsapp_violine_1
+  corpus: sms
+  path: sms/wa1618i__whatsapp-scam-dataset/WhatsApp Chat with Violine (1).txt
+  format: txt_lines
+  fixed_label: scam
+  channel: whatsapp
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: WhatsApp romance/investment scam conversation log
+- id: sms_wa1618i_whatsapp_violine
+  path: sms/wa1618i__whatsapp-scam-dataset/WhatsApp Chat with Violine.txt
+  skip: true
+  reason: Duplicate chat export of WhatsApp Chat with Violine (1).txt
+- id: sms_wa1618i_whatsapp_zevanca_1
+  corpus: sms
+  path: sms/wa1618i__whatsapp-scam-dataset/WhatsApp Chat with Zevanca (1).txt
+  format: txt_lines
+  fixed_label: scam
+  channel: whatsapp
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: WhatsApp crypto scam conversation log
+- id: sms_wa1618i_whatsapp_zevanca
+  path: sms/wa1618i__whatsapp-scam-dataset/WhatsApp Chat with Zevanca.txt
+  skip: true
+  reason: Duplicate earlier export of WhatsApp Chat with Zevanca (1).txt
+- id: sms_yatinaggarwal033_whatsapp_scam
+  corpus: sms
+  path: sms/yatinaggarwal033__whatsapp-scam-dataset/whatsapp_scam_dataset.csv
+  format: csv
+  text_col: message
+  fixed_label: scam
+  channel: whatsapp
+  lang: en
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'WhatsApp scam dataset: message contains scam messages across 10 fraud
+    types'
+- id: url_alishan07_homograph_phishing
+  corpus: url
+  path: url/alishan07__adversarial-homograph-detection/adversarial-homograph-detection/Adversarial
+    Homograph Detection.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'Adversarial homograph detection dataset: 0 is benign, 1 is homograph
+    phishing attack'
+- id: url_alishan07_homograph_splits
+  path: url/alishan07__adversarial-homograph-detection/adversarial-homograph-detection/homograph_phishing_*.csv
+  skip: true
+  reason: Train/val/test splits of combined Adversarial Homograph Detection.csv
+- id: url_alishan07_metadata_json
+  path: url/alishan07__adversarial-homograph-detection/adversarial-homograph-detection/homograph-dataset-metadata.json
+  skip: true
+  reason: Dataset metadata description JSON, not tabular URL data
+- id: url_antonyj453_urldataset
+  corpus: url
+  path: url/antonyj453__urldataset/data.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    good: benign
+    bad: malicious
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'antonyj453 dataset: good is benign URL, bad is malicious URL'
+- id: url_dhrubangtalukdar_phishing_unique
+  corpus: url
+  path: url/dhrubangtalukdar__real-world-phishing-url-classification-data/phishing_url_dataset_unique.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: malicious
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'Source column confirms: 0 from tranco (benign), 1 from urlhaus (malicious)'
+- id: url_golner_phishing_domains
+  corpus: url
+  path: url/golner__phishing-domains/dataset_202402231320.csv
+  format: csv
+  url_col: DOMAIN_NAME
+  label_col: IS_PHISHING
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'IS_PHISHING binary indicator: 0 is non-phishing (benign), 1 is phishing'
+- id: url_harisudhan411_new_data_urls
+  corpus: url
+  path: url/harisudhan411__phishing-and-legitimate-urls/new_data_urls.csv
+  format: csv
+  url_col: url
+  label_col: status
+  label_map:
+    1: benign
+    0: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: Inspection shows status 1 contains legitimate sites (rgipt.ac.in, lifewire.com)
+    and status 0 contains phishing domains (paypalsecurity.fr, lookalike amazon domains)
+- id: url_harshsinghal_common_crawl_domains
+  corpus: url
+  path: url/harshsinghal__random-sample-of-common-crawl-domains-from-2021/b7b9b3f1-762f-41c4-9899-bcee33740c64.csv
+  format: csv
+  url_col: url_host_name
+  fixed_label: benign
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: Random sample of Common Crawl domains from 2021 web crawl (benign)
+- id: url_hassaanmustafavi_phishing_urls
+  corpus: url
+  path: url/hassaanmustafavi__phishing-urls-dataset/url_dataset.csv
+  format: csv
+  url_col: url
+  label_col: type
+  label_map:
+    legitimate: benign
+    phishing: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'URL dataset types: legitimate is benign, phishing is phishing'
+- id: url_joebeachcapital_phishing_urls
+  corpus: url
+  path: url/joebeachcapital__phishing-urls/urlset.csv
+  format: csv
+  read_options:
+    encoding: latin1
+    on_bad_lines: skip
+  url_col: domain
+  label_col: label
+  label_map:
+    0.0: benign
+    '0.0': benign
+    '0': benign
+    1.0: phishing
+    '1.0': phishing
+    '1': phishing
+    0.7'8049: DROP
+    '0.770083': DROP
+    nan: DROP  # 92 rows without a label in the full run
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: Inspection shows 1.0 contains PayPal/Skype phishing URLs, 0.0 contains
+    university/gov URLs (benign), corrupted strings map to DROP
+- id: url_joebeachcapital_phiusiil
+  corpus: url
+  path: url/joebeachcapital__phiusiil-phishing-url/PhiUSIIL_Phishing_URL_Dataset.csv
+  format: csv
+  url_col: URL
+  label_col: label
+  label_map:
+    1: benign
+    0: phishing
+  channel: web
+  synthetic: false
+  licence: CC BY 4.0
+  evidence: PhiUSIIL paper documentation specifies label 1 = legitimate (benign) and
+    label 0 = phishing
+- id: url_marryjanety_phishing_simple
+  corpus: url
+  path: url/marryjanety__phishing-url-dataset-url-and-label/phishing_simple (1).csv
+  format: csv
+  url_col: URL
+  label_col: label
+  label_map:
+    benign: benign
+    phishing: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: Labels explicitly given as benign and phishing
+- id: url_moutasmtamimi_mud_2026
+  corpus: url
+  path: url/moutasmtamimi__malicious-url-detection-dataset-enhanced-2026/MUD_malicious_urls_2026_V2.csv
+  format: csv
+  url_col: url
+  label_col: class_label
+  label_map:
+    benign: benign
+    defacement: defacement
+    phishing: phishing
+    malware: malware
+  channel: web
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'MUD 2026 V2 dataset class_label: benign, defacement, phishing, malware'
+- id: url_moutasmtamimi_dataset_v2
+  path: url/moutasmtamimi__malicious-url-detection-dataset-enhanced-2026/dataset_with_all_features
+    v2.csv
+  skip: true
+  reason: Intermediate release subset superseded by MUD_malicious_urls_2026_V2.csv
+- id: url_moutasmtamimi_final_features
+  path: url/moutasmtamimi__malicious-url-detection-dataset-enhanced-2026/final_dataset_with_all_features.csv
+  skip: true
+  reason: Feature-only dataset without raw URL column
+- id: url_moutasmtamimi_final_features_v3
+  path: url/moutasmtamimi__malicious-url-detection-dataset-enhanced-2026/final_dataset_with_all_features_v3.1.csv
+  skip: true
+  reason: Intermediate release subset superseded by MUD_malicious_urls_2026_V2.csv
+- id: url_nhutrinhanna_merged_urls
+  corpus: url
+  path: url/nhutrinhanna__malicious-and-benign-urls-datasets/merged_urls_dataset.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    phish: phishing
+    benign: benign
+    malware: malware
+    adult: DROP  # adult-content category, not a threat class
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'nhutrinhanna: phish mapped to phishing, adult content outside threat
+    classes mapped to DROP'
+- id: url_pilarpieiro_alexa
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/alexatop1m_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Alexa top 1M benign domains snapshot with label
+    0 (benign)'
+- id: url_pilarpieiro_dmoz
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/dmoz_domain_category_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: DMOZ category benign domains with label 0 (benign)'
+- id: url_pilarpieiro_domcop
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/domcop_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Domcop top benign domains with label 0 (benign)'
+- id: url_pilarpieiro_majestic
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/majestic_million_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Majestic Million benign domains with label 0
+    (benign)'
+- id: url_pilarpieiro_manual_data
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/manual_data.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Manual benign URLs with label 0 (benign)'
+- id: url_pilarpieiro_manual_j
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/manual_j.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Manual benign notifications with label 0 (benign)'
+- id: url_pilarpieiro_manual_plugin
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/manual_plugin_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Manual plugin benign URLs with label 0 (benign)'
+- id: url_pilarpieiro_parsed_new
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/parsed-new_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Parsed new benign URLs with label 0 (benign)'
+- id: url_pilarpieiro_parsed_subdomain
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/parsed-subdomain_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Parsed subdomain benign URLs with label 0 (benign)'
+- id: url_pilarpieiro_top500
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/top500Domains_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Top 500 benign domains with label 0 (benign)'
+- id: url_pilarpieiro_tranco
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/tranco_K2K4W_20220202_benign.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Tranco top benign domains list with label 0
+    (benign)'
+- id: url_pilarpieiro_gmail
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/urls_20220201_gmail.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Gmail benign URLs with label 0 (benign)'
+- id: url_pilarpieiro_outlook
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/urls_20220201_outlook.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Outlook benign URLs with label 0 (benign)'
+- id: url_pilarpieiro_gmail_j
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/urls_20220202_gmail_j.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Gmail notification benign URLs with label 0
+    (benign)'
+- id: url_pilarpieiro_419_fakeurls_0323
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/419_fakeurls_325_0323.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: 419 scam and fake URLs feed with label 1 (phishing)'
+- id: url_pilarpieiro_419_fakeurls_clean
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/419_fakeurls_325_clean.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: 419 clean fake URLs feed with label 1 (phishing)'
+- id: url_pilarpieiro_all_phishing_domains
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/ALL-phishing-domains_20220207_malicious.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: All phishing domains feed with label 1 (phishing)'
+- id: url_pilarpieiro_all_phishing_links
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/ALL-phishing-links_20220207_malicious.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: All phishing links feed with label 1 (phishing)'
+- id: url_pilarpieiro_cryptoscan
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/CryptoScanDB_malicious_git.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: CryptoScanDB malicious URLs with label 1 (phishing)'
+- id: url_pilarpieiro_openphish
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/openphish.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: OpenPhish feed snapshot with label 1 (phishing)'
+- id: url_pilarpieiro_openphish_2
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/openphish_2.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: OpenPhish feed secondary snapshot with label
+    1 (phishing)'
+- id: url_pilarpieiro_data_clean_test
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/data_clean_test_mendel.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Cleaned Mendel test set: 0 is benign, 1 is phishing'
+- id: url_pilarpieiro_data_clean_train
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/data_clean_train_mendel.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Cleaned Mendel train set: 0 is benign, 1 is
+    phishing'
+- id: url_pilarpieiro_manual_samples
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/manual_samples.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro collection: Manual samples: 0 is benign, 1 is phishing'
+- id: url_pilarpieiro_phishtank
+  corpus: url
+  path: url/pilarpieiro__malicious-and-benign-url-dataset/phishtank_*.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Pilar Pieiro PhishTank split files: all verified phishing URLs labeled
+    1'
+- id: url_quangnguynv_phishtank
+  corpus: url
+  path: url/quangnguynv__phishtank-phishingurl-valid-dataset/PhishTank_2026.csv
+  format: csv
+  url_col: URL
+  fixed_label: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'PhishTank valid phishing URL dataset: CSV column URL; all entries verified phishing'
+- id: url_sahandnamvar_dataset
+  corpus: url
+  path: url/sahandnamvar__phishing-url-detection-111k-urls-22-features/Dataset.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: Inspection shows label 0 contains university/legitimate domains (rmit.edu.au)
+    and label 1 contains phishing URLs
+- id: url_samahsadiq_balanced_urls
+  corpus: url
+  path: url/samahsadiq__benign-and-malicious-urls/balanced_urls.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    benign: benign
+    malicious: malicious
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: Labels explicitly given as benign and malicious
+- id: url_sarrazer_iscx_2016
+  path: url/sarrazer__url-dataset-iscx-url2016/*.csv
+  skip: true
+  reason: Feature-only ISCX URL 2016 dataset without raw URL text
+- id: url_shawon10_dmoz_classification
+  corpus: url
+  path: url/shawon10__url-classification-dataset-dmoz/URL Classification.csv
+  format: csv
+  read_options:
+    header: null
+    names:
+    - index
+    - url
+    - category
+  url_col: url
+  fixed_label: benign
+  channel: web
+  synthetic: false
+  licence: Other
+  evidence: 'DMOZ open directory project URL classification: directory of legitimate/benign
+    websites'
+- id: url_shawon10_dmoz_descriptions
+  path: url/shawon10__url-classification-dataset-dmoz/dmoz.csv
+  skip: true
+  reason: Website descriptions and categories only without raw URL column
+- id: url_sid321axn_malicious_phish
+  corpus: url
+  path: url/sid321axn__malicious-urls-dataset/malicious_phish.csv
+  format: csv
+  url_col: url
+  label_col: type
+  label_map:
+    benign: benign
+    defacement: defacement
+    phishing: phishing
+    malware: malware
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'Multi-class dataset types: benign, defacement, phishing, malware'
+- id: url_siddharthkumar25_urldata
+  corpus: url
+  path: url/siddharthkumar25__malicious-and-benign-urls/urldata.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    benign: benign
+    malicious: malicious
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: Labels explicitly given as benign and malicious
+- id: url_somanshumahajan_65lakh_urls
+  corpus: url
+  path: url/somanshumahajan__65-lakh-urls-labelled-as-1-and-0/urls_*.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: malicious
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: 'Kaggle dataset description: 65 lakh URLs labeled 1 as malicious and 0
+    as non-malicious (benign)'
+- id: url_taruntiwarihp_phishing_site_urls
+  corpus: url
+  path: url/taruntiwarihp__phishing-site-urls/phishing_site_urls.csv
+  format: csv
+  url_col: URL
+  label_col: Label
+  label_map:
+    good: benign
+    bad: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'taruntiwarihp dataset: good is benign URL, bad is phishing URL'
+- id: url_vibhuyadav0_stealthphisher
+  corpus: url
+  path: url/vibhuyadav0__stealthphisher-phishing-attack-dataset/StealthPhisher.csv
+  format: csv
+  url_col: URL
+  label_col: Label
+  label_map:
+    Legitimate: benign
+    Phishing: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'StealthPhisher labels: Legitimate is benign, Phishing is phishing'
+- id: url_victusadi_phishing_features
+  corpus: url
+  path: url/victusadi__phishing-urls-dataset-with-extracted-features/phishing_features.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: Inspection shows label 0 contains top alexa domains (google.com, youtube.com)
+    as benign, label 1 contains phishing URLs
+- id: url_vishalxtyagi_verified_online
+  corpus: url
+  path: url/vishalxtyagi__phishing-website-detector-based-on-url/verified_online.csv
+  format: csv
+  url_col: url
+  fixed_label: phishing
+  channel: web
+  synthetic: false
+  licence: Unknown
+  evidence: PhishTank verified online phishing URLs collection
+- id: url_zishnusarker_4class_final
+  corpus: url
+  path: url/zishnusarker__malicious-url-classification-706k/dataset_4class_final.csv
+  format: csv
+  url_col: link
+  label_col: class
+  label_map:
+    benign: benign
+    phishing: phishing
+    defacement: defacement
+    malware: malware
+  channel: web
+  synthetic: false
+  licence: CC0-1.0
+  evidence: '4-class final dataset: benign, phishing, defacement, malware'
+- id: url_zishnusarker_binary
+  path: url/zishnusarker__malicious-url-classification-706k/dataset_binary.csv
+  skip: true
+  reason: Binary rollup view of the same rows in dataset_4class_final.csv
+- id: url_openphish_feed
+  corpus: url
+  path: ext/feeds/openphish_feed_2026-11-02.txt
+  format: txt_lines
+  fixed_label: phishing
+  channel: feed
+  synthetic: false
+  licence: Open Source
+  evidence: OpenPhish community feed of active verified phishing URLs
+- id: url_tranco_feed
+  corpus: url
+  path: ext/feeds/tranco_top1m_2026-11-02.zip
+  format: zip_csv
+  read_options:
+    header: null
+    names:
+    - rank
+    - url
+  url_col: url
+  fixed_label: benign
+  channel: feed
+  synthetic: false
+  licence: Open Source
+  evidence: Tranco top 1 million legitimate domains feed
+- id: sms_mendeley_mishra_soni
+  corpus: sms
+  path: ext/mendeley/mishra_soni_smishing/Dataset_5971.zip
+  format: zip_csv
+  read_options:
+    zip_member: Dataset_5971.csv
+  text_col: TEXT
+  label_col: LABEL
+  label_map:
+    ham: ham
+    Smishing: scam
+    smishing: scam
+    spam: unwanted
+    Spam: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'Mishra & Soni smishing benchmark in Dataset_5971.zip: ham is legitimate,
+    Smishing is scam, spam is unwanted'
+- id: url_mendeley_phishing_urls
+  corpus: url
+  path: ext/mendeley/url_phish_2025/Phishing URLs.csv
+  format: csv
+  url_col: url
+  label_col: Type
+  label_map:
+    phishing: phishing
+  channel: web
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'Mendeley URL phish 2025: phishing URLs labeled phishing'
+- id: url_mendeley_url_dataset
+  corpus: url
+  path: ext/mendeley/url_phish_2025/URL dataset.csv
+  format: csv
+  url_col: url
+  label_col: type
+  label_map:
+    legitimate: benign
+    phishing: phishing
+  channel: web
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'Mendeley URL phish 2025: legitimate is benign, phishing is phishing'
+- id: ext_reportsmishing_license
+  path: ext/git/reportsmishing/LICENSE-free.txt
+  skip: true
+  reason: Repository license text, not tabular data
+- id: sms_hf_alusci_sms_otp
+  corpus: sms
+  path: ext/hf/alusci__sms-otp-spam-dataset/SMS_OTP_10000_samples.csv
+  format: csv
+  text_col: sms_text
+  label_col: label
+  label_map:
+    valid: ham
+    not valid: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'SMS OTP dataset: valid OTP message (ham) vs not valid spam (unwanted)'
+- id: sms_hf_bolewara_hinglish_scam
+  corpus: sms
+  path: ext/hf/bolewara__hinglish-scam-text-dataset/data.json
+  format: json
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang: hinglish
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'Hinglish scam text dataset: romanised Hindi mixed with English (lang: hinglish); 0 is legitimate conversation (ham), 1 is scam/fraud (scam)'
+- id: sms_hf_cloveai_india_spam
+  corpus: sms
+  path: ext/hf/CloveAI__india-spam-sms/data/train-00000-of-00001.parquet
+  format: parquet
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang: en
+  synthetic: true
+  licence: Apache-2.0
+  evidence: 'templated synthetic India SMS, label 1 rows are scam templates (fake Aadhaar/bill/prize links), verified by manual sample 2026-11-04.'
+- id: sms_hf_dbarbedillo_sms_spam_multilingual
+  corpus: sms
+  path: ext/hf/dbarbedillo__SMS_Spam_Multilingual_Collection_Dataset/data-augmented.csv
+  format: csv
+  text_col: text
+  label_col: labels
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-SA-4.0
+  evidence: 'Multilingual augmented SMS spam: ham is legitimate, spam is unwanted'
+- id: sms_hf_karanverma19_indian_scam
+  corpus: sms
+  path: ext/hf/karanverma19__Indian_Multilingual_Scam_Message_Dataset/ultra_premium_scam_dataset.csv
+  format: csv
+  text_col: message
+  label_col: label
+  label_map:
+    legit: ham
+    scam: scam
+  channel: sms
+  lang_col: language
+  synthetic: false
+  licence: MIT
+  evidence: 'Indian multilingual scam messages: legit is ham, scam is scam'
+- id: url_hf_mitake_phishing_urls
+  corpus: url
+  path: ext/hf/Mitake__PhishingURLsANDBenignURLs/PhishBenignDataset.csv
+  format: csv
+  url_col: url
+  label_col: label
+  label_map:
+    0: benign
+    1: phishing
+  channel: web
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'Mitake dataset: 0 is benign (eventbrite.com, tumblr.com), 1 is phishing
+    (jreast lookalike, fake yahoo)'
+- id: sms_hf_moznlp_moz_smishing
+  corpus: sms
+  path: ext/hf/MOZNLP__MOZ-Smishing/test.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    Legitimate: ham
+    Smishing: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'MOZ smishing: Legitimate is ham, Smishing is scam'
+- id: sms_hf_nini654_hinglish_scam
+  path: ext/hf/nini654__hinglish-scam-text-dataset/data.json
+  skip: true
+  reason: Duplicate copy of bolewara/hinglish-scam-text-dataset data.json
+- id: url_hf_pirocheto_phishing_url_train
+  corpus: url
+  path: ext/hf/pirocheto__phishing-url/data/train.parquet
+  format: parquet
+  url_col: url
+  label_col: status
+  label_map:
+    legitimate: benign
+    phishing: phishing
+  channel: web
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'Pirocheto phishing URL dataset: legitimate is benign, phishing is phishing'
+- id: url_hf_pirocheto_phishing_url_test
+  corpus: url
+  path: ext/hf/pirocheto__phishing-url/data/test.parquet
+  format: parquet
+  url_col: url
+  label_col: status
+  label_map:
+    legitimate: benign
+    phishing: phishing
+  channel: web
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'Pirocheto phishing URL test split: legitimate is benign, phishing is
+    phishing'
+- id: sms_hf_ridham115_synthetic_audited
+  corpus: sms
+  path: ext/hf/Ridham115__indian-scam-sms-synthetic-audited/data/synthetic_audited.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    safe: ham
+    scam: scam
+  channel: sms
+  lang_col: language
+  synthetic: true
+  licence: Apache-2.0
+  evidence: 'Indian scam SMS synthetic audited: safe is ham, scam is scam'
+- id: ext_hf_ridham115_audit_decisions
+  path: ext/hf/Ridham115__indian-scam-sms-synthetic-audited/audit_decisions.csv
+  skip: true
+  reason: Audit decision log, not message corpus
+- id: ext_hf_ridham115_stats
+  path: ext/hf/Ridham115__indian-scam-sms-synthetic-audited/stats.json
+  skip: true
+  reason: Summary statistics metadata
+- id: sms_hf_ucirvine_sms_spam
+  corpus: sms
+  path: ext/hf/ucirvine__sms_spam/plain_text/train-00000-of-00001.parquet
+  format: parquet
+  text_col: sms
+  label_col: label
+  label_map:
+    0: ham
+    1: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC0-1.0
+  evidence: 'HuggingFace mirror of UCI SMS spam: 0 is ham, 1 is spam'
+- id: sms_hf_ysangam_phonecall_hinglish
+  corpus: sms
+  path: ext/hf/ysangam__Indian_Cyber_Scam_PhoneCall_Hinglish_Dataset/India_Cyber_Scam_Hinglish_Dataset.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    0: ham
+    1: scam
+  channel: call_transcript
+  lang: hinglish
+  synthetic: false
+  licence: Apache-2.0
+  evidence: 'Indian cyber scam phone call dataset: romanised Hindi mixed with English phone call transcripts (lang: hinglish); 0 is ham, 1 is scam'
+- id: ext_hf_cache_metadata
+  path: ext/hf/*/.cache/**/*
+  skip: true
+  reason: HuggingFace cache and tree metadata files
+- id: ext_smish_dt_papers
+  path: ext/git/SMISH_DT/papers.xlsx
+  skip: true
+  reason: Research papers bibliography, not corpus
+- id: sms_smish_dt_banglabarta
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/BangalaBarta bangla_spam_sms smishing.csv
+  format: csv
+  text_col: text
+  label_col: label
+  label_map:
+    smish: scam
+    promo: unwanted
+    normal: ham
+  channel: sms
+  lang: bn
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'BanglaBarta smishing dataset: normal is ham, promo is unwanted, smish
+    is scam'
+- id: sms_smish_dt_bangla_spam
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/bangla_spam.csv
+  format: csv
+  text_col: text
+  label_col: type
+  label_map:
+    spam: unwanted
+    ham: ham
+  channel: sms
+  lang: bn
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'Bangla spam dataset: ham is personal message, spam is unwanted broadcast'
+- id: sms_smish_dt_mendeley_5971
+  path: ext/git/SMISH_DT/Dataset/Mendeley_Dataset_5971.csv
+  skip: true
+  reason: Duplicate copy of fadlifatih/sms-phishing-dataset Dataset_5971.csv
+- id: sms_smish_dt_revised_indian
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/revisedindiandataset.xls
+  format: xls
+  read_options:
+    sheet_name: Sheet1
+  text_col: msg
+  label_col: label
+  label_map:
+    ham: ham
+    spam: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'Revised Indian dataset: ham is legitimate Indian SMS, spam is unwanted
+    promotional SMS'
+- id: sms_smish_dt_singapore_sms
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/Singapore_smsCorpus_en_2015.03.09_all.json
+  format: json
+  fixed_label: ham
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'NUS SMS Corpus: 55k legitimate collected mobile messages from Singapore'
+- id: sms_smish_dt_smishtank
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/smishtank.csv
+  format: csv
+  text_col: Fulltext
+  fixed_label: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'SmishTank crowd-sourced smishing reports: verified smishing messages
+    (scam)'
+- id: sms_smish_dt_spam_hunter
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/SPAM-Hunter_full_dataset_messages.csv
+  format: csv
+  text_col: Messages
+  fixed_label: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'SPAM-Hunter full dataset messages: collected promotional spam SMS'
+- id: sms_smish_dt_super_sms
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/super_sms_dataset.csv
+  format: csv
+  read_options:
+    encoding: latin1
+  text_col: SMSes
+  label_col: Labels
+  label_map:
+    0.0: ham
+    '0.0': ham
+    '0': ham
+    1.0: scam
+    '1.0': scam
+    '1': scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'Super SMS dataset: label 0 is legitimate SMS, label 1 is smishing/spam, NaN label rows dropped'
+- id: ext_smish_dt_tld_list
+  path: ext/git/SMISH_DT/Dataset/tld-list-basic.csv
+  skip: true
+  reason: TLD reference list, not corpus
+- id: ext_smish_dt_uci_copy
+  path: ext/git/SMISH_DT/Dataset/UCI_SMSSpamCollection
+  skip: true
+  reason: Duplicate copy of uciml/sms-spam-collection-dataset
+- id: sms_smish_dt_sp24_campaigns
+  path: ext/git/SMISH_DT/Dataset/sp24-smishing/phishing_campaigns.csv
+  skip: true
+  reason: Campaign summary view of phishing_messages.csv
+- id: sms_smish_dt_sp24_messages
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/sp24-smishing/phishing_messages.csv
+  format: csv
+  text_col: message
+  fixed_label: scam
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'SP24 smishing campaign messages: active smishing attacks (scam)'
+- id: sms_smish_dt_exais_cleaned
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ExAIS_SMS Spam Dataset/cleaned_all_ExAIS_SPAM_Dataset.csv
+  format: csv
+  text_col: Message
+  label_col: Label
+  label_map:
+    HAM: ham
+    SPAM: unwanted
+  channel: sms
+  lang: en
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'ExAIS SMS spam dataset: HAM is legitimate, SPAM is unwanted'
+- id: sms_smish_dt_exais_raw
+  path: ext/git/SMISH_DT/Dataset/ExAIS_SMS Spam Dataset/all_ExAIS_SPAM_Dataset.csv
+  skip: true
+  reason: Uncleaned raw version of cleaned_all_ExAIS_SPAM_Dataset.csv
+- id: sms_smish_dt_exais_user_splits
+  path: ext/git/SMISH_DT/Dataset/ExAIS_SMS Spam Dataset/ExAIS_SMS Spam Dataset/*.csv
+  skip: true
+  reason: Per-user splits merged into cleaned_all_ExAIS_SPAM_Dataset.csv
+- id: sms_smish_dt_kor_phishing
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/KOR_smishing_data_raw/KOR_phishing_data_raw.csv
+  format: csv
+  text_col: content
+  label_col: class
+  label_map:
+    0: ham
+    1: scam
+  channel: sms
+  lang: ko
+  synthetic: false
+  licence: CC-BY-4.0
+  evidence: 'Korean smishing dataset: 0 is legitimate Korean message, 1 is smishing
+    fraud'
+- id: sms_smish_dt_enron1_ham
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron1/ham
+  format: folder_docs
+  fixed_label: ham
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 1: ham folder contains verified legitimate
+    business emails'
+- id: sms_smish_dt_enron1_spam
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron1/spam
+  format: folder_docs
+  fixed_label: unwanted
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 1: spam folder contains unsolicited spam
+    emails'
+- id: ext_smish_dt_enron1_summary
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron1/Summary.txt
+  skip: true
+  reason: Enron dataset partition summary notes
+- id: sms_smish_dt_enron2_ham
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron2/ham
+  format: folder_docs
+  fixed_label: ham
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 2: ham folder contains verified legitimate
+    business emails'
+- id: sms_smish_dt_enron2_spam
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron2/spam
+  format: folder_docs
+  fixed_label: unwanted
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 2: spam folder contains unsolicited spam
+    emails'
+- id: ext_smish_dt_enron2_summary
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron2/Summary.txt
+  skip: true
+  reason: Enron dataset partition summary notes
+- id: sms_smish_dt_enron3_ham
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron3/ham
+  format: folder_docs
+  fixed_label: ham
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 3: ham folder contains verified legitimate
+    business emails'
+- id: sms_smish_dt_enron3_spam
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron3/spam
+  format: folder_docs
+  fixed_label: unwanted
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 3: spam folder contains unsolicited spam
+    emails'
+- id: ext_smish_dt_enron3_summary
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron3/Summary.txt
+  skip: true
+  reason: Enron dataset partition summary notes
+- id: sms_smish_dt_enron4_ham
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron4/ham
+  format: folder_docs
+  fixed_label: ham
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 4: ham folder contains verified legitimate
+    business emails'
+- id: sms_smish_dt_enron4_spam
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron4/spam
+  format: folder_docs
+  fixed_label: unwanted
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 4: spam folder contains unsolicited spam
+    emails'
+- id: ext_smish_dt_enron4_summary
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron4/Summary.txt
+  skip: true
+  reason: Enron dataset partition summary notes
+- id: sms_smish_dt_enron5_ham
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron5/ham
+  format: folder_docs
+  fixed_label: ham
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 5: ham folder contains verified legitimate
+    business emails'
+- id: sms_smish_dt_enron5_spam
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron5/spam
+  format: folder_docs
+  fixed_label: unwanted
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 5: spam folder contains unsolicited spam
+    emails'
+- id: ext_smish_dt_enron5_summary
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron5/Summary.txt
+  skip: true
+  reason: Enron dataset partition summary notes
+- id: sms_smish_dt_enron6_ham
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron6/ham
+  format: folder_docs
+  fixed_label: ham
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 6: ham folder contains verified legitimate
+    business emails'
+- id: sms_smish_dt_enron6_spam
+  corpus: sms
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron6/spam
+  format: folder_docs
+  fixed_label: unwanted
+  channel: email
+  lang: en
+  synthetic: false
+  licence: Public Domain
+  evidence: 'Enron spam benchmark subset 6: spam folder contains unsolicited spam
+    emails'
+- id: ext_smish_dt_enron6_summary
+  path: ext/git/SMISH_DT/Dataset/ENRON Spam Dataset/enron6/Summary.txt
+  skip: true
+  reason: Enron dataset partition summary notes
+- id: ext_smish_dt_email_data
+  path: ext/git/SMISH_DT/Email Data/*.csv
+  skip: true
+  reason: Extracted email address lists without message body
+- id: ext_smish_dt_phone_data
+  path: ext/git/SMISH_DT/Phone Data/*.csv
+  skip: true
+  reason: Extracted phone number lists without message body
+- id: ext_smish_dt_refined_datasets
+  path: ext/git/SMISH_DT/Refined Datasets/*.csv
+  skip: true
+  reason: Derived refined copies of datasets in Dataset/ directory
+- id: ext_smish_dt_url_data
+  path: ext/git/SMISH_DT/URL Data/*.csv
+  skip: true
+  reason: Extracted URL and website analysis tables without message body

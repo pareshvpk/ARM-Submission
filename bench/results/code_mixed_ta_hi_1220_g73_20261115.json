@@ -1,0 +1,35 @@
+{
+ "device": "moto g73 5G, Android 14, sms_int8.pte",
+ "rows": 1220,
+ "overall": {
+  "risky": 620,
+  "caught": 568,
+  "recall_pct": 91.6,
+  "ham": 600,
+  "false_alarms": 31,
+  "false_alarm_pct": 5.2
+ },
+ "Tamil": {
+  "risky": 310,
+  "caught": 287,
+  "recall_pct": 92.6,
+  "ham": 300,
+  "false_alarms": 26,
+  "false_alarm_pct": 8.7
+ },
+ "Hindi": {
+  "risky": 310,
+  "caught": 281,
+  "recall_pct": 90.6,
+  "ham": 300,
+  "false_alarms": 5,
+  "false_alarm_pct": 1.7
+ },
+ "vs_pc_int8": {
+  "alert_differs": 0,
+  "level_differs": 2,
+  "model_label_differs": 1,
+  "risk_abs_diff_median": 0.0003,
+  "risk_abs_diff_max": 0.0225
+ }
+}

@@ -1,0 +1,403 @@
+{
+  "rows": 13098,
+  "missing_joins": 0,
+  "arms": {
+    "P_pruned_v5": {
+      "model_dir": "models/sms_v5d",
+      "id_map": "models/sms_v5d/id_map.json",
+      "heldout": {
+        "Overall": {
+          "n": 13098,
+          "risky_recall": 0.7648139641708773,
+          "fpr_ham": 0.11146642302421197,
+          "precision": 0.8721843897328444,
+          "f1": 0.8149779735682819,
+          "tp": 4995,
+          "fn": 1536,
+          "fp": 732,
+          "tn": 5835
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9347496206373292,
+          "fpr_ham": 0.005454545454545455,
+          "precision": 0.9951534733441034,
+          "f1": 0.9640062597809076,
+          "tp": 616,
+          "fn": 43,
+          "fp": 3,
+          "tn": 547
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.932,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9648033126293997,
+          "tp": 466,
+          "fn": 34,
+          "fp": 0,
+          "tn": 500
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.9395604395604396,
+          "fpr_ham": 0.3125,
+          "precision": 0.66796875,
+          "f1": 0.7808219178082191,
+          "tp": 171,
+          "fn": 11,
+          "fp": 85,
+          "tn": 187
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.964,
+          "fpr_ham": 0.128,
+          "precision": 0.8827838827838828,
+          "f1": 0.921606118546845,
+          "tp": 482,
+          "fn": 18,
+          "fp": 64,
+          "tn": 436
+        }
+      },
+      "golden": {
+        "Tamil": {
+          "correct": 56,
+          "total": 60
+        },
+        "Hindi": {
+          "correct": 58,
+          "total": 60
+        }
+      },
+      "golden_wrong": [
+        {
+          "id": "ta-s11",
+          "truth": "risky",
+          "level": "low"
+        },
+        {
+          "id": "ta-s28",
+          "truth": "risky",
+          "level": "low"
+        },
+        {
+          "id": "ta-h06",
+          "truth": "ham",
+          "level": "medium"
+        },
+        {
+          "id": "ta-h20",
+          "truth": "ham",
+          "level": "medium"
+        },
+        {
+          "id": "hi-s11",
+          "truth": "risky",
+          "level": "low"
+        },
+        {
+          "id": "hi-h23",
+          "truth": "ham",
+          "level": "medium"
+        }
+      ],
+      "phone": [
+        {
+          "message": "SBI KYC",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Hinglish Axis card KYC",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Hinglish UPI refund PIN",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Instant loan .apk link",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Order delivered",
+          "level": "low",
+          "expected": "low",
+          "ok": true
+        },
+        {
+          "message": "HDFC OTP",
+          "level": "low",
+          "expected": "low",
+          "ok": true
+        }
+      ]
+    },
+    "U_unpruned_v5": {
+      "model_dir": "C:/Users/<user>/arm-ps3/models/sms_v5",
+      "id_map": null,
+      "heldout": {
+        "Overall": {
+          "n": 13098,
+          "risky_recall": 0.8863879957127545,
+          "fpr_ham": 0.2511040048728491,
+          "precision": 0.7783006184458188,
+          "f1": 0.8288352781158279,
+          "tp": 5789,
+          "fn": 742,
+          "fp": 1649,
+          "tn": 4918
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9347496206373292,
+          "fpr_ham": 0.005454545454545455,
+          "precision": 0.9951534733441034,
+          "f1": 0.9640062597809076,
+          "tp": 616,
+          "fn": 43,
+          "fp": 3,
+          "tn": 547
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.932,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9648033126293997,
+          "tp": 466,
+          "fn": 34,
+          "fp": 0,
+          "tn": 500
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.945054945054945,
+          "fpr_ham": 0.3860294117647059,
+          "precision": 0.6209386281588448,
+          "f1": 0.7494553376906318,
+          "tp": 172,
+          "fn": 10,
+          "fp": 105,
+          "tn": 167
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.952,
+          "fpr_ham": 0.104,
+          "precision": 0.9015151515151515,
+          "f1": 0.9260700389105058,
+          "tp": 476,
+          "fn": 24,
+          "fp": 52,
+          "tn": 448
+        }
+      },
+      "golden": {
+        "Tamil": {
+          "correct": 59,
+          "total": 60
+        },
+        "Hindi": {
+          "correct": 58,
+          "total": 60
+        }
+      },
+      "golden_wrong": [
+        {
+          "id": "ta-h20",
+          "truth": "ham",
+          "level": "medium"
+        },
+        {
+          "id": "hi-s11",
+          "truth": "risky",
+          "level": "low"
+        },
+        {
+          "id": "hi-h23",
+          "truth": "ham",
+          "level": "medium"
+        }
+      ],
+      "phone": [
+        {
+          "message": "SBI KYC",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Hinglish Axis card KYC",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Hinglish UPI refund PIN",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Instant loan .apk link",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Order delivered",
+          "level": "low",
+          "expected": "low",
+          "ok": true
+        },
+        {
+          "message": "HDFC OTP",
+          "level": "low",
+          "expected": "low",
+          "ok": true
+        }
+      ]
+    },
+    "F_finetuned_run1": {
+      "model_dir": "models/sms_v6ml_run1/sms_v6ml",
+      "id_map": null,
+      "heldout": {
+        "Overall": {
+          "n": 13098,
+          "risky_recall": 0.8831725616291533,
+          "fpr_ham": 0.16080402010050251,
+          "precision": 0.8452520515826495,
+          "f1": 0.8637963309621864,
+          "tp": 5768,
+          "fn": 763,
+          "fp": 1056,
+          "tn": 5511
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9575113808801214,
+          "fpr_ham": 0.014545454545454545,
+          "precision": 0.9874804381846636,
+          "f1": 0.9722650231124809,
+          "tp": 631,
+          "fn": 28,
+          "fp": 8,
+          "tn": 542
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.942,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9701338825952626,
+          "tp": 471,
+          "fn": 29,
+          "fp": 0,
+          "tn": 500
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 1.0,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 1.0,
+          "tp": 182,
+          "fn": 0,
+          "fp": 0,
+          "tn": 272
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.944,
+          "fpr_ham": 0.012,
+          "precision": 0.9874476987447699,
+          "f1": 0.9652351738241308,
+          "tp": 472,
+          "fn": 28,
+          "fp": 6,
+          "tn": 494
+        }
+      },
+      "golden": {
+        "Tamil": {
+          "correct": 59,
+          "total": 60
+        },
+        "Hindi": {
+          "correct": 59,
+          "total": 60
+        }
+      },
+      "golden_wrong": [
+        {
+          "id": "ta-h20",
+          "truth": "ham",
+          "level": "medium"
+        },
+        {
+          "id": "hi-s11",
+          "truth": "risky",
+          "level": "low"
+        }
+      ],
+      "phone": [
+        {
+          "message": "SBI KYC",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Hinglish Axis card KYC",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Hinglish UPI refund PIN",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Instant loan .apk link",
+          "level": "high",
+          "expected": "high",
+          "ok": true
+        },
+        {
+          "message": "Order delivered",
+          "level": "low",
+          "expected": "low",
+          "ok": true
+        },
+        {
+          "message": "HDFC OTP",
+          "level": "low",
+          "expected": "low",
+          "ok": true
+        }
+      ]
+    }
+  },
+  "english_hinglish_level_changes": {
+    "P_pruned_v5 vs U_unpruned_v5": 0,
+    "P_pruned_v5 vs F_finetuned_run1": 108
+  },
+  "agreement_with_device_dump": {
+    "P_pruned_v5": 0.9952664528935715,
+    "U_unpruned_v5": 0.797602687433196,
+    "F_finetuned_run1": 0.8072988242479768
+  }
+}

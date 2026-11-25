@@ -1,0 +1,40 @@
+#!/bin/sh
+# Pre-commit gate for PS3 Sentinel (fast part only).
+#
+# Runs the Python test suite and refuses the commit on failure. The parity
+# fixture staleness is covered by pytest: tests/test_rules_parity.py runs
+# test_parity_fixture_is_up_to_date, so no separate parity check lives here.
+# The Android half is intentionally NOT run here: a JDK may not be present on
+# every machine, so the full check (scripts/check.ps1 | scripts/check.sh) is the
+# place for Android tests.
+#
+# Enable (each engineer opts in, do not run this yourself as part of this change):
+#   git config core.hooksPath .githooks
+# Disable:
+#   git config --unset core.hooksPath
+#
+# The hook is opt-in until a linter is installed; review is the real enforcement.
+# It can be bypassed with --no-verify, so a bad commit is still caught in review.
+
+SCRIPT_DIR=$(CDPATH= cd "$(dirname "$0")" && pwd)
+REPO_ROOT=$(CDPATH= cd "$SCRIPT_DIR/.." && pwd)
+cd "$REPO_ROOT"
+
+if [ -x ".venv/Scripts/python.exe" ]; then
+    PYTHON=".venv/Scripts/python.exe"
+elif [ -x ".venv/bin/python" ]; then
+    PYTHON=".venv/bin/python"
+else
+    PYTHON="python3"
+fi
+
+echo "pre-commit: running Python tests..."
+"$PYTHON" -m pytest -q
+rc=$?
+if [ $rc -ne 0 ]; then
+    echo "pre-commit: REFUSED - Python tests failed." >&2
+    exit 1
+fi
+
+echo "pre-commit: all fast checks passed."
+exit 0

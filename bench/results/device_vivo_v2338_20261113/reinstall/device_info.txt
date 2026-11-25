@@ -1,0 +1,9 @@
+﻿manufacturer=vivo
+model=V2338
+android_version=16
+sdk=36
+soc=SM6450
+ram_gib=7.3
+mem_total_kb=7641768
+cpu_features=fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+free_space=/dev/fuse       105G  98G  6.6G  94% /storage/emulated

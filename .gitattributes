@@ -1,0 +1,21 @@
+# Shell scripts must stay LF or `sh` breaks on Windows CRLF checkouts.
+*.sh text eol=lf
+.githooks/* text eol=lf
+gradlew text eol=lf
+deploy/android/*.sh text eol=lf
+# PowerShell and batch files use CRLF for native Windows parsing.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+gradlew.bat text eol=crlf
+# Models, images, video, captures and archives are never text.
+*.pte binary
+*.png binary
+*.mp4 binary
+*.pcap binary
+*.jar binary
+*.aar binary
+*.ttf binary
+*.apk binary
+*.aab binary
+*.keystore binary
+*.jks binary

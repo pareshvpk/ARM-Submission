@@ -1,0 +1,14 @@
+﻿11-13 18:21:46.203  8325  8383 I PS3Timing: sms_verdict level=high sms_label=scam full=true alert=true
+11-13 18:21:46.226  8325  8383 I PS3Timing: sms_received_to_alert_ms=268
+11-13 18:21:49.200  8325  8383 I PS3Timing: sms_verdict level=low sms_label=ham full=true alert=false
+11-13 18:21:50.093  8325  8383 I PS3Timing: sms_verdict level=low sms_label=ham full=true alert=false
+11-13 18:21:55.476  8325  8383 I PS3Timing: sms_verdict level=high sms_label=scam full=true alert=true
+11-13 18:21:55.500  8325  8383 I PS3Timing: sms_received_to_alert_ms=335
+11-13 18:22:00.596  8325  8383 I PS3Timing: sms_verdict level=high sms_label=scam full=true alert=true
+11-13 18:22:00.620  8325  8383 I PS3Timing: sms_received_to_alert_ms=367
+11-13 18:22:05.210  8325  8383 I PS3Timing: sms_verdict level=high sms_label=scam full=true alert=true
+11-13 18:22:05.240  8325  8383 I PS3Timing: sms_received_to_alert_ms=248
+11-13 18:22:06.196  8325  8383 I PS3Timing: sms_verdict level=high sms_label=scam full=true alert=true
+11-13 18:22:06.233  8325  8383 I PS3Timing: sms_received_to_alert_ms=459
+11-13 18:22:11.547  8325  8383 I PS3Timing: sms_verdict level=low sms_label=ham full=true alert=false
+11-13 18:22:15.570  8325  8383 I PS3Timing: sms_verdict level=low sms_label=ham full=true alert=false

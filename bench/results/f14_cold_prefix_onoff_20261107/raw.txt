@@ -1,0 +1,45 @@
+run1 off          1794029773.975 26962 26962 I PS3Timing: process_start_to_onCreate_ms=18
+run1 off          1794029774.125 26962 26977 I PS3Timing: model_load_model=url ms=100
+run1 off          1794029779.181 26962 26977 I PS3Timing: model_load_model=sms ms=5042
+run1 off          1794029779.286 26962 26993 I PS3Sms  : LlamaAdvisor: prefix cache disabled (flag file prefix_cache.off present)
+run1 off          1794029779.407 26962 26993 I PS3Timing: model_load_model=llama ms=124
+run1 off          1794029796.894 26962 26994 I PS3Llama: {"prefill_token_per_sec":53.8873,"decode_token_per_sec":7.35217,"prompt_tokens":262,"generated_tokens":70,"model_load_start_ms":1794029779451,"model_load_end_ms":1794029782509,"inference_start_ms":1794029782511,"inference_end_ms":1794029796894,"model_execution_start_ms":1794029796756,"model_execution_end_ms":1794029796893,"prompt_eval_end_ms":1794029787373,"first_token_ms":1794029787373,"aggregate_sampling_time_ms":20,"aggregate_model_execution_time_ms":14330,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run1 off          1794029796.900 26962 26994 I PS3Bench: prompt_path=full_prompt prompt_tokens=262 ttft_ms=4862.0 decode_tok_s=7.2 advice_sha8=706b3064
+run2 on          1794029808.801 27262 27262 I PS3Timing: process_start_to_onCreate_ms=18
+run2 on          1794029808.952 27262 27277 I PS3Timing: model_load_model=url ms=100
+run2 on          1794029814.032 27262 27277 I PS3Timing: model_load_model=sms ms=5067
+run2 on          1794029814.103 27262 27293 I PS3Sms  : LlamaAdvisor: prefix cache enabled (constant USE_PREFIX_CACHE=true, no flag file)
+run2 on          1794029814.246 27262 27293 I PS3Timing: model_load_model=llama ms=151
+run2 on          1794029820.343 27262 27327 I PS3Timing: prefix_prefill_ms=6095
+run2 on          1794029829.741 27262 27295 I PS3Llama: {"prefill_token_per_sec":54.4554,"decode_token_per_sec":8.01603,"prompt_tokens":77,"generated_tokens":64,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1794029820343,"inference_end_ms":1794029829741,"model_execution_start_ms":1794029829612,"model_execution_end_ms":1794029829740,"prompt_eval_end_ms":1794029821757,"first_token_ms":1794029821757,"aggregate_sampling_time_ms":22,"aggregate_model_execution_time_ms":12320,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run2 on          1794029829.746 27262 27295 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1414.0 decode_tok_s=7.9 advice_sha8=dc5d2a70
+run3 off          1794029841.621 27433 27433 I PS3Timing: process_start_to_onCreate_ms=19
+run3 off          1794029841.772 27433 27447 I PS3Timing: model_load_model=url ms=102
+run3 off          1794029846.797 27433 27447 I PS3Timing: model_load_model=sms ms=5014
+run3 off          1794029846.839 27433 27464 I PS3Sms  : LlamaAdvisor: prefix cache disabled (flag file prefix_cache.off present)
+run3 off          1794029847.011 27433 27464 I PS3Timing: model_load_model=llama ms=184
+run3 off          1794029862.029 27433 27465 I PS3Llama: {"prefill_token_per_sec":61.6471,"decode_token_per_sec":7.9858,"prompt_tokens":262,"generated_tokens":63,"model_load_start_ms":1794029847071,"model_load_end_ms":1794029849886,"inference_start_ms":1794029849889,"inference_end_ms":1794029862028,"model_execution_start_ms":1794029861898,"model_execution_end_ms":1794029862028,"prompt_eval_end_ms":1794029854139,"first_token_ms":1794029854139,"aggregate_sampling_time_ms":18,"aggregate_model_execution_time_ms":12094,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run3 off          1794029862.033 27433 27465 I PS3Bench: prompt_path=full_prompt prompt_tokens=262 ttft_ms=4250.0 decode_tok_s=7.9 advice_sha8=ba4a2e17
+run4 on          1794029874.324 27576 27576 I PS3Timing: process_start_to_onCreate_ms=18
+run4 on          1794029874.470 27576 27591 I PS3Timing: model_load_model=url ms=96
+run4 on          1794029879.613 27576 27591 I PS3Timing: model_load_model=sms ms=5131
+run4 on          1794029879.718 27576 27607 I PS3Sms  : LlamaAdvisor: prefix cache enabled (constant USE_PREFIX_CACHE=true, no flag file)
+run4 on          1794029879.839 27576 27607 I PS3Timing: model_load_model=llama ms=127
+run4 on          1794029885.773 27576 27642 I PS3Timing: prefix_prefill_ms=5934
+run4 on          1794029894.742 27576 27609 I PS3Llama: {"prefill_token_per_sec":49.7416,"decode_token_per_sec":8.49057,"prompt_tokens":77,"generated_tokens":63,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1794029885774,"inference_end_ms":1794029894742,"model_execution_start_ms":1794029894616,"model_execution_end_ms":1794029894741,"prompt_eval_end_ms":1794029887322,"first_token_ms":1794029887322,"aggregate_sampling_time_ms":19,"aggregate_model_execution_time_ms":12108,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run4 on          1794029894.749 27576 27609 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1548.0 decode_tok_s=8.4 advice_sha8=ba4a2e17
+run5 off          1794029907.144 27721 27721 I PS3Timing: process_start_to_onCreate_ms=20
+run5 off          1794029907.290 27721 27737 I PS3Timing: model_load_model=url ms=93
+run5 off          1794029912.276 27721 27737 I PS3Timing: model_load_model=sms ms=4964
+run5 off          1794029912.382 27721 27757 I PS3Sms  : LlamaAdvisor: prefix cache disabled (flag file prefix_cache.off present)
+run5 off          1794029912.500 27721 27757 I PS3Timing: model_load_model=llama ms=124
+run5 off          1794029930.883 27721 27759 I PS3Llama: {"prefill_token_per_sec":46.5447,"decode_token_per_sec":6.86499,"prompt_tokens":262,"generated_tokens":63,"model_load_start_ms":1794029912559,"model_load_end_ms":1794029916076,"inference_start_ms":1794029916076,"inference_end_ms":1794029930882,"model_execution_start_ms":1794029930719,"model_execution_end_ms":1794029930882,"prompt_eval_end_ms":1794029921705,"first_token_ms":1794029921705,"aggregate_sampling_time_ms":21,"aggregate_model_execution_time_ms":14756,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run5 off          1794029930.894 27721 27759 I PS3Bench: prompt_path=full_prompt prompt_tokens=262 ttft_ms=5629.0 decode_tok_s=6.8 advice_sha8=ba4a2e17
+run6 on          1794029942.188 27875 27875 I PS3Timing: process_start_to_onCreate_ms=22
+run6 on          1794029942.281 27875 27895 I PS3Timing: model_load_model=url ms=44
+run6 on          1794029947.410 27875 27895 I PS3Timing: model_load_model=sms ms=5126
+run6 on          1794029947.504 27875 27911 I PS3Sms  : LlamaAdvisor: prefix cache enabled (constant USE_PREFIX_CACHE=true, no flag file)
+run6 on          1794029947.624 27875 27911 I PS3Timing: model_load_model=llama ms=126
+run6 on          1794029955.026 27875 27948 I PS3Timing: prefix_prefill_ms=7401
+run6 on          1794029965.068 27875 27912 I PS3Llama: {"prefill_token_per_sec":42.471,"decode_token_per_sec":7.77832,"prompt_tokens":77,"generated_tokens":64,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1794029955027,"inference_end_ms":1794029965068,"model_execution_start_ms":1794029964922,"model_execution_end_ms":1794029965067,"prompt_eval_end_ms":1794029956840,"first_token_ms":1794029956840,"aggregate_sampling_time_ms":27,"aggregate_model_execution_time_ms":13958,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run6 on          1794029965.078 27875 27912 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1813.0 decode_tok_s=7.7 advice_sha8=dc5d2a70

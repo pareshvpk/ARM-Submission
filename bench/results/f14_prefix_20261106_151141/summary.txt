@@ -1,0 +1,24 @@
+PS3 prefix cache check summary
+date: 20261106_151141
+serial: phone-serial-redacted
+messages: 12
+off count: 12
+on count: 12
+off_rev count: 12
+on_rev count: 12
+off TTFT p50 ms: 5548
+off TTFT p95 ms: 6231
+on TTFT p50 ms: 4280
+on TTFT p95 ms: 5961
+off mean prompt_tokens: 312.083333333333
+on mean prompt_tokens: 127.083333333333
+identical advice_sha8: 5 / 12
+identical off forward vs reversed: 12 / 12
+identical on forward vs reversed: 12 / 12
+check1 advice identical on all messages: FAIL
+check2 on prompt_tokens < off on every message: PASS
+check3 TTFT p50 lower with on: PASS
+check4 off advice identical forward vs reversed: PASS
+check5 on advice identical forward vs reversed: PASS
+note: check1 can fail without a bug because prefilling the prompt in two chunks changes floating-point rounding, while checks 4 and 5 prove that no message affects another.
+overall: FAIL

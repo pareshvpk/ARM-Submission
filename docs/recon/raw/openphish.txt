@@ -1,0 +1,82 @@
+URL: https://openphish.com/
+TITLE: OpenPhish - Phishing Intelligence
+
+[RootWebArea] OpenPhish - Phishing Intelligence
+[heading] Timely. Accurate. Relevant Phishing Intelligence.
+[StaticText] 3,126,150
+[StaticText] 5,742
+[StaticText] 160
+[heading] Top 10 Targeted Brands
+[heading] Top 10 Sectors
+[heading] Top 10 ASNs
+[StaticText] {"mode":"full","isActive":true,"isUserDisabled":false}
+[StaticText] 7-Day Phishing Trends
+[StaticText] URLs Processed
+[StaticText] New Phishing URLs
+[StaticText] Brands Targeted
+[StaticText] 24-Hour Phishing Activity
+[cell] Meta Platforms, Inc.
+[cell] 36.4%
+[cell] Roblox
+[cell] 13.0%
+[cell] Crypto/Wallet
+[cell] 6.7%
+[cell] TikTok
+[cell] 6.5%
+[cell] Webull
+[cell] 2.4%
+[cell] SaaS/Webmail
+[cell] 2.0%
+[cell] Office365
+[cell] Booking.com
+[cell] 1.7%
+[cell] United States Postal Service
+[cell] 1.5%
+[cell] DPDgroup
+[cell] 1.3%
+[cell] Social Networking
+[cell] 46.2%
+[cell] Gaming
+[cell] 14.1%
+[cell] Online/Cloud Service
+[cell] 10.6%
+[cell] Financial
+[cell] 8.7%
+[cell] Cryptocurrency
+[cell] 8.0%
+[cell] Logistics & Couriers
+[cell] 3.9%
+[cell] e-Commerce
+[cell] Telecommunications
+[cell] Payment Service
+[cell] Gambling
+[cell] AS13335 Cloudflare, Inc.
+[cell] 41.9%
+[cell] AS16509 Amazon.com, Inc.
+[cell] 9.6%
+[cell] AS219067 Chiara Conti
+[cell] 4.7%
+[cell] AS153656 OWGELS INTERNATIONAL CO., LIMITED
+[cell] 4.6%
+[cell] AS36352 HostPapa
+[cell] AS53667 FranTech Solutions
+[cell] 3.7%
+[cell] AS15169 Google LLC
+[cell] 3.4%
+[cell] AS54113 Fastly, Inc.
+[cell] 2.8%
+[cell] AS8075 Microsoft Corporation
+[cell] 2.6%
+[cell] AS14956 RouterHosting LLC
+[cell] 2.1%
+[StaticText] © OpenPhish |
+[link] Knowledge Base
+[link] Terms of Use
+[link] Report Phishing
+[link] Contact Us
+[link] OpenPhish Logo
+[link] Phishing Feeds
+[link] Phishing Database
+[link] Academic Use
+
+THIRD-PARTY/RESOURCE HOSTS: openphish.com

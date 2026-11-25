@@ -1,0 +1,1 @@
+Galaxy F14, APK from 12fdbf6, battery, adb over Wi-Fi, 2026-11-07 17:28. One cold open via a share intent: HIGH RISK / SCAM, SMS model scam 1.00, URL untrusted (risky_tld, brand_lookalike), sms load 2734 ms (tokenizer 2402 ms), llama load 234 ms, prefix_prefill 7393 ms, prompt_path=prefix_cache, TTFT 2038 ms, no crash; advice contains no click/share instruction (after.png).

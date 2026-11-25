@@ -1,0 +1,77 @@
+ref,cat,license,status
+uciml/sms-spam-collection-dataset,sms,unknown,ok 0.5MB
+junioralive/india-spam-sms-classification,sms,MIT,ok 0.2MB
+galactus007/sms-smishing-collection-data-set,sms,DbCL-1.0,ok 0.5MB
+siddharthrane07/scamshield-multilingual-smishing-social-engn,sms,MIT,ok 46.3MB
+sngmyd/india-cyber-scam-hinglish-dataset,sms,apache-2.0,ok 1.3MB
+atherionsystems/indian-scam-sms-30k,sms,CC0-1.0,ok 10.7MB
+roberto2057/hindi-sms,sms,unknown,ok 2.3MB
+rajnathpatel/multilingual-spam-data,sms,GPL-2.0,ok 2.5MB
+vinit119/sms-scam-detection-dataset-merged,sms,other,ok 14.3MB
+gokhansoyturk/smishing-sms-dataset,sms,MIT,ok 9.3MB
+fadlifatih/sms-phishing-dataset,sms,CC0-1.0,ok 0.6MB
+nickgabriel100/sms-fraud-detection-dataset,sms,apache-2.0,ok 64.6MB
+rithikkumar802/adaption-sms-fraud-classification,sms,CC0-1.0,ok 38.3MB
+ahmadtijjani/phishing-urgency-authority-persuasion,sms,MIT,ok 0.1MB
+yatinaggarwal033/whatsapp-scam-dataset,sms,apache-2.0,ok 2.6MB
+wa1618i/whatsapp-scam-dataset,sms,CC0-1.0,ok 0.8MB
+mexwell/telegram-spam-or-ham,sms,CC0-1.0,ok 6.8MB
+tapakah68/spam-text-messages-dataset,sms,Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0),ok 4.1MB
+ameenhasan/fake-fraud-message-detection-dataset,sms,other,ok 0.5MB
+nikhilchauhan02/indian-social-media-fraud-and-scam-detection-d,sms,,FAIL 403 Client Error: Forbidden for url: https://api.kaggle.com/v1/datasets.DatasetApiService/GetDatasetMetadata
+kritikgianta/multilanguage-sms-classification-dataset,sms,unknown,ok 15.7MB
+spamdetectorssms/combined-multilingual-spam-dataset-25k,sms,ODbL-1.0,ok 5.9MB
+dahalea/banking-sms-fraud-datasets,sms,unknown,ok 0.0MB
+karanverma/punjab-fraud-intent-benchmark-trilingual,sms,MIT,ok 0.0MB
+bwandowando/philippine-spam-sms-messages,sms,CC-BY-NC-SA-4.0,ok 0.2MB
+abdelrahmanmahmoud22/phishing-credit-card-smss,sms,CC0-1.0,ok 2.5MB
+msubhansiddiqui/financial-scam-and-deceptive-text-meta-dataset,sms,CC-BY-NC-SA-4.0,ok 10.9MB
+aditsawhney/indian-job-fraud-dataset,sms,CC0-1.0,ok 1.0MB
+dharshiyanacc/spam-ham-and-phishing-message-dataset-for-nlp,sms,MIT,ok 370.6MB
+teeconnie/scam-and-non-scam-call-conversation-dataset,sms,Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0),ok 0.2MB
+joebeachcapital/phiusiil-phishing-url,url,Attribution 4.0 International (CC BY 4.0),ok 56.9MB
+sid321axn/malicious-urls-dataset,url,CC0-1.0,ok 45.7MB
+taruntiwarihp/phishing-site-urls,url,DbCL-1.0,ok 31.6MB
+siddharthkumar25/malicious-and-benign-urls,url,unknown,ok 35.4MB
+samahsadiq/benign-and-malicious-urls,url,unknown,ok 46.2MB
+harisudhan411/phishing-and-legitimate-urls,url,CC0-1.0,ok 42.0MB
+antonyj453/urldataset,url,DbCL-1.0,ok 23.2MB
+hassaanmustafavi/phishing-urls-dataset,url,CC0-1.0,ok 32.3MB
+sahandnamvar/phishing-url-detection-111k-urls-22-features,url,Attribution 4.0 International (CC BY 4.0),ok 15.2MB
+moutasmtamimi/malicious-url-detection-dataset-enhanced-2026,url,CC-BY-NC-SA-4.0,ok 828.1MB
+zishnusarker/malicious-url-classification-706k,url,CC-BY-SA-4.0,ok 103.6MB
+nhutrinhanna/malicious-and-benign-urls-datasets,url,CC0-1.0,ok 168.2MB
+pilarpieiro/malicious-and-benign-url-dataset,url,apache-2.0,ok 527.9MB
+somanshumahajan/65-lakh-urls-labelled-as-1-and-0,url,MIT,ok 1141.8MB
+quangnguynv/phishtank-phishingurl-valid-dataset,url,apache-2.0,ok 4.1MB
+vishalxtyagi/phishing-website-detector-based-on-url,url,unknown,ok 2.3MB
+dhrubangtalukdar/real-world-phishing-url-classification-data,url,MIT,ok 1.9MB
+marryjanety/phishing-url-dataset-url-and-label,url,unknown,ok 16.4MB
+vibhuyadav0/stealthphisher-phishing-attack-dataset,url,MIT,ok 93.3MB
+alishan07/adversarial-homograph-detection,url,CC-BY-SA-4.0,ok 31.5MB
+sarrazer/url-dataset-iscx-url2016,url,apache-2.0,ok 49.0MB
+golner/phishing-domains,url,apache-2.0,ok 47.4MB
+joebeachcapital/phishing-urls,url,DbCL-1.0,ok 12.3MB
+shawon10/url-classification-dataset-dmoz,url,CC0-1.0,ok 260.5MB
+harshsinghal/random-sample-of-common-crawl-domains-from-2021,url,other,ok 37.1MB
+victusadi/phishing-urls-dataset-with-extracted-features,url,CC0-1.0,ok 16.1MB
+mrwellsdavid/unsw-nb15,net,unknown,ok 0.0MB
+hassan06/nslkdd,net,unknown,ok 0.0MB
+chethuhn/network-intrusion-dataset,net,CC0-1.0,ok 0.0MB
+bcccdatasets/intrusion-detection-datasets-bccc-cic-ids-2017,net,MIT,ok 0.0MB
+solarmainframe/ids-intrusion-csv,net,Attribution 4.0 International (CC BY 4.0),ok 0.0MB
+dhoogla/cicddos2019,net,CC-BY-NC-SA-4.0,ok 0.0MB
+himadri07/ciciot2023,net,MIT,ok 0.0MB
+sohamkatlariwala/ciciot2023-preprocessed-leakage-fixed,net,other,ok 0.0MB
+mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-i,net,,ok 0.0MB
+arnobbhowmik/ton-iot-network-dataset,net,Attribution 4.0 International (CC BY 4.0),ok 0.0MB
+vigneshvenkateswaran/bot-iot,net,unknown,ok 0.0MB
+dhoogla/nfunswnb15v2,net,CC-BY-NC-SA-4.0,ok 0.0MB
+aryashah2k/nfuqnidsv2-network-intrusion-detection-dataset,net,CC0-1.0,ok 0.0MB
+joebeachcapital/real-time-internet-of-things-rt-iot2022,net,Attribution 4.0 International (CC BY 4.0),ok 0.0MB
+amineipad/cic-iomt-dataset-2024,net,MIT,ok 0.0MB
+mryanm/luflow-network-intrusion-detection-data-set,net,CC-BY-SA-4.0,ok 0.0MB
+yasiralifarrukh/unsw-and-cicids2017-labelled-pcap-data,net,DbCL-1.0,ok 0.0MB
+mkashifn/nbaiot-dataset,net,unknown,ok 0.0MB
+ymirsky/network-attack-dataset-kitsune,net,GNU Affero General Public License 3.0,ok 0.0MB
+shashwatwork/android-malware-dataset-for-machine-learning,mal,Attribution 4.0 International (CC BY 4.0),ok 0.0MB

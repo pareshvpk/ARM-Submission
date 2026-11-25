@@ -1,0 +1,15 @@
+# torch 2.15.0+cpu resolves from the CPU index below.
+--extra-index-url https://download.pytorch.org/whl/cpu
+pip==25.3
+torch==2.15.0+cpu
+executorch==1.5.1
+transformers==5.22.1
+tokenizers==0.23.3
+numpy==2.4.6
+PyYAML==6.0.3
+ruamel.yaml==0.18.16
+tomli==2.2.1
+cmake==3.31.10
+sentencepiece==0.2.2
+safetensors==0.8.0
+regex==2026.9.29

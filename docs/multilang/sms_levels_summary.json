@@ -1,0 +1,241 @@
+{
+ "rows": 3012,
+ "by_language": {
+  "Latin": 2696,
+  "Tamil": 313,
+  "Malayalam": 1,
+  "Hindi": 2
+ },
+ "by_sender_class": {
+  "genuine": 521,
+  "promotional": 109,
+  "unknown": 2382
+ },
+ "arms": {
+  "shipped": {
+   "all": {
+    "low": 1504,
+    "medium": 1166,
+    "high": 342
+   },
+   "class:genuine": {
+    "low": 407,
+    "medium": 64,
+    "high": 50
+   },
+   "class:promotional": {
+    "low": 67,
+    "medium": 35,
+    "high": 7
+   },
+   "class:unknown": {
+    "low": 1030,
+    "high": 285,
+    "medium": 1067
+   },
+   "lang:Hindi": {
+    "low": 2
+   },
+   "lang:Hindi|class:genuine": {
+    "low": 1
+   },
+   "lang:Hindi|class:unknown": {
+    "low": 1
+   },
+   "lang:Latin": {
+    "low": 1366,
+    "medium": 1066,
+    "high": 264
+   },
+   "lang:Latin|class:genuine": {
+    "low": 368,
+    "medium": 47,
+    "high": 23
+   },
+   "lang:Latin|class:promotional": {
+    "low": 62,
+    "medium": 35,
+    "high": 7
+   },
+   "lang:Latin|class:unknown": {
+    "low": 936,
+    "high": 234,
+    "medium": 984
+   },
+   "lang:Malayalam": {
+    "low": 1
+   },
+   "lang:Malayalam|class:genuine": {
+    "low": 1
+   },
+   "lang:Tamil": {
+    "high": 78,
+    "medium": 100,
+    "low": 135
+   },
+   "lang:Tamil|class:genuine": {
+    "high": 27,
+    "medium": 17,
+    "low": 37
+   },
+   "lang:Tamil|class:promotional": {
+    "low": 5
+   },
+   "lang:Tamil|class:unknown": {
+    "low": 93,
+    "high": 51,
+    "medium": 83
+   }
+  },
+  "run1": {
+   "all": {
+    "medium": 1385,
+    "low": 1426,
+    "high": 201
+   },
+   "class:genuine": {
+    "medium": 94,
+    "low": 413,
+    "high": 14
+   },
+   "class:promotional": {
+    "low": 61,
+    "medium": 41,
+    "high": 7
+   },
+   "class:unknown": {
+    "low": 952,
+    "medium": 1250,
+    "high": 180
+   },
+   "lang:Hindi": {
+    "low": 2
+   },
+   "lang:Hindi|class:genuine": {
+    "low": 1
+   },
+   "lang:Hindi|class:unknown": {
+    "low": 1
+   },
+   "lang:Latin": {
+    "medium": 1283,
+    "low": 1216,
+    "high": 197
+   },
+   "lang:Latin|class:genuine": {
+    "medium": 70,
+    "low": 354,
+    "high": 14
+   },
+   "lang:Latin|class:promotional": {
+    "low": 57,
+    "medium": 40,
+    "high": 7
+   },
+   "lang:Latin|class:unknown": {
+    "low": 805,
+    "medium": 1173,
+    "high": 176
+   },
+   "lang:Malayalam": {
+    "low": 1
+   },
+   "lang:Malayalam|class:genuine": {
+    "low": 1
+   },
+   "lang:Tamil": {
+    "medium": 102,
+    "low": 207,
+    "high": 4
+   },
+   "lang:Tamil|class:genuine": {
+    "medium": 24,
+    "low": 57
+   },
+   "lang:Tamil|class:promotional": {
+    "low": 4,
+    "medium": 1
+   },
+   "lang:Tamil|class:unknown": {
+    "low": 146,
+    "medium": 77,
+    "high": 4
+   }
+  },
+  "run2": {
+   "all": {
+    "medium": 1540,
+    "low": 1259,
+    "high": 213
+   },
+   "class:genuine": {
+    "medium": 92,
+    "low": 417,
+    "high": 12
+   },
+   "class:promotional": {
+    "medium": 68,
+    "low": 34,
+    "high": 7
+   },
+   "class:unknown": {
+    "low": 808,
+    "medium": 1380,
+    "high": 194
+   },
+   "lang:Hindi": {
+    "low": 2
+   },
+   "lang:Hindi|class:genuine": {
+    "low": 1
+   },
+   "lang:Hindi|class:unknown": {
+    "low": 1
+   },
+   "lang:Latin": {
+    "medium": 1437,
+    "low": 1049,
+    "high": 210
+   },
+   "lang:Latin|class:genuine": {
+    "medium": 69,
+    "low": 357,
+    "high": 12
+   },
+   "lang:Latin|class:promotional": {
+    "medium": 64,
+    "low": 33,
+    "high": 7
+   },
+   "lang:Latin|class:unknown": {
+    "low": 659,
+    "medium": 1304,
+    "high": 191
+   },
+   "lang:Malayalam": {
+    "low": 1
+   },
+   "lang:Malayalam|class:genuine": {
+    "low": 1
+   },
+   "lang:Tamil": {
+    "medium": 103,
+    "low": 207,
+    "high": 3
+   },
+   "lang:Tamil|class:genuine": {
+    "medium": 23,
+    "low": 58
+   },
+   "lang:Tamil|class:promotional": {
+    "low": 1,
+    "medium": 4
+   },
+   "lang:Tamil|class:unknown": {
+    "low": 148,
+    "medium": 76,
+    "high": 3
+   }
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "device": "Galaxy M31 SM-M315F, sms_fp32.pte",
+ "rows": 1220,
+ "overall": {
+  "risky": 620,
+  "caught": 571,
+  "recall_pct": 92.1,
+  "ham": 600,
+  "false_alarms": 29,
+  "false_alarm_pct": 4.8
+ },
+ "Tamil": {
+  "risky": 310,
+  "caught": 288,
+  "recall_pct": 92.9,
+  "ham": 300,
+  "false_alarms": 24,
+  "false_alarm_pct": 8.0
+ },
+ "Hindi": {
+  "risky": 310,
+  "caught": 283,
+  "recall_pct": 91.3,
+  "ham": 300,
+  "false_alarms": 5,
+  "false_alarm_pct": 1.7
+ },
+ "vs_pc_int8": {
+  "alert_differs": 5,
+  "level_differs": 6,
+  "model_label_differs": 9,
+  "risk_abs_diff_median": 0.0007,
+  "risk_abs_diff_max": 0.0976
+ }
+}

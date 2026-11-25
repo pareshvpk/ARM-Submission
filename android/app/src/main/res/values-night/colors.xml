@@ -1,0 +1,10 @@
+<resources>
+    <color name="cue_urgency">#33FFAB91</color>
+    <color name="cue_threat">#33EF9A9A</color>
+    <color name="cue_credential_request">#33FFCC80</color>
+    <color name="cue_payment_request">#33FFD54F</color>
+    <color name="cue_impersonation">#33FFF59D</color>
+    <color name="cue_reward">#33CE93D8</color>
+    <color name="cue_app_install">#3390CAF9</color>
+    <color name="cue_default">#33F48FB1</color>
+</resources>

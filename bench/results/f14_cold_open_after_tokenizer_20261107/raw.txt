@@ -1,0 +1,24 @@
+run1 on          1794032747.468  4930  4930 I PS3Timing: process_start_to_onCreate_ms=18
+run1 on          1794032747.589  4930  4953 I PS3Timing: model_load_model=url ms=67
+run1 on          1794032750.109  4930  4953 I PS3Timing: sms_init_split tokenizer_ms=2172 idmap_ms=147 module_load_ms=57 probe_ms=130 gate_wait_ms=0
+run1 on          1794032750.109  4930  4953 I PS3Timing: model_load_model=sms ms=2508
+run1 on          1794032750.294  4930  4978 I PS3Timing: model_load_model=llama ms=131
+run1 on          1794032755.913  4930  5041 I PS3Timing: prefix_prefill_ms=5619
+run1 on          1794032763.690  4930  4980 I PS3Llama: {"prefill_token_per_sec":57.037,"decode_token_per_sec":9.80392,"prompt_tokens":77,"generated_tokens":63,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1794032755914,"inference_end_ms":1794032763690,"model_execution_start_ms":1794032763581,"model_execution_end_ms":1794032763690,"prompt_eval_end_ms":1794032757264,"first_token_ms":1794032757264,"aggregate_sampling_time_ms":8,"aggregate_model_execution_time_ms":10658,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run1 on          1794032763.694  4930  4980 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1350.0 decode_tok_s=9.6 advice_sha8=ba4a2e17
+run2 on          1794032776.277  5179  5179 I PS3Timing: process_start_to_onCreate_ms=20
+run2 on          1794032776.369  5179  5194 I PS3Timing: model_load_model=url ms=44
+run2 on          1794032779.168  5179  5194 I PS3Timing: sms_init_split tokenizer_ms=2453 idmap_ms=147 module_load_ms=70 probe_ms=122 gate_wait_ms=0
+run2 on          1794032779.168  5179  5194 I PS3Timing: model_load_model=sms ms=2795
+run2 on          1794032779.340  5179  5236 I PS3Timing: model_load_model=llama ms=164
+run2 on          1794032784.770  5179  5320 I PS3Timing: prefix_prefill_ms=5430
+run2 on          1794032793.929  5179  5237 I PS3Llama: {"prefill_token_per_sec":53.9594,"decode_token_per_sec":8.27943,"prompt_tokens":77,"generated_tokens":64,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1794032784771,"inference_end_ms":1794032793928,"model_execution_start_ms":1794032793802,"model_execution_end_ms":1794032793928,"prompt_eval_end_ms":1794032786198,"first_token_ms":1794032786198,"aggregate_sampling_time_ms":16,"aggregate_model_execution_time_ms":12105,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run2 on          1794032793.934  5179  5237 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1427.0 decode_tok_s=8.2 advice_sha8=dc5d2a70
+run3 on          1794032805.031  5423  5423 I PS3Timing: process_start_to_onCreate_ms=20
+run3 on          1794032805.121  5423  5438 I PS3Timing: model_load_model=url ms=41
+run3 on          1794032807.581  5423  5438 I PS3Timing: sms_init_split tokenizer_ms=2164 idmap_ms=146 module_load_ms=44 probe_ms=102 gate_wait_ms=1
+run3 on          1794032807.581  5423  5438 I PS3Timing: model_load_model=sms ms=2457
+run3 on          1794032807.872  5423  5454 I PS3Timing: model_load_model=llama ms=271
+run3 on          1794032813.198  5423  5493 I PS3Timing: prefix_prefill_ms=5324
+run3 on          1794032821.020  5423  5456 I PS3Llama: {"prefill_token_per_sec":57.3343,"decode_token_per_sec":9.72522,"prompt_tokens":77,"generated_tokens":63,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1794032813199,"inference_end_ms":1794032821020,"model_execution_start_ms":1794032820909,"model_execution_end_ms":1794032821020,"prompt_eval_end_ms":1794032814542,"first_token_ms":1794032814542,"aggregate_sampling_time_ms":12,"aggregate_model_execution_time_ms":10687,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+run3 on          1794032821.024  5423  5456 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1343.0 decode_tok_s=9.6 advice_sha8=ba4a2e17

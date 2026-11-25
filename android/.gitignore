@@ -1,0 +1,12 @@
+﻿build/
+app/build/
+.gradle/
+local.properties
+*.jks
+*.keystore
+*.p12
+keystore.properties
+build_test.log
+*.apk
+.idea/
+*.iml

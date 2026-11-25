@@ -1,0 +1,3802 @@
+{
+  "generated": "2026-11-10",
+  "inputs": {
+    "heldout_csv": "C:\\Users\\<user>\\arm-ps3-multilang\\bench\\heldout\\heldout_20261107.csv",
+    "dump_csv": "C:\\Users\\<user>\\arm-ps3-multilang\\bench\\heldout\\calib_20261108\\dump_20261108.csv"
+  },
+  "gate_rule": {
+    "description": "dominant script is not Latin and its share of letters is at least 0.5",
+    "min_share": 0.5,
+    "baseline_script": "Latin",
+    "cap_value": 0.3999,
+    "medium_threshold": 0.4,
+    "url_phishing_threshold": 0.5,
+    "v4_scam_confidence": 0.9
+  },
+  "reproduction": {
+    "method": "real sentinel.fusion.fuse() with FUSION_RULES temporarily set to the dump-time baseline (temperature 1.0, scam weight 1.0, unwanted weight 0.5)",
+    "baseline_params": {
+      "temperature": 1.0,
+      "scam_weight": 1.0,
+      "unwanted_weight": 0.5
+    },
+    "n_rows": 13098,
+    "n_missing_join": 0,
+    "n_level_mismatches": 0,
+    "level_mismatch_percent": 0.0,
+    "limit_percent": 0.5,
+    "passed": true,
+    "n_risk_mismatches": 0,
+    "n_replica_vs_real_fuse_mismatches": 0,
+    "shipped_rules_level_mismatches": 820,
+    "shipped_rules_mismatch_percent": 6.260497785921515,
+    "note": "The dumped fused_level is the pre-calibration baseline recorded in calibrate.BASELINE_PARAMS and calibration.md (temperature 1.0, scam weight 1.0). The shipped rules.json is the calibrated candidate (temperature 3.0, scam weight 0.9), so replaying the shipped parameters against the dump is expected to differ and is reported only for transparency."
+  },
+  "n_total": 13098,
+  "n_gated": 10811,
+  "n_not_gated": 2287,
+  "gated_by_language": {
+    "Assamese": 1000,
+    "Bengali": 997,
+    "Gujarati": 1000,
+    "Hindi": 1000,
+    "Kannada": 975,
+    "Kashmiri": 1000,
+    "Malayalam": 975,
+    "Marathi": 1000,
+    "Odia": 435,
+    "Punjabi": 1000,
+    "Tamil": 454,
+    "Telugu": 975
+  },
+  "gated_by_script": {
+    "Arabic": 1000,
+    "Bengali": 1997,
+    "Devanagari": 2000,
+    "Gujarati": 1000,
+    "Gurmukhi": 1000,
+    "Kannada": 975,
+    "Malayalam": 975,
+    "Odia": 435,
+    "Tamil": 454,
+    "Telugu": 975
+  },
+  "total_by_language": {
+    "Assamese": 1000,
+    "Bengali": 1000,
+    "English": 1209,
+    "Gujarati": 1000,
+    "Hindi": 1000,
+    "Hinglish": 1000,
+    "Kannada": 1000,
+    "Kashmiri": 1000,
+    "Malayalam": 1000,
+    "Marathi": 1000,
+    "Odia": 435,
+    "Punjabi": 1000,
+    "Tamil": 454,
+    "Telugu": 1000
+  },
+  "total_by_script": {
+    "Arabic": 1000,
+    "Bengali": 1997,
+    "Devanagari": 2000,
+    "Gujarati": 1000,
+    "Gurmukhi": 1000,
+    "Kannada": 975,
+    "Latin": 2287,
+    "Malayalam": 975,
+    "Odia": 435,
+    "Tamil": 454,
+    "Telugu": 975
+  },
+  "metrics": {
+    "overall_all_rows": {
+      "V0": {
+        "n": 13098,
+        "risky_recall": 0.7724697596080232,
+        "fpr_ham": 0.14009441145119536,
+        "precision": 0.845766974015088,
+        "f1": 0.8074583866837388,
+        "tp": 5045,
+        "fn": 1486,
+        "fp": 920,
+        "tn": 5647
+      },
+      "V1": {
+        "n": 13098,
+        "risky_recall": 0.6092482008880723,
+        "fpr_ham": 0.01888229023907416,
+        "precision": 0.9697782110650743,
+        "f1": 0.7483543351514013,
+        "tp": 3979,
+        "fn": 2552,
+        "fp": 124,
+        "tn": 6443
+      },
+      "V2": {
+        "n": 13098,
+        "risky_recall": 0.5936303781962946,
+        "fpr_ham": 0.011725293132328308,
+        "precision": 0.9805260495700556,
+        "f1": 0.7395326657129232,
+        "tp": 3877,
+        "fn": 2654,
+        "fp": 77,
+        "tn": 6490
+      },
+      "V3": {
+        "n": 13098,
+        "risky_recall": 0.5280967692543255,
+        "fpr_ham": 0.0024364245469773106,
+        "precision": 0.9953823953823954,
+        "f1": 0.6900760304121649,
+        "tp": 3449,
+        "fn": 3082,
+        "fp": 16,
+        "tn": 6551
+      },
+      "V4": {
+        "n": 13098,
+        "risky_recall": 0.604195375899556,
+        "fpr_ham": 0.01187756966651439,
+        "precision": 0.9806163021868787,
+        "f1": 0.7477025106584556,
+        "tp": 3946,
+        "fn": 2585,
+        "fp": 78,
+        "tn": 6489
+      }
+    },
+    "overall_gated_rows": {
+      "V0": {
+        "n": 10811,
+        "risky_recall": 0.735927465054779,
+        "fpr_ham": 0.16639477977161501,
+        "precision": 0.8093061902783548,
+        "f1": 0.7708745548080728,
+        "tp": 3896,
+        "fn": 1398,
+        "fp": 918,
+        "tn": 4599
+      },
+      "V1": {
+        "n": 10811,
+        "risky_recall": 0.5345674348318852,
+        "fpr_ham": 0.02211346746420156,
+        "precision": 0.9586720867208672,
+        "f1": 0.6863934028619937,
+        "tp": 2830,
+        "fn": 2464,
+        "fp": 122,
+        "tn": 5395
+      },
+      "V2": {
+        "n": 10811,
+        "risky_recall": 0.5153003400075558,
+        "fpr_ham": 0.013594344752582926,
+        "precision": 0.9732429539778809,
+        "f1": 0.673829813511177,
+        "tp": 2728,
+        "fn": 2566,
+        "fp": 75,
+        "tn": 5442
+      },
+      "V3": {
+        "n": 10811,
+        "risky_recall": 0.43445409897997733,
+        "fpr_ham": 0.0025376110204821463,
+        "precision": 0.9939498703543648,
+        "f1": 0.6046267087276552,
+        "tp": 2300,
+        "fn": 2994,
+        "fp": 14,
+        "tn": 5503
+      },
+      "V4": {
+        "n": 10811,
+        "risky_recall": 0.528333962976955,
+        "fpr_ham": 0.013775602682617365,
+        "precision": 0.9735468151757745,
+        "f1": 0.684951634627158,
+        "tp": 2797,
+        "fn": 2497,
+        "fp": 76,
+        "tn": 5441
+      }
+    },
+    "per_language_all_rows": {
+      "V0": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.58,
+          "fpr_ham": 0.288,
+          "precision": 0.6682027649769585,
+          "f1": 0.620985010706638,
+          "tp": 290,
+          "fn": 210,
+          "fp": 144,
+          "tn": 356
+        },
+        "Bengali": {
+          "n": 1000,
+          "risky_recall": 0.792,
+          "fpr_ham": 0.05,
+          "precision": 0.9406175771971497,
+          "f1": 0.8599348534201955,
+          "tp": 396,
+          "fn": 104,
+          "fp": 25,
+          "tn": 475
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9301972685887708,
+          "fpr_ham": 0.0036363636363636364,
+          "precision": 0.9967479674796748,
+          "f1": 0.9623233908948194,
+          "tp": 613,
+          "fn": 46,
+          "fp": 2,
+          "tn": 548
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.574,
+          "fpr_ham": 0.034,
+          "precision": 0.944078947368421,
+          "f1": 0.7139303482587064,
+          "tp": 287,
+          "fn": 213,
+          "fp": 17,
+          "tn": 483
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.95,
+          "fpr_ham": 0.126,
+          "precision": 0.8828996282527881,
+          "f1": 0.9152215799614644,
+          "tp": 475,
+          "fn": 25,
+          "fp": 63,
+          "tn": 437
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.916,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9561586638830899,
+          "tp": 458,
+          "fn": 42,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 1000,
+          "risky_recall": 0.306,
+          "fpr_ham": 0.008,
+          "precision": 0.9745222929936306,
+          "f1": 0.4657534246575343,
+          "tp": 153,
+          "fn": 347,
+          "fp": 4,
+          "tn": 496
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.65,
+          "fpr_ham": 0.032,
+          "precision": 0.9530791788856305,
+          "f1": 0.7728894173602854,
+          "tp": 325,
+          "fn": 175,
+          "fp": 16,
+          "tn": 484
+        },
+        "Malayalam": {
+          "n": 1000,
+          "risky_recall": 0.738,
+          "fpr_ham": 0.202,
+          "precision": 0.7851063829787234,
+          "f1": 0.7608247422680412,
+          "tp": 369,
+          "fn": 131,
+          "fp": 101,
+          "tn": 399
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.908,
+          "fpr_ham": 0.136,
+          "precision": 0.8697318007662835,
+          "f1": 0.8884540117416829,
+          "tp": 454,
+          "fn": 46,
+          "fp": 68,
+          "tn": 432
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.892,
+          "fpr_ham": 0.288,
+          "precision": 0.7559322033898305,
+          "f1": 0.818348623853211,
+          "tp": 446,
+          "fn": 54,
+          "fp": 144,
+          "tn": 356
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.967032967032967,
+          "fpr_ham": 0.35661764705882354,
+          "precision": 0.6446886446886447,
+          "f1": 0.7736263736263737,
+          "tp": 176,
+          "fn": 6,
+          "fp": 97,
+          "tn": 175
+        },
+        "Telugu": {
+          "n": 1000,
+          "risky_recall": 0.886,
+          "fpr_ham": 0.478,
+          "precision": 0.6495601173020528,
+          "f1": 0.7495769881556684,
+          "tp": 443,
+          "fn": 57,
+          "fp": 239,
+          "tn": 261
+        }
+      },
+      "V1": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.048,
+          "precision": 0.8620689655172413,
+          "f1": 0.4451038575667655,
+          "tp": 150,
+          "fn": 350,
+          "fp": 24,
+          "tn": 476
+        },
+        "Bengali": {
+          "n": 1000,
+          "risky_recall": 0.618,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7639060568603214,
+          "tp": 309,
+          "fn": 191,
+          "fp": 0,
+          "tn": 500
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9301972685887708,
+          "fpr_ham": 0.0036363636363636364,
+          "precision": 0.9967479674796748,
+          "f1": 0.9623233908948194,
+          "tp": 613,
+          "fn": 46,
+          "fp": 2,
+          "tn": 548
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.496,
+          "fpr_ham": 0.004,
+          "precision": 0.992,
+          "f1": 0.6613333333333333,
+          "tp": 248,
+          "fn": 252,
+          "fp": 2,
+          "tn": 498
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.948,
+          "fpr_ham": 0.124,
+          "precision": 0.8843283582089553,
+          "f1": 0.915057915057915,
+          "tp": 474,
+          "fn": 26,
+          "fp": 62,
+          "tn": 438
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.916,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9561586638830899,
+          "tp": 458,
+          "fn": 42,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4615384615384615,
+          "tp": 150,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4615384615384615,
+          "tp": 150,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.584,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7373737373737373,
+          "tp": 292,
+          "fn": 208,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.61,
+          "fpr_ham": 0.014,
+          "precision": 0.9775641025641025,
+          "f1": 0.7512315270935961,
+          "tp": 305,
+          "fn": 195,
+          "fp": 7,
+          "tn": 493
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 1000,
+          "risky_recall": 0.51,
+          "fpr_ham": 0.054,
+          "precision": 0.9042553191489362,
+          "f1": 0.6521739130434783,
+          "tp": 255,
+          "fn": 245,
+          "fp": 27,
+          "tn": 473
+        }
+      },
+      "V2": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.032,
+          "precision": 0.9036144578313253,
+          "f1": 0.45045045045045046,
+          "tp": 150,
+          "fn": 350,
+          "fp": 16,
+          "tn": 484
+        },
+        "Bengali": {
+          "n": 1000,
+          "risky_recall": 0.58,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7341772151898733,
+          "tp": 290,
+          "fn": 210,
+          "fp": 0,
+          "tn": 500
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9301972685887708,
+          "fpr_ham": 0.0036363636363636364,
+          "precision": 0.9967479674796748,
+          "f1": 0.9623233908948194,
+          "tp": 613,
+          "fn": 46,
+          "fp": 2,
+          "tn": 548
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.49,
+          "fpr_ham": 0.004,
+          "precision": 0.9919028340080972,
+          "f1": 0.6559571619812584,
+          "tp": 245,
+          "fn": 255,
+          "fp": 2,
+          "tn": 498
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.914,
+          "fpr_ham": 0.1,
+          "precision": 0.9013806706114399,
+          "f1": 0.9076464746772592,
+          "tp": 457,
+          "fn": 43,
+          "fp": 50,
+          "tn": 450
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.916,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9561586638830899,
+          "tp": 458,
+          "fn": 42,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4615384615384615,
+          "tp": 150,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4615384615384615,
+          "tp": 150,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.57,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7261146496815287,
+          "tp": 285,
+          "fn": 215,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8105263157894737,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8953488372093024,
+          "tp": 154,
+          "fn": 36,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.578,
+          "fpr_ham": 0.006,
+          "precision": 0.9897260273972602,
+          "f1": 0.7297979797979798,
+          "tp": 289,
+          "fn": 211,
+          "fp": 3,
+          "tn": 497
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 1000,
+          "risky_recall": 0.442,
+          "fpr_ham": 0.008,
+          "precision": 0.9822222222222222,
+          "f1": 0.6096551724137931,
+          "tp": 221,
+          "fn": 279,
+          "fp": 4,
+          "tn": 496
+        }
+      },
+      "V3": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4615384615384615,
+          "tp": 150,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Bengali": {
+          "n": 1000,
+          "risky_recall": 0.442,
+          "fpr_ham": 0.014,
+          "precision": 0.9692982456140351,
+          "f1": 0.6071428571428571,
+          "tp": 221,
+          "fn": 279,
+          "fp": 7,
+          "tn": 493
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9301972685887708,
+          "fpr_ham": 0.0036363636363636364,
+          "precision": 0.9967479674796748,
+          "f1": 0.9623233908948194,
+          "tp": 613,
+          "fn": 46,
+          "fp": 2,
+          "tn": 548
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.464,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6338797814207651,
+          "tp": 232,
+          "fn": 268,
+          "fp": 0,
+          "tn": 500
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.448,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6187845303867404,
+          "tp": 224,
+          "fn": 276,
+          "fp": 0,
+          "tn": 500
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.916,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9561586638830899,
+          "tp": 458,
+          "fn": 42,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 1000,
+          "risky_recall": 0.304,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4662576687116564,
+          "tp": 152,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.006,
+          "precision": 0.9878542510121457,
+          "f1": 0.6532797858099063,
+          "tp": 244,
+          "fn": 256,
+          "fp": 3,
+          "tn": 497
+        },
+        "Malayalam": {
+          "n": 1000,
+          "risky_recall": 0.396,
+          "fpr_ham": 0.002,
+          "precision": 0.9949748743718593,
+          "f1": 0.5665236051502146,
+          "tp": 198,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.49,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6577181208053691,
+          "tp": 245,
+          "fn": 255,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.6052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7540983606557378,
+          "tp": 115,
+          "fn": 75,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6559139784946236,
+          "tp": 244,
+          "fn": 256,
+          "fp": 0,
+          "tn": 500
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.5934065934065934,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9818181818181818,
+          "f1": 0.7397260273972602,
+          "tp": 108,
+          "fn": 74,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 1000,
+          "risky_recall": 0.49,
+          "fpr_ham": 0.002,
+          "precision": 0.9959349593495935,
+          "f1": 0.6568364611260055,
+          "tp": 245,
+          "fn": 255,
+          "fp": 1,
+          "tn": 499
+        }
+      },
+      "V4": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.022,
+          "precision": 0.9316770186335404,
+          "f1": 0.453857791225416,
+          "tp": 150,
+          "fn": 350,
+          "fp": 11,
+          "tn": 489
+        },
+        "Bengali": {
+          "n": 1000,
+          "risky_recall": 0.594,
+          "fpr_ham": 0.014,
+          "precision": 0.9769736842105263,
+          "f1": 0.7388059701492536,
+          "tp": 297,
+          "fn": 203,
+          "fp": 7,
+          "tn": 493
+        },
+        "English": {
+          "n": 1209,
+          "risky_recall": 0.9301972685887708,
+          "fpr_ham": 0.0036363636363636364,
+          "precision": 0.9967479674796748,
+          "f1": 0.9623233908948194,
+          "tp": 613,
+          "fn": 46,
+          "fp": 2,
+          "tn": 548
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.004,
+          "precision": 0.991869918699187,
+          "f1": 0.6541554959785523,
+          "tp": 244,
+          "fn": 256,
+          "fp": 2,
+          "tn": 498
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.888,
+          "fpr_ham": 0.09,
+          "precision": 0.9079754601226994,
+          "f1": 0.897876643073812,
+          "tp": 444,
+          "fn": 56,
+          "fp": 45,
+          "tn": 455
+        },
+        "Hinglish": {
+          "n": 1000,
+          "risky_recall": 0.916,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9561586638830899,
+          "tp": 458,
+          "fn": 42,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 1000,
+          "risky_recall": 0.304,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4662576687116564,
+          "tp": 152,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.516,
+          "fpr_ham": 0.006,
+          "precision": 0.9885057471264368,
+          "f1": 0.6780551905387647,
+          "tp": 258,
+          "fn": 242,
+          "fp": 3,
+          "tn": 497
+        },
+        "Malayalam": {
+          "n": 1000,
+          "risky_recall": 0.396,
+          "fpr_ham": 0.002,
+          "precision": 0.9949748743718593,
+          "f1": 0.5665236051502146,
+          "tp": 198,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.56,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.717948717948718,
+          "tp": 280,
+          "fn": 220,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8921282798833818,
+          "tp": 153,
+          "fn": 37,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.54,
+          "fpr_ham": 0.004,
+          "precision": 0.9926470588235294,
+          "f1": 0.6994818652849741,
+          "tp": 270,
+          "fn": 230,
+          "fp": 2,
+          "tn": 498
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9878787878787879,
+          "f1": 0.9394812680115274,
+          "tp": 163,
+          "fn": 19,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 1000,
+          "risky_recall": 0.532,
+          "fpr_ham": 0.006,
+          "precision": 0.9888475836431226,
+          "f1": 0.6918075422626788,
+          "tp": 266,
+          "fn": 234,
+          "fp": 3,
+          "tn": 497
+        }
+      }
+    },
+    "per_language_gated_rows": {
+      "V0": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.58,
+          "fpr_ham": 0.288,
+          "precision": 0.6682027649769585,
+          "f1": 0.620985010706638,
+          "tp": 290,
+          "fn": 210,
+          "fp": 144,
+          "tn": 356
+        },
+        "Bengali": {
+          "n": 997,
+          "risky_recall": 0.7907444668008048,
+          "fpr_ham": 0.05,
+          "precision": 0.9401913875598086,
+          "f1": 0.8590163934426229,
+          "tp": 393,
+          "fn": 104,
+          "fp": 25,
+          "tn": 475
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.574,
+          "fpr_ham": 0.034,
+          "precision": 0.944078947368421,
+          "f1": 0.7139303482587064,
+          "tp": 287,
+          "fn": 213,
+          "fp": 17,
+          "tn": 483
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.95,
+          "fpr_ham": 0.126,
+          "precision": 0.8828996282527881,
+          "f1": 0.9152215799614644,
+          "tp": 475,
+          "fn": 25,
+          "fp": 63,
+          "tn": 437
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2694736842105263,
+          "fpr_ham": 0.008,
+          "precision": 0.9696969696969697,
+          "f1": 0.4217462932454696,
+          "tp": 128,
+          "fn": 347,
+          "fp": 4,
+          "tn": 496
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.65,
+          "fpr_ham": 0.032,
+          "precision": 0.9530791788856305,
+          "f1": 0.7728894173602854,
+          "tp": 325,
+          "fn": 175,
+          "fp": 16,
+          "tn": 484
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.7242105263157895,
+          "fpr_ham": 0.202,
+          "precision": 0.7730337078651686,
+          "f1": 0.7478260869565218,
+          "tp": 344,
+          "fn": 131,
+          "fp": 101,
+          "tn": 399
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.908,
+          "fpr_ham": 0.136,
+          "precision": 0.8697318007662835,
+          "f1": 0.8884540117416829,
+          "tp": 454,
+          "fn": 46,
+          "fp": 68,
+          "tn": 432
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.892,
+          "fpr_ham": 0.288,
+          "precision": 0.7559322033898305,
+          "f1": 0.818348623853211,
+          "tp": 446,
+          "fn": 54,
+          "fp": 144,
+          "tn": 356
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.967032967032967,
+          "fpr_ham": 0.35661764705882354,
+          "precision": 0.6446886446886447,
+          "f1": 0.7736263736263737,
+          "tp": 176,
+          "fn": 6,
+          "fp": 97,
+          "tn": 175
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.88,
+          "fpr_ham": 0.478,
+          "precision": 0.6362252663622526,
+          "f1": 0.7385159010600707,
+          "tp": 418,
+          "fn": 57,
+          "fp": 239,
+          "tn": 261
+        }
+      },
+      "V1": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.048,
+          "precision": 0.8620689655172413,
+          "f1": 0.4451038575667655,
+          "tp": 150,
+          "fn": 350,
+          "fp": 24,
+          "tn": 476
+        },
+        "Bengali": {
+          "n": 997,
+          "risky_recall": 0.6156941649899397,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7621419676214197,
+          "tp": 306,
+          "fn": 191,
+          "fp": 0,
+          "tn": 500
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.496,
+          "fpr_ham": 0.004,
+          "precision": 0.992,
+          "f1": 0.6613333333333333,
+          "tp": 248,
+          "fn": 252,
+          "fp": 2,
+          "tn": 498
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.948,
+          "fpr_ham": 0.124,
+          "precision": 0.8843283582089553,
+          "f1": 0.915057915057915,
+          "tp": 474,
+          "fn": 26,
+          "fp": 62,
+          "tn": 438
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.584,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7373737373737373,
+          "tp": 292,
+          "fn": 208,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.61,
+          "fpr_ham": 0.014,
+          "precision": 0.9775641025641025,
+          "f1": 0.7512315270935961,
+          "tp": 305,
+          "fn": 195,
+          "fp": 7,
+          "tn": 493
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4842105263157895,
+          "fpr_ham": 0.054,
+          "precision": 0.8949416342412452,
+          "f1": 0.6284153005464481,
+          "tp": 230,
+          "fn": 245,
+          "fp": 27,
+          "tn": 473
+        }
+      },
+      "V2": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.032,
+          "precision": 0.9036144578313253,
+          "f1": 0.45045045045045046,
+          "tp": 150,
+          "fn": 350,
+          "fp": 16,
+          "tn": 484
+        },
+        "Bengali": {
+          "n": 997,
+          "risky_recall": 0.5774647887323944,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7321428571428571,
+          "tp": 287,
+          "fn": 210,
+          "fp": 0,
+          "tn": 500
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.49,
+          "fpr_ham": 0.004,
+          "precision": 0.9919028340080972,
+          "f1": 0.6559571619812584,
+          "tp": 245,
+          "fn": 255,
+          "fp": 2,
+          "tn": 498
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.914,
+          "fpr_ham": 0.1,
+          "precision": 0.9013806706114399,
+          "f1": 0.9076464746772592,
+          "tp": 457,
+          "fn": 43,
+          "fp": 50,
+          "tn": 450
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.57,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7261146496815287,
+          "tp": 285,
+          "fn": 215,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8105263157894737,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8953488372093024,
+          "tp": 154,
+          "fn": 36,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.578,
+          "fpr_ham": 0.006,
+          "precision": 0.9897260273972602,
+          "f1": 0.7297979797979798,
+          "tp": 289,
+          "fn": 211,
+          "fp": 3,
+          "tn": 497
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4126315789473684,
+          "fpr_ham": 0.008,
+          "precision": 0.98,
+          "f1": 0.5807407407407407,
+          "tp": 196,
+          "fn": 279,
+          "fp": 4,
+          "tn": 496
+        }
+      },
+      "V3": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4615384615384615,
+          "tp": 150,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Bengali": {
+          "n": 997,
+          "risky_recall": 0.4386317907444668,
+          "fpr_ham": 0.014,
+          "precision": 0.9688888888888889,
+          "f1": 0.6038781163434903,
+          "tp": 218,
+          "fn": 279,
+          "fp": 7,
+          "tn": 493
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.464,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6338797814207651,
+          "tp": 232,
+          "fn": 268,
+          "fp": 0,
+          "tn": 500
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.448,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6187845303867404,
+          "tp": 224,
+          "fn": 276,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2673684210526316,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4219269102990033,
+          "tp": 127,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.006,
+          "precision": 0.9878542510121457,
+          "f1": 0.6532797858099063,
+          "tp": 244,
+          "fn": 256,
+          "fp": 3,
+          "tn": 497
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.3642105263157895,
+          "fpr_ham": 0.002,
+          "precision": 0.9942528735632183,
+          "f1": 0.5331278890600925,
+          "tp": 173,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.49,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6577181208053691,
+          "tp": 245,
+          "fn": 255,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.6052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7540983606557378,
+          "tp": 115,
+          "fn": 75,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6559139784946236,
+          "tp": 244,
+          "fn": 256,
+          "fp": 0,
+          "tn": 500
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.5934065934065934,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9818181818181818,
+          "f1": 0.7397260273972602,
+          "tp": 108,
+          "fn": 74,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4631578947368421,
+          "fpr_ham": 0.002,
+          "precision": 0.995475113122172,
+          "f1": 0.632183908045977,
+          "tp": 220,
+          "fn": 255,
+          "fp": 1,
+          "tn": 499
+        }
+      },
+      "V4": {
+        "Assamese": {
+          "n": 1000,
+          "risky_recall": 0.3,
+          "fpr_ham": 0.022,
+          "precision": 0.9316770186335404,
+          "f1": 0.453857791225416,
+          "tp": 150,
+          "fn": 350,
+          "fp": 11,
+          "tn": 489
+        },
+        "Bengali": {
+          "n": 997,
+          "risky_recall": 0.5915492957746479,
+          "fpr_ham": 0.014,
+          "precision": 0.9767441860465116,
+          "f1": 0.7368421052631579,
+          "tp": 294,
+          "fn": 203,
+          "fp": 7,
+          "tn": 493
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.004,
+          "precision": 0.991869918699187,
+          "f1": 0.6541554959785523,
+          "tp": 244,
+          "fn": 256,
+          "fp": 2,
+          "tn": 498
+        },
+        "Hindi": {
+          "n": 1000,
+          "risky_recall": 0.888,
+          "fpr_ham": 0.09,
+          "precision": 0.9079754601226994,
+          "f1": 0.897876643073812,
+          "tp": 444,
+          "fn": 56,
+          "fp": 45,
+          "tn": 455
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2673684210526316,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4219269102990033,
+          "tp": 127,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kashmiri": {
+          "n": 1000,
+          "risky_recall": 0.516,
+          "fpr_ham": 0.006,
+          "precision": 0.9885057471264368,
+          "f1": 0.6780551905387647,
+          "tp": 258,
+          "fn": 242,
+          "fp": 3,
+          "tn": 497
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.3642105263157895,
+          "fpr_ham": 0.002,
+          "precision": 0.9942528735632183,
+          "f1": 0.5331278890600925,
+          "tp": 173,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Marathi": {
+          "n": 1000,
+          "risky_recall": 0.56,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.717948717948718,
+          "tp": 280,
+          "fn": 220,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8921282798833818,
+          "tp": 153,
+          "fn": 37,
+          "fp": 0,
+          "tn": 245
+        },
+        "Punjabi": {
+          "n": 1000,
+          "risky_recall": 0.54,
+          "fpr_ham": 0.004,
+          "precision": 0.9926470588235294,
+          "f1": 0.6994818652849741,
+          "tp": 270,
+          "fn": 230,
+          "fp": 2,
+          "tn": 498
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9878787878787879,
+          "f1": 0.9394812680115274,
+          "tp": 163,
+          "fn": 19,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.5073684210526316,
+          "fpr_ham": 0.006,
+          "precision": 0.9877049180327869,
+          "f1": 0.6703755215577191,
+          "tp": 241,
+          "fn": 234,
+          "fp": 3,
+          "tn": 497
+        }
+      }
+    },
+    "per_script_all_rows": {
+      "V0": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.65,
+          "fpr_ham": 0.032,
+          "precision": 0.9530791788856305,
+          "f1": 0.7728894173602854,
+          "tp": 325,
+          "fn": 175,
+          "fp": 16,
+          "tn": 484
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.6850551654964895,
+          "fpr_ham": 0.169,
+          "precision": 0.8016431924882629,
+          "f1": 0.7387777176852353,
+          "tp": 683,
+          "fn": 314,
+          "fp": 169,
+          "tn": 831
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.929,
+          "fpr_ham": 0.131,
+          "precision": 0.8764150943396226,
+          "f1": 0.9019417475728154,
+          "tp": 929,
+          "fn": 71,
+          "fp": 131,
+          "tn": 869
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.574,
+          "fpr_ham": 0.034,
+          "precision": 0.944078947368421,
+          "f1": 0.7139303482587064,
+          "tp": 287,
+          "fn": 213,
+          "fp": 17,
+          "tn": 483
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.892,
+          "fpr_ham": 0.288,
+          "precision": 0.7559322033898305,
+          "f1": 0.818348623853211,
+          "tp": 446,
+          "fn": 54,
+          "fp": 144,
+          "tn": 356
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2694736842105263,
+          "fpr_ham": 0.008,
+          "precision": 0.9696969696969697,
+          "f1": 0.4217462932454696,
+          "tp": 128,
+          "fn": 347,
+          "fp": 4,
+          "tn": 496
+        },
+        "Latin": {
+          "n": 2287,
+          "risky_recall": 0.9288601455133387,
+          "fpr_ham": 0.0019047619047619048,
+          "precision": 0.998262380538662,
+          "f1": 0.9623115577889446,
+          "tp": 1149,
+          "fn": 88,
+          "fp": 2,
+          "tn": 1048
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.7242105263157895,
+          "fpr_ham": 0.202,
+          "precision": 0.7730337078651686,
+          "f1": 0.7478260869565218,
+          "tp": 344,
+          "fn": 131,
+          "fp": 101,
+          "tn": 399
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.967032967032967,
+          "fpr_ham": 0.35661764705882354,
+          "precision": 0.6446886446886447,
+          "f1": 0.7736263736263737,
+          "tp": 176,
+          "fn": 6,
+          "fp": 97,
+          "tn": 175
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.88,
+          "fpr_ham": 0.478,
+          "precision": 0.6362252663622526,
+          "f1": 0.7385159010600707,
+          "tp": 418,
+          "fn": 57,
+          "fp": 239,
+          "tn": 261
+        }
+      },
+      "V1": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.4573721163490471,
+          "fpr_ham": 0.024,
+          "precision": 0.95,
+          "f1": 0.6174678402166554,
+          "tp": 456,
+          "fn": 541,
+          "fp": 24,
+          "tn": 976
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.766,
+          "fpr_ham": 0.062,
+          "precision": 0.9251207729468599,
+          "f1": 0.8380743982494528,
+          "tp": 766,
+          "fn": 234,
+          "fp": 62,
+          "tn": 938
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.496,
+          "fpr_ham": 0.004,
+          "precision": 0.992,
+          "f1": 0.6613333333333333,
+          "tp": 248,
+          "fn": 252,
+          "fp": 2,
+          "tn": 498
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.61,
+          "fpr_ham": 0.014,
+          "precision": 0.9775641025641025,
+          "f1": 0.7512315270935961,
+          "tp": 305,
+          "fn": 195,
+          "fp": 7,
+          "tn": 493
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Latin": {
+          "n": 2287,
+          "risky_recall": 0.9288601455133387,
+          "fpr_ham": 0.0019047619047619048,
+          "precision": 0.998262380538662,
+          "f1": 0.9623115577889446,
+          "tp": 1149,
+          "fn": 88,
+          "fp": 2,
+          "tn": 1048
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4842105263157895,
+          "fpr_ham": 0.054,
+          "precision": 0.8949416342412452,
+          "f1": 0.6284153005464481,
+          "tp": 230,
+          "fn": 245,
+          "fp": 27,
+          "tn": 473
+        }
+      },
+      "V2": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.4383149448345035,
+          "fpr_ham": 0.016,
+          "precision": 0.9646799116997793,
+          "f1": 0.6027586206896552,
+          "tp": 437,
+          "fn": 560,
+          "fp": 16,
+          "tn": 984
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.742,
+          "fpr_ham": 0.05,
+          "precision": 0.9368686868686869,
+          "f1": 0.8281249999999999,
+          "tp": 742,
+          "fn": 258,
+          "fp": 50,
+          "tn": 950
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.49,
+          "fpr_ham": 0.004,
+          "precision": 0.9919028340080972,
+          "f1": 0.6559571619812584,
+          "tp": 245,
+          "fn": 255,
+          "fp": 2,
+          "tn": 498
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.578,
+          "fpr_ham": 0.006,
+          "precision": 0.9897260273972602,
+          "f1": 0.7297979797979798,
+          "tp": 289,
+          "fn": 211,
+          "fp": 3,
+          "tn": 497
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Latin": {
+          "n": 2287,
+          "risky_recall": 0.9288601455133387,
+          "fpr_ham": 0.0019047619047619048,
+          "precision": 0.998262380538662,
+          "f1": 0.9623115577889446,
+          "tp": 1149,
+          "fn": 88,
+          "fp": 2,
+          "tn": 1048
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8105263157894737,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8953488372093024,
+          "tp": 154,
+          "fn": 36,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4126315789473684,
+          "fpr_ham": 0.008,
+          "precision": 0.98,
+          "f1": 0.5807407407407407,
+          "tp": 196,
+          "fn": 279,
+          "fp": 4,
+          "tn": 496
+        }
+      },
+      "V3": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.006,
+          "precision": 0.9878542510121457,
+          "f1": 0.6532797858099063,
+          "tp": 244,
+          "fn": 256,
+          "fp": 3,
+          "tn": 497
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.3691073219658977,
+          "fpr_ham": 0.007,
+          "precision": 0.9813333333333333,
+          "f1": 0.5364431486880467,
+          "tp": 368,
+          "fn": 629,
+          "fp": 7,
+          "tn": 993
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.469,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6385296119809394,
+          "tp": 469,
+          "fn": 531,
+          "fp": 0,
+          "tn": 1000
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.464,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6338797814207651,
+          "tp": 232,
+          "fn": 268,
+          "fp": 0,
+          "tn": 500
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6559139784946236,
+          "tp": 244,
+          "fn": 256,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2673684210526316,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4219269102990033,
+          "tp": 127,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Latin": {
+          "n": 2287,
+          "risky_recall": 0.9288601455133387,
+          "fpr_ham": 0.0019047619047619048,
+          "precision": 0.998262380538662,
+          "f1": 0.9623115577889446,
+          "tp": 1149,
+          "fn": 88,
+          "fp": 2,
+          "tn": 1048
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.3642105263157895,
+          "fpr_ham": 0.002,
+          "precision": 0.9942528735632183,
+          "f1": 0.5331278890600925,
+          "tp": 173,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.6052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7540983606557378,
+          "tp": 115,
+          "fn": 75,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.5934065934065934,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9818181818181818,
+          "f1": 0.7397260273972602,
+          "tp": 108,
+          "fn": 74,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4631578947368421,
+          "fpr_ham": 0.002,
+          "precision": 0.995475113122172,
+          "f1": 0.632183908045977,
+          "tp": 220,
+          "fn": 255,
+          "fp": 1,
+          "tn": 499
+        }
+      },
+      "V4": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.516,
+          "fpr_ham": 0.006,
+          "precision": 0.9885057471264368,
+          "f1": 0.6780551905387647,
+          "tp": 258,
+          "fn": 242,
+          "fp": 3,
+          "tn": 497
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.4453360080240722,
+          "fpr_ham": 0.018,
+          "precision": 0.961038961038961,
+          "f1": 0.608636052090473,
+          "tp": 444,
+          "fn": 553,
+          "fp": 18,
+          "tn": 982
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.724,
+          "fpr_ham": 0.045,
+          "precision": 0.94148244473342,
+          "f1": 0.8185415488976824,
+          "tp": 724,
+          "fn": 276,
+          "fp": 45,
+          "tn": 955
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.004,
+          "precision": 0.991869918699187,
+          "f1": 0.6541554959785523,
+          "tp": 244,
+          "fn": 256,
+          "fp": 2,
+          "tn": 498
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.54,
+          "fpr_ham": 0.004,
+          "precision": 0.9926470588235294,
+          "f1": 0.6994818652849741,
+          "tp": 270,
+          "fn": 230,
+          "fp": 2,
+          "tn": 498
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2673684210526316,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4219269102990033,
+          "tp": 127,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Latin": {
+          "n": 2287,
+          "risky_recall": 0.9288601455133387,
+          "fpr_ham": 0.0019047619047619048,
+          "precision": 0.998262380538662,
+          "f1": 0.9623115577889446,
+          "tp": 1149,
+          "fn": 88,
+          "fp": 2,
+          "tn": 1048
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.3642105263157895,
+          "fpr_ham": 0.002,
+          "precision": 0.9942528735632183,
+          "f1": 0.5331278890600925,
+          "tp": 173,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8921282798833818,
+          "tp": 153,
+          "fn": 37,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9878787878787879,
+          "f1": 0.9394812680115274,
+          "tp": 163,
+          "fn": 19,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.5073684210526316,
+          "fpr_ham": 0.006,
+          "precision": 0.9877049180327869,
+          "f1": 0.6703755215577191,
+          "tp": 241,
+          "fn": 234,
+          "fp": 3,
+          "tn": 497
+        }
+      }
+    },
+    "per_script_gated_rows": {
+      "V0": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.65,
+          "fpr_ham": 0.032,
+          "precision": 0.9530791788856305,
+          "f1": 0.7728894173602854,
+          "tp": 325,
+          "fn": 175,
+          "fp": 16,
+          "tn": 484
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.6850551654964895,
+          "fpr_ham": 0.169,
+          "precision": 0.8016431924882629,
+          "f1": 0.7387777176852353,
+          "tp": 683,
+          "fn": 314,
+          "fp": 169,
+          "tn": 831
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.929,
+          "fpr_ham": 0.131,
+          "precision": 0.8764150943396226,
+          "f1": 0.9019417475728154,
+          "tp": 929,
+          "fn": 71,
+          "fp": 131,
+          "tn": 869
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.574,
+          "fpr_ham": 0.034,
+          "precision": 0.944078947368421,
+          "f1": 0.7139303482587064,
+          "tp": 287,
+          "fn": 213,
+          "fp": 17,
+          "tn": 483
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.892,
+          "fpr_ham": 0.288,
+          "precision": 0.7559322033898305,
+          "f1": 0.818348623853211,
+          "tp": 446,
+          "fn": 54,
+          "fp": 144,
+          "tn": 356
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2694736842105263,
+          "fpr_ham": 0.008,
+          "precision": 0.9696969696969697,
+          "f1": 0.4217462932454696,
+          "tp": 128,
+          "fn": 347,
+          "fp": 4,
+          "tn": 496
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.7242105263157895,
+          "fpr_ham": 0.202,
+          "precision": 0.7730337078651686,
+          "f1": 0.7478260869565218,
+          "tp": 344,
+          "fn": 131,
+          "fp": 101,
+          "tn": 399
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.967032967032967,
+          "fpr_ham": 0.35661764705882354,
+          "precision": 0.6446886446886447,
+          "f1": 0.7736263736263737,
+          "tp": 176,
+          "fn": 6,
+          "fp": 97,
+          "tn": 175
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.88,
+          "fpr_ham": 0.478,
+          "precision": 0.6362252663622526,
+          "f1": 0.7385159010600707,
+          "tp": 418,
+          "fn": 57,
+          "fp": 239,
+          "tn": 261
+        }
+      },
+      "V1": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.4573721163490471,
+          "fpr_ham": 0.024,
+          "precision": 0.95,
+          "f1": 0.6174678402166554,
+          "tp": 456,
+          "fn": 541,
+          "fp": 24,
+          "tn": 976
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.766,
+          "fpr_ham": 0.062,
+          "precision": 0.9251207729468599,
+          "f1": 0.8380743982494528,
+          "tp": 766,
+          "fn": 234,
+          "fp": 62,
+          "tn": 938
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.496,
+          "fpr_ham": 0.004,
+          "precision": 0.992,
+          "f1": 0.6613333333333333,
+          "tp": 248,
+          "fn": 252,
+          "fp": 2,
+          "tn": 498
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.61,
+          "fpr_ham": 0.014,
+          "precision": 0.9775641025641025,
+          "f1": 0.7512315270935961,
+          "tp": 305,
+          "fn": 195,
+          "fp": 7,
+          "tn": 493
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8421052631578947,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9142857142857143,
+          "tp": 160,
+          "fn": 30,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4842105263157895,
+          "fpr_ham": 0.054,
+          "precision": 0.8949416342412452,
+          "f1": 0.6284153005464481,
+          "tp": 230,
+          "fn": 245,
+          "fp": 27,
+          "tn": 473
+        }
+      },
+      "V2": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.504,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6702127659574468,
+          "tp": 252,
+          "fn": 248,
+          "fp": 0,
+          "tn": 500
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.4383149448345035,
+          "fpr_ham": 0.016,
+          "precision": 0.9646799116997793,
+          "f1": 0.6027586206896552,
+          "tp": 437,
+          "fn": 560,
+          "fp": 16,
+          "tn": 984
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.742,
+          "fpr_ham": 0.05,
+          "precision": 0.9368686868686869,
+          "f1": 0.8281249999999999,
+          "tp": 742,
+          "fn": 258,
+          "fp": 50,
+          "tn": 950
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.49,
+          "fpr_ham": 0.004,
+          "precision": 0.9919028340080972,
+          "f1": 0.6559571619812584,
+          "tp": 245,
+          "fn": 255,
+          "fp": 2,
+          "tn": 498
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.578,
+          "fpr_ham": 0.006,
+          "precision": 0.9897260273972602,
+          "f1": 0.7297979797979798,
+          "tp": 289,
+          "fn": 211,
+          "fp": 3,
+          "tn": 497
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.2631578947368421,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4166666666666667,
+          "tp": 125,
+          "fn": 350,
+          "fp": 0,
+          "tn": 500
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8105263157894737,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8953488372093024,
+          "tp": 154,
+          "fn": 36,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.9449275362318841,
+          "tp": 163,
+          "fn": 19,
+          "fp": 0,
+          "tn": 272
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4126315789473684,
+          "fpr_ham": 0.008,
+          "precision": 0.98,
+          "f1": 0.5807407407407407,
+          "tp": 196,
+          "fn": 279,
+          "fp": 4,
+          "tn": 496
+        }
+      },
+      "V3": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.006,
+          "precision": 0.9878542510121457,
+          "f1": 0.6532797858099063,
+          "tp": 244,
+          "fn": 256,
+          "fp": 3,
+          "tn": 497
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.3691073219658977,
+          "fpr_ham": 0.007,
+          "precision": 0.9813333333333333,
+          "f1": 0.5364431486880467,
+          "tp": 368,
+          "fn": 629,
+          "fp": 7,
+          "tn": 993
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.469,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6385296119809394,
+          "tp": 469,
+          "fn": 531,
+          "fp": 0,
+          "tn": 1000
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.464,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6338797814207651,
+          "tp": 232,
+          "fn": 268,
+          "fp": 0,
+          "tn": 500
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.6559139784946236,
+          "tp": 244,
+          "fn": 256,
+          "fp": 0,
+          "tn": 500
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2673684210526316,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4219269102990033,
+          "tp": 127,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.3642105263157895,
+          "fpr_ham": 0.002,
+          "precision": 0.9942528735632183,
+          "f1": 0.5331278890600925,
+          "tp": 173,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.6052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.7540983606557378,
+          "tp": 115,
+          "fn": 75,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.5934065934065934,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9818181818181818,
+          "f1": 0.7397260273972602,
+          "tp": 108,
+          "fn": 74,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.4631578947368421,
+          "fpr_ham": 0.002,
+          "precision": 0.995475113122172,
+          "f1": 0.632183908045977,
+          "tp": 220,
+          "fn": 255,
+          "fp": 1,
+          "tn": 499
+        }
+      },
+      "V4": {
+        "Arabic": {
+          "n": 1000,
+          "risky_recall": 0.516,
+          "fpr_ham": 0.006,
+          "precision": 0.9885057471264368,
+          "f1": 0.6780551905387647,
+          "tp": 258,
+          "fn": 242,
+          "fp": 3,
+          "tn": 497
+        },
+        "Bengali": {
+          "n": 1997,
+          "risky_recall": 0.4453360080240722,
+          "fpr_ham": 0.018,
+          "precision": 0.961038961038961,
+          "f1": 0.608636052090473,
+          "tp": 444,
+          "fn": 553,
+          "fp": 18,
+          "tn": 982
+        },
+        "Devanagari": {
+          "n": 2000,
+          "risky_recall": 0.724,
+          "fpr_ham": 0.045,
+          "precision": 0.94148244473342,
+          "f1": 0.8185415488976824,
+          "tp": 724,
+          "fn": 276,
+          "fp": 45,
+          "tn": 955
+        },
+        "Gujarati": {
+          "n": 1000,
+          "risky_recall": 0.488,
+          "fpr_ham": 0.004,
+          "precision": 0.991869918699187,
+          "f1": 0.6541554959785523,
+          "tp": 244,
+          "fn": 256,
+          "fp": 2,
+          "tn": 498
+        },
+        "Gurmukhi": {
+          "n": 1000,
+          "risky_recall": 0.54,
+          "fpr_ham": 0.004,
+          "precision": 0.9926470588235294,
+          "f1": 0.6994818652849741,
+          "tp": 270,
+          "fn": 230,
+          "fp": 2,
+          "tn": 498
+        },
+        "Kannada": {
+          "n": 975,
+          "risky_recall": 0.2673684210526316,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.4219269102990033,
+          "tp": 127,
+          "fn": 348,
+          "fp": 0,
+          "tn": 500
+        },
+        "Malayalam": {
+          "n": 975,
+          "risky_recall": 0.3642105263157895,
+          "fpr_ham": 0.002,
+          "precision": 0.9942528735632183,
+          "f1": 0.5331278890600925,
+          "tp": 173,
+          "fn": 302,
+          "fp": 1,
+          "tn": 499
+        },
+        "Odia": {
+          "n": 435,
+          "risky_recall": 0.8052631578947368,
+          "fpr_ham": 0.0,
+          "precision": 1.0,
+          "f1": 0.8921282798833818,
+          "tp": 153,
+          "fn": 37,
+          "fp": 0,
+          "tn": 245
+        },
+        "Tamil": {
+          "n": 454,
+          "risky_recall": 0.8956043956043956,
+          "fpr_ham": 0.007352941176470588,
+          "precision": 0.9878787878787879,
+          "f1": 0.9394812680115274,
+          "tp": 163,
+          "fn": 19,
+          "fp": 2,
+          "tn": 270
+        },
+        "Telugu": {
+          "n": 975,
+          "risky_recall": 0.5073684210526316,
+          "fpr_ham": 0.006,
+          "precision": 0.9877049180327869,
+          "f1": 0.6703755215577191,
+          "tp": 241,
+          "fn": 234,
+          "fp": 3,
+          "tn": 497
+        }
+      }
+    }
+  },
+  "acceptance_preregistered": {
+    "V1": {
+      "a_english_hinglish_unchanged": {
+        "n_rows": 2209,
+        "n_level_changes": 0,
+        "pass": true
+      },
+      "b_gated_fpr_ham": {
+        "value": 0.02211346746420156,
+        "value_percent": 2.211346746420156,
+        "limit_percent": 5.0,
+        "pass": true
+      },
+      "c_gated_recall_drop_pp": {
+        "value_pp": 20.136003022289383,
+        "limit_pp": 5.0,
+        "baseline_recall": 0.735927465054779,
+        "variant_recall": 0.5345674348318852,
+        "pass": false
+      },
+      "overall_pass": false
+    },
+    "V2": {
+      "a_english_hinglish_unchanged": {
+        "n_rows": 2209,
+        "n_level_changes": 0,
+        "pass": true
+      },
+      "b_gated_fpr_ham": {
+        "value": 0.013594344752582926,
+        "value_percent": 1.3594344752582925,
+        "limit_percent": 5.0,
+        "pass": true
+      },
+      "c_gated_recall_drop_pp": {
+        "value_pp": 22.062712504722327,
+        "limit_pp": 5.0,
+        "baseline_recall": 0.735927465054779,
+        "variant_recall": 0.5153003400075558,
+        "pass": false
+      },
+      "overall_pass": false
+    },
+    "V3": {
+      "a_english_hinglish_unchanged": {
+        "n_rows": 2209,
+        "n_level_changes": 0,
+        "pass": true
+      },
+      "b_gated_fpr_ham": {
+        "value": 0.0025376110204821463,
+        "value_percent": 0.2537611020482146,
+        "limit_percent": 5.0,
+        "pass": true
+      },
+      "c_gated_recall_drop_pp": {
+        "value_pp": 30.14733660748017,
+        "limit_pp": 5.0,
+        "baseline_recall": 0.735927465054779,
+        "variant_recall": 0.43445409897997733,
+        "pass": false
+      },
+      "overall_pass": false
+    },
+    "V4": {
+      "a_english_hinglish_unchanged": {
+        "n_rows": 2209,
+        "n_level_changes": 0,
+        "pass": true
+      },
+      "b_gated_fpr_ham": {
+        "value": 0.013775602682617365,
+        "value_percent": 1.3775602682617365,
+        "limit_percent": 5.0,
+        "pass": true
+      },
+      "c_gated_recall_drop_pp": {
+        "value_pp": 20.7593502077824,
+        "limit_pp": 5.0,
+        "baseline_recall": 0.735927465054779,
+        "variant_recall": 0.528333962976955,
+        "pass": false
+      },
+      "overall_pass": false
+    }
+  },
+  "shipped_rules": {
+    "decision_basis": "real sentinel.fusion.fuse() with sentinel/data/rules.json as shipped (temperature 3.0, scam weight 0.9)",
+    "v0_method": "real sentinel.fusion.fuse() with FUSION_RULES untouched",
+    "variant_method": "V1 to V4 are the same variant definitions applied on top of the shipped rules; V4 temperature-scaled p_scam uses the shipped temperature",
+    "params": {
+      "temperature": 3.0,
+      "scam_weight": 0.9,
+      "unwanted_weight": 0.5,
+      "medium_threshold": 0.4,
+      "high_threshold": 0.7
+    },
+    "cross_check": {
+      "stored_shipped_level_column": null,
+      "note": "There is no stored shipped-level column. dump_20261108.csv fused_level is the pre-calibration baseline. The shipped levels are recomputed with calibrate.risk_and_level and the chosen candidate (temperature 3.0, scam weight 0.9), exactly as tests/test_calibration_shipped.py does.",
+      "reference_rows_n": 13098,
+      "reference_scope": "tests/test_calibration_shipped.py and calibration.md cover all 13,104 dumped rows; this run joins the 13,098 held-out rows.",
+      "n_shipped_vs_reference_level_mismatches": 0,
+      "shipped_v0_overall_recall": 0.7660388914408207,
+      "shipped_v0_overall_fpr_ham": 0.10933455154560683,
+      "docs_benchmarks_test_half_recall": 0.7726,
+      "docs_benchmarks_test_half_fpr_ham": 0.1053,
+      "docs_benchmarks_note": "docs/benchmarks.md section SMS fusion calibration reports the 6,550-row test half only; the shipped V0 numbers here are over all 13,098 joined rows and are not directly comparable."
+    },
+    "best_variant": "V1",
+    "best_variant_rule": "highest gated risky recall among the variants whose gated ham FPR is at most 5%, then lower gated ham FPR",
+    "metrics": {
+      "overall_all_rows": {
+        "V0": {
+          "n": 13098,
+          "risky_recall": 0.7660388914408207,
+          "fpr_ham": 0.10933455154560683,
+          "precision": 0.8744974654780633,
+          "f1": 0.816682990532158,
+          "tp": 5003,
+          "fn": 1528,
+          "fp": 718,
+          "tn": 5849
+        },
+        "V1": {
+          "n": 13098,
+          "risky_recall": 0.6012861736334405,
+          "fpr_ham": 0.014618547281863865,
+          "precision": 0.9761372110365399,
+          "f1": 0.7441728254690166,
+          "tp": 3927,
+          "fn": 2604,
+          "fp": 96,
+          "tn": 6471
+        },
+        "V2": {
+          "n": 13098,
+          "risky_recall": 0.5213596692696371,
+          "fpr_ham": 0.0013704888076747374,
+          "precision": 0.9973637961335676,
+          "f1": 0.6847662141779788,
+          "tp": 3405,
+          "fn": 3126,
+          "fp": 9,
+          "tn": 6558
+        },
+        "V3": {
+          "n": 13098,
+          "risky_recall": 0.5319246669728985,
+          "fpr_ham": 0.0015227653418608193,
+          "precision": 0.9971297359357061,
+          "f1": 0.6937593609585622,
+          "tp": 3474,
+          "fn": 3057,
+          "fp": 10,
+          "tn": 6557
+        },
+        "V4": {
+          "n": 13098,
+          "risky_recall": 0.5449395192160466,
+          "fpr_ham": 0.0015227653418608193,
+          "precision": 0.997198094704399,
+          "f1": 0.7047524752475248,
+          "tp": 3559,
+          "fn": 2972,
+          "fp": 10,
+          "tn": 6557
+        }
+      },
+      "overall_gated_rows": {
+        "V0": {
+          "n": 10811,
+          "risky_recall": 0.7257272383830752,
+          "fpr_ham": 0.1295994199746239,
+          "precision": 0.8430985297344744,
+          "f1": 0.7800223327580957,
+          "tp": 3842,
+          "fn": 1452,
+          "fp": 715,
+          "tn": 4802
+        },
+        "V1": {
+          "n": 10811,
+          "risky_recall": 0.522478277295051,
+          "fpr_ham": 0.016856987493202826,
+          "precision": 0.9674711437565582,
+          "f1": 0.6785232429780448,
+          "tp": 2766,
+          "fn": 2528,
+          "fp": 93,
+          "tn": 5424
+        },
+        "V2": {
+          "n": 10811,
+          "risky_recall": 0.42387608613524747,
+          "fpr_ham": 0.001087547580206634,
+          "precision": 0.9973333333333333,
+          "f1": 0.5949098621420997,
+          "tp": 2244,
+          "fn": 3050,
+          "fp": 6,
+          "tn": 5511
+        },
+        "V3": {
+          "n": 10811,
+          "risky_recall": 0.43690970910464677,
+          "fpr_ham": 0.0012688055102410732,
+          "precision": 0.9969827586206896,
+          "f1": 0.607565011820331,
+          "tp": 2313,
+          "fn": 2981,
+          "fp": 7,
+          "tn": 5510
+        },
+        "V4": {
+          "n": 10811,
+          "risky_recall": 0.45296562145825464,
+          "fpr_ham": 0.0012688055102410732,
+          "precision": 0.9970893970893971,
+          "f1": 0.6229380439018054,
+          "tp": 2398,
+          "fn": 2896,
+          "fp": 7,
+          "tn": 5510
+        }
+      },
+      "per_language_all_rows": {
+        "V0": {
+          "Assamese": {
+            "n": 1000,
+            "risky_recall": 0.556,
+            "fpr_ham": 0.202,
+            "precision": 0.7335092348284961,
+            "f1": 0.6325369738339023,
+            "tp": 278,
+            "fn": 222,
+            "fp": 101,
+            "tn": 399
+          },
+          "Bengali": {
+            "n": 1000,
+            "risky_recall": 0.826,
+            "fpr_ham": 0.034,
+            "precision": 0.9604651162790697,
+            "f1": 0.8881720430107527,
+            "tp": 413,
+            "fn": 87,
+            "fp": 17,
+            "tn": 483
+          },
+          "English": {
+            "n": 1209,
+            "risky_recall": 0.936267071320182,
+            "fpr_ham": 0.005454545454545455,
+            "precision": 0.9951612903225806,
+            "f1": 0.9648162627052383,
+            "tp": 617,
+            "fn": 42,
+            "fp": 3,
+            "tn": 547
+          },
+          "Gujarati": {
+            "n": 1000,
+            "risky_recall": 0.59,
+            "fpr_ham": 0.032,
+            "precision": 0.9485530546623794,
+            "f1": 0.7274969173859432,
+            "tp": 295,
+            "fn": 205,
+            "fp": 16,
+            "tn": 484
+          },
+          "Hindi": {
+            "n": 1000,
+            "risky_recall": 0.968,
+            "fpr_ham": 0.128,
+            "precision": 0.8832116788321168,
+            "f1": 0.9236641221374046,
+            "tp": 484,
+            "fn": 16,
+            "fp": 64,
+            "tn": 436
+          },
+          "Hinglish": {
+            "n": 1000,
+            "risky_recall": 0.932,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9648033126293997,
+            "tp": 466,
+            "fn": 34,
+            "fp": 0,
+            "tn": 500
+          },
+          "Kannada": {
+            "n": 1000,
+            "risky_recall": 0.3,
+            "fpr_ham": 0.006,
+            "precision": 0.9803921568627451,
+            "f1": 0.4594180704441041,
+            "tp": 150,
+            "fn": 350,
+            "fp": 3,
+            "tn": 497
+          },
+          "Kashmiri": {
+            "n": 1000,
+            "risky_recall": 0.562,
+            "fpr_ham": 0.008,
+            "precision": 0.9859649122807017,
+            "f1": 0.715923566878981,
+            "tp": 281,
+            "fn": 219,
+            "fp": 4,
+            "tn": 496
+          },
+          "Malayalam": {
+            "n": 1000,
+            "risky_recall": 0.682,
+            "fpr_ham": 0.14,
+            "precision": 0.829683698296837,
+            "f1": 0.7486278814489573,
+            "tp": 341,
+            "fn": 159,
+            "fp": 70,
+            "tn": 430
+          },
+          "Marathi": {
+            "n": 1000,
+            "risky_recall": 0.898,
+            "fpr_ham": 0.078,
+            "precision": 0.9200819672131147,
+            "f1": 0.9089068825910932,
+            "tp": 449,
+            "fn": 51,
+            "fp": 39,
+            "tn": 461
+          },
+          "Odia": {
+            "n": 435,
+            "risky_recall": 0.8526315789473684,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9204545454545454,
+            "tp": 162,
+            "fn": 28,
+            "fp": 0,
+            "tn": 245
+          },
+          "Punjabi": {
+            "n": 1000,
+            "risky_recall": 0.892,
+            "fpr_ham": 0.242,
+            "precision": 0.7865961199294532,
+            "f1": 0.8359887535145267,
+            "tp": 446,
+            "fn": 54,
+            "fp": 121,
+            "tn": 379
+          },
+          "Tamil": {
+            "n": 454,
+            "risky_recall": 0.945054945054945,
+            "fpr_ham": 0.3088235294117647,
+            "precision": 0.671875,
+            "f1": 0.7853881278538812,
+            "tp": 172,
+            "fn": 10,
+            "fp": 84,
+            "tn": 188
+          },
+          "Telugu": {
+            "n": 1000,
+            "risky_recall": 0.898,
+            "fpr_ham": 0.392,
+            "precision": 0.6961240310077519,
+            "f1": 0.7842794759825328,
+            "tp": 449,
+            "fn": 51,
+            "fp": 196,
+            "tn": 304
+          }
+        },
+        "V1": {
+          "Assamese": {
+            "n": 1000,
+            "risky_recall": 0.3,
+            "fpr_ham": 0.046,
+            "precision": 0.8670520231213873,
+            "f1": 0.44576523031203563,
+            "tp": 150,
+            "fn": 350,
+            "fp": 23,
+            "tn": 477
+          },
+          "Bengali": {
+            "n": 1000,
+            "risky_recall": 0.592,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.743718592964824,
+            "tp": 296,
+            "fn": 204,
+            "fp": 0,
+            "tn": 500
+          },
+          "English": {
+            "n": 1209,
+            "risky_recall": 0.936267071320182,
+            "fpr_ham": 0.005454545454545455,
+            "precision": 0.9951612903225806,
+            "f1": 0.9648162627052383,
+            "tp": 617,
+            "fn": 42,
+            "fp": 3,
+            "tn": 547
+          },
+          "Gujarati": {
+            "n": 1000,
+            "risky_recall": 0.49,
+            "fpr_ham": 0.004,
+            "precision": 0.9919028340080972,
+            "f1": 0.6559571619812584,
+            "tp": 245,
+            "fn": 255,
+            "fp": 2,
+            "tn": 498
+          },
+          "Hindi": {
+            "n": 1000,
+            "risky_recall": 0.934,
+            "fpr_ham": 0.118,
+            "precision": 0.8878326996197718,
+            "f1": 0.9103313840155945,
+            "tp": 467,
+            "fn": 33,
+            "fp": 59,
+            "tn": 441
+          },
+          "Hinglish": {
+            "n": 1000,
+            "risky_recall": 0.932,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9648033126293997,
+            "tp": 466,
+            "fn": 34,
+            "fp": 0,
+            "tn": 500
+          },
+          "Kannada": {
+            "n": 1000,
+            "risky_recall": 0.3,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.4615384615384615,
+            "tp": 150,
+            "fn": 350,
+            "fp": 0,
+            "tn": 500
+          },
+          "Kashmiri": {
+            "n": 1000,
+            "risky_recall": 0.504,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.6702127659574468,
+            "tp": 252,
+            "fn": 248,
+            "fp": 0,
+            "tn": 500
+          },
+          "Malayalam": {
+            "n": 1000,
+            "risky_recall": 0.3,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.4615384615384615,
+            "tp": 150,
+            "fn": 350,
+            "fp": 0,
+            "tn": 500
+          },
+          "Marathi": {
+            "n": 1000,
+            "risky_recall": 0.576,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.730964467005076,
+            "tp": 288,
+            "fn": 212,
+            "fp": 0,
+            "tn": 500
+          },
+          "Odia": {
+            "n": 435,
+            "risky_recall": 0.8368421052631579,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9111747851002865,
+            "tp": 159,
+            "fn": 31,
+            "fp": 0,
+            "tn": 245
+          },
+          "Punjabi": {
+            "n": 1000,
+            "risky_recall": 0.584,
+            "fpr_ham": 0.006,
+            "precision": 0.9898305084745763,
+            "f1": 0.7345911949685535,
+            "tp": 292,
+            "fn": 208,
+            "fp": 3,
+            "tn": 497
+          },
+          "Tamil": {
+            "n": 454,
+            "risky_recall": 0.8956043956043956,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9449275362318841,
+            "tp": 163,
+            "fn": 19,
+            "fp": 0,
+            "tn": 272
+          },
+          "Telugu": {
+            "n": 1000,
+            "risky_recall": 0.464,
+            "fpr_ham": 0.012,
+            "precision": 0.9747899159663865,
+            "f1": 0.6287262872628726,
+            "tp": 232,
+            "fn": 268,
+            "fp": 6,
+            "tn": 494
+          }
+        }
+      },
+      "per_language_gated_rows": {
+        "V0": {
+          "Assamese": {
+            "n": 1000,
+            "risky_recall": 0.556,
+            "fpr_ham": 0.202,
+            "precision": 0.7335092348284961,
+            "f1": 0.6325369738339023,
+            "tp": 278,
+            "fn": 222,
+            "fp": 101,
+            "tn": 399
+          },
+          "Bengali": {
+            "n": 997,
+            "risky_recall": 0.8249496981891348,
+            "fpr_ham": 0.034,
+            "precision": 0.9601873536299765,
+            "f1": 0.8874458874458874,
+            "tp": 410,
+            "fn": 87,
+            "fp": 17,
+            "tn": 483
+          },
+          "Gujarati": {
+            "n": 1000,
+            "risky_recall": 0.59,
+            "fpr_ham": 0.032,
+            "precision": 0.9485530546623794,
+            "f1": 0.7274969173859432,
+            "tp": 295,
+            "fn": 205,
+            "fp": 16,
+            "tn": 484
+          },
+          "Hindi": {
+            "n": 1000,
+            "risky_recall": 0.968,
+            "fpr_ham": 0.128,
+            "precision": 0.8832116788321168,
+            "f1": 0.9236641221374046,
+            "tp": 484,
+            "fn": 16,
+            "fp": 64,
+            "tn": 436
+          },
+          "Kannada": {
+            "n": 975,
+            "risky_recall": 0.2631578947368421,
+            "fpr_ham": 0.006,
+            "precision": 0.9765625,
+            "f1": 0.41459369817578773,
+            "tp": 125,
+            "fn": 350,
+            "fp": 3,
+            "tn": 497
+          },
+          "Kashmiri": {
+            "n": 1000,
+            "risky_recall": 0.562,
+            "fpr_ham": 0.008,
+            "precision": 0.9859649122807017,
+            "f1": 0.715923566878981,
+            "tp": 281,
+            "fn": 219,
+            "fp": 4,
+            "tn": 496
+          },
+          "Malayalam": {
+            "n": 975,
+            "risky_recall": 0.6652631578947369,
+            "fpr_ham": 0.14,
+            "precision": 0.8186528497409327,
+            "f1": 0.7340301974448317,
+            "tp": 316,
+            "fn": 159,
+            "fp": 70,
+            "tn": 430
+          },
+          "Marathi": {
+            "n": 1000,
+            "risky_recall": 0.898,
+            "fpr_ham": 0.078,
+            "precision": 0.9200819672131147,
+            "f1": 0.9089068825910932,
+            "tp": 449,
+            "fn": 51,
+            "fp": 39,
+            "tn": 461
+          },
+          "Odia": {
+            "n": 435,
+            "risky_recall": 0.8526315789473684,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9204545454545454,
+            "tp": 162,
+            "fn": 28,
+            "fp": 0,
+            "tn": 245
+          },
+          "Punjabi": {
+            "n": 1000,
+            "risky_recall": 0.892,
+            "fpr_ham": 0.242,
+            "precision": 0.7865961199294532,
+            "f1": 0.8359887535145267,
+            "tp": 446,
+            "fn": 54,
+            "fp": 121,
+            "tn": 379
+          },
+          "Tamil": {
+            "n": 454,
+            "risky_recall": 0.945054945054945,
+            "fpr_ham": 0.3088235294117647,
+            "precision": 0.671875,
+            "f1": 0.7853881278538812,
+            "tp": 172,
+            "fn": 10,
+            "fp": 84,
+            "tn": 188
+          },
+          "Telugu": {
+            "n": 975,
+            "risky_recall": 0.8926315789473684,
+            "fpr_ham": 0.392,
+            "precision": 0.6838709677419355,
+            "f1": 0.7744292237442922,
+            "tp": 424,
+            "fn": 51,
+            "fp": 196,
+            "tn": 304
+          }
+        },
+        "V1": {
+          "Assamese": {
+            "n": 1000,
+            "risky_recall": 0.3,
+            "fpr_ham": 0.046,
+            "precision": 0.8670520231213873,
+            "f1": 0.44576523031203563,
+            "tp": 150,
+            "fn": 350,
+            "fp": 23,
+            "tn": 477
+          },
+          "Bengali": {
+            "n": 997,
+            "risky_recall": 0.5895372233400402,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.7417721518987341,
+            "tp": 293,
+            "fn": 204,
+            "fp": 0,
+            "tn": 500
+          },
+          "Gujarati": {
+            "n": 1000,
+            "risky_recall": 0.49,
+            "fpr_ham": 0.004,
+            "precision": 0.9919028340080972,
+            "f1": 0.6559571619812584,
+            "tp": 245,
+            "fn": 255,
+            "fp": 2,
+            "tn": 498
+          },
+          "Hindi": {
+            "n": 1000,
+            "risky_recall": 0.934,
+            "fpr_ham": 0.118,
+            "precision": 0.8878326996197718,
+            "f1": 0.9103313840155945,
+            "tp": 467,
+            "fn": 33,
+            "fp": 59,
+            "tn": 441
+          },
+          "Kannada": {
+            "n": 975,
+            "risky_recall": 0.2631578947368421,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.4166666666666667,
+            "tp": 125,
+            "fn": 350,
+            "fp": 0,
+            "tn": 500
+          },
+          "Kashmiri": {
+            "n": 1000,
+            "risky_recall": 0.504,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.6702127659574468,
+            "tp": 252,
+            "fn": 248,
+            "fp": 0,
+            "tn": 500
+          },
+          "Malayalam": {
+            "n": 975,
+            "risky_recall": 0.2631578947368421,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.4166666666666667,
+            "tp": 125,
+            "fn": 350,
+            "fp": 0,
+            "tn": 500
+          },
+          "Marathi": {
+            "n": 1000,
+            "risky_recall": 0.576,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.730964467005076,
+            "tp": 288,
+            "fn": 212,
+            "fp": 0,
+            "tn": 500
+          },
+          "Odia": {
+            "n": 435,
+            "risky_recall": 0.8368421052631579,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9111747851002865,
+            "tp": 159,
+            "fn": 31,
+            "fp": 0,
+            "tn": 245
+          },
+          "Punjabi": {
+            "n": 1000,
+            "risky_recall": 0.584,
+            "fpr_ham": 0.006,
+            "precision": 0.9898305084745763,
+            "f1": 0.7345911949685535,
+            "tp": 292,
+            "fn": 208,
+            "fp": 3,
+            "tn": 497
+          },
+          "Tamil": {
+            "n": 454,
+            "risky_recall": 0.8956043956043956,
+            "fpr_ham": 0.0,
+            "precision": 1.0,
+            "f1": 0.9449275362318841,
+            "tp": 163,
+            "fn": 19,
+            "fp": 0,
+            "tn": 272
+          },
+          "Telugu": {
+            "n": 975,
+            "risky_recall": 0.4357894736842105,
+            "fpr_ham": 0.012,
+            "precision": 0.971830985915493,
+            "f1": 0.6017441860465117,
+            "tp": 207,
+            "fn": 268,
+            "fp": 6,
+            "tn": 494
+          }
+        }
+      }
+    },
+    "acceptance_preregistered": {
+      "V1": {
+        "a_english_hinglish_unchanged": {
+          "n_rows": 2209,
+          "n_level_changes": 0,
+          "pass": true
+        },
+        "b_gated_fpr_ham": {
+          "value": 0.016856987493202826,
+          "value_percent": 1.6856987493202826,
+          "limit_percent": 5.0,
+          "pass": true
+        },
+        "c_gated_recall_drop_pp": {
+          "value_pp": 20.324896108802413,
+          "limit_pp": 5.0,
+          "baseline_recall": 0.7257272383830752,
+          "variant_recall": 0.522478277295051,
+          "pass": false
+        },
+        "overall_pass": false
+      },
+      "V2": {
+        "a_english_hinglish_unchanged": {
+          "n_rows": 2209,
+          "n_level_changes": 0,
+          "pass": true
+        },
+        "b_gated_fpr_ham": {
+          "value": 0.001087547580206634,
+          "value_percent": 0.1087547580206634,
+          "limit_percent": 5.0,
+          "pass": true
+        },
+        "c_gated_recall_drop_pp": {
+          "value_pp": 30.18511522478277,
+          "limit_pp": 5.0,
+          "baseline_recall": 0.7257272383830752,
+          "variant_recall": 0.42387608613524747,
+          "pass": false
+        },
+        "overall_pass": false
+      },
+      "V3": {
+        "a_english_hinglish_unchanged": {
+          "n_rows": 2209,
+          "n_level_changes": 0,
+          "pass": true
+        },
+        "b_gated_fpr_ham": {
+          "value": 0.0012688055102410732,
+          "value_percent": 0.1268805510241073,
+          "limit_percent": 5.0,
+          "pass": true
+        },
+        "c_gated_recall_drop_pp": {
+          "value_pp": 28.88175292784284,
+          "limit_pp": 5.0,
+          "baseline_recall": 0.7257272383830752,
+          "variant_recall": 0.43690970910464677,
+          "pass": false
+        },
+        "overall_pass": false
+      },
+      "V4": {
+        "a_english_hinglish_unchanged": {
+          "n_rows": 2209,
+          "n_level_changes": 0,
+          "pass": true
+        },
+        "b_gated_fpr_ham": {
+          "value": 0.0012688055102410732,
+          "value_percent": 0.1268805510241073,
+          "limit_percent": 5.0,
+          "pass": true
+        },
+        "c_gated_recall_drop_pp": {
+          "value_pp": 27.276161692482052,
+          "limit_pp": 5.0,
+          "baseline_recall": 0.7257272383830752,
+          "variant_recall": 0.45296562145825464,
+          "pass": false
+        },
+        "overall_pass": false
+      }
+    },
+    "verdict": "REJECTED"
+  },
+  "synthetic_false": {
+    "n": 0,
+    "note": "heldout_20261107.csv synthetic values are 'true' and 'mixed'; there are no 'false' rows",
+    "overall": {
+      "V0": {
+        "n": 0,
+        "risky_recall": 0.0,
+        "fpr_ham": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0
+      },
+      "V1": {
+        "n": 0,
+        "risky_recall": 0.0,
+        "fpr_ham": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0
+      },
+      "V2": {
+        "n": 0,
+        "risky_recall": 0.0,
+        "fpr_ham": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0
+      },
+      "V3": {
+        "n": 0,
+        "risky_recall": 0.0,
+        "fpr_ham": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0
+      },
+      "V4": {
+        "n": 0,
+        "risky_recall": 0.0,
+        "fpr_ham": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0
+      }
+    }
+  }
+}

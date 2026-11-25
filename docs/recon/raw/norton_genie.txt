@@ -1,0 +1,232 @@
+URL: https://us.norton.com/feature/ai-scam-protection
+TITLE: AI-Powered Scam Protection &amp; Security | Norton
+
+[RootWebArea] AI-Powered Scam Protection & Security | Norton
+[heading] AI technology to protect against advanced threats
+[heading] Deepfake protection
+[heading] Email protection
+[heading] Text message and call protection
+[heading] Internet browsing protection
+[heading] Norton Genie, your AI-powered assistant
+[heading] Scam Reimbursement.
+[heading] Frequently asked questions
+[heading] How can you spot a scam?
+[heading] How does AI-powered Scam Protection work?
+[heading] How can Scam Protection protect me from phishing and fraud?
+[heading] Expert security advice just for you
+[heading] System requirements
+[form] Promo code
+[link] Products
+[link] Product features
+[link] Gen
+[StaticText] {"mode":"full","isActive":true,"isUserDisabled":false}
+[StaticText] Spot deepfakes and financial scams in videos before they can fool you. Norton uses advanced AI to help protect your money and your identity in real-time.
+[StaticText] Safe Email proactively scans and flags suspicious emails, detecting sophisticated scams so you’ll know if it’s a scam before opening.
+[StaticText] We’ll help you spot scam texts and block scam calls by putting proactive protection right on your phone.
+[StaticText] Based on Norton internal testing comparing SMS scam detection with Genie to the previous version without it.
+[StaticText] Only available in Scam Protection Pro.
+[link] Safe Web
+[StaticText] uses AI to analyze websites for scam indicators, preventing you from visiting fake e-stores and phishing sites.
+[link] Safe AI
+[StaticText] helps protect against AI-driven threats and scams.
+[StaticText] Get answers to general Cyber Safety questions and information about Norton products, find scams in texts and emails, and even identify deepfake YouTube videos.
+[StaticText] If you get scammed online, you're backed by up to $10,000 coverage.
+[StaticText] (Only available with
+[link] Norton 360 with LifeLock Ultimate Plus
+[heading] Our plans are now packed with AI-Powered Scam Protection
+[link] Explore more articles
+[link] What are deepfakes? How they work and how to spot them
+[link] What is phishing? How to spot it and avoid it
+[link] AI scams: What are they and how can you avoid them?
+[DisclosureTriangle] VPN +
+[DisclosureTriangle] Device Security (includes Mobile Security) +
+[StaticText] No one can prevent all cybercrime or identity theft.
+[StaticText] Requires an automatically renewing subscription for a product containing antivirus features. For further terms and conditions please see
+[link] norton.com/virus-protection-promise
+[StaticText] Scam protection coverage as part of identity theft benefits is currently available to all customers residing in the United States, including U.S. territories and the District of Columbia, with the exception of residents of New York. Gen Digital is not a licensed insurance producer. Benefits under the Master Policy are issued and covered by HSB Specialty Insurance Company. You can find further details and exclusions in the summary of benefits.
+[StaticText] Only available on Windows systems (but not in S mode or on ARM processors).
+[StaticText] Location Supervision features are NOT available in all countries.
+[link] Click here for details
+[StaticText] . To work, the child’s Android or iOS device must have Norton Family app installed and be turned on.
+[StaticText] Automatic Deepfake Protection works only for videos in English on supported social media/video platforms; use manual scan on other platforms. Requires Windows 11 or later and a supported browser. Automatic detection additionally requires either an AI PC (minimum 8‑core Qualcomm or Intel CPU, 16 GB RAM) or a non‑AI PC (minimum 6‑core CPU from any brand, 16 GB RAM). On non‑AI PCs with a minimum 4‑core CPU, 8 GB RAM, only manual scan is available. For full details, see
+[link] https://norton.com/deepfakesupport
+[StaticText] Deepfake Protection in Norton Genie AI Assistant is currently available in early access and only YouTube videos in English are supported.
+[StaticText] Up to $1 million for coverage for Lawyers and Experts, collectively, if needed, for all plans. Reimbursement and expense compensation varies according to plan—up to $1 million for Ultimate Plus, up to $100,000 for Advantage, and up to $25,000 for Standard. Benefits under the
+[link] Master Policy
+[StaticText] are issued and covered by third-party insurance companies.
+[StaticText] Monitoring available on Windows™ PC, iOS and Android™ devices. Not all features available on all platforms.
+[StaticText] Requires your device to have an Internet/data plan and be turned on.
+[StaticText] Monitoring not available in all countries and varies based on region..
+[button] Apply Promo Code
+[StaticText] Services & Support
+[StaticText] About
+[StaticText] Norton is part of Gen - a global company with a family of trusted brands
+[StaticText] Copyright © 2026 Gen Digital Inc. All rights reserved. Gen trademarks or registered trademarks are property of Gen Digital Inc. or its affiliates. Firefox is a trademark of Mozilla Foundation. Android, Google Chrome, Google Play, and the Google Play logo are trademarks of Google, LLC. Mac, iPhone, iPad, Apple, and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Alexa and all related logos are trademarks of Amazon.com, Inc. or its affiliates. Microsoft and the Windows logo are trademarks of Microsoft Corporation in the U.S. and other countries. The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License. Other names may be trademarks of their respective owners.
+[link] logo_norton_d
+[navigation] Main
+[StaticText] 23,33
+[StaticText] AI detects text scams in messages, offering up to 10x better scam detection.
+[StaticText] Automatically blocks scam calls or labels incoming calls as scam, spam, or a business, so you’ll know if you should answer.
+[StaticText] Demystifying deepfakes. Learn what they are, how they’re created and used, and how to detect them to protect your identity.
+[StaticText] Learn what phishing is, how it works, and how to spot scams before they steal your data or money.
+[StaticText] Learn about AI scams to watch out for: find out how they operate so you can be aware of potential risks.
+[StaticText] VPN
+[StaticText] Device Security (includes Mobile Security)
+[StaticText] * Important subscription, pricing, and offer details:
+[StaticText] : Subscription contracts begin when the transaction is complete and are subject to our
+[link] Terms of Sale
+[StaticText] and
+[link] License & Services Agreement
+[StaticText] . For trials, a payment method is required at sign-up and will be charged at the end of the trial period, unless canceled first.
+[StaticText] : Subscriptions automatically renew unless the renewal is canceled before billing. Renewal payments are billed annually (up to 35 days before renewal) or monthly depending on your billing cycle. Annual subscribers will receive an email with the renewal price beforehand.
+[link] Renewal prices
+[StaticText] may be higher than the initial price and are subject to change. You can cancel the renewal
+[link] as described here
+[link] your account
+[StaticText] or by
+[link] contacting us here
+[StaticText] or at
+[link] 844-488-4540
+[StaticText] : You can cancel your contracts and get a full refund within 14 days of initial purchase for monthly subscriptions, and within 60 days of payments for annual subscriptions. For details, visit our
+[link] Cancellation and Refund Policy
+[link] To cancel your contract or request a refund, click here
+[StaticText] †††
+[StaticText] Apply
+[link] Norton AntiVirus Plus
+[link] Norton 360 Deluxe
+[link] Norton 360 for Gamers
+[link] Norton 360 with LifeLock Select
+[link] Norton VPN
+[link] Norton AntiTrack
+[link] Norton Family
+[link] Norton Mobile Security for Android
+[link] Norton Mobile Security for iOS
+[link] Norton Utilities Ultimate
+[link] Norton Driver Updater
+[link] Norton Small Business
+[link] Norton Private Browser
+[link] Norton Revamp
+[link] Norton 360 Comparison
+[link] Antivirus
+[link] AI Scam Protection
+[link] Windows 10 Antivirus
+[link] Windows 11 Antivirus
+[link] Mac Antivirus
+[link] Virus removal
+[link] Malware protection
+[link] Cloud Backup
+[link] Safe Search
+[link] Windows 10 VPN
+[link] Smart Firewall
+[link] Password Manager
+[link] Password Generator
+[link] Parental Control
+[link] Privacy Monitor
+[link] SafeCam
+[link] Dark Web Monitoring
+[link] Identity Lock
+[link] Norton Premium Services
+[link] Norton Computer Tune Up
+[link] Norton Ultimate Help Desk
+[link] Spyware & Virus Removal
+[link] Norton Support
+[link] How to renew
+[link] About Norton
+[link] Blog
+[link] Awards
+[link] Reviews
+[link] Community
+[link] Affiliates
+[link] Norton Apps
+[link] Free trials
+[link] Free tools
+[link] Sign in
+[link] LifeLock identity protection
+[link] ReputationDefender by Norton
+[link] Twitter
+[link] Instagram
+[link] Facebook
+[link] YouTube
+[link] About Gen
+[link] Newsroom
+[link] Partner with us
+[link] Careers
+[link] Legal
+[link] Privacy
+[link] Security
+[link] Terms of Use
+[link] Accessibility
+[link] Services status
+[link] Your privacy choices
+[heading] Norton 360 with AI-powered Scam Protection
+[link] Explore plans
+[StaticText] Safe SMS:
+[StaticText] Safe Call:
+[link] Buy now
+[link] Norton 360 Standard
+[link] Norton 360 with LifeLock Select Plus
+[StaticText] Details
+[StaticText] Renewal
+[StaticText] Cancellation and refund
+[StaticText] Norton 360
+[StaticText] with AI-powered
+[StaticText] Scam Protection
+[StaticText] Norton 360 plans include AI-powered Scam Protection to keep you safer from scams.
+[heading] Plus
+[StaticText] Annual
+[StaticText] first yr.
+[StaticText] Savings compared to the renewal price of
+[StaticText] 59.99
+[StaticText] / year
+[StaticText] See subscription details below.*
+[heading] Standard
+[StaticText] 94.99
+[StaticText] Most popular
+[heading] Deluxe
+[StaticText] 124.99
+[heading] Select Plus
+[StaticText] 189.99
+[button] Personal
+[link] Small Business
+[button] Resources
+[button] Support
+[button] Try Free
+[button] Sign In
+[StaticText] Advanced AI outsmarts online scams
+[StaticText] Detects scams in texts and deepfake videos
+[StaticText] Norton Genie, your AI assistant, gives you real-time tips to avoid scams
+[StaticText] Norton AntiVirus
+[StaticText] 50%
+[StaticText] OFF*
+[StaticText] 23.99
+[StaticText] 1 PC, Mac, tablet, or phone
+[StaticText] Antivirus, malware, ransomware, and hacking protection
+[StaticText] 100% Virus Protection Promise
+[StaticText] 2 GB Cloud Backup
+[StaticText] Deepfake Protection
+[StaticText] 57%
+[StaticText] 39.99
+[StaticText] 3 PCs, Mac, tablets, or phones
+[StaticText] 2GB Cloud Backup
+[StaticText] 60%
+[StaticText] 49.99
+[StaticText] 5 PCs, Mac, tablets, or phones
+[StaticText] 50GB Cloud Backup
+[StaticText] Norton 360 with LifeLock
+[StaticText] 47%
+[StaticText] 99.99
+[StaticText] 10 PCs, Mac, tablets, or phones
+[StaticText] 250 GB Cloud Backup
+[StaticText] LifeLock identity theft protection
+[StaticText] Stolen Wallet Protection
+[StaticText] Social Security & Credit Alerts
+[StaticText] Credit Monitoring Coverage: One bureau
+[StaticText] Up to $25,000 in stolen funds reimbursement
+[button] Search
+[StaticText] 23, 33
+[StaticText] ‡‡, 4
+[StaticText] ‡‡, 4
+[StaticText] Scam Protection Pro
+[StaticText] ‡‡,4
+
+THIRD-PARTY/RESOURCE HOSTS: us.norton.com

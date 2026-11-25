@@ -1,0 +1,13 @@
+{
+  "id": "<kaggle-user>/ps3-url-classifier-v2",
+  "title": "ps3-url-classifier-v2",
+  "code_file": "train_url_v2.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "<kaggle-user>/ps3-corpus"
+  ]
+}

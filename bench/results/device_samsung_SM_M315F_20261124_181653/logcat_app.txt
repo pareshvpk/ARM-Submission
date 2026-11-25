@@ -1,0 +1,517 @@
+﻿--------- beginning of main
+11-24 18:18:01.027 26689 26689 I rg.ps3.sentine: Using non-generational CollectorTypeCC GC.
+11-24 18:18:01.034 26689 26689 E USNET   : USNET: appName: org.ps3.sentinel
+11-24 18:18:01.034 26689 26689 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+11-24 18:18:01.036 26689 26689 D ActivityThread: setConscryptValidator
+11-24 18:18:01.036 26689 26689 D ActivityThread: setConscryptValidator - put
+--------- beginning of system
+11-24 18:18:01.051 26689 26689 D ActivityThread: handleBindApplication()++ app=org.ps3.sentinel
+11-24 18:18:01.051 26689 26689 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10968; state: ENABLED
+11-24 18:18:01.068 26689 26689 I rg.ps3.sentine: Duplicate interns in the .data.img.rel.ro section of /data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/oat/arm64/base.odex mapped to immutable spaces.
+11-24 18:18:01.068 26689 26689 D nativeloader: Configuring clns-4 for other apk /data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/lib/arm64:/data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.ps3.sentinel
+11-24 18:18:01.077 26689 26689 V GraphicsEnvironment: ANGLE Developer option for 'org.ps3.sentinel' set to: 'default'
+11-24 18:18:01.077 26689 26689 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-24 18:18:01.078 26689 26689 D LoadedApk: LoadedApk::makeApplication() appContext.mOpPackageName=org.ps3.sentinel appContext.mBasePackageName=org.ps3.sentinel
+11-24 18:18:01.078 26689 26689 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-24 18:18:01.081 26689 26689 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-24 18:18:01.090 26689 26689 D ActivityThread: handleBindApplication() --
+11-24 18:18:01.091 26689 26689 I PS3Timing: process_start_to_onCreate_ms=9
+11-24 18:18:01.092 26689 26689 I PS3Timing: cpu_features atomics=false asimddp=false fphp=false bf16=false i8mm=false sve=false sve2=false sme=false sme2=false ram_bytes=5843161088 tier=LIGHT
+11-24 18:18:01.096 26689 26689 I PS3Timing: accel_path=NEON clusters=4@2314000+4@1742000
+11-24 18:18:01.097 26689 26689 I PS3Timing: threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:01.097 26689 26689 V SoLoader: Init System Loader delegate
+11-24 18:18:01.114 26689 26719 D OpenGLRenderer: RenderThread::requireGlContext()
+11-24 18:18:01.132 26689 26719 D OpenGLRenderer: RenderThread::setGrContext()
+11-24 18:18:01.136 26689 26718 I PS3Timing: integrity_verify_model=url ms=29
+11-24 18:18:01.141 26689 26718 I PS3Timing: url_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:01.147 26689 26718 E libc    : Access denied finding property "ro.mediatek.platform"
+11-24 18:18:01.149 26689 26718 D nativeloader: Load /data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/base.apk!/lib/arm64-v8a/libexecutorch.so using class loader ns clns-4 (caller=/data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/base.apk): ok
+11-24 18:18:01.150 26689 26718 I ExecuTorch: Reading file /sys/devices/soc0/image_version
+11-24 18:18:01.150 26689 26718 I ExecuTorch: Failed to open midr file /sys/devices/soc0/image_version
+11-24 18:18:01.150 26689 26718 I ExecuTorch: Number of efficient cores 4
+11-24 18:18:01.150 26689 26718 I ExecuTorch: Resetting threadpool to 4 threads.
+11-24 18:18:01.152 26689 26718 D nativeloader: Load /data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/base.apk!/lib/arm64-v8a/libfbjni.so using class loader ns clns-4 (caller=/data/app/~~-4txW6rEBz07jl0Pjt5z1g==/org.ps3.sentinel-R70FRPgx8XANNrRIhiz-Zw==/base.apk): ok
+11-24 18:18:01.153 26689 26718 I PS3Timing: model_load_model=url ms=17
+11-24 18:18:01.154 26689 26718 I PS3Timing: sms_model_choice=sms_fp32.pte dot_product=false fp32_available=true
+11-24 18:18:01.276 26689 26689 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10968; state: ENABLED
+11-24 18:18:01.440 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:18:01.440 26689 26689 I DecorView: updateCaptionType >> DecorView@4a04d6b[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:18:01.440 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@4a04d6b[]
+11-24 18:18:01.441 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:18:01.454 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:18:01.454 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@4a04d6b[]
+11-24 18:18:01.463 26689 26689 I ViewRootImpl@8971e37[MainActivity]: setView = com.android.internal.policy.DecorView@4a04d6b TM=true
+11-24 18:18:01.465 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:01.465 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@4a04d6b[MainActivity]
+11-24 18:18:01.497 26689 26689 I ViewRootImpl@8971e37[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=7 res=0x7 s={true 504775036928} ch=true fn=-1
+11-24 18:18:01.499 26689 26719 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+11-24 18:18:01.499 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:18:01.501 26689 26743 I Gralloc4: mapper 4.x is not supported
+11-24 18:18:01.501 26689 26743 W Gralloc3: mapper 3.x is not supported
+11-24 18:18:01.502 26689 26689 I ViewRootImpl@8971e37[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:18:01.502 26689 26689 D ViewRootImpl@8971e37[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:18:01.502 26689 26689 D ViewRootImpl@8971e37[MainActivity]: Creating frameCompleteCallback
+11-24 18:18:01.504 26689 26743 I gralloc : Arm Module v1.0
+11-24 18:18:01.508 26689 26743 W Gralloc4: allocator 4.x is not supported
+11-24 18:18:01.509 26689 26743 W Gralloc3: allocator 3.x is not supported
+11-24 18:18:01.510 26689 26745 D ViewRootImpl@8971e37[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:18:01.693 26689 26719 D ViewRootImpl@8971e37[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:18:01.696 26689 26689 I ViewRootImpl@8971e37[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:18:01.696 26689 26689 I ViewRootImpl@8971e37[MainActivity]: [DP] rdf()
+11-24 18:18:01.696 26689 26689 D ViewRootImpl@8971e37[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:18:01.706 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:18:01.707 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:18:01.715 26689 26689 I ViewRootImpl@8971e37[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:18:01.718 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:18:01.718 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:18:01.735 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:18:02.200 26689 26718 I PS3Timing: integrity_verify_model=sms ms=1046
+11-24 18:18:03.061 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 14MB AllocSpace bytes, 34(696KB) LOS objects, 49% free, 23MB/46MB, paused 116us,192us total 112.584ms
+11-24 18:18:03.447 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 6621KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 24MB/48MB, paused 94us,80us total 121.610ms
+11-24 18:18:03.903 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 5999KB AllocSpace bytes, 0(0B) LOS objects, 48% free, 25MB/49MB, paused 87us,71us total 111.795ms
+11-24 18:18:04.134 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 5711KB AllocSpace bytes, 0(0B) LOS objects, 47% free, 26MB/50MB, paused 89us,186us total 112.361ms
+11-24 18:18:04.372 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 5811KB AllocSpace bytes, 0(0B) LOS objects, 46% free, 27MB/51MB, paused 84us,193us total 123.066ms
+11-24 18:18:04.453 26689 26689 I ViewRootImpl@8971e37[MainActivity]: ViewPostIme pointer 0
+11-24 18:18:04.453 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:04.535 26689 26689 I ViewRootImpl@8971e37[MainActivity]: ViewPostIme pointer 1
+11-24 18:18:04.535 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:04.607 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 5611KB AllocSpace bytes, 0(0B) LOS objects, 45% free, 28MB/52MB, paused 90us,198us total 116.464ms
+11-24 18:18:04.840 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 5980KB AllocSpace bytes, 0(0B) LOS objects, 44% free, 30MB/54MB, paused 252us,73us total 114.117ms
+11-24 18:18:05.098 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 6522KB AllocSpace bytes, 0(0B) LOS objects, 43% free, 31MB/55MB, paused 85us,333us total 142.668ms
+11-24 18:18:05.422 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 6183KB AllocSpace bytes, 0(0B) LOS objects, 42% free, 32MB/56MB, paused 126us,245us total 159.362ms
+11-24 18:18:05.793 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 7031KB AllocSpace bytes, 0(0B) LOS objects, 41% free, 33MB/57MB, paused 116us,237us total 206.799ms
+11-24 18:18:05.794 26689 26689 I ViewRootImpl@8971e37[MainActivity]: ViewPostIme pointer 0
+11-24 18:18:05.794 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:05.831 26689 26689 I ViewRootImpl@8971e37[MainActivity]: ViewPostIme pointer 1
+11-24 18:18:05.831 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:06.139 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 6356KB AllocSpace bytes, 2(104KB) LOS objects, 40% free, 35MB/59MB, paused 126us,170us total 156.025ms
+11-24 18:18:06.184 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:18:06.184 26689 26689 I DecorView: updateCaptionType >> DecorView@3e874b6[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:18:06.184 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@3e874b6[]
+11-24 18:18:06.185 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:18:06.205 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:18:06.205 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@3e874b6[]
+11-24 18:18:06.209 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: setView = com.android.internal.policy.DecorView@3e874b6 TM=true
+11-24 18:18:06.209 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@3e874b6[GuideActivity]
+11-24 18:18:06.209 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@3e874b6[GuideActivity]
+11-24 18:18:06.229 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=6 res=0x7 s={true 504764751872} ch=true fn=-1
+11-24 18:18:06.230 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:18:06.231 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:18:06.231 26689 26689 D ViewRootImpl@3991f08[GuideActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:18:06.231 26689 26689 D ViewRootImpl@3991f08[GuideActivity]: Creating frameCompleteCallback
+11-24 18:18:06.242 26689 26747 D ViewRootImpl@3991f08[GuideActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:18:06.257 26689 26719 D ViewRootImpl@3991f08[GuideActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:18:06.258 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:18:06.258 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: [DP] rdf()
+11-24 18:18:06.258 26689 26689 D ViewRootImpl@3991f08[GuideActivity]: reportDrawFinished (fn: -1) 
+11-24 18:18:06.259 26689 26689 I ViewRootImpl@8971e37[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:18:06.264 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.GuideActivity
+11-24 18:18:06.265 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.GuideActivity
+11-24 18:18:06.286 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:18:06.289 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:18:06.289 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:18:06.433 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 7285KB AllocSpace bytes, 1(20KB) LOS objects, 37% free, 39MB/63MB, paused 122us,131us total 161.865ms
+11-24 18:18:06.674 26689 26689 I ViewRootImpl@8971e37[MainActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:18:06.688 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:18:06.688 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:18:06.688 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:18:06.693 26689 26689 I ViewRootImpl@8971e37[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=3 res=0x5 s={false 0} ch=true fn=55
+11-24 18:18:06.693 26689 26689 I ViewRootImpl@8971e37[MainActivity]: stopped(true) old=false
+11-24 18:18:06.696 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:06.696 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@4a04d6b[MainActivity]
+11-24 18:18:06.738 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 8473KB AllocSpace bytes, 2(104KB) LOS objects, 37% free, 40MB/64MB, paused 101us,75us total 178.016ms
+11-24 18:18:06.771 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=122
+11-24 18:18:07.048 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 8170KB AllocSpace bytes, 0(0B) LOS objects, 36% free, 42MB/66MB, paused 95us,73us total 179.601ms
+11-24 18:18:07.248 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: ViewPostIme pointer 0
+11-24 18:18:07.249 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@3e874b6[GuideActivity]
+11-24 18:18:07.275 26689 26778 D ProfileInstaller: Installing profile for org.ps3.sentinel
+11-24 18:18:07.323 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: ViewPostIme pointer 1
+11-24 18:18:07.323 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@3e874b6[GuideActivity]
+11-24 18:18:07.361 26689 26689 I ViewRootImpl@8971e37[MainActivity]: handleAppVisibility mAppVisible=false visible=true
+11-24 18:18:07.361 26689 26689 I ViewRootImpl@8971e37[MainActivity]: stopped(false) old=true
+11-24 18:18:07.363 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:07.363 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@4a04d6b[MainActivity]
+11-24 18:18:07.366 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:18:07.380 26689 26689 I ViewRootImpl@8971e37[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=11 res=0x7 s={true 504775036928} ch=true fn=-1
+11-24 18:18:07.381 26689 26689 I ViewRootImpl@8971e37[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:18:07.381 26689 26689 D ViewRootImpl@8971e37[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:18:07.381 26689 26689 D ViewRootImpl@8971e37[MainActivity]: Creating frameCompleteCallback
+11-24 18:18:07.386 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:18:07.391 26689 26745 D ViewRootImpl@8971e37[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:18:07.396 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 8329KB AllocSpace bytes, 0(0B) LOS objects, 34% free, 45MB/69MB, paused 84us,211us total 216.130ms
+11-24 18:18:07.400 26689 26719 D ViewRootImpl@8971e37[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:18:07.404 26689 26689 I ViewRootImpl@8971e37[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:18:07.404 26689 26689 I ViewRootImpl@8971e37[MainActivity]: [DP] rdf()
+11-24 18:18:07.404 26689 26689 D ViewRootImpl@8971e37[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:18:07.405 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:18:07.880 26689 26689 I ViewRootImpl@8971e37[MainActivity]: stopped(false) old=false
+11-24 18:18:07.882 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:07.882 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@4a04d6b[MainActivity]
+11-24 18:18:07.889 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:18:07.889 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:18:07.923 26689 26689 I ViewRootImpl@8971e37[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:18:07.930 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:18:07.930 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:18:07.980 26689 26694 I rg.ps3.sentine: Background concurrent copying GC freed 9805KB AllocSpace bytes, 9(10MB) LOS objects, 33% free, 48MB/72MB, paused 240us,236us total 274.281ms
+11-24 18:18:08.108 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:18:08.125 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:18:08.125 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:18:08.125 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:18:08.129 26689 26718 I PS3Timing: sms_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:08.129 26689 26718 I ExecuTorch: Resetting threadpool to 4 threads.
+11-24 18:18:08.136 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=7 res=0x5 s={false 0} ch=true fn=27
+11-24 18:18:08.136 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: stopped(true) old=false
+11-24 18:18:08.137 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@3e874b6[GuideActivity]
+11-24 18:18:08.137 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@3e874b6[GuideActivity]
+11-24 18:18:08.138 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@3e874b6[GuideActivity]
+11-24 18:18:08.138 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:18:08.139 26689 26689 I ViewRootImpl@3991f08[GuideActivity]: dispatchDetachedFromWindow
+11-24 18:18:08.146 26689 26689 D InputTransport: Input channel destroyed: 'c9420b4', fd=102
+11-24 18:18:08.845 26689 26718 I PS3Timing: sms_init_split tokenizer_ms=5858 idmap_ms=69 module_load_ms=33 probe_ms=683 gate_wait_ms=0
+11-24 18:18:08.845 26689 26718 I PS3Timing: model_load_model=sms ms=6645
+11-24 18:18:08.845 26689 26739 W rg.ps3.sentine: Long monitor contention with owner ps3-model-init (26718) at v1.G r1.f.e()(SourceFile:-1) waiters=0 in boolean r1.f.j(boolean) for 7.392s
+11-24 18:18:22.128 26689 26737 I PS3Timing: integrity_verify_model=llama ms=13282
+11-24 18:18:22.130 26689 26737 I PS3Sms  : LlamaAdvisor: prefix cache enabled (constant USE_PREFIX_CACHE=true, no flag file)
+11-24 18:18:22.131 26689 26737 I ExecuTorch: Reading file /sys/devices/soc0/image_version
+11-24 18:18:22.131 26689 26737 I ExecuTorch: Failed to open midr file /sys/devices/soc0/image_version
+11-24 18:18:22.131 26689 26737 I ExecuTorch: Number of efficient cores 4
+11-24 18:18:22.131 26689 26737 I ExecuTorch: Resetting threadpool to 3 threads
+11-24 18:18:22.131 26689 26737 I ExecuTorch: Resetting threadpool to 3 threads.
+11-24 18:18:22.439 26689 26737 I ExecuTorch: Loaded TikToken tokenizer
+11-24 18:18:22.440 26689 26737 I ExecuTorch: Reading metadata from model
+11-24 18:18:22.441 26689 26737 I ExecuTorch: Metadata: use_sdpa_with_kv_cache = 1
+11-24 18:18:22.441 26689 26737 I ExecuTorch: Metadata: use_kv_cache = 1
+11-24 18:18:22.441 26689 26737 I ExecuTorch: Metadata: get_max_context_len = 2048
+11-24 18:18:22.441 26689 26737 I ExecuTorch: Metadata: get_max_seq_len = 2048
+11-24 18:18:22.441 26689 26737 I ExecuTorch: Metadata: enable_dynamic_shape = 1
+11-24 18:18:22.441 26689 26737 I ExecuTorch: eos_id = 128009
+11-24 18:18:22.441 26689 26737 I ExecuTorch: eos_id = 128001
+11-24 18:18:22.442 26689 26737 I ExecuTorch: Using method: forward
+11-24 18:18:22.445 26689 26737 I ExecuTorch: Resetting threadpool to 4 threads.
+11-24 18:18:22.446 26689 26737 I PS3Timing: llama_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:22.448 26689 26737 I PS3Timing: url_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:22.449 26689 26737 I ExecuTorch: Resetting threadpool to 4 threads.
+11-24 18:18:22.451 26689 26737 I PS3Timing: sms_threads=4 threads_proposal=4 threads_used=4 threads_auto=false
+11-24 18:18:22.452 26689 26737 I ExecuTorch: Resetting threadpool to 4 threads.
+11-24 18:18:22.532 26689 26737 I PS3Timing: pool_rebind ms=86 url=ok sms=ok
+11-24 18:18:22.532 26689 26737 I PS3Timing: prefill_skipped reason=light_tier
+11-24 18:18:22.532 26689 26737 I PS3Timing: llama_tier=LIGHT max_new_tokens=78 first_token_timeout_ms=45000 total_timeout_ms=90000
+11-24 18:18:22.532 26689 26737 I PS3Timing: model_load_model=llama ms=404
+11-24 18:18:29.925 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:18:29.926 26689 26689 I DecorView: updateCaptionType >> DecorView@524eb9[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:18:29.926 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@524eb9[]
+11-24 18:18:29.926 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:18:29.935 26689 26689 I IMM_LC  : hsifw() - flags=0, caller=android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1858 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1827 org.ps3.sentinel.ui.MainActivity.x:65 x1.D.i:332 U0.b.c:8 
+11-24 18:18:29.935 26689 26689 I IMM_LC  : hsifw() ignore mServedView == null or mServedView.getWindowToken() != windowToken, mServedView :DecorView@4a04d6b[MainActivity]
+11-24 18:18:29.938 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:18:29.938 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@524eb9[]
+11-24 18:18:29.943 26689 26689 I ViewRootImpl@8c75829[MainActivity]: setView = com.android.internal.policy.DecorView@524eb9 TM=true
+11-24 18:18:29.943 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@524eb9[MainActivity]
+11-24 18:18:29.943 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@524eb9[MainActivity]
+11-24 18:18:29.968 26689 26689 I ViewRootImpl@8c75829[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=7 res=0x7 s={true 506668802048} ch=true fn=-1
+11-24 18:18:29.969 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:18:29.971 26689 26689 I ViewRootImpl@8c75829[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:18:29.971 26689 26689 D ViewRootImpl@8c75829[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:18:29.971 26689 26689 D ViewRootImpl@8c75829[MainActivity]: Creating frameCompleteCallback
+11-24 18:18:29.979 26689 26747 D ViewRootImpl@8c75829[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:18:30.003 26689 26719 D ViewRootImpl@8c75829[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:18:30.005 26689 26689 I ViewRootImpl@8c75829[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:18:30.005 26689 26689 I ViewRootImpl@8c75829[MainActivity]: [DP] rdf()
+11-24 18:18:30.005 26689 26689 D ViewRootImpl@8c75829[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:18:30.005 26689 26689 I ViewRootImpl@8971e37[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:18:30.022 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:18:30.024 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:18:30.038 26689 26689 I ViewRootImpl@8c75829[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:18:30.042 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:18:30.042 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:18:30.424 26689 26689 I ViewRootImpl@8971e37[MainActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:18:30.459 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:18:30.459 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:18:30.459 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:18:30.470 26689 26689 I ViewRootImpl@8971e37[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=8 res=0x5 s={false 0} ch=true fn=5
+11-24 18:18:30.481 26689 26689 I ViewRootImpl@8971e37[MainActivity]: stopped(true) old=false
+11-24 18:18:30.483 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@4a04d6b[MainActivity]
+11-24 18:18:30.483 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@4a04d6b[MainActivity]
+11-24 18:18:30.625 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 5673KB AllocSpace bytes, 46(15MB) LOS objects, 41% free, 33MB/57MB, paused 404us,118us total 198.933ms
+11-24 18:18:30.626 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=106
+11-24 18:18:30.628 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=133
+11-24 18:18:30.635 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:18:55.786 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:18:55.787 26689 26738 I ExecuTorch: RSS after loading model: 1745.625000 MiB (0 if unsupported)
+11-24 18:19:02.655 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:19:02.656 26689 26738 I ExecuTorch: Max new tokens resolved: 1756, given pos_ 292, num_prompt_tokens 108, max_context_len 2048
+11-24 18:19:02.657 26689 26738 I ExecuTorch: RSS after prompt prefill: 1745.625000 MiB (0 if unsupported)
+11-24 18:19:05.476 26689 26738 I rg.ps3.sentine: Waiting for a blocking GC NativeAlloc
+11-24 18:19:05.712 26689 26694 I rg.ps3.sentine: NativeAlloc concurrent copying GC freed 1015KB AllocSpace bytes, 0(0B) LOS objects, 41% free, 33MB/57MB, paused 158us,106us total 238.003ms
+11-24 18:19:05.712 26689 26738 I rg.ps3.sentine: WaitForGcToComplete blocked NativeAlloc on NativeAlloc for 236.509ms
+11-24 18:19:11.854 26689 26738 I PS3Sms  : LlamaAdvisor: stopped after sentence limit
+11-24 18:19:11.854 26689 26738 I ExecuTorch: RSS after finishing text generation: 1745.625000 MiB (0 if unsupported)
+11-24 18:19:11.854 26689 26738 I ExecuTorch: 	Prompt Tokens: 108    Generated Tokens: 44
+11-24 18:19:11.854 26689 26738 I ExecuTorch: 	Model Load Time:		0.000000 (seconds)
+11-24 18:19:11.854 26689 26738 I ExecuTorch: 	Total inference time:		16.067000 (seconds)		 Rate: 	2.738532 (tokens/second)
+11-24 18:19:11.854 26689 26738 I ExecuTorch: 		Prompt evaluation:	6.869000 (seconds)		 Rate: 	15.722813 (tokens/second)
+11-24 18:19:11.854 26689 26738 I ExecuTorch: 		Generated 44 tokens:	9.198000 (seconds)		 Rate: 	4.783649 (tokens/second)
+11-24 18:19:11.854 26689 26738 I ExecuTorch: 	Time to first generated token:	6.869000 (seconds)
+11-24 18:19:11.854 26689 26738 I ExecuTorch: 	Sampling time over 152 tokens:	0.025000 (seconds)
+11-24 18:19:11.854 26689 26738 I PS3Llama: {"prefill_token_per_sec":15.7228,"decode_token_per_sec":4.78365,"prompt_tokens":108,"generated_tokens":44,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1795524535787,"inference_end_ms":1795524551854,"model_execution_start_ms":1795524551686,"model_execution_end_ms":1795524551853,"prompt_eval_end_ms":1795524542656,"first_token_ms":1795524542656,"aggregate_sampling_time_ms":25,"aggregate_model_execution_time_ms":27222,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-24 18:19:11.855 26689 26738 I PS3Timing: prefill_skipped reason=light_tier
+11-24 18:19:11.857 26689 26738 I PS3Sms  : LlamaAdvisor prompt_path=prefix_on_demand prompt_tokens=108
+11-24 18:19:11.857 26689 26738 I PS3Llama: prompt_path=prefix_on_demand
+11-24 18:19:11.861 26689 26738 I PS3Bench: prompt_path=prefix_on_demand prompt_tokens=108 ttft_ms=6869.0 decode_tok_s=4.7 advice_sha8=b61c51f1
+11-24 18:19:17.517 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:19:17.517 26689 26689 I DecorView: updateCaptionType >> DecorView@546ed6e[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:19:17.517 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@546ed6e[]
+11-24 18:19:17.518 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:19:17.522 26689 26689 I IMM_LC  : hsifw() - flags=0, caller=android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1858 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1827 org.ps3.sentinel.ui.MainActivity.x:65 x1.D.i:332 U0.b.c:8 
+11-24 18:19:17.522 26689 26689 I IMM_LC  : hsifw() ignore mServedView == null or mServedView.getWindowToken() != windowToken, mServedView :DecorView@524eb9[MainActivity]
+11-24 18:19:17.525 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:19:17.525 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@546ed6e[]
+11-24 18:19:17.531 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: setView = com.android.internal.policy.DecorView@546ed6e TM=true
+11-24 18:19:17.531 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@546ed6e[MainActivity]
+11-24 18:19:17.531 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@546ed6e[MainActivity]
+11-24 18:19:17.560 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=11 res=0x7 s={true 504766660608} ch=true fn=-1
+11-24 18:19:17.562 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:19:17.567 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:19:17.567 26689 26689 D ViewRootImpl@ab086a0[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:19:17.567 26689 26689 D ViewRootImpl@ab086a0[MainActivity]: Creating frameCompleteCallback
+11-24 18:19:17.585 26689 26745 D ViewRootImpl@ab086a0[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:19:17.604 26689 26719 D ViewRootImpl@ab086a0[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:19:17.607 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:19:17.607 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: [DP] rdf()
+11-24 18:19:17.607 26689 26689 D ViewRootImpl@ab086a0[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:19:17.607 26689 26689 I ViewRootImpl@8c75829[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:19:17.626 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:19:17.627 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:19:17.643 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:19:17.649 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:19:17.649 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:19:18.025 26689 26689 I ViewRootImpl@8c75829[MainActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:19:18.041 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:19:18.041 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:19:18.041 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:19:18.049 26689 26689 I ViewRootImpl@8c75829[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=5 res=0x5 s={false 0} ch=true fn=65
+11-24 18:19:18.050 26689 26689 I ViewRootImpl@8c75829[MainActivity]: stopped(true) old=false
+11-24 18:19:18.052 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@524eb9[MainActivity]
+11-24 18:19:18.052 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@524eb9[MainActivity]
+11-24 18:19:29.220 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:19:29.221 26689 26738 I ExecuTorch: RSS after loading model: 1745.625000 MiB (0 if unsupported)
+11-24 18:19:36.381 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:19:36.381 26689 26738 I ExecuTorch: Max new tokens resolved: 1751, given pos_ 297, num_prompt_tokens 113, max_context_len 2048
+11-24 18:19:36.382 26689 26738 I ExecuTorch: RSS after prompt prefill: 1745.625000 MiB (0 if unsupported)
+11-24 18:19:43.944 26689 26738 I PS3Sms  : LlamaAdvisor: stopped after sentence limit
+11-24 18:19:43.944 26689 26738 I ExecuTorch: RSS after finishing text generation: 1745.625000 MiB (0 if unsupported)
+11-24 18:19:43.944 26689 26738 I ExecuTorch: 	Prompt Tokens: 113    Generated Tokens: 37
+11-24 18:19:43.944 26689 26738 I ExecuTorch: 	Model Load Time:		0.000000 (seconds)
+11-24 18:19:43.944 26689 26738 I ExecuTorch: 	Total inference time:		14.723000 (seconds)		 Rate: 	2.513075 (tokens/second)
+11-24 18:19:43.944 26689 26738 I ExecuTorch: 		Prompt evaluation:	7.160000 (seconds)		 Rate: 	15.782123 (tokens/second)
+11-24 18:19:43.944 26689 26738 I ExecuTorch: 		Generated 37 tokens:	7.563000 (seconds)		 Rate: 	4.892239 (tokens/second)
+11-24 18:19:43.944 26689 26738 I ExecuTorch: 	Time to first generated token:	7.160000 (seconds)
+11-24 18:19:43.944 26689 26738 I ExecuTorch: 	Sampling time over 150 tokens:	0.024000 (seconds)
+11-24 18:19:43.944 26689 26738 I PS3Llama: {"prefill_token_per_sec":15.7821,"decode_token_per_sec":4.89224,"prompt_tokens":113,"generated_tokens":37,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1795524569221,"inference_end_ms":1795524583944,"model_execution_start_ms":1795524583777,"model_execution_end_ms":1795524583943,"prompt_eval_end_ms":1795524576381,"first_token_ms":1795524576381,"aggregate_sampling_time_ms":24,"aggregate_model_execution_time_ms":26170,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-24 18:19:43.944 26689 26738 I PS3Timing: prefill_skipped reason=light_tier
+11-24 18:19:43.944 26689 26738 I PS3Sms  : LlamaAdvisor prompt_path=prefix_on_demand prompt_tokens=113
+11-24 18:19:43.944 26689 26738 I PS3Llama: prompt_path=prefix_on_demand
+11-24 18:19:43.946 26689 26738 I PS3Bench: prompt_path=prefix_on_demand prompt_tokens=113 ttft_ms=7160.0 decode_tok_s=4.8 advice_sha8=56a40eaf
+11-24 18:19:50.800 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:19:50.800 26689 26689 I DecorView: updateCaptionType >> DecorView@1c65ff[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:19:50.800 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@1c65ff[]
+11-24 18:19:50.803 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:19:50.807 26689 26689 I IMM_LC  : hsifw() - flags=0, caller=android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1858 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1827 org.ps3.sentinel.ui.MainActivity.x:65 x1.D.i:332 U0.b.c:8 
+11-24 18:19:50.807 26689 26689 I IMM_LC  : hsifw() ignore mServedView == null or mServedView.getWindowToken() != windowToken, mServedView :DecorView@546ed6e[MainActivity]
+11-24 18:19:50.810 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:19:50.810 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@1c65ff[]
+11-24 18:19:50.815 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: setView = com.android.internal.policy.DecorView@1c65ff TM=true
+11-24 18:19:50.815 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@1c65ff[MainActivity]
+11-24 18:19:50.815 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@1c65ff[MainActivity]
+11-24 18:19:50.845 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=15 res=0x7 s={true 504769867776} ch=true fn=-1
+11-24 18:19:50.847 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:19:50.852 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:19:50.852 26689 26689 D ViewRootImpl@49a6ac9[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:19:50.852 26689 26689 D ViewRootImpl@49a6ac9[MainActivity]: Creating frameCompleteCallback
+11-24 18:19:50.865 26689 26747 D ViewRootImpl@49a6ac9[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:19:50.878 26689 26719 D ViewRootImpl@49a6ac9[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:19:50.879 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:19:50.879 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: [DP] rdf()
+11-24 18:19:50.879 26689 26689 D ViewRootImpl@49a6ac9[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:19:50.879 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:19:50.905 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:19:50.909 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:19:50.920 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:19:50.925 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:19:50.926 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:19:51.300 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:19:51.317 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:19:51.317 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:19:51.317 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:19:51.324 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=4 res=0x5 s={false 0} ch=true fn=66
+11-24 18:19:51.325 26689 26689 I ViewRootImpl@ab086a0[MainActivity]: stopped(true) old=false
+11-24 18:19:51.326 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@546ed6e[MainActivity]
+11-24 18:19:51.326 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@546ed6e[MainActivity]
+11-24 18:20:02.647 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:20:02.648 26689 26738 I ExecuTorch: RSS after loading model: 1745.625000 MiB (0 if unsupported)
+11-24 18:20:10.251 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:20:10.252 26689 26738 I ExecuTorch: Max new tokens resolved: 1750, given pos_ 298, num_prompt_tokens 114, max_context_len 2048
+11-24 18:20:10.253 26689 26738 I ExecuTorch: RSS after prompt prefill: 1745.625000 MiB (0 if unsupported)
+11-24 18:20:18.150 26689 26738 I PS3Sms  : LlamaAdvisor: stopped after sentence limit
+11-24 18:20:18.150 26689 26738 I ExecuTorch: RSS after finishing text generation: 1745.625000 MiB (0 if unsupported)
+11-24 18:20:18.150 26689 26738 I ExecuTorch: 	Prompt Tokens: 114    Generated Tokens: 44
+11-24 18:20:18.150 26689 26738 I ExecuTorch: 	Model Load Time:		0.000000 (seconds)
+11-24 18:20:18.150 26689 26738 I ExecuTorch: 	Total inference time:		15.502000 (seconds)		 Rate: 	2.838343 (tokens/second)
+11-24 18:20:18.150 26689 26738 I ExecuTorch: 		Prompt evaluation:	7.604000 (seconds)		 Rate: 	14.992109 (tokens/second)
+11-24 18:20:18.150 26689 26738 I ExecuTorch: 		Generated 44 tokens:	7.898000 (seconds)		 Rate: 	5.571031 (tokens/second)
+11-24 18:20:18.150 26689 26738 I ExecuTorch: 	Time to first generated token:	7.604000 (seconds)
+11-24 18:20:18.150 26689 26738 I ExecuTorch: 	Sampling time over 158 tokens:	0.025000 (seconds)
+11-24 18:20:18.150 26689 26738 I PS3Llama: {"prefill_token_per_sec":14.9921,"decode_token_per_sec":5.57103,"prompt_tokens":114,"generated_tokens":44,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1795524602648,"inference_end_ms":1795524618150,"model_execution_start_ms":1795524617974,"model_execution_end_ms":1795524618149,"prompt_eval_end_ms":1795524610252,"first_token_ms":1795524610252,"aggregate_sampling_time_ms":25,"aggregate_model_execution_time_ms":27100,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-24 18:20:18.150 26689 26738 I PS3Timing: prefill_skipped reason=light_tier
+11-24 18:20:18.151 26689 26738 I PS3Sms  : LlamaAdvisor prompt_path=prefix_on_demand prompt_tokens=114
+11-24 18:20:18.151 26689 26738 I PS3Llama: prompt_path=prefix_on_demand
+11-24 18:20:18.153 26689 26738 I PS3Bench: prompt_path=prefix_on_demand prompt_tokens=114 ttft_ms=7604.0 decode_tok_s=5.4 advice_sha8=3227337a
+11-24 18:20:23.661 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:20:23.662 26689 26689 I DecorView: updateCaptionType >> DecorView@275ed83[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:20:23.662 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@275ed83[]
+11-24 18:20:23.662 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:20:23.667 26689 26689 I IMM_LC  : hsifw() - flags=0, caller=android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1858 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1827 org.ps3.sentinel.ui.MainActivity.x:65 x1.D.i:332 U0.b.c:8 
+11-24 18:20:23.667 26689 26689 I IMM_LC  : hsifw() ignore mServedView == null or mServedView.getWindowToken() != windowToken, mServedView :DecorView@1c65ff[MainActivity]
+11-24 18:20:23.670 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:20:23.670 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@275ed83[]
+11-24 18:20:23.679 26689 26689 I ViewRootImpl@3229ead[MainActivity]: setView = com.android.internal.policy.DecorView@275ed83 TM=true
+11-24 18:20:23.679 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@275ed83[MainActivity]
+11-24 18:20:23.679 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@275ed83[MainActivity]
+11-24 18:20:23.706 26689 26689 I ViewRootImpl@3229ead[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=11 res=0x7 s={true 504750829568} ch=true fn=-1
+11-24 18:20:23.707 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:20:23.711 26689 26689 I ViewRootImpl@3229ead[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:20:23.711 26689 26689 D ViewRootImpl@3229ead[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:20:23.712 26689 26689 D ViewRootImpl@3229ead[MainActivity]: Creating frameCompleteCallback
+11-24 18:20:23.724 26689 26745 D ViewRootImpl@3229ead[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:20:23.739 26689 26719 D ViewRootImpl@3229ead[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:20:23.741 26689 26689 I ViewRootImpl@3229ead[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:20:23.741 26689 26689 I ViewRootImpl@3229ead[MainActivity]: [DP] rdf()
+11-24 18:20:23.742 26689 26689 D ViewRootImpl@3229ead[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:20:23.750 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:20:23.771 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:20:23.772 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:20:23.778 26689 26689 I ViewRootImpl@3229ead[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:20:23.784 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:20:23.784 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:20:24.163 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:20:24.177 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:20:24.177 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:20:24.177 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:20:24.201 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=8 res=0x5 s={false 0} ch=true fn=67
+11-24 18:20:24.202 26689 26689 I ViewRootImpl@49a6ac9[MainActivity]: stopped(true) old=false
+11-24 18:20:24.211 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@1c65ff[MainActivity]
+11-24 18:20:24.211 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@1c65ff[MainActivity]
+11-24 18:20:35.516 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:20:35.517 26689 26738 I ExecuTorch: RSS after loading model: 1745.625000 MiB (0 if unsupported)
+11-24 18:20:41.932 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:20:41.933 26689 26738 I ExecuTorch: Max new tokens resolved: 1764, given pos_ 284, num_prompt_tokens 100, max_context_len 2048
+11-24 18:20:41.933 26689 26738 I ExecuTorch: RSS after prompt prefill: 1745.625000 MiB (0 if unsupported)
+11-24 18:20:48.251 26689 26738 I PS3Sms  : LlamaAdvisor: stopped after sentence limit
+11-24 18:20:48.251 26689 26738 I ExecuTorch: RSS after finishing text generation: 1745.625000 MiB (0 if unsupported)
+11-24 18:20:48.251 26689 26738 I ExecuTorch: 	Prompt Tokens: 100    Generated Tokens: 37
+11-24 18:20:48.251 26689 26738 I ExecuTorch: 	Model Load Time:		0.000000 (seconds)
+11-24 18:20:48.251 26689 26738 I ExecuTorch: 	Total inference time:		12.734000 (seconds)		 Rate: 	2.905607 (tokens/second)
+11-24 18:20:48.251 26689 26738 I ExecuTorch: 		Prompt evaluation:	6.416000 (seconds)		 Rate: 	15.586035 (tokens/second)
+11-24 18:20:48.251 26689 26738 I ExecuTorch: 		Generated 37 tokens:	6.318000 (seconds)		 Rate: 	5.856284 (tokens/second)
+11-24 18:20:48.251 26689 26738 I ExecuTorch: 	Time to first generated token:	6.416000 (seconds)
+11-24 18:20:48.251 26689 26738 I ExecuTorch: 	Sampling time over 137 tokens:	0.021000 (seconds)
+11-24 18:20:48.251 26689 26738 I PS3Llama: {"prefill_token_per_sec":15.586,"decode_token_per_sec":5.85628,"prompt_tokens":100,"generated_tokens":37,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1795524635517,"inference_end_ms":1795524648251,"model_execution_start_ms":1795524648085,"model_execution_end_ms":1795524648250,"prompt_eval_end_ms":1795524641933,"first_token_ms":1795524641933,"aggregate_sampling_time_ms":21,"aggregate_model_execution_time_ms":24325,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-24 18:20:48.252 26689 26738 I PS3Timing: prefill_skipped reason=light_tier
+11-24 18:20:48.252 26689 26738 I PS3Sms  : LlamaAdvisor prompt_path=prefix_on_demand prompt_tokens=100
+11-24 18:20:48.252 26689 26738 I PS3Llama: prompt_path=prefix_on_demand
+11-24 18:20:48.254 26689 26738 I PS3Bench: prompt_path=prefix_on_demand prompt_tokens=100 ttft_ms=6416.0 decode_tok_s=5.7 advice_sha8=04df2c8c
+11-24 18:20:51.907 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:20:51.907 26689 26689 I DecorView: updateCaptionType >> DecorView@25a74f4[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:20:51.907 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@25a74f4[]
+11-24 18:20:51.907 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:20:51.911 26689 26689 I IMM_LC  : hsifw() - flags=0, caller=android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1858 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1827 org.ps3.sentinel.ui.MainActivity.x:65 x1.D.i:332 U0.b.c:8 
+11-24 18:20:51.911 26689 26689 I IMM_LC  : hsifw() ignore mServedView == null or mServedView.getWindowToken() != windowToken, mServedView :DecorView@275ed83[MainActivity]
+11-24 18:20:51.915 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:20:51.915 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@25a74f4[]
+11-24 18:20:51.919 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: setView = com.android.internal.policy.DecorView@25a74f4 TM=true
+11-24 18:20:51.919 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@25a74f4[MainActivity]
+11-24 18:20:51.919 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@25a74f4[MainActivity]
+11-24 18:20:51.945 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=13 res=0x7 s={true 504750837760} ch=true fn=-1
+11-24 18:20:51.946 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:20:51.948 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:20:51.948 26689 26689 D ViewRootImpl@35f36b6[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:20:51.948 26689 26689 D ViewRootImpl@35f36b6[MainActivity]: Creating frameCompleteCallback
+11-24 18:20:51.962 26689 26747 D ViewRootImpl@35f36b6[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:20:51.974 26689 26719 D ViewRootImpl@35f36b6[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:20:51.975 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:20:51.976 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: [DP] rdf()
+11-24 18:20:51.976 26689 26689 D ViewRootImpl@35f36b6[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:20:51.976 26689 26689 I ViewRootImpl@3229ead[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:20:51.990 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:20:51.991 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:20:52.008 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:20:52.012 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:20:52.012 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:20:52.390 26689 26689 I ViewRootImpl@3229ead[MainActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:20:52.411 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:20:52.412 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:20:52.412 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:20:52.419 26689 26689 I ViewRootImpl@3229ead[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=4 res=0x5 s={false 0} ch=true fn=64
+11-24 18:20:52.419 26689 26689 I ViewRootImpl@3229ead[MainActivity]: stopped(true) old=false
+11-24 18:20:52.421 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@275ed83[MainActivity]
+11-24 18:20:52.421 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@275ed83[MainActivity]
+11-24 18:21:03.421 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:21:03.421 26689 26738 I ExecuTorch: RSS after loading model: 1745.625000 MiB (0 if unsupported)
+11-24 18:21:08.936 26689 26738 I ExecuTorch: Prefill token result numel(): 128256
+11-24 18:21:08.937 26689 26738 I ExecuTorch: Max new tokens resolved: 1778, given pos_ 270, num_prompt_tokens 86, max_context_len 2048
+11-24 18:21:08.937 26689 26738 I ExecuTorch: RSS after prompt prefill: 1745.625000 MiB (0 if unsupported)
+11-24 18:21:15.223 26689 26738 I PS3Sms  : LlamaAdvisor: stopped after sentence limit
+11-24 18:21:15.224 26689 26738 I ExecuTorch: RSS after finishing text generation: 1745.625000 MiB (0 if unsupported)
+11-24 18:21:15.224 26689 26738 I ExecuTorch: 	Prompt Tokens: 86    Generated Tokens: 36
+11-24 18:21:15.224 26689 26738 I ExecuTorch: 	Model Load Time:		0.000000 (seconds)
+11-24 18:21:15.224 26689 26738 I ExecuTorch: 	Total inference time:		11.802000 (seconds)		 Rate: 	3.050330 (tokens/second)
+11-24 18:21:15.224 26689 26738 I ExecuTorch: 		Prompt evaluation:	5.516000 (seconds)		 Rate: 	15.591008 (tokens/second)
+11-24 18:21:15.224 26689 26738 I ExecuTorch: 		Generated 36 tokens:	6.286000 (seconds)		 Rate: 	5.727012 (tokens/second)
+11-24 18:21:15.224 26689 26738 I ExecuTorch: 	Time to first generated token:	5.516000 (seconds)
+11-24 18:21:15.224 26689 26738 I ExecuTorch: 	Sampling time over 122 tokens:	0.018000 (seconds)
+11-24 18:21:15.224 26689 26738 I PS3Llama: {"prefill_token_per_sec":15.591,"decode_token_per_sec":5.72701,"prompt_tokens":86,"generated_tokens":36,"model_load_start_ms":0,"model_load_end_ms":0,"inference_start_ms":1795524663421,"inference_end_ms":1795524675223,"model_execution_start_ms":1795524674992,"model_execution_end_ms":1795524675222,"prompt_eval_end_ms":1795524668937,"first_token_ms":1795524668937,"aggregate_sampling_time_ms":18,"aggregate_model_execution_time_ms":23076,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+11-24 18:21:15.224 26689 26738 I PS3Timing: prefill_skipped reason=light_tier
+11-24 18:21:15.224 26689 26738 I PS3Sms  : LlamaAdvisor prompt_path=prefix_on_demand prompt_tokens=86
+11-24 18:21:15.224 26689 26738 I PS3Llama: prompt_path=prefix_on_demand
+11-24 18:21:15.227 26689 26738 I PS3Bench: prompt_path=prefix_on_demand prompt_tokens=86 ttft_ms=5516.0 decode_tok_s=5.6 advice_sha8=c0a57a12
+11-24 18:21:20.151 26689 26689 I DecorView: [INFO] isPopOver=false, config=true
+11-24 18:21:20.151 26689 26689 I DecorView: updateCaptionType >> DecorView@1289f60[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+11-24 18:21:20.152 26689 26689 D DecorView: setCaptionType = 0, this = DecorView@1289f60[]
+11-24 18:21:20.152 26689 26689 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=420 msg=resources_loaded
+11-24 18:21:20.156 26689 26689 I IMM_LC  : hsifw() - flags=0, caller=android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1858 android.view.inputmethod.InputMethodManager.hideSoftInputFromWindow:1827 org.ps3.sentinel.ui.MainActivity.x:65 x1.D.i:332 U0.b.c:8 
+11-24 18:21:20.156 26689 26689 I IMM_LC  : hsifw() ignore mServedView == null or mServedView.getWindowToken() != windowToken, mServedView :DecorView@25a74f4[MainActivity]
+11-24 18:21:20.160 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=org.ps3.sentinel parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+11-24 18:21:20.160 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@1289f60[]
+11-24 18:21:20.165 26689 26689 I ViewRootImpl@aef8342[MainActivity]: setView = com.android.internal.policy.DecorView@1289f60 TM=true
+11-24 18:21:20.165 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@1289f60[MainActivity]
+11-24 18:21:20.165 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@1289f60[MainActivity]
+11-24 18:21:20.190 26689 26689 I ViewRootImpl@aef8342[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)0 dur=10 res=0x7 s={true 504519802880} ch=true fn=-1
+11-24 18:21:20.191 26689 26719 D OpenGLRenderer: eglCreateWindowSurface
+11-24 18:21:20.195 26689 26689 I ViewRootImpl@aef8342[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+11-24 18:21:20.195 26689 26689 D ViewRootImpl@aef8342[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+11-24 18:21:20.195 26689 26689 D ViewRootImpl@aef8342[MainActivity]: Creating frameCompleteCallback
+11-24 18:21:20.207 26689 26745 D ViewRootImpl@aef8342[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+11-24 18:21:20.223 26689 26719 D ViewRootImpl@aef8342[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+11-24 18:21:20.225 26689 26689 I ViewRootImpl@aef8342[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+11-24 18:21:20.226 26689 26689 I ViewRootImpl@aef8342[MainActivity]: [DP] rdf()
+11-24 18:21:20.226 26689 26689 D ViewRootImpl@aef8342[MainActivity]: reportDrawFinished (fn: -1) 
+11-24 18:21:20.226 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+11-24 18:21:20.240 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:21:20.241 26689 26689 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on org.ps3.sentinel/org.ps3.sentinel.ui.MainActivity
+11-24 18:21:20.257 26689 26689 I ViewRootImpl@aef8342[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+11-24 18:21:20.266 26689 26689 D InputMethodManager: startInputInner - Id : 0
+11-24 18:21:20.266 26689 26689 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+11-24 18:21:20.638 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: handleAppVisibility mAppVisible=true visible=false
+11-24 18:21:20.660 26689 26719 D OpenGLRenderer: setSurface called with nullptr
+11-24 18:21:20.660 26689 26719 D OpenGLRenderer: setSurface() destroyed EGLSurface
+11-24 18:21:20.660 26689 26719 D OpenGLRenderer: destroyEglSurface
+11-24 18:21:20.666 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) req=(1080,2340)8 dur=3 res=0x5 s={false 0} ch=true fn=66
+11-24 18:21:20.667 26689 26689 I ViewRootImpl@35f36b6[MainActivity]: stopped(true) old=false
+11-24 18:21:20.668 26689 26689 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@25a74f4[MainActivity]
+11-24 18:21:20.668 26689 26689 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@25a74f4[MainActivity]
+11-24 18:21:27.854 26689 26701 I rg.ps3.sentine: Explicit concurrent copying GC freed 6959KB AllocSpace bytes, 1(20KB) LOS objects, 40% free, 35MB/59MB, paused 658us,104us total 368.195ms
+11-24 18:21:28.166 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=125
+11-24 18:21:28.169 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=120
+11-24 18:21:28.171 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=117
+11-24 18:21:28.173 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=111
+11-24 18:21:28.174 26689 26695 D InputTransport: Input channel destroyed: 'ClientS', fd=148

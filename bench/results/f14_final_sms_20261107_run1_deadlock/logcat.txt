@@ -1,0 +1,11 @@
+--------- beginning of main
+11-07 09:24:33.184 I/PS3Timing(17943): process_start_to_onCreate_ms=18
+11-07 09:24:33.236 I/PS3Timing(17943): integrity_verify_model=url ms=7
+11-07 09:24:33.281 I/PS3Timing(17943): model_load_model=url ms=45
+11-07 09:24:33.284 I/PS3Timing(17943): integrity_verify_model=sms ms=1
+11-07 09:24:36.366 I/PS3Timing(17943): sms_received_to_alert_ms=3111
+11-07 09:24:39.792 I/PS3Timing(17943): model_load_model=sms ms=6509
+11-07 09:24:39.904 I/PS3Timing(17943): deferred_analysis_done_ms=6649 posted=true updated=true
+11-07 09:25:55.958 I/PS3Timing(17943): intent_to_analysis_start_ms=50
+11-07 09:25:55.968 I/PS3Timing(17943): integrity_verify_model=llama ms=3
+11-07 09:25:55.978 I/PS3Sms  (17943): LlamaAdvisor: prefix cache enabled (constant USE_PREFIX_CACHE=true, no flag file)

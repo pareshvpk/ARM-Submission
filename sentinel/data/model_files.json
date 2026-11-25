@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "files": {
+    "url_model": {
+      "phone": "url_cnn_v2.pte",
+      "linux": "url_v2/url_cnn_v2.pte"
+    },
+    "url_vocab": {
+      "phone": "vocab.json",
+      "linux": "url_v2/vocab.json"
+    },
+    "sms_model": {
+      "phone": "sms_int8.pte",
+      "linux": "sms_v6ml/sms_int8.pte"
+    },
+    "sms_fp32": {
+      "phone": "sms_fp32.pte",
+      "linux": "sms_v6ml/sms_fp32_int8emb.pte",
+      "description": "optional phone-only fallback for CPUs without dot-product support (no asimddp); not a required role"
+    },
+    "sms_id_map": {
+      "phone": "id_map.json",
+      "linux": "sms_v6ml/id_map.json"
+    },
+    "sms_vocab": {
+      "phone": "sms_vocab.txt",
+      "linux": "sms_v6ml/sms_vocab.txt",
+      "description": "The Linux SMS detector loads the tokenizer directory and id_map, not this vocab file"
+    },
+    "sms_tokenizer_dir": {
+      "phone": "sms_vocab.txt",
+      "linux": "sms_v6ml/tokenizer"
+    },
+    "llama_model": {
+      "phone": "llama.pte",
+      "linux": "llama32_1b/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8.pte"
+    },
+    "llama_tokenizer": {
+      "phone": "tokenizer.model",
+      "linux": "llama32_1b/tokenizer.model"
+    }
+  }
+}

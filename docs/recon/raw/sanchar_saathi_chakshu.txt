@@ -1,0 +1,111 @@
+URL: https://sancharsaathi.gov.in/sfc/
+TITLE: Sanchar Saathi Suspected Fraud Communication Reporting
+
+[RootWebArea] Sanchar Saathi Suspected Fraud Communication Reporting
+[link] Skip to main content
+[navigation] Main
+[region] This website uses cookies to provide a better user experience.
+[link] State Emblem of India Government of India Ministry of Communications Department of Telecommunications
+[link] Sanchar Saathi
+[link] Home
+[StaticText] चक्षु - Chakshu
+[heading] Report Suspected Fraud Communication / UCC (Spam) About Chakshu YouTube VideoAbout Chakshu YouTube Video
+[navigation] Useful links
+[navigation] Follow DoT
+[image] CDOT
+[link] Customize cookies
+[button] Accept essential cookies
+[button] Accept all cookies
+[dialog] AI Sanchar Saathi
+[StaticText] {"mode":"full","isActive":true,"isUserDisabled":false}
+[image] State Emblem of India
+[StaticText] Government of India
+[StaticText] Ministry of Communications
+[searchbox] Search Sanchar Saathi
+[button] Search
+[combobox] Language Translator
+[button] Accessibility controls
+[StaticText] Report Suspected Fraud Communication / UCC (Spam)
+[link] About Chakshu YouTube Video
+[StaticText] Sanchar Saathi Helpdesk
+[StaticText] Timings: 9:00 AM to 5:00 PM (Monday to Friday)
+[StaticText] The website belongs to Department of Telecommunications, Ministry of Communications, Government of India
+[StaticText] Designed, Developed and Hosted by Centre for Development of Telematics (C-DOT)
+[StaticText] Website best viewed in Chrome 90+ and Firefox 90+
+[StaticText] 31,91,10,488
+[StaticText] 15-10-2026 16:26:12
+[link] Security Certificate
+[link] Certified Quality Website
+[StaticText] By clicking accept, you agree to the policies outlined in the
+[link] Cookie Settings
+[StaticText] Department of Telecommunications
+[StaticText] Searches the whole Sanchar Saathi portal, including documents
+[link] Email: help-sancharsaathi@gov.in
+[link] Telephone: 011-20907480
+[StaticText] Visitor Count:
+[StaticText] Last Updated On:
+[StaticText] Certified
+[StaticText] Quality
+[StaticText] Website
+[button] New chat
+[button] Close the chat
+[button] How to report fraud call?
+[button] Block my lost phone
+[button] Check SIMs in my name
+[button] Verify my phone IMEI
+[textbox] Your question
+[button] Send
+[StaticText] 0/500
+[StaticText] (opens in a new tab)
+[link] Citizen Centric Services
+[link] About
+[link] Keep Yourself Aware
+[link] Frequently Asked Questions
+[link] Mobile App
+[link] Report Cyber Fraud Trends
+[heading] Report Suspected Fraud
+[button] Go back to main view
+[heading] About Suspected Fraud Reporting
+[heading] Report Spam (UCC)
+[heading] About UCC/Spam Reporting
+[link] About Us
+[link] Contact Us
+[link] Help
+[link] Feedback
+[link] Grievance
+[link] Accessibility Statement
+[link] Important Documents
+[link] Website Policies
+[link] Sitemap
+[link] Related Links
+[link] Web Information Manager
+[link] Facebook
+[link] X (Twitter)
+[link] YouTube
+[link] Instagram
+[StaticText] Email:
+[StaticText] help-sancharsaathi@gov.in
+[StaticText] Telephone:
+[StaticText] 011-20907480
+[StaticText] Answers are generated automatically. Do not share OTP, Aadhaar, passwords or bank details.
+[StaticText] Answers will be in the language selected on this portal. To get them in another language, change the portal's language.
+[StaticText] Hello! I am AI Sanchar Saathi. I can help you with Sanchar Saathi services such as reporting fraud calls, blocking a lost phone and checking mobile connections in your name. Ask me a question.
+[StaticText] (Report within 30 days for action)
+[link] Proceed
+[button] Know More
+[StaticText] Back
+[link] Proceed to Report
+[link] FAQs
+[StaticText] Disclaimer:
+[StaticText] Chakshu facilitates citizens to report the suspected fraud communications with the intention of defrauding telecom service users for cyber-crime, financial frauds, non-bonafide purpose like impersonation or any other misuse through Call, SMS or WhatsApp.
+[StaticText] Bank Account / Payment Wallet / SIM / Gas / Electricity / KYC update, impersonation as Government official, sextortion etc.
+[StaticText] If you have already lost money, please report at
+[link] cybercrime.gov.in
+[StaticText] Chakshu facilitates citizens to report UCC (Unsolicited Commercial Communication) or spam received through Voice Call or SMS which is not as per the consent given by recipient or as per registered preference(s).
+[StaticText] Complaints made within 30 days are investigated. Reports made after 30 days aid in proactively finding spammers.
+[StaticText] Examples:
+[StaticText] Note:
+[StaticText] cyber crime helpline 1930
+[StaticText] Timeline:
+
+THIRD-PARTY/RESOURCE HOSTS: sancharsaathi.gov.in

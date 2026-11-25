@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/glass_highlight">
+    <item>
+        <selector>
+            <!-- Pressed state: highlight at half alpha -->
+            <item android:state_pressed="true">
+                <layer-list>
+                    <!-- 1. Base fill with 1dp stroke -->
+                    <item>
+                        <shape android:shape="rectangle">
+                            <gradient
+                                android:angle="270"
+                                android:startColor="#57B8DEFF"
+                                android:endColor="#38598CFF"
+                                android:type="linear" />
+                            <stroke
+                                android:width="1dp"
+                                android:color="#8CFFFFFF" />
+                            <corners android:radius="999dp" />
+                        </shape>
+                    </item>
+
+                    <!-- 2. Inner top highlight: half alpha #13FFFFFF to transparent -->
+                    <item
+                        android:bottom="1dp"
+                        android:left="1dp"
+                        android:right="1dp"
+                        android:top="1dp">
+                        <shape android:shape="rectangle">
+                            <gradient
+                                android:angle="270"
+                                android:centerY="0.45"
+                                android:startColor="#13FFFFFF"
+                                android:centerColor="@android:color/transparent"
+                                android:endColor="@android:color/transparent"
+                                android:type="linear" />
+                            <corners android:radius="999dp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+
+            <!-- Default state -->
+            <item>
+                <layer-list>
+                    <!-- 1. Base fill with 1dp stroke -->
+                    <item>
+                        <shape android:shape="rectangle">
+                            <gradient
+                                android:angle="270"
+                                android:startColor="#57B8DEFF"
+                                android:endColor="#38598CFF"
+                                android:type="linear" />
+                            <stroke
+                                android:width="1dp"
+                                android:color="#8CFFFFFF" />
+                            <corners android:radius="999dp" />
+                        </shape>
+                    </item>
+
+                    <!-- 2. Inner top highlight: #26FFFFFF to transparent -->
+                    <item
+                        android:bottom="1dp"
+                        android:left="1dp"
+                        android:right="1dp"
+                        android:top="1dp">
+                        <shape android:shape="rectangle">
+                            <gradient
+                                android:angle="270"
+                                android:centerY="0.45"
+                                android:startColor="#26FFFFFF"
+                                android:centerColor="@android:color/transparent"
+                                android:endColor="@android:color/transparent"
+                                android:type="linear" />
+                            <corners android:radius="999dp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+        </selector>
+    </item>
+</ripple>

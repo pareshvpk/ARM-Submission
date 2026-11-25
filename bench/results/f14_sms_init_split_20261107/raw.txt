@@ -1,0 +1,12 @@
+run1 11-07 11:25:53.199  1584  1622 I PS3Timing: sms_init_split tokenizer_ms=4668 idmap_ms=148 module_load_ms=58 probe_ms=130 gate_wait_ms=0
+run1 11-07 11:25:53.199  1584  1622 I PS3Timing: model_load_model=sms ms=5007
+run1 11-07 11:25:53.431  1584  1640 I PS3Timing: model_load_model=llama ms=137
+run1 11-07 11:26:01.748  1584  1696 I PS3Timing: prefix_prefill_ms=8315
+run2 11-07 11:26:23.899  2900  2921 I PS3Timing: sms_init_split tokenizer_ms=4530 idmap_ms=151 module_load_ms=58 probe_ms=145 gate_wait_ms=1
+run2 11-07 11:26:23.899  2900  2921 I PS3Timing: model_load_model=sms ms=4889
+run2 11-07 11:26:24.134  2900  2963 I PS3Timing: model_load_model=llama ms=134
+run2 11-07 11:26:31.500  2900  3003 I PS3Timing: prefix_prefill_ms=7364
+run3 11-07 11:26:54.034  3064  3079 I PS3Timing: sms_init_split tokenizer_ms=4345 idmap_ms=145 module_load_ms=41 probe_ms=100 gate_wait_ms=0
+run3 11-07 11:26:54.034  3064  3079 I PS3Timing: model_load_model=sms ms=4633
+run3 11-07 11:26:54.179  3064  3095 I PS3Timing: model_load_model=llama ms=131
+run3 11-07 11:27:00.955  3064  3128 I PS3Timing: prefix_prefill_ms=6770

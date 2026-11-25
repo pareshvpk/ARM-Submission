@@ -1,0 +1,13 @@
+{
+  "id": "<kaggle-user>/ps3-sms-multilang-translate",
+  "title": "ps3-sms-multilang-translate",
+  "code_file": "translate_mt.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "<kaggle-user>/ps3-sms-corpus"
+  ]
+}

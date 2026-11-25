@@ -1,0 +1,9 @@
+Galaxy F14, APK bdcc10e, cold open via share intent; open_to_first_token = Llama first_token_ms minus the epoch of process_start_to_onCreate
+run1 prefix_cache=off prompt_tokens=262 native_model_load_ms=3058 prefix_prefill_ms=- ttft_ms=4862.0 open_to_first_token_s=13.40
+run3 prefix_cache=off prompt_tokens=262 native_model_load_ms=2815 prefix_prefill_ms=- ttft_ms=4250.0 open_to_first_token_s=12.52
+run5 prefix_cache=off prompt_tokens=262 native_model_load_ms=3517 prefix_prefill_ms=- ttft_ms=5629.0 open_to_first_token_s=14.56
+  off: mean open_to_first_token 13.49 s over 3 runs
+run2 prefix_cache=on prompt_tokens=77 native_model_load_ms=0 prefix_prefill_ms=6095 ttft_ms=1414.0 open_to_first_token_s=12.96
+run4 prefix_cache=on prompt_tokens=77 native_model_load_ms=0 prefix_prefill_ms=5934 ttft_ms=1548.0 open_to_first_token_s=13.00
+run6 prefix_cache=on prompt_tokens=77 native_model_load_ms=0 prefix_prefill_ms=7401 ttft_ms=1813.0 open_to_first_token_s=14.65
+  on: mean open_to_first_token 13.54 s over 3 runs

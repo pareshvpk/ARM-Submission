@@ -1,0 +1,16 @@
+run1 11-07 10:23:24.829 23895 23932 I PS3Timing: model_load_model=llama ms=133
+run1 11-07 10:23:31.969 23895 23969 I PS3Timing: prefix_prefill_ms=7140
+run1 11-07 10:23:44.294 23895 23934 I PS3Sms  : LlamaAdvisor prompt_path=prefix_cache prompt_tokens=109
+run1 11-07 10:23:44.301 23895 23934 I PS3Bench: prompt_path=prefix_cache prompt_tokens=109 ttft_ms=2037.0 decode_tok_s=7.1 advice_sha8=459497e7
+run2 11-07 10:33:37.560 25385 25416 I PS3Timing: model_load_model=llama ms=160
+run2 11-07 10:33:43.275 25385 25453 I PS3Timing: prefix_prefill_ms=5715
+run2 11-07 10:33:51.224 25385 25418 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1332.0 decode_tok_s=9.4 advice_sha8=ba4a2e17
+run3 11-07 10:34:07.049 25522 25558 I PS3Timing: model_load_model=llama ms=125
+run3 11-07 10:34:12.658 25522 25596 I PS3Timing: prefix_prefill_ms=5609
+run3 11-07 10:34:21.559 25522 25560 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1408.0 decode_tok_s=8.3 advice_sha8=ba4a2e17
+run4 11-07 10:34:36.732 25666 25697 I PS3Timing: model_load_model=llama ms=271
+run4 11-07 10:34:42.458 25666 25736 I PS3Timing: prefix_prefill_ms=5726
+run4 11-07 10:34:51.805 25666 25699 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1462.0 decode_tok_s=7.9 advice_sha8=ba4a2e17
+run5 11-07 10:35:08.469 26092 26123 I PS3Timing: model_load_model=llama ms=185
+run5 11-07 10:35:15.703 26092 26163 I PS3Timing: prefix_prefill_ms=7232
+run5 11-07 10:35:25.628 26092 26125 I PS3Bench: prompt_path=prefix_cache prompt_tokens=77 ttft_ms=1890.0 decode_tok_s=7.7 advice_sha8=ba4a2e17

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ps3-sentinel"
+version = "1.0.0"
+description = "Offline on-device SMS scam detection on Arm Linux (Phase 1)"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+# Runtime pins (torch, executorch, transformers, ...) live in requirements-linux.txt.
+dependencies = []
+
+[project.scripts]
+sentinel = "sentinel.cli:main"
+
+[tool.setuptools]
+packages = ["sentinel"]
+
+[tool.setuptools.package-data]
+sentinel = ["data/*.json", "data/*.txt"]

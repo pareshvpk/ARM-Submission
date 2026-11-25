@@ -1,0 +1,215 @@
+{
+ "date": "2026-11-15",
+ "what": "Alert rate of the incoming-SMS path (routine skip, SMS + URL ExecuTorch models, fusion, alert policy; no Llama) before and after the registered-sender rule.",
+ "before": "fuse() called without the sender, as shipped until 2026-11-14 (the .bank.in trust rule is active in both columns)",
+ "after": "fuse() called with the sender; registered-sender link cap and medium-alert rule active",
+ "inbox_note": "Inbox sets are unlabelled real business SMS (distinct templates, redacted, DLT header senders); a few are real scams, so the alert rate is an upper bound on the false-alarm rate. Message text is not stored in the repository.",
+ "sms_model": "models/sms_v6ml",
+ "url_model": "models/url_v2",
+ "results": {
+  "before": {
+   "fake_bank_alert_scams/scam": {
+    "n": 55,
+    "skipped": 0,
+    "alerts": 50,
+    "high": 47,
+    "medium": 3,
+    "low": 5,
+    "alert_rate": 0.9091
+   },
+   "genuine_bank_disclaimers/ham": {
+    "n": 55,
+    "skipped": 0,
+    "alerts": 3,
+    "high": 2,
+    "medium": 1,
+    "low": 52,
+    "alert_rate": 0.0545
+   },
+   "heldout_english/ham": {
+    "n": 550,
+    "skipped": 0,
+    "alerts": 0,
+    "high": 0,
+    "medium": 5,
+    "low": 545,
+    "alert_rate": 0.0
+   },
+   "heldout_english/scam": {
+    "n": 659,
+    "skipped": 0,
+    "alerts": 592,
+    "high": 526,
+    "medium": 69,
+    "low": 64,
+    "alert_rate": 0.8983
+   },
+   "heldout_hinglish/ham": {
+    "n": 500,
+    "skipped": 0,
+    "alerts": 1,
+    "high": 0,
+    "medium": 2,
+    "low": 498,
+    "alert_rate": 0.002
+   },
+   "heldout_hinglish/scam": {
+    "n": 500,
+    "skipped": 0,
+    "alerts": 425,
+    "high": 340,
+    "medium": 104,
+    "low": 56,
+    "alert_rate": 0.85
+   },
+   "inbox_galaxy_f14/ham": {
+    "n": 381,
+    "skipped": 7,
+    "alerts": 186,
+    "high": 172,
+    "medium": 39,
+    "low": 163,
+    "alert_rate": 0.4882
+   },
+   "inbox_galaxy_m31/ham": {
+    "n": 3012,
+    "skipped": 45,
+    "alerts": 1589,
+    "high": 1509,
+    "medium": 264,
+    "low": 1194,
+    "alert_rate": 0.5276
+   },
+   "inbox_vivo_v2338/ham": {
+    "n": 1392,
+    "skipped": 67,
+    "alerts": 371,
+    "high": 316,
+    "medium": 153,
+    "low": 856,
+    "alert_rate": 0.2665
+   }
+  },
+  "after": {
+   "fake_bank_alert_scams/scam": {
+    "n": 55,
+    "skipped": 0,
+    "alerts": 50,
+    "high": 47,
+    "medium": 3,
+    "low": 5,
+    "alert_rate": 0.9091
+   },
+   "genuine_bank_disclaimers/ham": {
+    "n": 55,
+    "skipped": 0,
+    "alerts": 2,
+    "high": 2,
+    "medium": 1,
+    "low": 52,
+    "alert_rate": 0.0364
+   },
+   "heldout_english/ham": {
+    "n": 550,
+    "skipped": 0,
+    "alerts": 0,
+    "high": 0,
+    "medium": 5,
+    "low": 545,
+    "alert_rate": 0.0
+   },
+   "heldout_english/scam": {
+    "n": 659,
+    "skipped": 0,
+    "alerts": 592,
+    "high": 526,
+    "medium": 69,
+    "low": 64,
+    "alert_rate": 0.8983
+   },
+   "heldout_hinglish/ham": {
+    "n": 500,
+    "skipped": 0,
+    "alerts": 1,
+    "high": 0,
+    "medium": 2,
+    "low": 498,
+    "alert_rate": 0.002
+   },
+   "heldout_hinglish/scam": {
+    "n": 500,
+    "skipped": 0,
+    "alerts": 425,
+    "high": 340,
+    "medium": 104,
+    "low": 56,
+    "alert_rate": 0.85
+   },
+   "inbox_galaxy_f14/ham": {
+    "n": 381,
+    "skipped": 7,
+    "alerts": 14,
+    "high": 12,
+    "medium": 106,
+    "low": 256,
+    "alert_rate": 0.0367
+   },
+   "inbox_galaxy_m31/ham": {
+    "n": 3012,
+    "skipped": 45,
+    "alerts": 95,
+    "high": 67,
+    "medium": 1339,
+    "low": 1561,
+    "alert_rate": 0.0315
+   },
+   "inbox_vivo_v2338/ham": {
+    "n": 1392,
+    "skipped": 67,
+    "alerts": 43,
+    "high": 28,
+    "medium": 311,
+    "low": 986,
+    "alert_rate": 0.0309
+   }
+  },
+  "after_worst_case_all_senders_registered": {
+   "heldout_english/ham": {
+    "n": 550,
+    "skipped": 38,
+    "alerts": 0,
+    "high": 0,
+    "medium": 5,
+    "low": 507,
+    "alert_rate": 0.0
+   },
+   "heldout_english/scam": {
+    "n": 659,
+    "skipped": 0,
+    "alerts": 556,
+    "high": 505,
+    "medium": 76,
+    "low": 78,
+    "alert_rate": 0.8437
+   },
+   "heldout_hinglish/ham": {
+    "n": 500,
+    "skipped": 0,
+    "alerts": 1,
+    "high": 0,
+    "medium": 2,
+    "low": 498,
+    "alert_rate": 0.002
+   },
+   "heldout_hinglish/scam": {
+    "n": 500,
+    "skipped": 0,
+    "alerts": 394,
+    "high": 336,
+    "medium": 106,
+    "low": 58,
+    "alert_rate": 0.788
+   }
+  }
+ }
+}

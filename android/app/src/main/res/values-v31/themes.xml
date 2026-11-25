@@ -1,0 +1,26 @@
+<resources>
+    <style name="Theme.PS3Sentinel" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+        <item name="colorSecondary">@color/brand</item>
+        <item name="colorOnSecondary">@color/on_accent</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text</item>
+        <item name="android:textViewStyle">@style/Widget.Sentinel.TextView</item>
+        <item name="android:editTextStyle">@style/Widget.Sentinel.EditText</item>
+        <item name="android:buttonStyle">@style/Widget.Sentinel.Button.Primary</item>
+        <item name="buttonStyle">@style/Widget.Sentinel.Button.Primary</item>
+        <item name="android:windowBackground">@drawable/bg_app_glass</item>
+        <item name="android:windowSplashScreenBackground">@color/bg_black</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="android:statusBarColor">@color/bg_black</item>
+        <item name="android:navigationBarColor">@color/bg_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Sentinel.DisplayXL</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Sentinel.DisplayL</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Sentinel.HeadingM</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Sentinel.BodyL</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Sentinel.BodyM</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+{
+  "id": "<kaggle-user>/ps3-sms-classifier",
+  "title": "ps3-sms-classifier",
+  "code_file": "train_sms.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "<kaggle-user>/ps3-sms-corpus"
+  ]
+}

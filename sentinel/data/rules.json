@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "cues": {
+    "description": "SMS cue keywords and extra regular expressions per cue type. Matching is case-insensitive and is done by the code, so no inline flags belong here.",
+    "type_order": [
+      "urgency",
+      "credential_request",
+      "payment_request",
+      "impersonation",
+      "reward",
+      "threat",
+      "app_install",
+      "sender_mismatch"
+    ],
+    "keywords": {
+      "urgency": [
+        "within 24 hours",
+        "last chance",
+        "aaj raat",
+        "immediately",
+        "tonight",
+        "urgent",
+        "turant",
+        "today",
+        "jaldi"
+      ],
+      "credential_request": [
+        "update now",
+        "password",
+        "verify",
+        "share",
+        "cvv",
+        "pin",
+        "otp",
+        "kyc"
+      ],
+      "payment_request": [
+        "collect request",
+        "processing fee",
+        "transfer",
+        "refund",
+        "upi",
+        "pay",
+        "fee"
+      ],
+      "impersonation": [
+        "electricity board",
+        "central bank of india",
+        "punjab and sind bank",
+        "bank of baroda",
+        "union bank of india",
+        "bank of india",
+        "federal bank",
+        "canara bank",
+        "indian bank",
+        "cyber crime",
+        "income tax",
+        "customs",
+        "police",
+        "courier",
+        "trai",
+        "sbi",
+        "hdfc",
+        "icici",
+        "axis",
+        "kotak",
+        "pnb",
+        "idbi",
+        "yes bank",
+        "indusind",
+        "paytm",
+        "phonepe",
+        "gpay",
+        "amazon",
+        "flipkart",
+        "irctc",
+        "indiapost",
+        "uidai",
+        "aadhaar",
+        "npci"
+      ],
+      "reward": [
+        "lucky draw",
+        "cashback",
+        "lottery",
+        "prize",
+        "won",
+        "kbc"
+      ],
+      "threat": [
+        "legal action",
+        "disconnect",
+        "disconnected",
+        "penalty",
+        "arrest",
+        "fine",
+        "blocked",
+        "suspended",
+        "kat jayega",
+        "kaat diya jayega",
+        "band ho jayega",
+        "block ho jayega",
+        "band kar diya jayega"
+      ],
+      "app_install": [
+        "apk",
+        "download apk",
+        "install apk",
+        ".apk"
+      ],
+      "sender_mismatch": []
+    },
+    "regexes": {
+      "urgency": [
+        "\\b(in|within)\\s+\\d+\\s+(minutes|minute|mins|min|hours|hour|hrs|hr)\\b"
+      ],
+      "credential_request": [],
+      "payment_request": [],
+      "impersonation": [],
+      "reward": [],
+      "threat": [],
+      "app_install": [],
+      "sender_mismatch": []
+    }
+  },
+  "fusion": {
+    "description": "Weights and thresholds used to turn SMS, URL and cue outputs into one risk score. Python is the reference implementation.",
+    "sms_temperature": 3.0,
+    "sms_scam_weight": 0.9,
+    "sms_unwanted_weight": 0.5,
+    "url_weight": 0.9,
+    "cue_weight": 0.15,
+    "cue_cap": 0.6,
+    "combo_score": 0.72,
+    "app_install_score": 0.75,
+    "collect_pin_score": 0.75,
+    "label_threshold": 0.7,
+    "high_level_threshold": 0.7,
+    "medium_level_threshold": 0.4,
+    "trusted_prob_cap": 0.2,
+    "url_phishing_label_threshold": 0.5,
+    "risk_round_decimals": 4,
+    "sms_ham_confidence_threshold": 0.8,
+    "sms_ham_confidence_description": "When an SMS model result is present and its ham probability is at least this value, the urgency plus payment combo rule is disabled so a confident ham verdict is not overridden by cue words."
+  },
+  "promotion_no_action": {
+    "description": "Plain-promotion detection shared by Python and Kotlin. A result is a plain promotion only when every check passes; the verdict (medium/unwanted) never changes, only the presentation does.",
+    "level": "medium",
+    "label": "unwanted",
+    "blocked_cue_types": [
+      "urgency",
+      "threat",
+      "credential_request",
+      "payment_request",
+      "impersonation",
+      "reward",
+      "app_install"
+    ],
+    "phone_digit_run_regex": "\\d(?:[ \\t\\-./()]*\\d){5,}",
+    "phone_min_digits": 6,
+    "domain_like_regex": "\\b[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.[a-z]{2,24}\\b",
+    "at_handle_regex": "\\S+@\\S+",
+    "reply_contact_phrases": [
+      "reply",
+      "text back",
+      "sms back",
+      "whatsapp",
+      "call",
+      "contact",
+      "message us",
+      "dm",
+      "send yes",
+      "send stop to claim"
+    ],
+    "advice_text": "Promotion: no action needed. Ignore it, or block the sender if you do not want these.\n1. You do not need to reply or call.\n2. Never share an OTP, PIN or password, even with a shop.\n3. Block the sender if these messages bother you."
+  },
+  "scam_scripts": {
+    "description": "Known scam scripts shared by Python and Kotlin. A message follows a script when every 'all' regex is found and no 'none' regex is found; matching is case-insensitive and done by the code. A match floors the risk at the high level and adds the indicator. Patterns use explicit ASCII letter guards instead of \\b so Python, the desktop JVM and Android agree on mixed-script text.",
+    "scripts": [
+      {
+        "name": "digital_arrest",
+        "indicator": "digital arrest threat",
+        "all": [
+          "digital\\s+arrest",
+          "(?<![a-z])(?:video\\s+call|money\\s+laundering|warrant|case|cbi|ncb|customs|police|crime\\s+branch)(?![a-z])"
+        ],
+        "none": [
+          "(?<![a-z])(?:helpline|1930|scams?|frauds?|fake|beware|awareness|advisory|report)(?![a-z])"
+        ]
+      },
+      {
+        "name": "pay_to_receive",
+        "indicator": "asks for a small payment to release a refund",
+        "all": [
+          "(?<![a-z])(?:refund)(?![a-z])",
+          "(?:₹|(?<![a-z])rs\\.?|(?<![a-z])inr)\\s*\\d{1,2}(?![\\d,]|\\.\\d)[^.!?।\\n]{0,25}(?<![a-z])(?:pay|send|transfer|bhej[a-z]*|jama)(?![a-z])|(?<![a-z])(?:pay|send|transfer|bhej[a-z]*|jama)(?![a-z])[^.!?।\\n]{0,25}(?:₹|(?<![a-z])rs\\.?|(?<![a-z])inr)\\s*\\d{1,2}(?![\\d,]|\\.\\d)",
+          "(?<![a-z])(?:credit(?:ed)?|receive|milega|milenge|wapas)(?![a-z])"
+        ],
+        "none": []
+      },
+      {
+        "name": "guaranteed_profit",
+        "indicator": "guaranteed profit investment offer",
+        "all": [
+          "guaranteed?\\s+(?:daily\\s+)?(?:profits?|returns?|income)|(?:profits?|returns?|income)\\s+guaranteed?",
+          "(?<![a-z])(?:daily|per\\s+day|weekly)(?![a-z])|\\d\\s*%",
+          "(?<![a-z])(?:groups?|whatsapp|telegram|channel|vip|trading)(?![a-z])"
+        ],
+        "none": []
+      },
+      {
+        "name": "upi_pin_to_receive",
+        "indicator": "asks for your UPI PIN to receive money",
+        "all": [
+          "(?<![a-z])(?:upi\\s*)?pin(?![a-z])",
+          "(?<![a-z])(?:receive|get|credit(?:ed)?|claim|refund|cashback)(?![a-z])",
+          "(?<![a-z])(?:enter|share|type|send|provide)(?![a-z])"
+        ],
+        "none": [
+          "(?<![a-z])(?:never|not|don'?t|dont|won'?t|no\\s+need|beware|fraud|scam|fake|awareness|advisory|1930|report)(?![a-z])"
+        ]
+      },
+      {
+        "name": "power_cut_call",
+        "indicator": "power cut threat with a number to call",
+        "all": [
+          "(?<![a-z])(?:electricity|electric|power|bijli|light)(?![a-z])",
+          "(?<![a-z])(?:cut|disconnect(?:ed|ion)?|discontinued)(?![a-z])",
+          "tonight|today|\\d{1,2}[:.]\\d{2}\\s*(?:pm|am)|within",
+          "(?<![a-z])(?:call|contact|whatsapp|dial)(?![a-z])"
+        ],
+        "none": [
+          "(?<![a-z])(?:never|not|don'?t|dont|won'?t|no\\s+need|beware|fraud|scam|fake|awareness|advisory|1930|report)(?![a-z])",
+          "(?<![a-z])(?:maintenance|shutdown|planned|scheduled)(?![a-z])"
+        ]
+      },
+      {
+        "name": "task_job",
+        "indicator": "paid online task or work-from-home job offer",
+        "all": [
+          "(?<![a-z])(?:work\\s+from\\s+home|part[\\s-]?time|earn(?:ing)?s?)(?![a-z])",
+          "per\\s+day|a\\s+day|daily|/\\s*day",
+          "(?<![a-z])(?:like|likes|subscribe|youtube|review|rating|task|telegram|whatsapp|wa\\.me)(?![a-z])"
+        ],
+        "none": [
+          "(?<![a-z])(?:never|not|don'?t|dont|won'?t|no\\s+need|beware|fraud|scam|fake|awareness|advisory|1930|report)(?![a-z])"
+        ]
+      },
+      {
+        "name": "new_number_money",
+        "indicator": "new number asking for money",
+        "all": [
+          "new\\s+number|lost\\s+my\\s+phone|changed\\s+my\\s+number|my\\s+new\\s+no",
+          "(?<![a-z])(?:send|transfer|need|pay|gpay|upi)(?![a-z])",
+          "(?:₹|(?<![a-z])rs\\.?|(?<![a-z])inr)\\s*[\\d,]+|(?<![a-z])(?:money|urgent(?:ly)?)(?![a-z])"
+        ],
+        "none": [
+          "(?<![a-z])(?:never|not|don'?t|dont|won'?t|no\\s+need|beware|fraud|scam|fake|awareness|advisory|1930|report)(?![a-z])"
+        ]
+      },
+      {
+        "name": "prize_fee",
+        "indicator": "prize that needs a fee",
+        "all": [
+          "(?<![a-z])(?:won|winner|lucky\\s+draw|lottery|prize|kbc)(?![a-z])",
+          "(?<![a-z])(?:fee|charges?|tax|deposit|pay)(?![a-z])"
+        ],
+        "none": [
+          "(?<![a-z])(?:never|not|don'?t|dont|won'?t|no\\s+need|beware|fraud|scam|fake|awareness|advisory|1930|report)(?![a-z])",
+          "prize\\s+pool|entry\\s+fee|contest|fantasy"
+        ]
+      },
+      {
+        "name": "apk_install",
+        "indicator": "asks you to install an app file",
+        "all": [
+          "\\.apk(?![a-z])|install\\s+(?:this|the)\\s+app",
+          "(?<![a-z])(?:kyc|bank|account|update|verify)(?![a-z])"
+        ],
+        "none": [
+          "(?<![a-z])(?:never|not|don'?t|dont|won'?t|no\\s+need|beware|fraud|scam|fake|awareness|advisory|1930|report)(?![a-z])"
+        ]
+      }
+    ]
+  },
+  "detector_versions": {
+    "description": "Version labels reported in the evidence object. Bump a version in this one place when its model or rules change.",
+    "versions": {
+      "url_detector": "2.0",
+      "sms_detector": "1.0",
+      "fusion": "1.0"
+    }
+  }
+}

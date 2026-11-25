@@ -1,0 +1,5628 @@
+{
+  "schema_version": 1,
+  "description": "Python reference verdicts that the Kotlin implementation must reproduce.",
+  "cases": [
+    {
+      "text": "URGENT: your SBI account is blocked today. Update now: otp needed or legal action will follow",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 0,
+            "end": 6,
+            "text": "URGENT"
+          },
+          {
+            "type": "impersonation",
+            "start": 13,
+            "end": 16,
+            "text": "SBI"
+          },
+          {
+            "type": "threat",
+            "start": 28,
+            "end": 35,
+            "text": "blocked"
+          },
+          {
+            "type": "urgency",
+            "start": 36,
+            "end": 41,
+            "text": "today"
+          },
+          {
+            "type": "credential_request",
+            "start": 43,
+            "end": 53,
+            "text": "Update now"
+          },
+          {
+            "type": "credential_request",
+            "start": 55,
+            "end": 58,
+            "text": "otp"
+          },
+          {
+            "type": "threat",
+            "start": 69,
+            "end": 81,
+            "text": "legal action"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation",
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Dear customer your SBI account is suspended. Verify KYC now: http://sbi-kyc.xyz",
+      "sms_result": {
+        "probs": {
+          "ham": 0.02,
+          "unwanted": 0.08,
+          "scam": 0.9
+        },
+        "label": "scam"
+      },
+      "url_results": [
+        {
+          "url": "http://sbi-kyc.xyz",
+          "norm_url": "sbi-kyc.xyz",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "risky_tld",
+            "brand_lookalike"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 19,
+            "end": 22,
+            "text": "SBI"
+          },
+          {
+            "type": "threat",
+            "start": 34,
+            "end": 43,
+            "text": "suspended"
+          },
+          {
+            "type": "credential_request",
+            "start": 45,
+            "end": 51,
+            "text": "Verify"
+          },
+          {
+            "type": "credential_request",
+            "start": 52,
+            "end": 55,
+            "text": "KYC"
+          },
+          {
+            "type": "impersonation",
+            "start": 68,
+            "end": 71,
+            "text": "sbi"
+          },
+          {
+            "type": "credential_request",
+            "start": 72,
+            "end": 75,
+            "text": "kyc"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation",
+          "threat"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://sbi-kyc.xyz"
+        ],
+        "normalised_urls": [
+          "sbi-kyc.xyz"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Aapka bijli connection aaj raat 9 baje kat jayega, turant officer ko 9876543210 call karein",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 23,
+            "end": 31,
+            "text": "aaj raat"
+          },
+          {
+            "type": "threat",
+            "start": 39,
+            "end": 49,
+            "text": "kat jayega"
+          },
+          {
+            "type": "urgency",
+            "start": 51,
+            "end": 57,
+            "text": "turant"
+          }
+        ],
+        "cue_types": [
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Line kaat diya jayega aaj",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 5,
+            "end": 21,
+            "text": "kaat diya jayega"
+          }
+        ],
+        "cue_types": [
+          "threat"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "SIM block ho jayega jaldi",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 4,
+            "end": 19,
+            "text": "block ho jayega"
+          },
+          {
+            "type": "urgency",
+            "start": 20,
+            "end": 25,
+            "text": "jaldi"
+          }
+        ],
+        "cue_types": [
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "You have received a UPI collect request of INR 10,000 from PhonePe Merchant. Approve now by entering your UPI PIN.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 20,
+            "end": 23,
+            "text": "UPI"
+          },
+          {
+            "type": "payment_request",
+            "start": 24,
+            "end": 39,
+            "text": "collect request"
+          },
+          {
+            "type": "impersonation",
+            "start": 59,
+            "end": 66,
+            "text": "PhonePe"
+          },
+          {
+            "type": "payment_request",
+            "start": 106,
+            "end": 109,
+            "text": "UPI"
+          },
+          {
+            "type": "credential_request",
+            "start": 110,
+            "end": 113,
+            "text": "PIN"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation",
+          "payment_request"
+        ],
+        "risk": 0.75,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Instant Loan App Approved: Rs 50,000 credited instantly without CIBIL check. Download APK from loan-instant.xyz.",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "loan-instant.xyz",
+          "norm_url": "loan-instant.xyz",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "risky_tld"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "app_install",
+            "start": 77,
+            "end": 89,
+            "text": "Download APK"
+          }
+        ],
+        "cue_types": [
+          "app_install"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "loan-instant.xyz"
+        ],
+        "normalised_urls": [
+          "loan-instant.xyz"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Install APK from http://loan-instant.top to get your loan",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://loan-instant.top",
+          "norm_url": "loan-instant.top",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "risky_tld"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "app_install",
+            "start": 0,
+            "end": 11,
+            "text": "Install APK"
+          }
+        ],
+        "cue_types": [
+          "app_install"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://loan-instant.top"
+        ],
+        "normalised_urls": [
+          "loan-instant.top"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "TRAI Notification: All mobile numbers registered on your Aadhaar will be blocked in 2 hours due to illegal spam calls. Press 1 to speak to officer.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 4,
+            "text": "TRAI"
+          },
+          {
+            "type": "impersonation",
+            "start": 57,
+            "end": 64,
+            "text": "Aadhaar"
+          },
+          {
+            "type": "threat",
+            "start": 73,
+            "end": 80,
+            "text": "blocked"
+          },
+          {
+            "type": "urgency",
+            "start": 81,
+            "end": 91,
+            "text": "in 2 hours"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your parcel will be delivered today. Pay on delivery.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 30,
+            "end": 35,
+            "text": "today"
+          },
+          {
+            "type": "payment_request",
+            "start": 37,
+            "end": 40,
+            "text": "Pay"
+          }
+        ],
+        "cue_types": [
+          "payment_request",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your parcel will be delivered today. Pay on delivery.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 30,
+            "end": 35,
+            "text": "today"
+          },
+          {
+            "type": "payment_request",
+            "start": 37,
+            "end": 40,
+            "text": "Pay"
+          }
+        ],
+        "cue_types": [
+          "payment_request",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Electricity board: pay your bill immediately or connection will disconnect",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 17,
+            "text": "Electricity board"
+          },
+          {
+            "type": "payment_request",
+            "start": 19,
+            "end": 22,
+            "text": "pay"
+          },
+          {
+            "type": "urgency",
+            "start": 33,
+            "end": 44,
+            "text": "immediately"
+          },
+          {
+            "type": "threat",
+            "start": 64,
+            "end": 74,
+            "text": "disconnect"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "payment_request",
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Income tax notice: legal action and arrest if you do not pay fine",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 10,
+            "text": "Income tax"
+          },
+          {
+            "type": "threat",
+            "start": 19,
+            "end": 31,
+            "text": "legal action"
+          },
+          {
+            "type": "threat",
+            "start": 36,
+            "end": 42,
+            "text": "arrest"
+          },
+          {
+            "type": "payment_request",
+            "start": 57,
+            "end": 60,
+            "text": "pay"
+          },
+          {
+            "type": "threat",
+            "start": 61,
+            "end": 65,
+            "text": "fine"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "payment_request",
+          "threat"
+        ],
+        "risk": 0.45,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "You won lottery prize cashback, claim within 24 hours",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "reward",
+            "start": 4,
+            "end": 7,
+            "text": "won"
+          },
+          {
+            "type": "reward",
+            "start": 8,
+            "end": 15,
+            "text": "lottery"
+          },
+          {
+            "type": "reward",
+            "start": 16,
+            "end": 21,
+            "text": "prize"
+          },
+          {
+            "type": "reward",
+            "start": 22,
+            "end": 30,
+            "text": "cashback"
+          },
+          {
+            "type": "urgency",
+            "start": 38,
+            "end": 53,
+            "text": "within 24 hours"
+          }
+        ],
+        "cue_types": [
+          "reward",
+          "urgency"
+        ],
+        "risk": 0.3,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "KBC lucky draw winner! Share your OTP to claim prize",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "reward",
+            "start": 0,
+            "end": 3,
+            "text": "KBC"
+          },
+          {
+            "type": "reward",
+            "start": 4,
+            "end": 14,
+            "text": "lucky draw"
+          },
+          {
+            "type": "credential_request",
+            "start": 23,
+            "end": 28,
+            "text": "Share"
+          },
+          {
+            "type": "credential_request",
+            "start": 34,
+            "end": 37,
+            "text": "OTP"
+          },
+          {
+            "type": "reward",
+            "start": 47,
+            "end": 52,
+            "text": "prize"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "reward"
+        ],
+        "risk": 0.3,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Customs: your parcel held. Pay processing fee via UPI now",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 7,
+            "text": "Customs"
+          },
+          {
+            "type": "payment_request",
+            "start": 27,
+            "end": 30,
+            "text": "Pay"
+          },
+          {
+            "type": "payment_request",
+            "start": 31,
+            "end": 45,
+            "text": "processing fee"
+          },
+          {
+            "type": "payment_request",
+            "start": 50,
+            "end": 53,
+            "text": "UPI"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "payment_request"
+        ],
+        "risk": 0.3,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Police cyber crime: your account blocked, transfer refund fee urgently",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 6,
+            "text": "Police"
+          },
+          {
+            "type": "impersonation",
+            "start": 7,
+            "end": 18,
+            "text": "cyber crime"
+          },
+          {
+            "type": "threat",
+            "start": 33,
+            "end": 40,
+            "text": "blocked"
+          },
+          {
+            "type": "payment_request",
+            "start": 42,
+            "end": 50,
+            "text": "transfer"
+          },
+          {
+            "type": "payment_request",
+            "start": 51,
+            "end": 57,
+            "text": "refund"
+          },
+          {
+            "type": "payment_request",
+            "start": 58,
+            "end": 61,
+            "text": "fee"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "payment_request",
+          "threat"
+        ],
+        "risk": 0.45,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Central bank of india: update your PAN and Aadhaar now",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 21,
+            "text": "Central bank of india"
+          },
+          {
+            "type": "impersonation",
+            "start": 43,
+            "end": 50,
+            "text": "Aadhaar"
+          }
+        ],
+        "cue_types": [
+          "impersonation"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your account is suspended, verify immediately",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 16,
+            "end": 25,
+            "text": "suspended"
+          },
+          {
+            "type": "credential_request",
+            "start": 27,
+            "end": 33,
+            "text": "verify"
+          },
+          {
+            "type": "urgency",
+            "start": 34,
+            "end": 45,
+            "text": "immediately"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Visit http://192.168.1.1/login to verify your KYC",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://192.168.1.1/login",
+          "norm_url": "192.168.1.1/login",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "ip_host",
+            "many_subdomains"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 34,
+            "end": 40,
+            "text": "verify"
+          },
+          {
+            "type": "credential_request",
+            "start": 46,
+            "end": 49,
+            "text": "KYC"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://192.168.1.1/login"
+        ],
+        "normalised_urls": [
+          "192.168.1.1/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Verify at http://user:pass@phish.com now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://user:pass@phish.com",
+          "norm_url": "user@phish.com",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "at_sign"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 0,
+            "end": 6,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://user:pass@phish.com"
+        ],
+        "normalised_urls": [
+          "user@phish.com"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Login at http://xn--80ak6aa92e.com/page to update KYC",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://xn--80ak6aa92e.com/page",
+          "norm_url": "xn--80ak6aa92e.com/page",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "punycode"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 50,
+            "end": 53,
+            "text": "KYC"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://xn--80ak6aa92e.com/page"
+        ],
+        "normalised_urls": [
+          "xn--80ak6aa92e.com/page"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Check http://a.b.c.example.com/test for your refund",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://a.b.c.example.com/test",
+          "norm_url": "a.b.c.example.com/test",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "many_subdomains"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 45,
+            "end": 51,
+            "text": "refund"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://a.b.c.example.com/test"
+        ],
+        "normalised_urls": [
+          "a.b.c.example.com/test"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Update at https://bit.ly/3xYz12 for KYC",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://bit.ly/3xYz12",
+          "norm_url": "bit.ly/3xYz12",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "shortener"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 36,
+            "end": 39,
+            "text": "KYC"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://bit.ly/3xYz12"
+        ],
+        "normalised_urls": [
+          "bit.ly/3xYz12"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Pay at https://sbi.co.in/pay?a=1|2 now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://sbi.co.in/pay?a=1|2",
+          "norm_url": "sbi.co.in/pay?a=1|2",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 0,
+            "end": 3,
+            "text": "Pay"
+          },
+          {
+            "type": "impersonation",
+            "start": 15,
+            "end": 18,
+            "text": "sbi"
+          },
+          {
+            "type": "payment_request",
+            "start": 25,
+            "end": 28,
+            "text": "pay"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "payment_request"
+        ],
+        "risk": 0.3,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://sbi.co.in/pay?a=1|2"
+        ],
+        "normalised_urls": [
+          "sbi.co.in/pay?a=1|2"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Check https://www.example.com/{x}/A now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://www.example.com/{x}/A",
+          "norm_url": "example.com/{x}/A",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.045,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://www.example.com/{x}/A"
+        ],
+        "normalised_urls": [
+          "example.com/{x}/A"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Pay at http://[bad-host immediately",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://[bad-host",
+          "norm_url": "http://[bad-host",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "unparseable_url"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 0,
+            "end": 3,
+            "text": "Pay"
+          },
+          {
+            "type": "urgency",
+            "start": 24,
+            "end": 35,
+            "text": "immediately"
+          }
+        ],
+        "cue_types": [
+          "payment_request",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://[bad-host"
+        ],
+        "normalised_urls": [
+          "http://[bad-host"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your parcel is at http://[bad-host",
+      "sms_result": {
+        "probs": {
+          "ham": 0.02,
+          "unwanted": 0.08,
+          "scam": 0.9
+        },
+        "label": "scam"
+      },
+      "url_results": [
+        {
+          "url": "http://[bad-host",
+          "norm_url": "http://[bad-host",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "unparseable_url"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.6502,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://[bad-host"
+        ],
+        "normalised_urls": [
+          "http://[bad-host"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 500 debited from SBI account. Check balance at https://sbi.co.in",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [
+        {
+          "url": "https://sbi.co.in",
+          "norm_url": "sbi.co.in",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 20,
+            "end": 23,
+            "text": "SBI"
+          },
+          {
+            "type": "impersonation",
+            "start": 58,
+            "end": 61,
+            "text": "sbi"
+          }
+        ],
+        "cue_types": [
+          "impersonation"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://sbi.co.in"
+        ],
+        "normalised_urls": [
+          "sbi.co.in"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your OTP for HDFC NetBanking is 482910. Valid for 5 mins. Do not share it with anyone.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "OTP"
+          },
+          {
+            "type": "impersonation",
+            "start": 13,
+            "end": 17,
+            "text": "HDFC"
+          },
+          {
+            "type": "credential_request",
+            "start": 65,
+            "end": 70,
+            "text": "share"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation"
+        ],
+        "risk": 0.3,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your OTP for HDFC NetBanking is 482910. Valid for 5 mins. Do not share it with anyone.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "OTP"
+          },
+          {
+            "type": "impersonation",
+            "start": 13,
+            "end": 17,
+            "text": "HDFC"
+          },
+          {
+            "type": "credential_request",
+            "start": 65,
+            "end": 70,
+            "text": "share"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 500 received from Ravi via UPI. Ref 4821. Check balance in the app.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 30,
+            "end": 33,
+            "text": "UPI"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": "transaction"
+      }
+    },
+    {
+      "text": "Hello friend, how are you?",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Meeting moved to 5 pm in the office",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your order has been shipped and will arrive tomorrow",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Happy birthday! Have a great day",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Please call me when you reach home",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Lunch at 1 pm today?",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 14,
+            "end": 19,
+            "text": "today"
+          }
+        ],
+        "cue_types": [
+          "urgency"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Payment of 500 upi received. Check at http://example.com",
+      "sms_result": {
+        "probs": {
+          "ham": 0.6,
+          "unwanted": 0.25,
+          "scam": 0.15
+        },
+        "label": "ham"
+      },
+      "url_results": [
+        {
+          "url": "http://example.com",
+          "norm_url": "example.com",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 15,
+            "end": 18,
+            "text": "upi"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.3957,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://example.com"
+        ],
+        "normalised_urls": [
+          "example.com"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Visit www.google.com today",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "www.google.com",
+          "norm_url": "google.com",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 21,
+            "end": 26,
+            "text": "today"
+          }
+        ],
+        "cue_types": [
+          "urgency"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "www.google.com"
+        ],
+        "normalised_urls": [
+          "google.com"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Update at paytm-help.xyz now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "paytm-help.xyz",
+          "norm_url": "paytm-help.xyz",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "risky_tld",
+            "brand_lookalike"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 10,
+            "end": 15,
+            "text": "paytm"
+          }
+        ],
+        "cue_types": [
+          "impersonation"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "paytm-help.xyz"
+        ],
+        "normalised_urls": [
+          "paytm-help.xyz"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Offer amazon(.)in/offer",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [
+        {
+          "url": "amazon.in/offer",
+          "norm_url": "amazon.in/offer",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 6,
+            "end": 12,
+            "text": "amazon"
+          }
+        ],
+        "cue_types": [
+          "impersonation"
+        ],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "amazon.in/offer"
+        ],
+        "normalised_urls": [
+          "amazon.in/offer"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Click bit.ly/3abc",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "bit.ly/3abc",
+          "norm_url": "bit.ly/3abc",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "shortener"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "bit.ly/3abc"
+        ],
+        "normalised_urls": [
+          "bit.ly/3abc"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "mail me at ravi@gmail.com",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "I am ok.See you",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your bill is Rs.500 pay now",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 20,
+            "end": 23,
+            "text": "pay"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Use code SAVE50 for cashback offer today",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "reward",
+            "start": 20,
+            "end": 28,
+            "text": "cashback"
+          },
+          {
+            "type": "urgency",
+            "start": 35,
+            "end": 40,
+            "text": "today"
+          }
+        ],
+        "cue_types": [
+          "reward",
+          "urgency"
+        ],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Aaj shaam ghar aa jao",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Server at http://[2001:db8::1]/login is down",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://[2001:db8::1]/login",
+          "norm_url": "2001:db8::1/login",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "ip_host"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://[2001:db8::1]/login"
+        ],
+        "normalised_urls": [
+          "2001:db8::1/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Access http://[2001:db8::1]:8080/login now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://[2001:db8::1]:8080/login",
+          "norm_url": "2001:db8::1:8080/login",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "ip_host"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://[2001:db8::1]:8080/login"
+        ],
+        "normalised_urls": [
+          "2001:db8::1:8080/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Visit http://secure.co.zz/login",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://secure.co.zz/login",
+          "norm_url": "secure.co.zz/login",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.045,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://secure.co.zz/login"
+        ],
+        "normalised_urls": [
+          "secure.co.zz/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Visit https://example.de/path",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://example.de/path",
+          "norm_url": "example.de/path",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.045,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://example.de/path"
+        ],
+        "normalised_urls": [
+          "example.de/path"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Check http://foo.gov.zz/file",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://foo.gov.zz/file",
+          "norm_url": "foo.gov.zz/file",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.045,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://foo.gov.zz/file"
+        ],
+        "normalised_urls": [
+          "foo.gov.zz/file"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Update KYC at sbi-kyc.co.in/verify now",
+      "sms_result": {
+        "probs": {
+          "ham": 0.02,
+          "unwanted": 0.08,
+          "scam": 0.9
+        },
+        "label": "scam"
+      },
+      "url_results": [
+        {
+          "url": "sbi-kyc.co.in/verify",
+          "norm_url": "sbi-kyc.co.in/verify",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "brand_lookalike"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 7,
+            "end": 10,
+            "text": "KYC"
+          },
+          {
+            "type": "impersonation",
+            "start": 14,
+            "end": 17,
+            "text": "sbi"
+          },
+          {
+            "type": "credential_request",
+            "start": 18,
+            "end": 21,
+            "text": "kyc"
+          },
+          {
+            "type": "credential_request",
+            "start": 28,
+            "end": 34,
+            "text": "verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "sbi-kyc.co.in/verify"
+        ],
+        "normalised_urls": [
+          "sbi-kyc.co.in/verify"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Pay processing fee via http://a.b.c.d.example.xyz/login",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://a.b.c.d.example.xyz/login",
+          "norm_url": "a.b.c.d.example.xyz/login",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "many_subdomains",
+            "risky_tld"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 0,
+            "end": 3,
+            "text": "Pay"
+          },
+          {
+            "type": "payment_request",
+            "start": 4,
+            "end": 18,
+            "text": "processing fee"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://a.b.c.d.example.xyz/login"
+        ],
+        "normalised_urls": [
+          "a.b.c.d.example.xyz/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your account is blocked. Verify now.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 16,
+            "end": 23,
+            "text": "blocked"
+          },
+          {
+            "type": "credential_request",
+            "start": 25,
+            "end": 31,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "threat"
+        ],
+        "risk": 0.3,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your account is blocked today",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 16,
+            "end": 23,
+            "text": "blocked"
+          },
+          {
+            "type": "urgency",
+            "start": 24,
+            "end": 29,
+            "text": "today"
+          }
+        ],
+        "cue_types": [
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Loan approved! Download apk now",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "app_install",
+            "start": 15,
+            "end": 27,
+            "text": "Download apk"
+          }
+        ],
+        "cue_types": [
+          "app_install"
+        ],
+        "risk": 0.75,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "HDFC bank: your netbanking is locked, verify immediately",
+      "sms_result": {
+        "probs": {
+          "ham": 0.6,
+          "unwanted": 0.25,
+          "scam": 0.15
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 4,
+            "text": "HDFC"
+          },
+          {
+            "type": "credential_request",
+            "start": 38,
+            "end": 44,
+            "text": "verify"
+          },
+          {
+            "type": "urgency",
+            "start": 45,
+            "end": 56,
+            "text": "immediately"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Verify now at http://example.xyz/login",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://example.xyz/login",
+          "norm_url": "example.xyz/login",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "risky_tld"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 0,
+            "end": 6,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://example.xyz/login"
+        ],
+        "normalised_urls": [
+          "example.xyz/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Click https://tinyurl.com/abc123 now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://tinyurl.com/abc123",
+          "norm_url": "tinyurl.com/abc123",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "shortener"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://tinyurl.com/abc123"
+        ],
+        "normalised_urls": [
+          "tinyurl.com/abc123"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Check http://10.0.0.1/verify now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://10.0.0.1/verify",
+          "norm_url": "10.0.0.1/verify",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "ip_host",
+            "many_subdomains"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 22,
+            "end": 28,
+            "text": "verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://10.0.0.1/verify"
+        ],
+        "normalised_urls": [
+          "10.0.0.1/verify"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Login at http://xn--80ak6aa92e.com/login now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://xn--80ak6aa92e.com/login",
+          "norm_url": "xn--80ak6aa92e.com/login",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "punycode"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://xn--80ak6aa92e.com/login"
+        ],
+        "normalised_urls": [
+          "xn--80ak6aa92e.com/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Verify at http://sbi-login.com now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://sbi-login.com",
+          "norm_url": "sbi-login.com",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "brand_lookalike"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 0,
+            "end": 6,
+            "text": "Verify"
+          },
+          {
+            "type": "impersonation",
+            "start": 17,
+            "end": 20,
+            "text": "sbi"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://sbi-login.com"
+        ],
+        "normalised_urls": [
+          "sbi-login.com"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Check http://a.b.c.d.example.com/test for your refund",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://a.b.c.d.example.com/test",
+          "norm_url": "a.b.c.d.example.com/test",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "many_subdomains"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 47,
+            "end": 53,
+            "text": "refund"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://a.b.c.d.example.com/test"
+        ],
+        "normalised_urls": [
+          "a.b.c.d.example.com/test"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Verify at http://user@example.com/login now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://user@example.com/login",
+          "norm_url": "user@example.com/login",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "at_sign"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 0,
+            "end": 6,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://user@example.com/login"
+        ],
+        "normalised_urls": [
+          "user@example.com/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Verify at http://myipfs.example.com/login now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://myipfs.example.com/login",
+          "norm_url": "myipfs.example.com/login",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 0,
+            "end": 6,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://myipfs.example.com/login"
+        ],
+        "normalised_urls": [
+          "myipfs.example.com/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Check https://cdn-ipfs.example.org/verify now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://cdn-ipfs.example.org/verify",
+          "norm_url": "cdn-ipfs.example.org/verify",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 35,
+            "end": 41,
+            "text": "verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://cdn-ipfs.example.org/verify"
+        ],
+        "normalised_urls": [
+          "cdn-ipfs.example.org/verify"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Visit http://gateway.ipfs.io/login now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://gateway.ipfs.io/login",
+          "norm_url": "gateway.ipfs.io/login",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.045,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://gateway.ipfs.io/login"
+        ],
+        "normalised_urls": [
+          "gateway.ipfs.io/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Verify at http://ipfs.io/login now",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://ipfs.io/login",
+          "norm_url": "ipfs.io/login",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 0,
+            "end": 6,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://ipfs.io/login"
+        ],
+        "normalised_urls": [
+          "ipfs.io/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Welcome to our store. Thank you for shopping with us. Enjoy your day.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.013988708145916462,
+          "unwanted": 0.29926422238349915,
+          "scam": 0.6867470741271973
+        },
+        "label": "scam"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.6297,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": true,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Verify now at http://sbi-kyc.xyz/login",
+      "sms_result": {
+        "probs": {
+          "ham": 0.0001,
+          "unwanted": 0.0001,
+          "scam": 0.9998
+        },
+        "label": "scam"
+      },
+      "url_results": [
+        {
+          "url": "http://sbi-kyc.xyz/login",
+          "norm_url": "sbi-kyc.xyz/login",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "risky_tld",
+            "brand_lookalike"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 0,
+            "end": 6,
+            "text": "Verify"
+          },
+          {
+            "type": "impersonation",
+            "start": 21,
+            "end": 24,
+            "text": "sbi"
+          },
+          {
+            "type": "credential_request",
+            "start": 25,
+            "end": 28,
+            "text": "kyc"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "impersonation"
+        ],
+        "risk": 0.8448,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://sbi-kyc.xyz/login"
+        ],
+        "normalised_urls": [
+          "sbi-kyc.xyz/login"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": true,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply metroshoes.com",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [
+        {
+          "url": "metroshoes.com",
+          "norm_url": "metroshoes.com",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "metroshoes.com"
+        ],
+        "normalised_urls": [
+          "metroshoes.com"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply 9876543210",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply Reply YES to claim",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply ९८७६५४३२१०",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply Visit shop-now.world",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply mail offers@metro.in",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply pay to metro@ybl",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 98,
+            "end": 101,
+            "text": "pay"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply Rs 499.99",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": true,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Flat 40 percent off on all shoes this weekend at Metro Shoes. Visit your nearest store. T&C apply 4.5 stars",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": true,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 4,999 debited from A/c XX9012. Reply with OTP 4821 to reverse the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 45,
+            "end": 48,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Don't worry, share OTP with our executive to stop the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 47,
+            "end": 52,
+            "text": "share"
+          },
+          {
+            "type": "credential_request",
+            "start": 53,
+            "end": 56,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Please do not share OTP or PIN with anyone.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 48,
+            "end": 53,
+            "text": "share"
+          },
+          {
+            "type": "credential_request",
+            "start": 54,
+            "end": 57,
+            "text": "OTP"
+          },
+          {
+            "type": "credential_request",
+            "start": 61,
+            "end": 64,
+            "text": "PIN"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. OTP kisi ko mat batao.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 34,
+            "end": 37,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Kindly reveal your OTP to reverse the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 53,
+            "end": 56,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. We never, under any circumstances, and for no reason, ask you to share your OTP to reverse the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 99,
+            "end": 104,
+            "text": "share"
+          },
+          {
+            "type": "credential_request",
+            "start": 110,
+            "end": 113,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Don't worry share OTP 4821 to cancel.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 46,
+            "end": 51,
+            "text": "share"
+          },
+          {
+            "type": "credential_request",
+            "start": 52,
+            "end": 55,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. If not you share OTP 4821 to cancel.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 45,
+            "end": 50,
+            "text": "share"
+          },
+          {
+            "type": "credential_request",
+            "start": 51,
+            "end": 54,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Never, under any circumstances, share your OTP.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 66,
+            "end": 71,
+            "text": "share"
+          },
+          {
+            "type": "credential_request",
+            "start": 77,
+            "end": 80,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Quote reference code 849201 for any query.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "आपका OTP ४८२१ है",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Call 1800 123 4567 now.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "sender_mismatch",
+            "start": 39,
+            "end": 52,
+            "text": "1800 123 4567"
+          }
+        ],
+        "cue_types": [
+          "sender_mismatch"
+        ],
+        "risk": 0.4,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Call 1800 123 4567 now.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "sender_mismatch",
+            "start": 39,
+            "end": 52,
+            "text": "1800 123 4567"
+          }
+        ],
+        "cue_types": [
+          "sender_mismatch"
+        ],
+        "risk": 0.4,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "98765 43210"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Call 1800 123 4567 now.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234 on 12-Nov. Avl bal Rs 20,000",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": "transaction",
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Hi, call me on 98765 43210 when free",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Call 1800 123 4567 now.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "56161"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Call 1800 123 4567 now.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Call 1800 123 4567 now.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.0001,
+          "unwanted": 0.0001,
+          "scam": 0.9998
+        },
+        "label": "scam"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "sender_mismatch",
+            "start": 39,
+            "end": 52,
+            "text": "1800 123 4567"
+          }
+        ],
+        "cue_types": [
+          "sender_mismatch"
+        ],
+        "risk": 0.8448,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Rs 500 paid via UPI, call me on 98765 43210",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 16,
+            "end": 19,
+            "text": "UPI"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "I paid Rs 500 to your account, call me on 98765 43210",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Rs 4,999 debited from A/c XX9012. Message OTP 4821 to stop debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 42,
+            "end": 45,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 4,999 debited from A/c XX9012. Text OTP 4821 to block.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 39,
+            "end": 42,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 4,999 debited from A/c XX9012. Quote the 6 digit code 482193 to stop the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 4999 debit hua A/c XX9012 se. OTP 4821 bhejo.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 33,
+            "end": 36,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 4,999 debited from A/c XX9012. Reach our helpline 011 2345 6789 to dispute.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "A/c XX9012 debited Rs 499. Pay Rs 99 via UPI to reactivate.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 27,
+            "end": 30,
+            "text": "Pay"
+          },
+          {
+            "type": "payment_request",
+            "start": 41,
+            "end": 44,
+            "text": "UPI"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "482913 is your One Time Password (OTP) for login at Example. This OTP will only be valid for 10 minutes",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 24,
+            "end": 32,
+            "text": "Password"
+          },
+          {
+            "type": "credential_request",
+            "start": 34,
+            "end": 37,
+            "text": "OTP"
+          },
+          {
+            "type": "credential_request",
+            "start": 66,
+            "end": 69,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": "otp",
+        "should_skip": true
+      },
+      "sender": "AD-HDFCBK"
+    },
+    {
+      "text": "Rs.500.00 credited to HDFC Bank A/c XX1234 on 12-11-26 from VPA user@okaxis (UPI 512345678901)",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 22,
+            "end": 26,
+            "text": "HDFC"
+          },
+          {
+            "type": "payment_request",
+            "start": 77,
+            "end": 80,
+            "text": "UPI"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "payment_request"
+        ],
+        "risk": 0.3,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": "transaction",
+        "should_skip": true
+      },
+      "sender": "AD-HDFCBK"
+    },
+    {
+      "text": "Rs 5,000 transferred from A/c XX1234 to VPA x@okaxis. Call 98111 22333 if not you.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "sender_mismatch",
+            "start": 59,
+            "end": 70,
+            "text": "98111 22333"
+          }
+        ],
+        "cue_types": [
+          "sender_mismatch"
+        ],
+        "risk": 0.4,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Call 98765 43210 if not you.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Rs 2,000 credited to my a/c, call me on 98765 43210",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "9876543210"
+    },
+    {
+      "text": "Rs 500 credited to a/c XX1234. Call 98765 43210 for queries.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Rs 4,999 debited from A/c XX9012. Read out OTP 4821 to the officer.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 43,
+            "end": 46,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. OTP 4821 required to stop the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 34,
+            "end": 37,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234. Never share your OTP with anyone.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 40,
+            "end": 45,
+            "text": "share"
+          },
+          {
+            "type": "credential_request",
+            "start": 51,
+            "end": 54,
+            "text": "OTP"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 5,000 debited from A/c XX1234 at ATM using PIN. Avl bal Rs 20,000.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 46,
+            "end": 49,
+            "text": "PIN"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 5,000 debited from your account. Code 4821 required to stop the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 5,000 debited from card 1234. Code 4821 required to stop the debit.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.0,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Rs 500 paid from A/c XX1234. Code 1234 required to stop the payment.",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Sale is live! Shop now: http://shop-deals.example.com/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [
+        {
+          "url": "http://shop-deals.example.com/a1",
+          "norm_url": "shop-deals.example.com/a1",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://shop-deals.example.com/a1"
+        ],
+        "normalised_urls": [
+          "shop-deals.example.com/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-NEWSHP-P"
+    },
+    {
+      "text": "Sale is live! Shop now: http://shop-deals.example.com/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [
+        {
+          "url": "http://shop-deals.example.com/a1",
+          "norm_url": "shop-deals.example.com/a1",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://shop-deals.example.com/a1"
+        ],
+        "normalised_urls": [
+          "shop-deals.example.com/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Sale is live! Shop now: http://shop-deals.example.com/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [
+        {
+          "url": "http://shop-deals.example.com/a1",
+          "norm_url": "shop-deals.example.com/a1",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://shop-deals.example.com/a1"
+        ],
+        "normalised_urls": [
+          "shop-deals.example.com/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Sale is live! Shop now: http://shop-deals.example.com/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [
+        {
+          "url": "http://shop-deals.example.com/a1",
+          "norm_url": "shop-deals.example.com/a1",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://shop-deals.example.com/a1"
+        ],
+        "normalised_urls": [
+          "shop-deals.example.com/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "56161"
+    },
+    {
+      "text": "Sale is live! Shop now: http://shop-deals.example.com/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.0001,
+          "unwanted": 0.0001,
+          "scam": 0.9998
+        },
+        "label": "scam"
+      },
+      "url_results": [
+        {
+          "url": "http://shop-deals.example.com/a1",
+          "norm_url": "shop-deals.example.com/a1",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.8448,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://shop-deals.example.com/a1"
+        ],
+        "normalised_urls": [
+          "shop-deals.example.com/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-NEWSHP-P"
+    },
+    {
+      "text": "Sale is live! Shop now: http://shop-deals.example.com/a1",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://shop-deals.example.com/a1",
+          "norm_url": "shop-deals.example.com/a1",
+          "prob": 0.05,
+          "label": "benign",
+          "indicators": []
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.045,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://shop-deals.example.com/a1"
+        ],
+        "normalised_urls": [
+          "shop-deals.example.com/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-NEWSHP-P"
+    },
+    {
+      "text": "Your KYC is pending. Verify now: http://bit.ly/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [
+        {
+          "url": "http://bit.ly/a1",
+          "norm_url": "bit.ly/a1",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "shortener"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "KYC"
+          },
+          {
+            "type": "credential_request",
+            "start": 21,
+            "end": 27,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://bit.ly/a1"
+        ],
+        "normalised_urls": [
+          "bit.ly/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Your KYC is pending. Verify now: http://bit.ly/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [
+        {
+          "url": "http://bit.ly/a1",
+          "norm_url": "bit.ly/a1",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "shortener"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "KYC"
+          },
+          {
+            "type": "credential_request",
+            "start": 21,
+            "end": 27,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://bit.ly/a1"
+        ],
+        "normalised_urls": [
+          "bit.ly/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your KYC is pending. Verify now: http://kyc-help.xyz/HDFCBK/a1",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [
+        {
+          "url": "http://kyc-help.xyz/HDFCBK/a1",
+          "norm_url": "kyc-help.xyz/HDFCBK/a1",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "risky_tld"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "KYC"
+          },
+          {
+            "type": "credential_request",
+            "start": 21,
+            "end": 27,
+            "text": "Verify"
+          },
+          {
+            "type": "credential_request",
+            "start": 40,
+            "end": 43,
+            "text": "kyc"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://kyc-help.xyz/HDFCBK/a1"
+        ],
+        "normalised_urls": [
+          "kyc-help.xyz/HDFCBK/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Your KYC is pending. Verify now: http://192.168.4.7/a1",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://192.168.4.7/a1",
+          "norm_url": "192.168.4.7/a1",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "ip_host",
+            "many_subdomains"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "KYC"
+          },
+          {
+            "type": "credential_request",
+            "start": 21,
+            "end": 27,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://192.168.4.7/a1"
+        ],
+        "normalised_urls": [
+          "192.168.4.7/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "Offer for you: https://1.hdfc.bank.in/HDFCBK/s/abc",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://1.hdfc.bank.in/HDFCBK/s/abc",
+          "norm_url": "1.hdfc.bank.in/HDFCBK/s/abc",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "many_subdomains",
+            "brand_lookalike"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 25,
+            "end": 29,
+            "text": "hdfc"
+          }
+        ],
+        "cue_types": [
+          "impersonation"
+        ],
+        "risk": 0.15,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://1.hdfc.bank.in/HDFCBK/s/abc"
+        ],
+        "normalised_urls": [
+          "1.hdfc.bank.in/HDFCBK/s/abc"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Offer for you: https://bank.in.evil.xyz/s/abc",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "https://bank.in.evil.xyz/s/abc",
+          "norm_url": "bank.in.evil.xyz/s/abc",
+          "prob": 0.85,
+          "label": "phishing",
+          "indicators": [
+            "many_subdomains",
+            "risky_tld"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.765,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "https://bank.in.evil.xyz/s/abc"
+        ],
+        "normalised_urls": [
+          "bank.in.evil.xyz/s/abc"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your KYC is pending. Verify now: http://bit.ly/a1",
+      "sms_result": null,
+      "url_results": [
+        {
+          "url": "http://bit.ly/a1",
+          "norm_url": "bit.ly/a1",
+          "prob": 0.4,
+          "label": "benign",
+          "indicators": [
+            "shortener"
+          ]
+        }
+      ],
+      "expected": {
+        "cues": [
+          {
+            "type": "credential_request",
+            "start": 5,
+            "end": 8,
+            "text": "KYC"
+          },
+          {
+            "type": "credential_request",
+            "start": 21,
+            "end": 27,
+            "text": "Verify"
+          }
+        ],
+        "cue_types": [
+          "credential_request"
+        ],
+        "risk": 0.36,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [
+          "http://bit.ly/a1"
+        ],
+        "normalised_urls": [
+          "bit.ly/a1"
+        ],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-HDFCBK-S"
+    },
+    {
+      "text": "CBI பேசுகிறோம். உங்கள் Aadhaar money laundering case-ல் use ஆகியுள்ளது. நீங்கள் digital arrest-ல் இருக்கிறீர்கள்; video call-ல் உடனே join ஆகவும்.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 23,
+            "end": 30,
+            "text": "Aadhaar"
+          },
+          {
+            "type": "threat",
+            "start": 88,
+            "end": 94,
+            "text": "arrest"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "threat"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "CBI से बोल रहे हैं। आप digital arrest में हैं; तुरंत video call join करें।",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 31,
+            "end": 37,
+            "text": "arrest"
+          }
+        ],
+        "cue_types": [
+          "threat"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "You are under Digital Arrest. Join the video call with the officer now.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 22,
+            "end": 28,
+            "text": "Arrest"
+          }
+        ],
+        "cue_types": [
+          "threat"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "+919876543210"
+    },
+    {
+      "text": "Digital arrest என்ற பெயரில் வரும் calls scam ஆக இருக்கலாம். Cybercrime helpline 1930-ஐ தொடர்பு கொள்ளவும்.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 8,
+            "end": 14,
+            "text": "arrest"
+          }
+        ],
+        "cue_types": [
+          "threat"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Police never place anyone under digital arrest on a video call. Report such calls.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "impersonation",
+            "start": 0,
+            "end": 6,
+            "text": "Police"
+          },
+          {
+            "type": "threat",
+            "start": 40,
+            "end": 46,
+            "text": "arrest"
+          }
+        ],
+        "cue_types": [
+          "impersonation",
+          "threat"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Refund process செய்ய ₹1 மட்டும் pay செய்யுங்கள். அதன் பிறகு உங்கள் UPI account-க்கு ₹5,000 credit ஆகும்.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 0,
+            "end": 6,
+            "text": "Refund"
+          },
+          {
+            "type": "payment_request",
+            "start": 32,
+            "end": 35,
+            "text": "pay"
+          },
+          {
+            "type": "payment_request",
+            "start": 67,
+            "end": 70,
+            "text": "UPI"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Refund process करने के लिए सिर्फ ₹1 pay करें। उसके बाद आपके UPI account में ₹1,999 credit होगा।",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 0,
+            "end": 6,
+            "text": "Refund"
+          },
+          {
+            "type": "payment_request",
+            "start": 36,
+            "end": 39,
+            "text": "pay"
+          },
+          {
+            "type": "payment_request",
+            "start": 60,
+            "end": 63,
+            "text": "UPI"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Refund ke liye sirf Rs 5 bhejo, phir Rs 2,000 wapas milega",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 0,
+            "end": 6,
+            "text": "Refund"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "To get your refund pay Rs. 10 now and receive Rs 4,999 in your account",
+      "sms_result": null,
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 12,
+            "end": 18,
+            "text": "refund"
+          },
+          {
+            "type": "payment_request",
+            "start": 19,
+            "end": 22,
+            "text": "pay"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your refund of Rs 499 has been credited to your account. Thank you for shopping.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 5,
+            "end": 11,
+            "text": "refund"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-NEWSHP-S"
+    },
+    {
+      "text": "Refund initiated. Pay Rs 1,499 on your next order and get free delivery. Amount will be credited in 5 days.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 0,
+            "end": 6,
+            "text": "Refund"
+          },
+          {
+            "type": "payment_request",
+            "start": 18,
+            "end": 21,
+            "text": "Pay"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Daily 10% guaranteed profit! Minimum investment ₹499. இன்று மட்டும் VIP trading group-ல் join ஆகுங்கள்.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Daily 10% guaranteed profit! Minimum investment ₹499। आज ही VIP trading group join करें।",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Earn guaranteed returns weekly. Join our Telegram channel today.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 58,
+            "end": 63,
+            "text": "today"
+          }
+        ],
+        "cue_types": [
+          "urgency"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-NEWSHP-P"
+    },
+    {
+      "text": "Guaranteed returns plan at 7.1% p.a. for 10 years. Speak to your insurance advisor.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.2,
+          "unwanted": 0.75,
+          "scam": 0.05
+        },
+        "label": "unwanted"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.4221,
+        "label": "unwanted",
+        "level": "medium",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": true,
+        "skip_kind": null,
+        "should_skip": false
+      },
+      "sender": "AD-NEWSHP-P"
+    },
+    {
+      "text": "Profit is never guaranteed in the stock market. Invest carefully.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Enter your UPI PIN to receive Rs 2,000 cashback directly in your bank account.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 11,
+            "end": 14,
+            "text": "UPI"
+          },
+          {
+            "type": "credential_request",
+            "start": 15,
+            "end": 18,
+            "text": "PIN"
+          },
+          {
+            "type": "reward",
+            "start": 39,
+            "end": 47,
+            "text": "cashback"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "payment_request",
+          "reward"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Never enter your UPI PIN to receive money. PIN is only needed to send money.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 17,
+            "end": 20,
+            "text": "UPI"
+          },
+          {
+            "type": "credential_request",
+            "start": 21,
+            "end": 24,
+            "text": "PIN"
+          },
+          {
+            "type": "credential_request",
+            "start": 43,
+            "end": 46,
+            "text": "PIN"
+          }
+        ],
+        "cue_types": [
+          "credential_request",
+          "payment_request"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Dear customer, your electricity power will be disconnected tonight at 9:30 pm. Call our officer immediately.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 46,
+            "end": 58,
+            "text": "disconnected"
+          },
+          {
+            "type": "urgency",
+            "start": 59,
+            "end": 66,
+            "text": "tonight"
+          },
+          {
+            "type": "urgency",
+            "start": 96,
+            "end": 107,
+            "text": "immediately"
+          }
+        ],
+        "cue_types": [
+          "threat",
+          "urgency"
+        ],
+        "risk": 0.72,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Scheduled power shutdown today for maintenance from 10:00 am to 2:00 pm. Call 1912 for queries.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "urgency",
+            "start": 25,
+            "end": 30,
+            "text": "today"
+          }
+        ],
+        "cue_types": [
+          "urgency"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Work from home job: earn Rs 3,000 per day by giving like and review on YouTube videos.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Beware of fake work from home offers promising Rs 2,000 per day for telegram tasks. Report to cybercrime.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Hi mom, I lost my phone and this is my new number. I urgently need you to transfer Rs 5,000.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 74,
+            "end": 82,
+            "text": "transfer"
+          }
+        ],
+        "cue_types": [
+          "payment_request"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "This is my new number. Please do not send money to my old account.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [],
+        "cue_types": [],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Congratulations! You won a cash prize of Rs 25,00,000 in KBC lucky draw. Pay processing fee to claim.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "reward",
+            "start": 21,
+            "end": 24,
+            "text": "won"
+          },
+          {
+            "type": "reward",
+            "start": 32,
+            "end": 37,
+            "text": "prize"
+          },
+          {
+            "type": "reward",
+            "start": 57,
+            "end": 60,
+            "text": "KBC"
+          },
+          {
+            "type": "reward",
+            "start": 61,
+            "end": 71,
+            "text": "lucky draw"
+          },
+          {
+            "type": "payment_request",
+            "start": 73,
+            "end": 76,
+            "text": "Pay"
+          },
+          {
+            "type": "payment_request",
+            "start": 77,
+            "end": 91,
+            "text": "processing fee"
+          }
+        ],
+        "cue_types": [
+          "payment_request",
+          "reward"
+        ],
+        "risk": 0.7,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Join our fantasy sports contest with entry fee Rs 49 and win from a prize pool of Rs 10 Lakhs.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "payment_request",
+            "start": 43,
+            "end": 46,
+            "text": "fee"
+          },
+          {
+            "type": "reward",
+            "start": 68,
+            "end": 73,
+            "text": "prize"
+          }
+        ],
+        "cue_types": [
+          "payment_request",
+          "reward"
+        ],
+        "risk": 0.303,
+        "label": "ham",
+        "level": "low",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Your bank account is suspended. Install the app from update-bank.apk to verify your KYC.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "threat",
+            "start": 21,
+            "end": 30,
+            "text": "suspended"
+          },
+          {
+            "type": "app_install",
+            "start": 64,
+            "end": 68,
+            "text": ".apk"
+          },
+          {
+            "type": "credential_request",
+            "start": 72,
+            "end": 78,
+            "text": "verify"
+          },
+          {
+            "type": "credential_request",
+            "start": 84,
+            "end": 87,
+            "text": "KYC"
+          }
+        ],
+        "cue_types": [
+          "app_install",
+          "credential_request",
+          "threat"
+        ],
+        "risk": 0.75,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    },
+    {
+      "text": "Never install any .apk file sent via SMS to update bank KYC details. Beware of fraud.",
+      "sms_result": {
+        "probs": {
+          "ham": 0.9,
+          "unwanted": 0.05,
+          "scam": 0.05
+        },
+        "label": "ham"
+      },
+      "url_results": [],
+      "expected": {
+        "cues": [
+          {
+            "type": "app_install",
+            "start": 19,
+            "end": 22,
+            "text": "apk"
+          },
+          {
+            "type": "credential_request",
+            "start": 56,
+            "end": 59,
+            "text": "KYC"
+          }
+        ],
+        "cue_types": [
+          "app_install",
+          "credential_request"
+        ],
+        "risk": 0.75,
+        "label": "scam",
+        "level": "high",
+        "threshold": 0.7,
+        "extracted_urls": [],
+        "normalised_urls": [],
+        "is_plain_promotion": false,
+        "skip_kind": null
+      }
+    }
+  ]
+}

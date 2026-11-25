@@ -1,0 +1,77 @@
+cat,ref,note
+sms,uciml/sms-spam-collection-dataset,UCI SMS Spam Collection 5.5k ham/spam
+sms,junioralive/india-spam-sms-classification,Indian telecom SMS ham/spam 2.2k MIT
+sms,galactus007/sms-smishing-collection-data-set,Mishra-Soni style ham/spam/smishing
+sms,siddharthrane07/scamshield-multilingual-smishing-social-engn,multilingual smishing train/val/test
+sms,sngmyd/india-cyber-scam-hinglish-dataset,India cyber scam Hinglish
+sms,atherionsystems/indian-scam-sms-30k,Indian scam SMS 30k (check if synthetic)
+sms,roberto2057/hindi-sms,Hindi SMS spam/ham 15k
+sms,rajnathpatel/multilingual-spam-data,UCI spam translated to Hindi/German/French
+sms,vinit119/sms-scam-detection-dataset-merged,merged SMS scam sets
+sms,gokhansoyturk/smishing-sms-dataset,smishing SMS
+sms,fadlifatih/sms-phishing-dataset,SMS phishing
+sms,nickgabriel100/sms-fraud-detection-dataset,SMS fraud
+sms,rithikkumar802/adaption-sms-fraud-classification,SMS fraud classification
+sms,ahmadtijjani/phishing-urgency-authority-persuasion,phishing email+SMS with persuasion categories
+sms,yatinaggarwal033/whatsapp-scam-dataset,WhatsApp scam
+sms,wa1618i/whatsapp-scam-dataset,WhatsApp scam
+sms,mexwell/telegram-spam-or-ham,Telegram spam/ham
+sms,tapakah68/spam-text-messages-dataset,SMS spam
+sms,ameenhasan/fake-fraud-message-detection-dataset,fake/fraud messages
+sms,nikhilchauhan02/indian-social-media-fraud-and-scam-detection-d,Indian social media scams
+sms,kritikgianta/multilanguage-sms-classification-dataset,multilanguage SMS
+sms,spamdetectorssms/combined-multilingual-spam-dataset-25k,multilingual spam 25k
+sms,dahalea/banking-sms-fraud-datasets,banking SMS fraud
+sms,karanverma/punjab-fraud-intent-benchmark-trilingual,Punjabi/Hindi/English fraud intent
+sms,bwandowando/philippine-spam-sms-messages,Philippine scam SMS (real)
+sms,abdelrahmanmahmoud22/phishing-credit-card-smss,credit card phishing SMS
+sms,msubhansiddiqui/financial-scam-and-deceptive-text-meta-dataset,financial scam text meta-dataset
+sms,aditsawhney/indian-job-fraud-dataset,Indian job fraud
+sms,dharshiyanacc/spam-ham-and-phishing-message-dataset-for-nlp,spam/ham/phishing messages 117MB
+sms,teeconnie/scam-and-non-scam-call-conversation-dataset,scam call conversations
+url,joebeachcapital/phiusiil-phishing-url,PhiUSIIL 235k (benign = homepages only)
+url,sid321axn/malicious-urls-dataset,651k benign/defacement/phishing/malware
+url,taruntiwarihp/phishing-site-urls,549k good/bad
+url,siddharthkumar25/malicious-and-benign-urls,malicious and benign URLs
+url,samahsadiq/benign-and-malicious-urls,benign and malicious URLs
+url,harisudhan411/phishing-and-legitimate-urls,phishing and legitimate URLs
+url,antonyj453/urldataset,malicious/non-malicious URL
+url,hassaanmustafavi/phishing-urls-dataset,450k URLs (Mendeley 2024 PhishTank+Majestic)
+url,sahandnamvar/phishing-url-detection-111k-urls-22-features,111k URLs 2025
+url,moutasmtamimi/malicious-url-detection-dataset-enhanced-2026,enhanced 2026
+url,zishnusarker/malicious-url-classification-706k,706k 4 class
+url,nhutrinhanna/malicious-and-benign-urls-datasets,malicious and benign
+url,pilarpieiro/malicious-and-benign-url-dataset,malicious and benign 137MB
+url,somanshumahajan/65-lakh-urls-labelled-as-1-and-0,6.5M labelled URLs 430MB
+url,quangnguynv/phishtank-phishingurl-valid-dataset,PhishTank valid 2026
+url,vishalxtyagi/phishing-website-detector-based-on-url,PhishTank 2023 snapshot
+url,dhrubangtalukdar/real-world-phishing-url-classification-data,real-world 2026
+url,marryjanety/phishing-url-dataset-url-and-label,URL and label 2025
+url,vibhuyadav0/stealthphisher-phishing-attack-dataset,StealthPhisher 2025
+url,alishan07/adversarial-homograph-detection,homograph attacks
+url,sarrazer/url-dataset-iscx-url2016,ISCX-URL2016
+url,golner/phishing-domains,phishing domains
+url,joebeachcapital/phishing-urls,phishing URLs
+url,shawon10/url-classification-dataset-dmoz,DMOZ benign URLs with paths
+url,harshsinghal/random-sample-of-common-crawl-domains-from-2021,Common Crawl domains
+url,victusadi/phishing-urls-dataset-with-extracted-features,2025 cleaned URLs
+net,mrwellsdavid/unsw-nb15,UNSW-NB15
+net,hassan06/nslkdd,NSL-KDD
+net,chethuhn/network-intrusion-dataset,CIC-IDS2017
+net,bcccdatasets/intrusion-detection-datasets-bccc-cic-ids-2017,BCCC re-labelled CIC-IDS2017
+net,solarmainframe/ids-intrusion-csv,CSE-CIC-IDS2018
+net,dhoogla/cicddos2019,CIC-DDoS2019
+net,himadri07/ciciot2023,CICIoT2023
+net,sohamkatlariwala/ciciot2023-preprocessed-leakage-fixed,CICIoT2023 leakage-free
+net,mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-i,Edge-IIoTset
+net,arnobbhowmik/ton-iot-network-dataset,TON_IoT network
+net,vigneshvenkateswaran/bot-iot,Bot-IoT
+net,dhoogla/nfunswnb15v2,NetFlow UNSW-NB15 v2
+net,aryashah2k/nfuqnidsv2-network-intrusion-detection-dataset,NF-UQ-NIDS-v2 merged NetFlow
+net,joebeachcapital/real-time-internet-of-things-rt-iot2022,RT-IoT2022
+net,amineipad/cic-iomt-dataset-2024,CIC IoMT 2024
+net,mryanm/luflow-network-intrusion-detection-data-set,LUFlow (updated 2026)
+net,yasiralifarrukh/unsw-and-cicids2017-labelled-pcap-data,labelled PCAP for replay demo
+net,mkashifn/nbaiot-dataset,N-BaIoT
+net,ymirsky/network-attack-dataset-kitsune,Kitsune 19GB (Kaggle only)
+mal,shashwatwork/android-malware-dataset-for-machine-learning,Drebin features (malware behaviour stretch)

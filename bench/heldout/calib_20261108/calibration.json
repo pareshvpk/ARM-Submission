@@ -1,0 +1,379 @@
+{
+  "seed": 20261108,
+  "n_dump_rows": 13104,
+  "n_calibration": 6548,
+  "n_test": 6550,
+  "n_extra": 6,
+  "acceptance": {
+    "max_risky_recall_drop_pp": 1.0,
+    "max_ham_fpr_increase": 0.0,
+    "shoe_store_promotion_must_not_be_high": true
+  },
+  "baseline_params": {
+    "temperature": 1.0,
+    "scam_weight": 1.0,
+    "unwanted_weight": 0.5,
+    "medium_threshold": 0.4,
+    "high_threshold": 0.7
+  },
+  "chosen": {
+    "params": {
+      "temperature": 3.0,
+      "scam_weight": 0.9,
+      "unwanted_weight": 0.5,
+      "medium_threshold": 0.4,
+      "high_threshold": 0.7
+    },
+    "calibration_metrics": {
+      "n": 6548,
+      "risky_recall": 0.7596358118361153,
+      "ham_fpr": 0.11343375345834614,
+      "tp": 2503,
+      "fn": 792,
+      "fp": 369,
+      "tn": 2884
+    }
+  },
+  "chosen_params": {
+    "temperature": 3.0,
+    "scam_weight": 0.9,
+    "unwanted_weight": 0.5,
+    "medium_threshold": 0.4,
+    "high_threshold": 0.7
+  },
+  "accepted_test": true,
+  "baseline_test": {
+    "n": 6550,
+    "risky_recall": 0.7812113720642769,
+    "ham_fpr": 0.13337356668678335,
+    "tp": 2528,
+    "fn": 708,
+    "fp": 442,
+    "tn": 2872
+  },
+  "baseline_test_per_language": {
+    "Assamese": {
+      "n": 500,
+      "risky_recall": 0.6205533596837944,
+      "ham_fpr": 0.2793522267206478,
+      "tp": 157,
+      "fn": 96,
+      "fp": 69,
+      "tn": 178
+    },
+    "Bengali": {
+      "n": 500,
+      "risky_recall": 0.8237704918032787,
+      "ham_fpr": 0.05859375,
+      "tp": 201,
+      "fn": 43,
+      "fp": 15,
+      "tn": 241
+    },
+    "English": {
+      "n": 605,
+      "risky_recall": 0.9473684210526315,
+      "ham_fpr": 0.0035460992907801418,
+      "tp": 306,
+      "fn": 17,
+      "fp": 1,
+      "tn": 281
+    },
+    "Gujarati": {
+      "n": 500,
+      "risky_recall": 0.588,
+      "ham_fpr": 0.032,
+      "tp": 147,
+      "fn": 103,
+      "fp": 8,
+      "tn": 242
+    },
+    "Hindi": {
+      "n": 500,
+      "risky_recall": 0.9365079365079365,
+      "ham_fpr": 0.13709677419354838,
+      "tp": 236,
+      "fn": 16,
+      "fp": 34,
+      "tn": 214
+    },
+    "Hinglish": {
+      "n": 500,
+      "risky_recall": 0.927710843373494,
+      "ham_fpr": 0.0,
+      "tp": 231,
+      "fn": 18,
+      "fp": 0,
+      "tn": 251
+    },
+    "Kannada": {
+      "n": 500,
+      "risky_recall": 0.3319327731092437,
+      "ham_fpr": 0.007633587786259542,
+      "tp": 79,
+      "fn": 159,
+      "fp": 2,
+      "tn": 260
+    },
+    "Kashmiri": {
+      "n": 500,
+      "risky_recall": 0.644,
+      "ham_fpr": 0.04,
+      "tp": 161,
+      "fn": 89,
+      "fp": 10,
+      "tn": 240
+    },
+    "Malayalam": {
+      "n": 500,
+      "risky_recall": 0.7217741935483871,
+      "ham_fpr": 0.15873015873015872,
+      "tp": 179,
+      "fn": 69,
+      "fp": 40,
+      "tn": 212
+    },
+    "Marathi": {
+      "n": 500,
+      "risky_recall": 0.9128787878787878,
+      "ham_fpr": 0.1228813559322034,
+      "tp": 241,
+      "fn": 23,
+      "fp": 29,
+      "tn": 207
+    },
+    "Odia": {
+      "n": 218,
+      "risky_recall": 0.8673469387755102,
+      "ham_fpr": 0.0,
+      "tp": 85,
+      "fn": 13,
+      "fp": 0,
+      "tn": 120
+    },
+    "Punjabi": {
+      "n": 500,
+      "risky_recall": 0.890625,
+      "ham_fpr": 0.2540983606557377,
+      "tp": 228,
+      "fn": 28,
+      "fp": 62,
+      "tn": 182
+    },
+    "Tamil": {
+      "n": 227,
+      "risky_recall": 0.948051948051948,
+      "ham_fpr": 0.3333333333333333,
+      "tp": 73,
+      "fn": 4,
+      "fp": 50,
+      "tn": 100
+    },
+    "Telugu": {
+      "n": 500,
+      "risky_recall": 0.8717948717948718,
+      "ham_fpr": 0.45864661654135336,
+      "tp": 204,
+      "fn": 30,
+      "fp": 122,
+      "tn": 144
+    }
+  },
+  "test_checks": {
+    "risky_recall_drop_pp": 0.8652657601977753,
+    "recall_ok": true,
+    "ham_fpr_delta": -0.028062764031382026,
+    "fpr_ok": true,
+    "shoe_store_not_high": true
+  },
+  "chosen_test": {
+    "n": 6550,
+    "risky_recall": 0.7725587144622992,
+    "ham_fpr": 0.10531080265540133,
+    "tp": 2500,
+    "fn": 736,
+    "fp": 349,
+    "tn": 2965
+  },
+  "chosen_test_per_language": {
+    "Assamese": {
+      "n": 500,
+      "risky_recall": 0.5928853754940712,
+      "ham_fpr": 0.1902834008097166,
+      "tp": 150,
+      "fn": 103,
+      "fp": 47,
+      "tn": 200
+    },
+    "Bengali": {
+      "n": 500,
+      "risky_recall": 0.8360655737704918,
+      "ham_fpr": 0.03515625,
+      "tp": 204,
+      "fn": 40,
+      "fp": 9,
+      "tn": 247
+    },
+    "English": {
+      "n": 605,
+      "risky_recall": 0.9535603715170279,
+      "ham_fpr": 0.0070921985815602835,
+      "tp": 308,
+      "fn": 15,
+      "fp": 2,
+      "tn": 280
+    },
+    "Gujarati": {
+      "n": 500,
+      "risky_recall": 0.596,
+      "ham_fpr": 0.028,
+      "tp": 149,
+      "fn": 101,
+      "fp": 7,
+      "tn": 243
+    },
+    "Hindi": {
+      "n": 500,
+      "risky_recall": 0.9523809523809523,
+      "ham_fpr": 0.14112903225806453,
+      "tp": 240,
+      "fn": 12,
+      "fp": 35,
+      "tn": 213
+    },
+    "Hinglish": {
+      "n": 500,
+      "risky_recall": 0.9437751004016064,
+      "ham_fpr": 0.0,
+      "tp": 235,
+      "fn": 14,
+      "fp": 0,
+      "tn": 251
+    },
+    "Kannada": {
+      "n": 500,
+      "risky_recall": 0.3277310924369748,
+      "ham_fpr": 0.007633587786259542,
+      "tp": 78,
+      "fn": 160,
+      "fp": 2,
+      "tn": 260
+    },
+    "Kashmiri": {
+      "n": 500,
+      "risky_recall": 0.556,
+      "ham_fpr": 0.016,
+      "tp": 139,
+      "fn": 111,
+      "fp": 4,
+      "tn": 246
+    },
+    "Malayalam": {
+      "n": 500,
+      "risky_recall": 0.6653225806451613,
+      "ham_fpr": 0.11904761904761904,
+      "tp": 165,
+      "fn": 83,
+      "fp": 30,
+      "tn": 222
+    },
+    "Marathi": {
+      "n": 500,
+      "risky_recall": 0.8977272727272727,
+      "ham_fpr": 0.06779661016949153,
+      "tp": 237,
+      "fn": 27,
+      "fp": 16,
+      "tn": 220
+    },
+    "Odia": {
+      "n": 218,
+      "risky_recall": 0.8775510204081632,
+      "ham_fpr": 0.0,
+      "tp": 86,
+      "fn": 12,
+      "fp": 0,
+      "tn": 120
+    },
+    "Punjabi": {
+      "n": 500,
+      "risky_recall": 0.8984375,
+      "ham_fpr": 0.20901639344262296,
+      "tp": 230,
+      "fn": 26,
+      "fp": 51,
+      "tn": 193
+    },
+    "Tamil": {
+      "n": 227,
+      "risky_recall": 0.935064935064935,
+      "ham_fpr": 0.28,
+      "tp": 72,
+      "fn": 5,
+      "fp": 42,
+      "tn": 108
+    },
+    "Telugu": {
+      "n": 500,
+      "risky_recall": 0.8846153846153846,
+      "ham_fpr": 0.39097744360902253,
+      "tp": 207,
+      "fn": 27,
+      "fp": 104,
+      "tn": 162
+    }
+  },
+  "extra_baseline_levels": [
+    {
+      "text_hash": "faf232ebfc9b9d6e5617d898d01e134660c05df4",
+      "level": "high"
+    },
+    {
+      "text_hash": "ee888aa6cdf1ff3d48de0c67fd9309dd605013f7",
+      "level": "high"
+    },
+    {
+      "text_hash": "76e0d4208b89cf156ac8fccad773724d522dc6f8",
+      "level": "high"
+    },
+    {
+      "text_hash": "124e895d3beefaf3cdb20d2da2f2ea000c71ef94",
+      "level": "high"
+    },
+    {
+      "text_hash": "e08d7fa2ef27a0157702d1c47fe91058dfa95fd5",
+      "level": "high"
+    },
+    {
+      "text_hash": "7bf1a4fac05fe95bab7677106d3344ef484ceed9",
+      "level": "low"
+    }
+  ],
+  "extra_chosen_levels": [
+    {
+      "text_hash": "faf232ebfc9b9d6e5617d898d01e134660c05df4",
+      "level": "high"
+    },
+    {
+      "text_hash": "ee888aa6cdf1ff3d48de0c67fd9309dd605013f7",
+      "level": "high"
+    },
+    {
+      "text_hash": "76e0d4208b89cf156ac8fccad773724d522dc6f8",
+      "level": "high"
+    },
+    {
+      "text_hash": "124e895d3beefaf3cdb20d2da2f2ea000c71ef94",
+      "level": "high"
+    },
+    {
+      "text_hash": "e08d7fa2ef27a0157702d1c47fe91058dfa95fd5",
+      "level": "medium"
+    },
+    {
+      "text_hash": "7bf1a4fac05fe95bab7677106d3344ef484ceed9",
+      "level": "low"
+    }
+  ],
+  "verdict": "chosen candidate passes pre-registered acceptance on the test half"
+}

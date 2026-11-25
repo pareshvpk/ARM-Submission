@@ -1,0 +1,9 @@
+﻿manufacturer=samsung
+model=SM-M315F
+android_version=12
+sdk=31
+soc=Exynos 9611
+ram_gib=5.4
+mem_total_kb=5706212
+cpu_features=fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+free_space=/dev/fuse       112G  73G   38G  66% /storage/emulated

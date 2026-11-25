@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 1. Base fill -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/glass_surface" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+
+    <!-- 2. Inner top highlight: gradient from glass_highlight at top to transparent at 45% height, inset 1dp -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:centerY="0.45"
+                android:startColor="@color/glass_highlight"
+                android:centerColor="@android:color/transparent"
+                android:endColor="@android:color/transparent"
+                android:type="linear" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+
+    <!-- 3. Rim: outer stroke glass_rim_light on a shape offset up-left by 1dp -->
+    <item
+        android:bottom="1dp"
+        android:left="-1dp"
+        android:right="1dp"
+        android:top="-1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/glass_rim_light" />
+        </shape>
+    </item>
+
+    <!-- 3. Rim: outer stroke glass_rim_ice on a shape offset down-right by 1dp -->
+    <item
+        android:bottom="-1dp"
+        android:left="1dp"
+        android:right="-1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/glass_rim_ice" />
+        </shape>
+    </item>
+
+    <!-- 4. Bottom inner shade: gradient from transparent to glass_shade at bottom -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:centerY="0.60"
+                android:startColor="@android:color/transparent"
+                android:centerColor="@android:color/transparent"
+                android:endColor="@color/glass_shade"
+                android:type="linear" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+</layer-list>

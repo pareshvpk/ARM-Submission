@@ -1,0 +1,10 @@
+﻿total 1.3M
+-rw-rw-rw- 1 shell ext_data_rw 1.0M 2026-11-12 19:45 id_map.json
+-rw-rw-rw- 1 shell ext_data_rw 1.0G 2026-11-03 21:09 llama.pte
+-rw-rw-rw- 1 shell ext_data_rw  632 2026-11-13 09:37 models.sha256
+-rw-rw-rw- 1 shell ext_data_rw 199M 2026-11-12 19:47 sms_fp32.pte
+-rw-rw-rw- 1 shell ext_data_rw  51M 2026-11-12 19:52 sms_int8.pte
+-rw-rw-rw- 1 shell ext_data_rw 6.0M 2026-11-12 20:19 sms_vocab.txt
+-rw-rw-rw- 1 shell ext_data_rw 2.0M 2026-11-03 21:08 tokenizer.model
+-rw-rw-rw- 1 shell ext_data_rw 1.0M 2026-11-03 20:48 url_cnn_v2.pte
+-rw-rw-rw- 1 shell ext_data_rw  896 2026-11-03 20:48 vocab.json

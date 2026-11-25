@@ -1,0 +1,98 @@
+{
+  "golden Hindi": {
+    "texts": 60,
+    "tokens": 2068,
+    "mapped_to_unk": 18,
+    "share": 0.0087
+  },
+  "golden Tamil": {
+    "texts": 60,
+    "tokens": 2108,
+    "mapped_to_unk": 877,
+    "share": 0.416
+  },
+  "heldout Assamese": {
+    "texts": 300,
+    "tokens": 13718,
+    "mapped_to_unk": 2580,
+    "share": 0.1881
+  },
+  "heldout Bengali": {
+    "texts": 300,
+    "tokens": 9977,
+    "mapped_to_unk": 26,
+    "share": 0.0026
+  },
+  "heldout English": {
+    "texts": 300,
+    "tokens": 8282,
+    "mapped_to_unk": 0,
+    "share": 0.0
+  },
+  "heldout Gujarati": {
+    "texts": 300,
+    "tokens": 12660,
+    "mapped_to_unk": 9785,
+    "share": 0.7729
+  },
+  "heldout Hindi": {
+    "texts": 300,
+    "tokens": 10599,
+    "mapped_to_unk": 180,
+    "share": 0.017
+  },
+  "heldout Hinglish": {
+    "texts": 300,
+    "tokens": 9209,
+    "mapped_to_unk": 1,
+    "share": 0.0001
+  },
+  "heldout Kannada": {
+    "texts": 300,
+    "tokens": 8123,
+    "mapped_to_unk": 5430,
+    "share": 0.6685
+  },
+  "heldout Kashmiri": {
+    "texts": 300,
+    "tokens": 13130,
+    "mapped_to_unk": 9904,
+    "share": 0.7543
+  },
+  "heldout Malayalam": {
+    "texts": 300,
+    "tokens": 8918,
+    "mapped_to_unk": 4935,
+    "share": 0.5534
+  },
+  "heldout Marathi": {
+    "texts": 300,
+    "tokens": 10770,
+    "mapped_to_unk": 627,
+    "share": 0.0582
+  },
+  "heldout Odia": {
+    "texts": 300,
+    "tokens": 9633,
+    "mapped_to_unk": 5802,
+    "share": 0.6023
+  },
+  "heldout Punjabi": {
+    "texts": 300,
+    "tokens": 12998,
+    "mapped_to_unk": 6169,
+    "share": 0.4746
+  },
+  "heldout Tamil": {
+    "texts": 300,
+    "tokens": 8904,
+    "mapped_to_unk": 2960,
+    "share": 0.3324
+  },
+  "heldout Telugu": {
+    "texts": 300,
+    "tokens": 8453,
+    "mapped_to_unk": 1020,
+    "share": 0.1207
+  }
+}
